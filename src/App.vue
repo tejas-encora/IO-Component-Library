@@ -4,10 +4,7 @@ import IoButton from '@/components/IoButton.vue'
 
 <template>
   <main>
-    <!-- <md-outlined-button>Test Outlined</md-outlined-button>
-    <p>&nbsp;</p> -->
-    <!-- <md-filled-button>Test Filled</md-filled-button> -->
-    <IoButton/>
+    <IoButton>Iodine</IoButton>
     <p>&nbsp;</p>
     <md-checkbox checked></md-checkbox>
     <p>&nbsp;</p>

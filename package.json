@@ -1,6 +1,6 @@
 {
   "name": "@encoradxp/mat-lib-test",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "publicConfig": {
     "access": "public"
   },
@@ -9,15 +9,15 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-    "main": "./dist/mat-lib-test.umd.js",
-    "module": "./dist/mat-lib-test.es.js",
-    "files": [
-      "dist",
-      "src/assets"
-    ],
+  "main": "./dist/mat-lib-test.umd.js",
+  "module": "./dist/mat-lib-test.es.js",
+  "files": [
+    "dist",
+    "src/assets"
+  ],
   "dependencies": {
+    "@fontsource/lato": "^5.0.15",
     "@material/web": "^1.0.0",
-    "lato-font": "^3.0.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {
@@ -33,6 +33,5 @@
       "import": "./dist/style.css",
       "require": "./dist/style.css"
     }
-    
   }
 }

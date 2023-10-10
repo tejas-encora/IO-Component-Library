@@ -69,10 +69,10 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  /* background: var(--color-background); */
+  background: var(--color-background);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-family: 'Lato', sans-serif !important; 
+  font-family: "Lato";
   font-weight: 700;
   font-size: 14px;
   text-rendering: optimizeLegibility;
