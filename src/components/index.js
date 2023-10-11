@@ -1,1 +1,1 @@
-export { default as IoButton } from './IoButton/IoButton.vue';
+export { default as IOButton } from './IOButton.vue';

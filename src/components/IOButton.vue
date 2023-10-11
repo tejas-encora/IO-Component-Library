@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "IoButton"
+  name: "IOButton"
 };
 import '@/assets/theme.css'
 </script>
