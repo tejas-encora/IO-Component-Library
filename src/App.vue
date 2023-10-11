@@ -1,5 +1,5 @@
 <script setup>
-import IoButton from '@/components/IoButton.vue'
+import IoButton from '@/components/IoButton/IoButton.vue'
 </script>
 
 <template>
