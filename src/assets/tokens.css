@@ -36,7 +36,7 @@
   --md-ref-palette-secondary99: #f7fdff;
   --md-ref-palette-secondary100: #ffffff;
   /* tertiary */
-  --md-ref-palette-tertiary0: #000000;
+  /* --md-ref-palette-tertiary0: #000000;
   --md-ref-palette-tertiary10: #2d1227;
   --md-ref-palette-tertiary20: #44263d;
   --md-ref-palette-tertiary25: #513149;
@@ -51,7 +51,7 @@
   --md-ref-palette-tertiary95: #ffecf6;
   --md-ref-palette-tertiary98: #fff7f9;
   --md-ref-palette-tertiary99: #fffbff;
-  --md-ref-palette-tertiary100: #ffffff;
+  --md-ref-palette-tertiary100: #ffffff; */
   /* neutral */
   --md-ref-palette-neutral0: #000000;
   --md-ref-palette-neutral10: #1b1b1f;
@@ -271,6 +271,6 @@
   --md-sys-typescale-title-small-font-size: 14px;
   --md-sys-typescale-title-small-line-height: 20px;
   --md-sys-typescale-title-small-letter-spacing: 0.10px;
-    --md-ref-typeface-brand: 'Lato';
+  --md-ref-typeface-brand: 'Lato';
   --md-ref-typeface-plain: 'Lato';
 }

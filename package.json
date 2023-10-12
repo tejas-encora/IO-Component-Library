@@ -19,17 +19,18 @@
   ],
   "dependencies": {
     "@fontsource/lato": "^5.0.15",
+    "@fortawesome/fontawesome-pro": "^6.4.2",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@material/web": "^1.0.0",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vue-meta": "^2.4.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-interactions": "^7.4.6",
     "@storybook/addon-links": "^7.4.6",
     "@storybook/blocks": "^7.4.6",
-    "@storybook/manager-api": "^7.4.6",
     "@storybook/testing-library": "^0.2.2",
-    "@storybook/theming": "^7.4.6",
     "@storybook/vue3": "^7.4.6",
     "@storybook/vue3-vite": "^7.4.6",
     "@vitejs/plugin-vue": "^4.3.4",

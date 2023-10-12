@@ -12,7 +12,7 @@ export default {
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { IOButton },
-  template: '<md-filled-button>Some Text</md-filled-button>',
+  template: '<md-filled-button>IOButton</md-filled-button>',
 });
 
 export const Small = Template.bind({}); 

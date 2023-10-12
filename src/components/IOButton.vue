@@ -1,6 +1,6 @@
 <template>
   <md-filled-button>
-    <slot name="content"></slot>
+    <slot></slot>
   </md-filled-button>
 </template>
 
