@@ -1,10 +1,4 @@
 /* color palette from <https://github.com/vuejs/theme> */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap');
-:root {
-  --md-ref-typeface-brand: 'Lato';
-  --md-ref-typeface-plain: 'Lato';
-  
-}
 
 :root {
   --md-sys-shape-corner-extra-small-default-size: 4px;

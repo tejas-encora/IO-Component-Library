@@ -12,6 +12,9 @@ createApp(App).mount('#app')
 
 export default meta = {
     parameters: {
+        palette: {
+            mode: 'light'
+        },
         slots: {
             default: {
                 description: 'Default slot',
