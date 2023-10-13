@@ -1,7 +1,7 @@
 <template>
   <md-filled-button class="small">
     <slot></slot>
-    <i class="fa-light fa-circle-plus" slot="icon"></i>
+    <i class="fa-light fa-circle-plus" slot="icon" />
   </md-filled-button>
 </template>
 

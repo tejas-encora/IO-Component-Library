@@ -9,19 +9,25 @@
     npm run build
     ```
 
-### Adding Components to `/dist/*.js` files
+### After Build, update `/dist/*.js` files
 
 1. Import each Material Web component you're using:
     ```javascript
     import '@material/web/button/filled-button.js';  // Import each component being used
     ```
+    
+2. Import FontAwesome Pro:
+    ```javascript
+    import '@fortawesome/fontawesome-svg-core';
+    import '@fortawesome/fontawesome-pro';
+    ```
 
-2. Import the fonts used by the components:
+3. Import the fonts used by the components:
     ```javascript
     import '@fontsource/lato/400.css';  // Or replace with whatever fonts your components use
     ```
 
-3. Import the generated stylesheet:
+4. Import the generated stylesheet:
     ```javascript
     import './style.css';  // This is the CSS generated from your build process
     ```
