@@ -1,6 +1,8 @@
 /** @type { import('@storybook/vue3').Preview } */
 import '@/assets/theme.css'
 import '@fontsource/lato/400.css'
+import '@fortawesome/fontawesome-pro'
+import '@fortawesome/fontawesome-svg-core'
 
 const preview = {
   parameters: {

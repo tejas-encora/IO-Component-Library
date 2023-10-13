@@ -13,16 +13,13 @@ import App from './App.vue'
 
 createApp(App).mount('#app')
 
-export default meta = {
-    parameters: {
-        palette: {
-            mode: 'light'
-        },
-        slots: {
-            default: {
-                description: 'Default slot',
-                template: `<p>{{ args.default }}</p>`
-            },
-        },
-    }
-}
+// export default meta = {
+//     parameters: {
+//         slots: {
+//             default: {
+//                 description: 'Default slot',
+//                 template: `<p>{{ args.default }}</p>`
+//             },
+//         },
+//     }
+// }

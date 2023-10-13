@@ -1,1 +1,2 @@
-export { default as IOButton } from './IOButton.vue';
+export { default as IOButtonFilledSmall } from './IOButtonFilledSmall.vue';
+export { default as IOIconButtonFilledSmall } from './IOIconButtonFilledSmall.vue';

@@ -1,13 +1,17 @@
 <script setup>
-import IOButton from '@/components/IOButton.vue'
-import IOIconButton from '@/components/IOIconButton.vue'
+import IOButtonFilledSmall from '@/components/IOButtonFilledSmall.vue'
+import IOIconButtonFilledSmall from '@/components/IOIconButtonFilledSmall.vue'
 
 </script>
 
 <template>
   <main>
-    <IOButton>IOButton</IOButton>
+    <md-filled-button>
+      <slot></slot>
+    </md-filled-button>
+
+    <IOButtonFilledSmall>IOButton</IOButtonFilledSmall>
     <p>&nbsp;</p>
-    <IOIconButton>IOIconButton</IOIconButton>
+    <IOIconButtonFilledSmall>IOIconButton</IOIconButtonFilledSmall>
   </main>
 </template>
