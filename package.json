@@ -1,6 +1,6 @@
 {
   "name": "@encoradxp/mat-lib-test",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "publicConfig": {
     "access": "public"
   },
@@ -28,11 +28,14 @@
     "vue-meta": "^2.4.0"
   },
   "devDependencies": {
+    "@storybook/addon-docs": "^7.4.6",
     "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-interactions": "^7.4.6",
     "@storybook/addon-links": "^7.4.6",
     "@storybook/blocks": "^7.4.6",
+    "@storybook/manager-api": "^7.4.6",
     "@storybook/testing-library": "^0.2.2",
+    "@storybook/theming": "^7.4.6",
     "@storybook/vue3": "^7.4.6",
     "@storybook/vue3-vite": "^7.4.6",
     "@vitejs/plugin-vue": "^4.3.4",

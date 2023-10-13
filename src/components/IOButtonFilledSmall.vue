@@ -1,18 +1,14 @@
 <template>
-  <md-filled-button class="small" has-icon="true">
+  <md-filled-button class="small">
     <slot></slot>
   </md-filled-button>
 </template>
 
 <script>
+import '@/assets/theme.css'
+
 export default {
   name: "IOButtonFilledSmall"
 };
-import '@/assets/theme.css'
 </script>
 
-<style>
-.small {
-  height: var(--small)
-}
-</style>

@@ -3,3 +3,10 @@
 @import url(typography.module.css);
 @import url(theme.light.css);
 /* @import url(theme.dark.css) (prefers-color-scheme: dark); */
+
+
+/* Custom */
+
+.small {
+  height: var(--small)
+}

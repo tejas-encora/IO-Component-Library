@@ -3,7 +3,7 @@ import IOIconButtonFilledSmall from '@/components/IOIconButtonFilledSmall.vue'
 import { action } from '@storybook/addon-actions';
 
 export default {
-  title: 'UI/Buttons/Filled/Small/Icon Buttons',
+  title: 'UI/Atoms/Buttons/Filled/Small/Button with Icon',
   component: IOIconButtonFilledSmall,
   argTypes: {
 

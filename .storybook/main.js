@@ -1,10 +1,14 @@
 /** @type { import('@storybook/vue3-vite').StorybookConfig } */
 const config = {
-  stories: ["../src/**/*.stories.js"],
+  stories: [
+    '../src/**/*.mdx', // 👈 Add this, to match your project's structure
+    '../src/**/*.stories.js',
+  ],
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
+    '@storybook/addon-docs',
   ],
   framework: {
     name: "@storybook/vue3-vite",
