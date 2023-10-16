@@ -50,6 +50,15 @@
 
 ### Currently Available Components
 
-- `IOButtonFilledSmall`
-- `IOIconButtonFilledSmall`
+IOButtonFilledSmall
+IOIconButtonFilledSmall
+IOIconButtonFilledSmallDisabled
+IOButtonFilledMedium
+IOIconButtonFilledMedium
+IOIconButtonFilledMediumDisabled
+IOButtonFilledLarge
+IOIconButtonFilledLarge
+IOIconButtonFilledLargeDisabled
+-------------------------------------------
+IOTextField
 
