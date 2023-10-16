@@ -3,14 +3,14 @@ import IOButtonFilledSmallDisabled from '@/components/IOButtonFilledSmallDisable
 import { action } from '@storybook/addon-actions';
 
 export default {
-  title: 'UI/Atoms/Buttons/Filled/Small/Button Disabled',
+  title: 'UI/Atoms/Buttons/Filled/Small/Disabled',
   component: IOButtonFilledSmallDisabled,
   argTypes: {
 
   },
 };
 
-export const ButtonDisabled = {
+export const Button = {
   render: () => ({
     components: { IOButtonFilledSmallDisabled },
     setup() {

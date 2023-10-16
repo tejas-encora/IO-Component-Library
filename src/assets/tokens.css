@@ -5,7 +5,8 @@
   --md-filled-button-container-shape: 4px;
   --md-outlined-button-container-shape: 4px;
   --small: 24px;
-  --md-filled-button-container-height: 40px;
+  --medium: 32px;
+  --large: 40px;
   --md-filled-button-icon-size: 14px;
   
   /* primary */

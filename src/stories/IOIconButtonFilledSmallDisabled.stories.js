@@ -3,14 +3,14 @@ import IOIconButtonFilledSmallDisabled from '@/components/IOIconButtonFilledSmal
 import { action } from '@storybook/addon-actions';
 
 export default {
-  title: 'UI/Atoms/Buttons/Filled/Small/Button IconDisabled',
+  title: 'UI/Atoms/Buttons/Filled/Small/Plus Icon/Disabled',
   component: IOIconButtonFilledSmallDisabled,
   argTypes: {
 
   },
 };
 
-export const ButtonWithIconDisabled  = {
+export const Button  = {
   render: () => ({
     components: { IOIconButtonFilledSmallDisabled },
     setup() {
@@ -18,6 +18,6 @@ export const ButtonWithIconDisabled  = {
         onClick: action('clicked'),
       };
     },
-    template: '<IOIconButtonFilledSmallDisabled class="small">Click Me!</IOIconButtonFilledSmallDisabled>',
+    template: '<IOIconButtonFilledSmallDisabled>Click Me!</IOIconButtonFilledSmallDisabled>',
   }),
 };

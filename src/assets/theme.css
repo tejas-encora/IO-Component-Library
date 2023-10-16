@@ -10,3 +10,9 @@
 .small {
   height: var(--small)
 }
+.medium {
+  height: var(--medium)
+}
+.large {
+  height: var(--large)
+}

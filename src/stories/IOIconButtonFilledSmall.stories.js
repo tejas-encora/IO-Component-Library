@@ -3,14 +3,14 @@ import IOIconButtonFilledSmall from '@/components/IOIconButtonFilledSmall.vue'
 import { action } from '@storybook/addon-actions';
 
 export default {
-  title: 'UI/Atoms/Buttons/Filled/Small/Button with Icon',
+  title: 'UI/Atoms/Buttons/Filled/Small/Plus Icon',
   component: IOIconButtonFilledSmall,
   argTypes: {
 
   },
 };
 
-export const ButtonWithIcon  = {
+export const Button  = {
   render: () => ({
     components: { IOIconButtonFilledSmall },
     setup() {
@@ -18,6 +18,6 @@ export const ButtonWithIcon  = {
         onClick: action('clicked'),
       };
     },
-    template: '<IOIconButtonFilledSmall class="small">Click Me!</IOIconButtonFilledSmall>',
+    template: '<IOIconButtonFilledSmall>Click Me!</IOIconButtonFilledSmall>',
   }),
 };
