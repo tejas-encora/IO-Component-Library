@@ -18,6 +18,6 @@ export const Button = {
         onClick: action('clicked'),
       };
     },
-    template: '<IOButtonOutlineSmall>Click Me</IOButtonOutlineSmall>',
+    template: '<IOButtonOutlineSmall>Click Me</IOButtonOutlineSmall><br><br><IOButtonOutlineSmall disabled>Click Me</IOButtonOutlineSmall>',
   }),
 };
