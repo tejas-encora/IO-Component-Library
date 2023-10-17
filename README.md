@@ -20,6 +20,7 @@
     ```javascript
     import '@fortawesome/fontawesome-svg-core';
     import '@fortawesome/fontawesome-pro';
+    import '@fortawesome/fontawesome-pro/css/all.css'
     ```
 
 3. Import the fonts used by the components:
