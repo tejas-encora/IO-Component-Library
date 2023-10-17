@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "IOIconButtonFilledSmall"
+  name: "IOIconButtonOutlineSmall"
 };
 import '@/assets/theme.css'
 </script>

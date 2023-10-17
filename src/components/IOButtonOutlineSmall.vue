@@ -1,7 +1,7 @@
 <template>
-  <md-filled-button class="small">
+  <md-outlined-button class="small outline">
     <slot></slot>
-  </md-filled-button>
+  </md-outlined-button>
 </template>
 
 <script>
@@ -11,4 +11,9 @@ export default {
   name: "IOButtonOutlineSmall"
 };
 </script>
+<style>
+/* .outline {
+  color: red !important
+} */
+</style>
 
