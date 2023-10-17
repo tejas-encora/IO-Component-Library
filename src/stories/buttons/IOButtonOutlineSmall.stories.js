@@ -1,5 +1,5 @@
 import '@material/web/button/outlined-button.js'
-import IOButtonOutlineSmall from '@/components/IOButtonOutlineSmall.vue'
+import IOButtonOutlineSmall from '@/components/buttons/IOButtonOutlineSmall.vue'
 import { action } from '@storybook/addon-actions';
 
 export default {
@@ -18,6 +18,6 @@ export const Button = {
         onClick: action('clicked'),
       };
     },
-    template: '<IOButtonOutlineSmall>Click Me</IOButtonOutlineSmall><br><br><IOButtonOutlineSmall disabled>Click Me</IOButtonOutlineSmall>',
+    template: '<IOButtonOutlineSmall @click="onClick">Click Me</IOButtonOutlineSmall><br><br><IOButtonOutlineSmall disabled>Click Me</IOButtonOutlineSmall>',
   }),
 };

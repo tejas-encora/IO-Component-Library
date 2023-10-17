@@ -2,6 +2,7 @@
 import '@material/web/button/filled-button.js';
 import '@material/web/button/outlined-button.js';
 import '@material/web/textfield/filled-text-field.js';
+import '@material/web/textfield/outlined-text-field.js';
 import '@fontsource/lato/400.css'
 // import '@fontsource/lato/500.css'
 import '@fortawesome/fontawesome-pro'

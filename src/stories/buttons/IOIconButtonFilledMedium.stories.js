@@ -1,5 +1,5 @@
 import '@material/web/button/filled-button.js'
-import IOIconButtonFilledMedium from '@/components/IOIconButtonFilledMedium.vue'
+import IOIconButtonFilledMedium from '@/components/buttons/IOIconButtonFilledMedium.vue'
 import { action } from '@storybook/addon-actions';
 
 export default {
@@ -18,6 +18,6 @@ export const Button  = {
         onClick: action('clicked'),
       };
     },
-    template: '<IOIconButtonFilledMedium>Click Me!</IOIconButtonFilledMedium><br><br><IOIconButtonFilledMedium disabled>Click Me!</IOIconButtonFilledMedium>',
+    template: '<IOIconButtonFilledMedium @click="onClick">Click Me!</IOIconButtonFilledMedium><br><br><IOIconButtonFilledMedium disabled>Click Me!</IOIconButtonFilledMedium>',
   }),
 };

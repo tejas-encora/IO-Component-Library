@@ -1,19 +1,13 @@
 <script setup>
-import IOButtonFilledSmall from '@/components/IOButtonFilledSmall.vue'
-import IOButtonFilledSmallDisabled from '@/components/IOButtonFilledSmallDisabled.vue'
-import IOButtonFilledMedium from '@/components/IOButtonFilledMedium.vue'
-import IOButtonFilledMediumDisabled from '@/components/IOButtonFilledMediumDisabled.vue'
-import IOButtonFilledLarge from '@/components/IOButtonFilledLarge.vue'
-import IOButtonFilledLargeDisabled from '@/components/IOButtonFilledLargeDisabled.vue'
+import IOButtonFilledSmall from '@/components/buttons/IOButtonFilledSmall.vue'
+import IOButtonFilledMedium from '@/components/buttons/IOButtonFilledMedium.vue'
+import IOButtonFilledLarge from '@/components/buttons/IOButtonFilledLarge.vue'
 
-import IOIconButtonFilledSmall from '@/components/IOIconButtonFilledSmall.vue'
-import IOIconButtonFilledSmallDisabled from '@/components/IOIconButtonFilledSmallDisabled.vue'
-import IOIconButtonFilledMedium from '@/components/IOIconButtonFilledMedium.vue'
-import IOIconButtonFilledMediumDisabled from '@/components/IOIconButtonFilledMediumDisabled.vue'
-import IOIconButtonFilledLarge from '@/components/IOIconButtonFilledLarge.vue'
-import IOIconButtonFilledLargeDisabled from '@/components/IOIconButtonFilledLargeDisabled.vue'
+import IOIconButtonFilledSmall from '@/components/buttons/IOIconButtonFilledSmall.vue'
+import IOIconButtonFilledMedium from '@/components/buttons/IOIconButtonFilledMedium.vue'
+import IOIconButtonFilledLarge from '@/components/buttons/IOIconButtonFilledLarge.vue'
 
-import IOTextField from '@/components/IOTextField.vue'
+import IOTextField from '@/components/input/IOTextField.vue'
 
 </script>
 

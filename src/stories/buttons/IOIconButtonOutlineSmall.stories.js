@@ -3,7 +3,7 @@ import IOIconButtonOutlineSmall from '@/components/IOIconButtonOutlineSmall.vue'
 import { action } from '@storybook/addon-actions';
 
 export default {
-  title: 'UI/Atoms/Buttons/Outlined/Small/Plus Icon/Button',
+  title: 'UI/Atoms/Buttons/Outlined/Small/Plus Icon',
   component: IOIconButtonOutlineSmall,
   argTypes: {
 
@@ -18,6 +18,6 @@ export const Button  = {
         onClick: action('clicked'),
       };
     },
-    template: '<IOIconButtonOutlineSmall>Click Me!</IOIconButtonOutlineSmall><br><br><IOIconButtonOutlineSmall disabled>Click Me!</IOIconButtonOutlineSmall>',
+    template: '<IOIconButtonOutlineSmall @click="onClick">Click Me!</IOIconButtonOutlineSmall><br><br><IOIconButtonOutlineSmall disabled>Click Me!</IOIconButtonOutlineSmall>',
   }),
 };

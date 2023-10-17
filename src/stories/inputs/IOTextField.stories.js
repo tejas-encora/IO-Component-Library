@@ -1,5 +1,5 @@
 import '@material/web/textfield/filled-text-field.js'
-import IOTextField from '@/components/IOTextField.vue'
+import IOTextField from '@/components/inputs/IOTextField.vue'
 import { action } from '@storybook/addon-actions';
 
 export default {
@@ -18,6 +18,6 @@ export const TextField = {
         onClick: action('clicked'),
       };
     },
-    template: '<IOTextField>Click Me</IOButtonFilledLarge>',
+    template: '<IOTextField>Click Me</IOTextField>',
   }),
 };
