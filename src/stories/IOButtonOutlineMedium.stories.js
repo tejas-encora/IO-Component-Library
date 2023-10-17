@@ -1,10 +1,10 @@
 import '@material/web/button/outlined-button.js'
-import IOButtonOutlineSmall from '@/components/IOButtonOutlineSmall.vue'
+import IOButtonOutlineMedium from '@/components/IOButtonOutlineMedium.vue'
 import { action } from '@storybook/addon-actions';
 
 export default {
-  title: 'UI/Atoms/Buttons/Outlined/Small',
-  component: IOButtonOutlineSmall,
+  title: 'UI/Atoms/Buttons/Outlined/Medium',
+  component: IOButtonOutlineMedium,
   argTypes: {
 
   },
@@ -12,12 +12,12 @@ export default {
 
 export const Button = {
   render: () => ({
-    components: { IOButtonOutlineSmall },
+    components: { IOButtonOutlineMedium },
     setup() {
       return {
         onClick: action('clicked'),
       };
     },
-    template: '<IOButtonOutlineSmall>Click Me</IOButtonOutlineSmall>',
+    template: '<IOButtonOutlineMedium>Click Me</IOButtonOutlineMedium>',
   }),
 };

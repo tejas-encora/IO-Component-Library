@@ -3,7 +3,7 @@ import IOTextField from '@/components/IOTextField.vue'
 import { action } from '@storybook/addon-actions';
 
 export default {
-  title: 'UI/Atoms/Inputs/Text/Filled/TextField',
+  title: 'UI/Atoms/Inputs/Text/Filled',
   component: IOTextField,
   argTypes: {
 

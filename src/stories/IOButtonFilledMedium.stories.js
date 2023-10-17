@@ -3,7 +3,7 @@ import IOButtonFilledMedium from '@/components/IOButtonFilledMedium.vue'
 import { action } from '@storybook/addon-actions';
 
 export default {
-  title: 'UI/Atoms/Buttons/Filled/Medium/Button',
+  title: 'UI/Atoms/Buttons/Filled/Medium',
   component: IOButtonFilledMedium,
   argTypes: {
 

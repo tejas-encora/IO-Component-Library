@@ -3,7 +3,7 @@ import IOIconButtonOutlineSmall from '@/components/IOIconButtonOutlineSmall.vue'
 import { action } from '@storybook/addon-actions';
 
 export default {
-  title: 'UI/Atoms/Buttons/Outlined/Small/Plus Icon',
+  title: 'UI/Atoms/Buttons/Outlined/Small/Plus Icon/Button',
   component: IOIconButtonOutlineSmall,
   argTypes: {
 

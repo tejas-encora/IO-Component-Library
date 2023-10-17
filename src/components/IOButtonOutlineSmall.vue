@@ -1,5 +1,5 @@
 <template>
-  <md-outlined-button class="small outline">
+  <md-outlined-button class="small">
     <slot></slot>
   </md-outlined-button>
 </template>

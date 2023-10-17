@@ -3,7 +3,7 @@ import IOButtonFilledLarge from '@/components/IOButtonFilledLarge.vue'
 import { action } from '@storybook/addon-actions';
 
 export default {
-  title: 'UI/Atoms/Buttons/Filled/Large/Button',
+  title: 'UI/Atoms/Buttons/Filled/Large',
   component: IOButtonFilledLarge,
   argTypes: {
 

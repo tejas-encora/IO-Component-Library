@@ -45,20 +45,6 @@
 
 1. Install the Iodine test package:
     ```bash
-    npm install mat-lib-test
+    npm install @encoradxp/mat-lib-test
     ```
-
-### Currently Available Components
-
-IOButtonFilledSmall
-IOIconButtonFilledSmall
-IOIconButtonFilledSmallDisabled
-IOButtonFilledMedium
-IOIconButtonFilledMedium
-IOIconButtonFilledMediumDisabled
-IOButtonFilledLarge
-IOIconButtonFilledLarge
-IOIconButtonFilledLargeDisabled
--------------------------------------------
-IOTextField
 
