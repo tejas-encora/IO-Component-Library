@@ -8,7 +8,11 @@
 import '@/assets/theme.css'
 
 export default {
-  name: "IOButtonFilledLarge"
+  name: "IOButtonFilledLarge",
+  props: {
+    label: String,
+    disabled: Boolean
+  }
 };
 </script>
 

@@ -1,10 +1,11 @@
 import '@material/web/textfield/filled-text-field.js'
-import IOTextField from '@/components/inputs/IOTextField.vue'
+import IOTextField from '@/components/Inputs/IOTextField.vue'
 import { action } from '@storybook/addon-actions';
 
 export default {
   title: 'UI/Atoms/Inputs/Text/Filled',
   component: IOTextField,
+  tags: ['autodocs'],
   argTypes: {
 
   },
@@ -13,11 +14,6 @@ export default {
 export const TextField = {
   render: () => ({
     components: { IOTextField },
-    setup() {
-      return {
-        onClick: action('clicked'),
-      };
-    },
-    template: '<IOTextField>Click Me</IOTextField>',
+    template: '<IOTextField label="Label">Click Me</IOTextField>'
   }),
 };

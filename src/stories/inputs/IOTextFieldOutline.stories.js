@@ -1,5 +1,5 @@
 import '@material/web/textfield/outlined-text-field.js'
-import IOTextFieldOutline from '@/components/inputs/IOTextFieldOutline.vue'
+import IOTextFieldOutline from '@/components/Inputs/IOTextFieldOutline.vue'
 import { action } from '@storybook/addon-actions';
 
 export default {
