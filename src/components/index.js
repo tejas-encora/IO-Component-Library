@@ -15,7 +15,7 @@ export { default as IOButtonOutlineSmall } from './Buttons/IOButtonOutlineSmall.
 export { default as IOIconButtonOutlineSmall } from './Buttons/IOIconButtonOutlineSmall.vue';
 export { default as IOButtonOutlineMedium } from './Buttons/IOButtonOutlineMedium.vue';
 export { default as IOIconButtonOutlineMedium } from './Buttons/IOIconButtonOutlineMedium.vue';
-export { default as IOButtonOutlineLarge } from './Buttons/buttons/IOButtonOutlineLarge.vue';
+export { default as IOButtonOutlineLarge } from './Buttons/IOButtonOutlineLarge.vue';
 export { default as IOIconButtonOutlineLarge } from './Buttons/IOIconButtonOutlineLarge.vue';
 
 /** 

@@ -1,12 +1,12 @@
 {
   "name": "@encoradxp/mat-lib-test",
-  "version": "0.2.5",
+  "version": "0.2.9",
   "publicConfig": {
     "access": "public"
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node post-build.js",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
