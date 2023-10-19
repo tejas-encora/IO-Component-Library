@@ -1,5 +1,5 @@
 <template>
-  <md-filled-text-field label="Label" placeholder="Placeholder" supporting-text="My supporting text"></md-filled-text-field>
+  <md-filled-text-field label="Label" placeholder="Placeholder" supporting-text="Supporting text"></md-filled-text-field>
 </template>
 
 <script>

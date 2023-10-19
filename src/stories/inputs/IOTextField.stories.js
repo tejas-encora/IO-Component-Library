@@ -4,7 +4,7 @@ import IOTextField from '@/components/Inputs/IOTextField.vue'
 import IOTextFieldOutline from '@/components/Inputs/IOTextFieldOutline.vue'
 
 export default {
-  title: 'UI/Atoms/Inputs/Text/Filled',
+  title: 'UI/Atoms/Inputs/Text',
   component: IOTextField,
   tags: ['autodocs'],
   render: (args) => ({
@@ -12,7 +12,7 @@ export default {
     setup() {
       return { args };
     },
-    template: '<IOTextField/>',
+    template: '<IOTextField class="large" type="text"/>',
   }),
   args: {
     disabled: false,
@@ -40,7 +40,7 @@ export default {
   },
 };
 
-export const TextField = {
+export const FilledTextField = {
   render: (args) => ({
     components: { IOTextField },
     setup() {
@@ -49,7 +49,8 @@ export const TextField = {
     template: `<IOTextField label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
   }),
 };
-export const TextFieldOutline = {
+
+export const OutlineTextField = {
   render: (args) => ({
     components: { IOTextFieldOutline },
     setup() {
@@ -58,3 +59,4 @@ export const TextFieldOutline = {
     template: `<IOTextFieldOutline label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
   }),
 };
+
