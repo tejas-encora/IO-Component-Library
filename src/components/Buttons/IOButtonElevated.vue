@@ -1,14 +1,14 @@
 <template>
-  <md-filled-button class="medium">
+  <md-elevated-button>
     <slot></slot>
-  </md-filled-button>
+  </md-elevated-button>
 </template>
 
 <script>
 import '@/assets/theme.css'
 
 export default {
-  name: "IOButtonFilledMedium"
+  name: "IOButtonElevated"
 };
 </script>
 

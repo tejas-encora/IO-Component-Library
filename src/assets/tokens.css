@@ -4,12 +4,14 @@
   /* custom */
   --md-filled-button-container-shape: 4px;
   --md-outlined-button-container-shape: 4px;
+  --md-text-button-container-shape: 4px;
+  --md-elevated-button-container-shape: 4px;
   --small: 24px;
   --medium: 32px;
   --large: 40px;
   --md-filled-button-icon-size: 14px;
   --md-outlined-button-icon-size: 14px;
-
+/* ------------------- */
   --md-ref-palette-primary0: #000000;
   --md-ref-palette-primary10: #1e0061;
   --md-ref-palette-primary20: #330098;

@@ -1,40 +1,104 @@
+import IOButtonFilled from '@/components/Buttons/IOButtonFilled.vue'
+import IOButtonOutline from '@/components/Buttons/IOButtonOutline.vue'
+import IOButtonElevated from '@/components/Buttons/IOButtonElevated.vue'
+import IOIconButtonFilled from '@/components/Buttons/IOIconButtonFilled.vue'
+import IOIconButtonOutline from '@/components/Buttons/IOIconButtonOutline.vue'
+import IOIconTextButtonLarge from '@/components/Buttons/IOIconTextButtonLarge.vue'
+import IOTextButton from '@/components/Buttons/IOTextButton.vue'
+
 import '@material/web/button/filled-button.js'
 import '@material/web/button/outlined-button.js'
-import IOButtonFilledLarge from '@/components/Buttons/IOButtonFilledLarge.vue'
-// import IOButtonOutlineLarge from '@/components/Buttons/IOButtonOutlineLarge.vue'
-// import { withDesign } from 'storybook-addon-designs'
+import '@material/web/button/text-button.js'
+import '@material/web/button/elevated-button.js'
+
 
 export default {
-    title: 'UI/Atoms/Button',
-    component: IOButtonFilledLarge,
+    title: 'UI/Atoms/Buttons',
+    component: IOButtonFilled,
     tags: ['autodocs'],
-    // decorators: [withDesign],
-};
-export const Primary = {
-    render: (args, { argTypes }) => ({
-        components: { IOButtonFilledLarge },
-        props: Object.keys(argTypes),
-        template: '<IOButtonFilledLarge v-bind="$props" />',
+    render: (args) => ({
+        components: { IOButtonFilled },
+        setup() {
+            return { args };
+        },
+        template: '<IOButtonFilled v-bind="args">{{args.label}}</IOButtonFilled>',
     }),
     args: {
-        label: true,
-        label: 'Click me',
+        disabled: false,
+        label: 'click me',
+        class: 'medium'
+    },
+    argTypes: {
+        class: {
+            control: {
+                type: 'select',
+            },
+            options: ['small', 'medium', 'large'],
+        },
     },
 };
+export const Default = {
+    render: (args) => ({
+        components: { IOButtonFilled },
+        setup() {
+            return { args };
+        },
+        template: '<IOButtonFilled v-bind="args">{{args.label}}</IOButtonFilled>',
+    })
+}; 
+export const FilledWithIcon = {
+    render: (args) => ({
+        components: { IOIconButtonFilled },
+        setup() {
+            return { args };
+        },
+        template: '<IOIconButtonFilled v-bind="args">{{args.label}}</IOIconButtonFilled>',
+    })
+};
+export const Outlined = {
+    render: (args) => ({
+        components: { IOButtonOutline },
+        setup() {
+            return { args };
+        },
+        template: '<IOButtonOutline v-bind="args">{{args.label}}</IOButtonOutline>',
+    })
+};
+export const OutlineWithIcon = {
+    render: (args) => ({
+        components: { IOIconButtonOutline },
+        setup() {
+            return { args };
+        },
+        template: '<IOIconButtonOutline v-bind="args">{{args.label}}</IOIconButtonOutline>',
+    })
+};
 
-// Primary.parameters = {
-//     design: {
-//         type: 'figma',
-//         url: 'https://www.figma.com/file/Yl9Art7nRZkjYr3Ocexr5G/ioUI-V2?type=design&node-id=50716-11372&mode=dev'
-//     }
-// }
+export const Text = {
+    render: (args) => ({
+        components: { IOTextButton },
+        setup() {
+            return { args };
+        },
+        template: '<IOTextButton v-bind="args">{{args.label}}</IOTextButton>',
+    })
+};
+export const TextWithIcon = {
+    render: (args) => ({
+        components: { IOIconTextButtonLarge },
+        setup() {
+            return { args };
+        },
+        template: '<IOIconTextButtonLarge v-bind="args">{{args.label}}</IOIconTextButtonLarge>',
+    })
+};
 
-//export const Large = (args) => <IOButtonFilledLarge {...args}>{label}</IOButtonFilledLarge>
-// export const Large = (args) => ({
-//     components: { IOButtonFilledLarge },
-//     template: '<IOButtonFilledLarge {...args} />'
-// });
-// Large.args = {
-//     children: 'Click me',
-//     disabled: false
-// }
+export const Elevated = {
+    render: (args) => ({
+        components: { IOButtonElevated },
+        setup() {
+            return { args };
+        },
+        template: '<IOButtonElevated v-bind="args">{{args.label}}</IOButtonElevated>',
+    })
+};

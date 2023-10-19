@@ -1,5 +1,5 @@
 <template>
-  <md-outlined-text-field label="Label" value="Test Value"></md-outlined-text-field>
+  <md-outlined-text-field label="Label" placeholder="Placeholder" supporting-text="My supporting text"></md-outlined-text-field>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <md-outlined-button class="small">
+  <md-outlined-button>
     <slot></slot>
   </md-outlined-button>
 </template>
@@ -8,12 +8,7 @@
 import '@/assets/theme.css'
 
 export default {
-  name: "IOButtonOutlineSmall"
+  name: "IOButtonOutline"
 };
 </script>
-<style>
-/* .outline {
-  color: red !important
-} */
-</style>
 

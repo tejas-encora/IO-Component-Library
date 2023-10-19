@@ -1,13 +1,15 @@
 <template>
-  <md-outlined-button class="large">
+  <md-text-button>
     <slot></slot>
     <i class="fa-light fa-circle-plus" slot="icon" />
-  </md-outlined-button>
+  </md-text-button>
 </template>
 
 <script>
-export default {
-  name: "IOIconButtonOutlineLarge"
-};
 import '@/assets/theme.css'
+
+export default {
+  name: "IOIconTextButton"
+};
 </script>
+

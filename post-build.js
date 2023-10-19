@@ -3,7 +3,7 @@ const path = require('path');
 
 // Get the paths to the source and destination files
 const srcFilePath = path.join(__dirname, 'src', 'assets', 'imports.js');
-const destFilePath = path.join(__dirname, 'dist/mat-lib-test.es.js'); // Replace with the actual path
+const destFilePath = path.join(__dirname, 'dist/mat-lib-test.es.js');
 
 // Read the content of the source file
 const srcFileContent = fs.readFileSync(srcFilePath, 'utf-8');

@@ -1,14 +1,14 @@
 <template>
-  <md-filled-button class="small">
+  <md-text-button>
     <slot></slot>
-  </md-filled-button>
+  </md-text-button>
 </template>
 
 <script>
 import '@/assets/theme.css'
 
 export default {
-  name: "IOButtonFilledSmall"
+  name: "IOTextButton"
 };
 </script>
 

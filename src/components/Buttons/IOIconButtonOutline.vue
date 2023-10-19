@@ -1,5 +1,5 @@
 <template>
-  <md-outlined-button class="small">
+  <md-outlined-button>
     <slot></slot>
     <i class="fa-light fa-circle-plus" slot="icon" />
   </md-outlined-button>
@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "IOIconButtonOutlineSmall"
+  name: "IOIconButtonOutline"
 };
 import '@/assets/theme.css'
 </script>

@@ -9,8 +9,6 @@ const config = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     '@storybook/addon-docs',
-    'storybook-addon-live-examples',
-    'storybook-addon-designs'
   ],
   framework: {
     name: "@storybook/vue3-vite",

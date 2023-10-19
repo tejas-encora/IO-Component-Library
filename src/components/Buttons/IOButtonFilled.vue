@@ -1,5 +1,5 @@
 <template>
-  <md-filled-button class="large">
+  <md-filled-button>
     <slot></slot>
   </md-filled-button>
 </template>
@@ -8,11 +8,7 @@
 import '@/assets/theme.css'
 
 export default {
-  name: "IOButtonFilledLarge",
-  props: {
-    label: String,
-    disabled: Boolean
-  }
+  name: "IOButtonFilled"
 };
 </script>
 

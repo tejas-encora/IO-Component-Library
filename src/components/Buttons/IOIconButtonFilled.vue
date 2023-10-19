@@ -1,5 +1,5 @@
 <template>
-  <md-filled-button class="medium">
+  <md-filled-button>
     <slot></slot>
     <i class="fa-light fa-circle-plus" slot="icon" />
   </md-filled-button>
@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "IOIconButtonFilledMedium"
+  name: "IOIconButtonFilled"
 };
 import '@/assets/theme.css'
 </script>
