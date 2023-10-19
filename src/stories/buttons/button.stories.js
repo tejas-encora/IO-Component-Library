@@ -3,7 +3,7 @@ import IOButtonOutline from '@/components/Buttons/IOButtonOutline.vue'
 import IOButtonElevated from '@/components/Buttons/IOButtonElevated.vue'
 import IOIconButtonFilled from '@/components/Buttons/IOIconButtonFilled.vue'
 import IOIconButtonOutline from '@/components/Buttons/IOIconButtonOutline.vue'
-import IOIconTextButtonLarge from '@/components/Buttons/IOIconTextButtonLarge.vue'
+import IOIconTextButton from '@/components/Buttons/IOIconTextButton.vue'
 import IOTextButton from '@/components/Buttons/IOTextButton.vue'
 
 import '@material/web/button/filled-button.js'
@@ -85,11 +85,11 @@ export const Text = {
 };
 export const TextWithIcon = {
     render: (args) => ({
-        components: { IOIconTextButtonLarge },
+        components: { IOIconTextButton },
         setup() {
             return { args };
         },
-        template: '<IOIconTextButtonLarge v-bind="args">{{args.label}}</IOIconTextButtonLarge>',
+        template: '<IOIconTextButton v-bind="args">{{args.label}}</IOIconTextButton>',
     })
 };
 
