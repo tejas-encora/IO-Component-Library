@@ -1,12 +1,12 @@
 <template>
-  <md-text-button>
+  <md-filled-tonal-button>
     <slot></slot>
-  </md-text-button>
+  </md-filled-tonal-button>
 </template>
 
 <script>
 export default {
-  name: "IOTextButton"
+  name: "IOButtonTonal"
 };
 </script>
 

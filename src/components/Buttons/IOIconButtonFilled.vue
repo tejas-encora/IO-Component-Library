@@ -1,13 +1,20 @@
 <template>
   <md-filled-button>
     <slot></slot>
-    <i class="fa-light fa-circle-plus" slot="icon" />
+    <i :class="iconClass" slot="icon" />
   </md-filled-button>
 </template>
 
 <script>
 export default {
-  name: "IOIconButtonFilled"
+  name: 'IOIconButtonFilled',
+  props: {
+    icon: String,
+  },
+  computed: {
+    iconClass() {
+      return `fa-light fa-${this.icon}`;
+    },
+  },
 };
-import '@/assets/theme.css'
 </script>

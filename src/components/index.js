@@ -3,6 +3,8 @@
 */
 export { default as IOIconButtonFilled } from '@/components/Buttons/IOIconButtonFilled.vue';
 export { default as IOButtonFilled } from '@/components/Buttons/IOButtonFilled.vue';
+export { default as IOButtonTonal } from '@/components/Buttons/IOButtonTonal.vue';
+export { default as IOIconButtonTonal } from '@/components/Buttons/IOIconButtonTonal.vue';
 
 /** 
  * Outlined Buttons * 

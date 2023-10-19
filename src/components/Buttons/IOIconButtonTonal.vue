@@ -1,13 +1,13 @@
 <template>
-  <md-outlined-button>
+  <md-filled-tonal-button>
     <slot></slot>
     <i :class="iconClass" slot="icon" />
-  </md-outlined-button>
+  </md-filled-tonal-button>
 </template>
 
 <script>
 export default {
-  name: "IOIconButtonOutline",
+  name: 'IOIconButtonTonal',
   props: {
     icon: String,
   },
@@ -15,6 +15,6 @@ export default {
     iconClass() {
       return `fa-light fa-${this.icon}`;
     },
-  }
+  },
 };
 </script>
