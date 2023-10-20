@@ -24,7 +24,14 @@ export { default as IOTextButton } from '@/components/Buttons/IOTextButton.vue';
 export { default as IOIconTextButton } from '@/components/Buttons/IOIconTextButton.vue';
 
 /** 
+ * Tonal Buttons * 
+*/
+import IOIconButtonTonal from '@/components/Buttons/IOIconButtonTonal.vue'
+import IOButtonTonal from '@/components/Buttons/IOButtonTonal.vue'
+
+/** 
  * Inputs * 
 */
 export { default as IOTextField } from '@/components/Inputs/IOTextField.vue';
 export { default as IOTextFieldOutline } from '@/components/Inputs/IOTextFieldOutline.vue';
+

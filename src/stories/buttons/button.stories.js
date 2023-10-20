@@ -6,6 +6,8 @@ import IOIconButtonOutline from '@/components/Buttons/IOIconButtonOutline.vue'
 import IOIconTextButton from '@/components/Buttons/IOIconTextButton.vue'
 import IOTextButton from '@/components/Buttons/IOTextButton.vue'
 import IOButtonTonal from '@/components/Buttons/IOButtonTonal.vue'
+import IOIconButtonTonal from '@/components/Buttons/IOIconButtonTonal.vue'
+import IOIconButtonElevated from '@/components/Buttons/IOIconButtonElevated.vue'
 
 import '@material/web/button/filled-button.js'
 import '@material/web/button/outlined-button.js'
@@ -105,6 +107,16 @@ export const Elevated = {
     })
 };
 
+export const ElevatedWithIcon = {
+    render: (args) => ({
+        components: { IOIconButtonElevated },
+        setup() {
+            return { args };
+        },
+        template: '<IOIconButtonElevated :args>{{args.label}}</IOIconButtonElevated>',
+    })
+};
+
 export const Tonal = {
     render: (args) => ({
         components: { IOButtonTonal },
@@ -112,5 +124,14 @@ export const Tonal = {
             return { args };
         },
         template: '<IOButtonTonal :args>{{args.label}}</IOButtonTonal>',
+    })
+};
+export const TonalWithIcon = {
+    render: (args) => ({
+        components: { IOIconButtonTonal },
+        setup() {
+            return { args };
+        },
+        template: '<IOIconButtonTonal :args>{{args.label}}</IOIconButtonTonal>',
     })
 };
