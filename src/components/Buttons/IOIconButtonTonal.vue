@@ -9,7 +9,10 @@
 export default {
   name: 'IOIconButtonTonal',
   props: {
-    icon: String,
+    icon: {
+      String,
+      default: "circle-plus"
+    }
   },
   computed: {
     iconClass() {

@@ -28,6 +28,6 @@ coverage
 *.sw?
 .history
 package-lock.json
-/storybook-static
+
 
 
