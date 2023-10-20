@@ -20,7 +20,7 @@ export { default as IOButtonElevated } from '@/components/Buttons/IOButtonElevat
 /** 
  * Text Buttons * 
 */
-export { default as IOTextButton } from '@/components/Buttons/IOTextButtonLarge.vue';
+export { default as IOTextButton } from '@/components/Buttons/IOTextButton.vue';
 export { default as IOIconTextButton } from '@/components/Buttons/IOIconTextButton.vue';
 
 /** 
