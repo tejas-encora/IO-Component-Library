@@ -1,10 +1,10 @@
 <script setup>
-import IOIconButtonFilled from '@/components/Buttons/IOIconButtonFilled.vue'
+import IOButtonFilled from '@/components/Buttons/IOButtonFilled.vue'
 </script>
 
 <template>
   <main>
-    <IOIconButtonFilled icon="circle-plus">Click thus</IOIconButtonFilled>
+    <IOButtonFilled>Click thus</IOButtonFilled>
   </main>
 </template>
  
