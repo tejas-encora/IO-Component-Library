@@ -1,10 +1,11 @@
 <script setup>
 import IOButtonFilled from '@/components/Buttons/IOButtonFilled.vue'
+import IOTextFieldBoth from '@/components/Inputs/IOTextFieldBoth.vue'
 </script>
 
 <template>
   <main>
-    <IOButtonFilled>Click thus</IOButtonFilled>
+    <IOTextFieldBoth label="Testing"/>
   </main>
 </template>
  

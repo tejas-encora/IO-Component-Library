@@ -160,8 +160,3 @@ export const TonalWithIcon = {
         template: '<IOIconButtonTonal v-bind="args">{{args.label}}</IOIconButtonTonal>',
     })
 };
-
-function handleOnClick() {
-    console.log('handleOnClick called')
-    alert('handleButtonClick called')
-}
