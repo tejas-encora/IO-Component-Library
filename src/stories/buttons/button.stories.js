@@ -14,8 +14,10 @@ import '@material/web/button/outlined-button.js'
 import '@material/web/button/text-button.js'
 import '@material/web/button/elevated-button.js'
 import '@material/web/button/filled-tonal-button.js'
-
-
+/**
+ * 
+ * Buttons help people take actions, such as sending an email, sharing a document, or liking a comment.
+ */
 export default {
     title: 'UI/Atoms/Buttons',
     component: IOButtonFilled,
@@ -25,7 +27,7 @@ export default {
         setup() {
             return { args };
         },
-        template: '<IOButtonFilled :args>{{args.label}}</IOButtonFilled>',
+        template: '<IOButtonFilled v-bind="args">{{args.label}}</IOButtonFilled>',
     }),
     args: {
         disabled: false,
@@ -56,7 +58,7 @@ export const FilledWithIcon = {
         setup() {
             return { args };
         },
-        template: '<IOIconButtonFilled :args>{{args.label}}</IOIconButtonFilled>',
+        template: '<IOIconButtonFilled  v-bind="args">{{args.label}}</IOIconButtonFilled>',
     })
 };
 export const Outlined = {
@@ -65,7 +67,7 @@ export const Outlined = {
         setup() {
             return { args };
         },
-        template: '<IOButtonOutline :args>{{args.label}}</IOButtonOutline>',
+        template: '<IOButtonOutline  v-bind="args">{{args.label}}</IOButtonOutline>',
     })
 };
 export const OutlineWithIcon = {
@@ -74,7 +76,7 @@ export const OutlineWithIcon = {
         setup() {
             return { args };
         },
-        template: '<IOIconButtonOutline :args>{{args.label}}</IOIconButtonOutline>',
+        template: '<IOIconButtonOutline  v-bind="args"s>{{args.label}}</IOIconButtonOutline>',
     })
 };
 
@@ -84,7 +86,7 @@ export const Text = {
         setup() {
             return { args };
         },
-        template: '<IOTextButton :args>{{args.label}}</IOTextButton>',
+        template: '<IOTextButton  v-bind="args">{{args.label}}</IOTextButton>',
     })
 };
 export const TextWithIcon = {
@@ -93,7 +95,7 @@ export const TextWithIcon = {
         setup() {
             return { args };
         },
-        template: '<IOIconTextButton :args>{{args.label}}</IOIconTextButton>',
+        template: '<IOIconTextButton  v-bind="args">{{args.label}}</IOIconTextButton>',
     })
 };
 
@@ -103,7 +105,7 @@ export const Elevated = {
         setup() {
             return { args };
         },
-        template: '<IOButtonElevated :args>{{args.label}}</IOButtonElevated>',
+        template: '<IOButtonElevated  v-bind="args">{{args.label}}</IOButtonElevated>',
     })
 };
 
@@ -113,7 +115,7 @@ export const ElevatedWithIcon = {
         setup() {
             return { args };
         },
-        template: '<IOIconButtonElevated :args>{{args.label}}</IOIconButtonElevated>',
+        template: '<IOIconButtonElevated  v-bind="args">{{args.label}}</IOIconButtonElevated>',
     })
 };
 
@@ -123,7 +125,7 @@ export const Tonal = {
         setup() {
             return { args };
         },
-        template: '<IOButtonTonal :args>{{args.label}}</IOButtonTonal>',
+        template: '<IOButtonTonal  v-bind="args">{{args.label}}</IOButtonTonal>',
     })
 };
 export const TonalWithIcon = {
@@ -132,6 +134,6 @@ export const TonalWithIcon = {
         setup() {
             return { args };
         },
-        template: '<IOIconButtonTonal :args>{{args.label}}</IOIconButtonTonal>',
+        template: '<IOIconButtonTonal  v-bind="args">{{args.label}}</IOIconButtonTonal>',
     })
 };
