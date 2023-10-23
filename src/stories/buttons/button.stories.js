@@ -32,6 +32,28 @@ export default {
     args: {
         disabled: false,
         label: 'click me',
+        class: 'medium',
+        icon: 'circle-plus'
+    },
+    argTypes: {
+        class: {
+            control: {
+                type: 'select',
+            },
+            options: ['small', 'medium', 'large'],
+        },
+        icon: {
+            control: {
+                type: 'text'
+            }
+        },
+        onClick: {action: 'Button clicked'},
+    },
+};
+export const Default = {
+    args: {
+        disabled: false,
+        label: 'click me',
         class: 'medium'
     },
     argTypes: {
@@ -41,9 +63,8 @@ export default {
             },
             options: ['small', 'medium', 'large'],
         },
+        onClick: { action: 'Button clicked' },
     },
-};
-export const Default = {
     render: (args) => ({
         components: { IOButtonFilled },
         setup() {
@@ -51,23 +72,24 @@ export const Default = {
         },
         template: '<IOButtonFilled v-bind="args">{{args.label}}</IOButtonFilled>',
     })
-}; 
+};
 export const FilledWithIcon = {
     render: (args) => ({
         components: { IOIconButtonFilled },
         setup() {
             return { args };
         },
-        template: '<IOIconButtonFilled  v-bind="args">{{args.label}}</IOIconButtonFilled>',
+        template: '<IOIconButtonFilled icon={{args.icon}} v-bind="args">{{args.label}}</IOIconButtonFilled>',
     })
 };
+
 export const Outlined = {
     render: (args) => ({
         components: { IOButtonOutline },
         setup() {
             return { args };
         },
-        template: '<IOButtonOutline  v-bind="args">{{args.label}}</IOButtonOutline>',
+        template: '<IOButtonOutline v-bind="args">{{args.label}}</IOButtonOutline>',
     })
 };
 export const OutlineWithIcon = {
@@ -76,7 +98,8 @@ export const OutlineWithIcon = {
         setup() {
             return { args };
         },
-        template: '<IOIconButtonOutline  v-bind="args"s>{{args.label}}</IOIconButtonOutline>',
+        template: '<IOIconButtonOutline icon={{args.icon}} v-bind="args">{{args.label}}</IOIconButtonOutline>',
+        
     })
 };
 
@@ -86,7 +109,7 @@ export const Text = {
         setup() {
             return { args };
         },
-        template: '<IOTextButton  v-bind="args">{{args.label}}</IOTextButton>',
+        template: '<IOTextButton v-bind="args">{{args.label}}</IOTextButton>',
     })
 };
 export const TextWithIcon = {
@@ -95,7 +118,7 @@ export const TextWithIcon = {
         setup() {
             return { args };
         },
-        template: '<IOIconTextButton  v-bind="args">{{args.label}}</IOIconTextButton>',
+        template: '<IOIconTextButton v-bind="args">{{args.label}}</IOIconTextButton>',
     })
 };
 
@@ -105,7 +128,7 @@ export const Elevated = {
         setup() {
             return { args };
         },
-        template: '<IOButtonElevated  v-bind="args">{{args.label}}</IOButtonElevated>',
+        template: '<IOButtonElevated v-bind="args">{{args.label}}</IOButtonElevated>',
     })
 };
 
@@ -115,7 +138,7 @@ export const ElevatedWithIcon = {
         setup() {
             return { args };
         },
-        template: '<IOIconButtonElevated  v-bind="args">{{args.label}}</IOIconButtonElevated>',
+        template: '<IOIconButtonElevated v-bind="args">{{args.label}}</IOIconButtonElevated>',
     })
 };
 
@@ -125,7 +148,7 @@ export const Tonal = {
         setup() {
             return { args };
         },
-        template: '<IOButtonTonal  v-bind="args">{{args.label}}</IOButtonTonal>',
+        template: '<IOButtonTonal v-bind="args">{{args.label}}</IOButtonTonal>',
     })
 };
 export const TonalWithIcon = {
@@ -134,6 +157,11 @@ export const TonalWithIcon = {
         setup() {
             return { args };
         },
-        template: '<IOIconButtonTonal  v-bind="args">{{args.label}}</IOIconButtonTonal>',
+        template: '<IOIconButtonTonal v-bind="args">{{args.label}}</IOIconButtonTonal>',
     })
 };
+
+function handleOnClick() {
+    console.log('handleOnClick called')
+    alert('handleButtonClick called')
+}
