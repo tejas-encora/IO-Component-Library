@@ -1,24 +1,20 @@
-import '@material/web/textfield/filled-text-field.js'
+
 import '@material/web/textfield/outlined-text-field.js'
-import IOTextField from '@/components/Inputs/IOTextField.vue'
-import IOTextFieldLeading from '@/components/Inputs/IOTextFieldLeading.vue'
-import IOTextFieldTrailing from '@/components/Inputs/IOTextFieldTrailing.vue'
-import IOTextFieldBoth from '@/components/Inputs/IOTextFieldBoth.vue'
 import IOTextFieldOutline from '@/components/Inputs/IOTextFieldOutline.vue'
 import IOTextFieldOutlineLeading from '@/components/Inputs/IOTextFieldOutlineLeading.vue'
 import IOTextFieldOutlineTrailing from '@/components/Inputs/IOTextFieldOutlineTrailing.vue'
 import IOTextFieldOutlineBoth from '@/components/Inputs/IOTextFieldOutlineBoth.vue'
 
 export default {
-  title: 'UI/Atoms/Inputs/Text Fields',
-  component: IOTextField,
+  title: 'UI/Atoms/Inputs/Text Fields/Outlined',
+  component: IOTextFieldOutline,
   tags: ['autodocs'],
   render: (args) => ({
-    components: { IOTextField },
+    components: { IOTextFieldOutline },
     setup() {
       return { args };
     },
-    template: `<IOTextField label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: `<IOTextFieldOutline label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
   }),
   args: {
     disabled: false,
@@ -28,67 +24,37 @@ export default {
     'supporting-text': 'My supporting text'
   },
   argTypes: {
+    disabled: {
+      defaultValue: false
+    },
     label: {
       control: {
         type: 'text',
-      }
+      },
+      description: 'The label of the input',
+      defaultValue: 'The Label'
     },
     icon: {
       control: {
         type: 'text'
-      }
+      },
+      description: 'Starting Icon',
+      defaultValue: 'magnifying-glass'
     },
-    disabled: 'boolean'
+    iconTrailing: {
+      control: {
+        type: 'text'
+      },
+      description: 'Ending Icon',
+      defaultValue: 'circle-x'
+    },
+    disabled: {
+      control: {
+        type: 'boolean'
+      },
+      defaultValue: false
+    }
   },
-};
-
-export const Filled = {
-  render: (args) => ({
-    components: { IOTextField },
-    setup() {
-      return { args };
-    },
-    template: `<IOTextField label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
-  }),
-};
-export const FilledLeadingIcon = {
-  args: {
-    icon: 'magnifying-glass'
-  },
-  render: (args) => ({
-    components: { IOTextFieldLeading },
-    setup() {
-      return { args };
-    },
-    template: `<IOTextFieldLeading label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
-  }),
-};
-
-export const FilledTrailingIcon = {
-  args: {
-    icon: 'circle-x'
-  },
-  render: (args) => ({
-    components: { IOTextFieldTrailing },
-    setup() {
-      return { args };
-    },
-    template: `<IOTextFieldTrailing label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
-  }),
-};
-
-export const FilledBothIcons = {
-  args: {
-    icon: 'magnifying-glass',
-    iconTrailing: 'circle-x',
-  },
-  render: (args) => ({
-    components: { IOTextFieldBoth },
-    setup() {
-      return { args };
-    },
-    template: `<IOTextFieldBoth label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
-  }),
 };
 
 export const Outlined = {
@@ -101,7 +67,7 @@ export const Outlined = {
   }),
 };
 
-export const OutlinedLeadingIcon = {
+export const LeadingIcon = {
   args: {
     icon: 'magnifying-glass'
   },
@@ -113,7 +79,7 @@ export const OutlinedLeadingIcon = {
     template: `<IOTextFieldOutlineLeading label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
   }),
 };
-export const OutlinedTrailingIcon = {
+export const TrailingIcon = {
   args: {
     icon: 'circle-x'
   },
@@ -126,7 +92,7 @@ export const OutlinedTrailingIcon = {
   }),
 };
 
-export const OutlinedBothIcons = {
+export const BothIcons = {
   args: {
     icon: 'magnifying-glass',
     iconTrailing: 'circle-x',
