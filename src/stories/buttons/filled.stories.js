@@ -1,6 +1,7 @@
 import IOButtonFilled from '@/components/Buttons/IOButtonFilled.vue'
 import IOIconButtonFilled from '@/components/Buttons/IOIconButtonFilled.vue'
 import '@material/web/button/filled-button.js'
+
 /**
  * 
  * Buttons help people take actions, such as sending an email, sharing a document, or liking a comment.
@@ -37,6 +38,7 @@ export default {
         onClick: {action: 'Button clicked'},
     },
 };
+
 export const Default = {
     args: {
         disabled: false,
