@@ -3,6 +3,7 @@ import IOTextField from '@/components/Inputs/IOTextField.vue'
 import IOTextFieldLeading from '@/components/Inputs/IOTextFieldLeading.vue'
 import IOTextFieldTrailing from '@/components/Inputs/IOTextFieldTrailing.vue'
 import IOTextFieldBoth from '@/components/Inputs/IOTextFieldBoth.vue'
+import IOTextFieldPassword from '@/components/Inputs/IOTextFieldPassword.vue'
 
 
 export default {
@@ -45,44 +46,5 @@ export const Default = {
       return { args };
     },
     template: `<IOTextField label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
-  }),
-};
-export const LeadingIcon = {
-  args: {
-    icon: 'magnifying-glass'
-  },
-  render: (args) => ({
-    components: { IOTextFieldLeading },
-    setup() {
-      return { args };
-    },
-    template: `<IOTextFieldLeading label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
-  }),
-};
-
-export const TrailingIcon = {
-  args: {
-    icon: 'circle-x'
-  },
-  render: (args) => ({
-    components: { IOTextFieldTrailing },
-    setup() {
-      return { args };
-    },
-    template: `<IOTextFieldTrailing label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
-  }),
-};
-
-export const BothIcons = {
-  args: {
-    icon: 'magnifying-glass',
-    iconTrailing: 'circle-x',
-  },
-  render: (args) => ({
-    components: { IOTextFieldBoth },
-    setup() {
-      return { args };
-    },
-    template: `<IOTextFieldBoth label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
   }),
 };

@@ -1,5 +1,4 @@
 import IOButtonFilled from '@/components/Buttons/IOButtonFilled.vue'
-import IOIconButtonFilled from '@/components/Buttons/IOIconButtonFilled.vue'
 import '@material/web/button/filled-button.js'
 
 /**
@@ -21,20 +20,20 @@ export default {
         disabled: false,
         label: 'click me',
         class: 'medium',
-        icon: 'circle-plus'
     },
     argTypes: {
+        label: {
+            control: {
+                type: 'text',
+            },
+        },
         class: {
             control: {
                 type: 'select',
             },
             options: ['small', 'medium', 'large'],
         },
-        icon: {
-            control: {
-                type: 'text'
-            }
-        },
+
         onClick: {action: 'Button clicked'},
     },
 };
@@ -46,11 +45,19 @@ export const Default = {
         class: 'medium'
     },
     argTypes: {
+        label: {
+            control: {
+                type: 'text',
+            },
+            description: 'Button label',
+        },
         class: {
             control: {
                 type: 'select',
+                options: ['small', 'medium', 'large'],
+                defaultValue: 'medium',
             },
-            options: ['small', 'medium', 'large'],
+            description: 'Button size',
         },
         onClick: { action: 'Button clicked' },
     },
@@ -62,13 +69,5 @@ export const Default = {
         template: '<IOButtonFilled v-bind="args">{{args.label}}</IOButtonFilled>',
     })
 };
-export const WithIcon = {
-    render: (args) => ({
-        components: { IOIconButtonFilled },
-        setup() {
-            return { args };
-        },
-        template: '<IOIconButtonFilled icon={{args.icon}} v-bind="args">{{args.label}}</IOIconButtonFilled>',
-    })
-};
+
 

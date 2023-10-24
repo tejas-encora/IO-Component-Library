@@ -11,7 +11,7 @@ export default {
   name: "IOIconButtonOutline",
   props: {
     icon: {
-      String,
+      type: String,
       default: "circle-plus"
     }
   },

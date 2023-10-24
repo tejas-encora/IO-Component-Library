@@ -10,7 +10,7 @@ export default {
   name: 'IOIconButtonElevated',
   props: {
     icon: {
-      String,
+      type: String,
       default: "circle-plus"
     }
   },

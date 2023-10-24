@@ -1,7 +1,7 @@
 /** @type { import('@storybook/vue3-vite').StorybookConfig } */
 const config = {
   stories: [
-    '../src/**/*.mdx', // 👈 Add this, to match your project's structure
+    '../src/**/*.mdx',
     '../src/**/*.stories.js'
   ],
   addons: [

@@ -10,8 +10,10 @@ import '@/assets/theme.css'
 export default {
   name: "IOTextFieldLeading",
   props: {
-    icon: String,
-    default: "magnifying-glass"
+    icon: {
+      type: String,
+      default: 'magnifying-glass'
+    }
   },
   computed: {
     iconClass() {

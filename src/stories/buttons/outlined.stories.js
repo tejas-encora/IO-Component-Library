@@ -1,6 +1,5 @@
 
 import IOButtonOutline from '@/components/Buttons/IOButtonOutline.vue'
-import IOIconButtonOutline from '@/components/Buttons/IOIconButtonOutline.vue'
 import '@material/web/button/outlined-button.js'
 /**
  * 
@@ -21,7 +20,6 @@ export default {
         disabled: false,
         label: 'click me',
         class: 'medium',
-        icon: 'circle-plus'
     },
     argTypes: {
         class: {
@@ -29,11 +27,6 @@ export default {
                 type: 'select',
             },
             options: ['small', 'medium', 'large'],
-        },
-        icon: {
-            control: {
-                type: 'text'
-            }
         },
         onClick: {action: 'Button clicked'},
     },
@@ -59,14 +52,5 @@ export const Default = {
             return { args };
         },
         template: '<IOButtonOutline v-bind="args">{{args.label}}</IOButtonOutline>',
-    })
-};
-export const WithIcon = {
-    render: (args) => ({
-        components: { IOIconButtonOutline },
-        setup() {
-            return { args };
-        },
-        template: '<IOIconButtonOutline icon={{args.icon}} v-bind="args">{{args.label}}</IOIconButtonOutline>',
     })
 };
