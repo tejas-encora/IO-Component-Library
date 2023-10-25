@@ -6,6 +6,7 @@ export default {
   component: IOTextFieldLeading,
   tags: ['autodocs'],
   render: (args) => ({
+
     components: { IOTextFieldLeading },
     setup() {
       return { args };
