@@ -1,11 +1,21 @@
-import { Meta, ColorPalette, ColorItem,Canvas } from '@storybook/blocks'
+import { Meta, ColorPalette, ColorItem, Canvas } from '@storybook/blocks';
 
 <Meta title="Styles/Colors/Chart" />
 
 # Chart Colors
+
 <details>
-  <summary>**Categorical:** This set contains multiple colors which contrast to each other and arrange as a specific order. (Bar Chart, Line Chart, etc.)</summary>
-  <ColorPalette>
+  <summary>
+    **Categorical:** This set contains multiple colors which contrast to each
+    other and arrange as a specific order. (Bar Chart, Line Chart, etc.)
+  </summary>
+  <ColorPalette
+    style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(5, 1fr)',
+      gap: '10px',
+    }}
+  >
     <ColorItem
       title="1"
       colors={{
@@ -69,8 +79,17 @@ import { Meta, ColorPalette, ColorItem,Canvas } from '@storybook/blocks'
   </ColorPalette>
 </details>
 <details>
-  <summary>**Sequential:** These colors are used to represent fixed, incremental changes (tree map, progress, etc.)</summary>
-  <ColorPalette class="test">
+  <summary>
+    **Sequential:** These colors are used to represent fixed, incremental
+    changes (tree map, progress, etc.)
+  </summary>
+  <ColorPalette
+    style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(5, 1fr)',
+      gap: '10px',
+    }}
+  >
     <ColorItem
       title="1"
       colors={{
@@ -134,8 +153,17 @@ import { Meta, ColorPalette, ColorItem,Canvas } from '@storybook/blocks'
   </ColorPalette>
 </details>
 <details>
-  <summary>**Polarized:** This color set is typically used for heatmap graphics, representing two extremes of data.</summary>
-  <ColorPalette>
+  <summary>
+    **Polarized:** This color set is typically used for heatmap graphics,
+    representing two extremes of data.
+  </summary>
+  <ColorPalette
+    style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(5, 1fr)',
+      gap: '10px',
+    }}
+  >
     <ColorItem
       title="1"
       colors={{

@@ -1,9 +1,11 @@
 <template>
-    <md-filled-text-field label="Password" type="password">
-      <md-icon-button slot="trailing-icon">
-        <md-icon><i class="fa-light fa-eye" /></md-icon>
+  <md-filled-text-field label="Password" :type="inputType">
+    <md-icon-button slot="trailing-icon" @click="handleToggle">
+      <md-icon>
+        <i :class="currIconClass"></i>
+      </md-icon>
     </md-icon-button>
-    </md-filled-text-field>
+  </md-filled-text-field>
 </template>
 
 <script>
@@ -13,16 +15,21 @@ export default {
   name: "IOTextFieldPassword",
   data() {
     return {
-      currIcon: "fa-eye",
-        isPassVisible: false,
-      }
+      isPassVisible: false,
+    }
+  },
+  computed: {
+    currIconClass() {
+      return this.isPassVisible ? "fa-light fa-eye-slash" : "fa-light fa-eye";
+    },
+    inputType() {
+      return this.isPassVisible ? "text" : "password";
+    },
   },
   methods: {
-    toggleVisibility() {
+    handleToggle() {
       this.isPassVisible = !this.isPassVisible;
-      this.currIcon = this.isPassVisible ? "fa-eye" : "fa-eye-slash";
-    }
-  }
+    },
+  },
 };
 </script>
-

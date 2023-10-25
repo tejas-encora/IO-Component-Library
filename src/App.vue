@@ -2,7 +2,7 @@
 import IOIconButtonFilled from '@/components/Buttons/IOIconButtonFilled.vue'
 import IOButtonFilled from '@/components/Buttons/IOButtonFilled.vue'
 import IOTextFieldBoth from '@/components/Inputs/IOTextFieldBoth.vue'
-import IOTextField from '@/components/Inputs/IOTextField.vue'
+import IOTextFieldPassword from '@/components/Inputs/IOTextFieldPassword.vue'
 </script>
 
 <template>
@@ -10,7 +10,7 @@ import IOTextField from '@/components/Inputs/IOTextField.vue'
     <IOTextFieldBoth label="Testing"/><br><br>
     <IOTextField label="Testing"/><br><br>
     <IOIconButtonFilled icon="pencil">Click things</IOIconButtonFilled><br><br>
-    <IOButtonFilled>Click things</IOButtonFilled>
+    <IOTextFieldPassword label="Password" />
   </main>
 </template>
  

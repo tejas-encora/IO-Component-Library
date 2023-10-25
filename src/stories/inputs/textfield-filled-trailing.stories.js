@@ -1,5 +1,6 @@
 import '@material/web/textfield/filled-text-field.js'
 import IOTextFieldTrailing from '@/components/Inputs/IOTextFieldTrailing.vue'
+import IOTextFieldPassword from '@/components/Inputs/IOTextFieldPassword.vue'
 
 export default {
   title: 'UI/Atoms/Inputs/Text Fields/Filled/With Icons/Trailing',
@@ -10,10 +11,12 @@ export default {
     setup() {
       return { args };
     },
+    props: Object.keys(argTypes),
     template: `<IOTextFieldTrailing label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
   }),
   args: {
     disabled: false,
+    error: false,
     label: 'The Label',
     icon: 'circle-x',
     'supporting-text': 'My supporting text'
@@ -29,7 +32,9 @@ export default {
         type: 'text'
       }
     },
-    disabled: 'boolean'
+    disabled: 'boolean',
+    error: 'boolean',
+    handleToggle: { action: 'toggled' }
   },
 };
 
@@ -39,7 +44,7 @@ export const Default = {
     setup() {
       return { args };
     },
-    template: `<IOTextFieldTrailing label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: `<IOTextFieldTrailing label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args" @toggled="handleToggle" v-bind="$props"/>`
   }),
 };
 
@@ -47,11 +52,14 @@ export const Password = {
   args: {
     icon: 'magnifying-glass'
   },
-  render: (args) => ({
+  argTypes: {
+    handleToggle: { action: 'handleToggle' }
+  },
+  render: (args, {argTypes}) => ({
     components: { IOTextFieldPassword },
     setup() {
       return { args };
     },
-    template: `<IOTextFieldPassword label="Password" v-bind="args"/>`
+    template: `<IOTextFieldPassword label="Password" type="password" v-bind="args" @toggled="handleToggle"/>`
   }),
 };

@@ -1,87 +1,70 @@
 import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
 
 <Meta title="Styles/Colors/Base" />
+
 # Base Colors
+
 ## Light
-<ColorPalette>
-  <ColorItem
-    title="Primary"
-    colors={{Primary: '#544DC7',  }}
-  />
-  <ColorItem 
-    title="Secondary" 
-    colors={{Secondary: '#008394' }} 
-  />
-  <ColorItem 
-    title="Error" 
-    colors={{ Error: '#BA1A1A' }}
-  />
-  <ColorItem
-    title="Warning"
-    colors={{
-      Warning: '#FFB300'
-    }}
-  />
-  <ColorItem
-    title="Success"
-    colors={{
-      Success: '#008950'
-    }}
-  />
-  <ColorItem
-    title="Informational"
-    colors={{
-      Informational: '#007ACD'
-    }}
-  />
-  <ColorItem
-    title="Background"
-    colors={{
-      Background: '#F0F6FA'
-    }}
-  />
-  <ColorItem
-    title="Background"
-    colors={{
-      Background: '#DCE4E9'
-    }}
-  />
-  ## Surfaces
-  <ColorItem
-    title="Surface"
-    colors={{
-      Background: '#F8FAFA'
-    }}
-  />
-  <ColorItem
-    title="Surface at +1"
-    colors={{
-      '+ 5% Primary': '#F8FAFA'
-    }}
-  />
-  <ColorItem
-    title="Surface at +2"
-    colors={{
-      '+ 8 Primary': '#F8FAFA'
-    }}
-  />
-  <ColorItem
-    title="Surface at +3"
-    colors={{
-      '+ 11 Primary': '#F8FAFA'
-    }}
-  />
-  <ColorItem
-    title="Surface at +4"
-    colors={{
-      '+ 12 Primary': '#F8FAFA'
-    }}
-  />
-  <ColorItem
-    title="Surface at +5"
-    colors={{
-      '+ 14 Primary': '#F8FAFA'
-    }}
-  />
- 
-</ColorPalette>
+
+<div>
+  <ColorPalette style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px' }}>
+    <ColorItem
+      title="Primary"
+      colors={{ Primary: '#544DC7' }}
+    />
+    <ColorItem
+      title="Secondary"
+      colors={{ Secondary: '#008394' }}
+    />
+    <ColorItem
+      title="Error"
+      colors={{ Error: '#BA1A1A' }}
+    />
+    <ColorItem
+      title="Warning"
+      colors={{ Warning: '#FFB300' }}
+    />
+    <ColorItem
+      title="Success"
+      colors={{ Success: '#008950' }}
+    />
+    <ColorItem
+      title="Informational"
+      colors={{ Informational: '#007ACD' }}
+    />
+    <ColorItem
+      title="Background"
+      colors={{ Background: '#F0F6FA' }}
+    />
+    <ColorItem
+      title="Background"
+      colors={{ Background: '#DCE4E9' }}
+    />
+        <ColorItem
+      title="Surface"
+      colors={{ Background: '#F8FAFA' }}
+    />
+    <ColorItem
+      title="Surface at +1"
+      colors={{ '+ 5% Primary': '#F8FAFA' }}
+    />
+    <ColorItem
+      title="Surface at +2"
+      colors={{ '+ 8 Primary': '#F8FAFA' }}
+    />
+    <ColorItem
+      title="Surface at +3"
+      colors={{ '+ 11 Primary': '#F8FAFA' }}
+    />
+    <ColorItem
+      title="Surface at +4"
+      colors={{ '+ 12 Primary': '#F8FAFA' }}
+    />
+    <ColorItem
+      title="Surface at +5"
+      colors={{ '+ 14 Primary': '#F8FAFA' }}
+    />
+  </ColorPalette>
+
+  
+</div>

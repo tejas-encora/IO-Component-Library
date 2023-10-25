@@ -1,10 +1,5 @@
 import '@material/web/textfield/filled-text-field.js'
 import IOTextField from '@/components/Inputs/IOTextField.vue'
-import IOTextFieldLeading from '@/components/Inputs/IOTextFieldLeading.vue'
-import IOTextFieldTrailing from '@/components/Inputs/IOTextFieldTrailing.vue'
-import IOTextFieldBoth from '@/components/Inputs/IOTextFieldBoth.vue'
-import IOTextFieldPassword from '@/components/Inputs/IOTextFieldPassword.vue'
-
 
 export default {
   title: 'UI/Atoms/Inputs/Text Fields/Filled',
@@ -20,9 +15,7 @@ export default {
   args: {
     disabled: false,
     label: 'The Label',
-    icon: 'magnifying-glass',
-    iconTrailing: 'circle-x',
-    'supporting-text': 'My supporting text'
+    'supporting-text': 'My supporting text',
   },
   argTypes: {
     label: {
@@ -30,12 +23,9 @@ export default {
         type: 'text',
       }
     },
-    icon: {
-      control: {
-        type: 'text'
-      }
-    },
-    disabled: 'boolean'
+    disabled: {
+      control: 'boolean'
+    }
   },
 };
 

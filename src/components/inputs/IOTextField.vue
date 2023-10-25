@@ -6,7 +6,6 @@
 import '@/assets/theme.css'
 
 export default {
-  name: "IOTextField",
+  name: 'IOTextField',
 };
 </script>
-
