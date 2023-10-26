@@ -1,22 +1,23 @@
+import '@material/web/textfield/filled-text-field.js'
 import '@material/web/textfield/outlined-text-field.js'
-import IOTextFieldOutlineTrailing from '@/components/Inputs/IOTextFieldOutlineTrailing.vue'
 import IOTextFieldOutlinePassword from '@/components/Inputs/IOTextFieldOutlinePassword.vue'
+import IOTextFieldPassword from '@/components/Inputs/IOTextFieldPassword.vue'
 
 export default {
-  title: 'UI/Atoms/Inputs/Text Fields/Outlined/With Icons/Trailing',
-  component: IOTextFieldOutlineTrailing,
+  title: 'UI/Atoms/Inputs/Text Fields/Password',
+  component: IOTextFieldPassword,
   tags: ['autodocs'],
   render: (args) => ({
-    components: { IOTextField },
+    components: { IOTextFieldPassword },
     setup() {
       return { args };
     },
-    template: `<IOTextFieldOutlineTrailing label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: `<IOTextFieldPassword label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
   }),
   args: {
     disabled: false,
     label: 'The Label',
-    icon: 'circle-x',
+    icon: 'magnifying-glass',
     'supporting-text': 'My supporting text'
   },
   argTypes: {
@@ -36,18 +37,15 @@ export default {
 
 export const Default = {
   render: (args) => ({
-    components: { IOTextFieldOutlineTrailing },
+    components: { IOTextFieldPassword },
     setup() {
       return { args };
     },
-    template: `<IOTextFieldOutlineTrailing label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: `<IOTextFieldPassword label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
   }),
 };
 
-export const Password = {
-  args: {
-    icon: 'magnifying-glass'
-  },
+export const Outlined = {
   render: (args) => ({
     components: { IOTextFieldOutlinePassword },
     setup() {
