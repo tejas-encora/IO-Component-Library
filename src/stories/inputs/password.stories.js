@@ -17,18 +17,14 @@ export default {
   args: {
     disabled: false,
     label: 'The Label',
-    icon: 'magnifying-glass',
     'supporting-text': 'My supporting text'
   },
   argTypes: {
     label: {
       control: {
         type: 'text',
-      }
-    },
-    icon: {
-      control: {
-        type: 'text'
+        description: 'Input Label',
+        defaultValue: 'The Label',
       }
     },
     disabled: 'boolean'
