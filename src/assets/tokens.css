@@ -10,8 +10,13 @@
   --small: 24px;
   --medium: 32px;
   --large: 40px;
+  --success: #008950;
+  --error: #BA1A1A;
+  --warning: #FFB300;
+  --info: #007ACD;
   --md-filled-button-icon-size: 14px;
   --md-outlined-button-icon-size: 14px;
+
 /* ------------------- */
   --md-ref-palette-primary0: #000000;
   --md-ref-palette-primary10: #1e0061;
@@ -112,6 +117,9 @@
   --md-sys-color-on-tertiary-container-light: #30111f;
   --md-sys-color-error-light: #ba1a1a;
   --md-sys-color-error-container-light: #ffdad6;
+
+--md-sys-color-success-light: #008950;
+
   --md-sys-color-on-error-light: #ffffff;
   --md-sys-color-on-error-container-light: #410002;
   --md-sys-color-background-light: #fffbff;

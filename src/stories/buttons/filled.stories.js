@@ -14,12 +14,12 @@ export default {
         setup() {
             return { args };
         },
-        template: '<IOButtonFilled v-bind="args">{{args.label}}</IOButtonFilled>',
+        template: '<IOButtonFilled v-bind="args" status={{args.status}}>{{args.label}}</IOButtonFilled>',
     }),
     args: {
         disabled: false,
         label: 'click me',
-        class: 'medium',
+        class: '',
     },
     argTypes: {
         label: {
@@ -31,7 +31,7 @@ export default {
             control: {
                 type: 'select',
             },
-            options: ['small', 'medium', 'large'],
+            options: ['success', 'error', 'warning', 'info'],
         },
 
         onClick: {action: 'Button clicked'},
@@ -42,7 +42,7 @@ export const Default = {
     args: {
         disabled: false,
         label: 'click me',
-        class: 'medium'
+        class: ''
     },
     argTypes: {
         label: {
@@ -54,10 +54,8 @@ export const Default = {
         class: {
             control: {
                 type: 'select',
-                options: ['small', 'medium', 'large'],
-                defaultValue: 'medium',
             },
-            description: 'Button size',
+            options: ['success', 'error', 'warning', 'info'],
         },
         onClick: { action: 'Button clicked' },
     },
@@ -66,7 +64,7 @@ export const Default = {
         setup() {
             return { args };
         },
-        template: '<IOButtonFilled v-bind="args">{{args.label}}</IOButtonFilled>',
+        template: '<IOButtonFilled v-bind="args" status={{args.status}}>{{args.label}}</IOButtonFilled>',
     })
 };
 

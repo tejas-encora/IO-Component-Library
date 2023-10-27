@@ -14,7 +14,7 @@ export default {
   }),
   args: {
     disabled: false,
-    label: 'The Label',
+    label: 'Label',
     class: 'medium',
     icon: 'circle-plus'
   },
@@ -42,7 +42,7 @@ export default {
   },
 };
 
-export const WithIcon = {
+export const Default = {
   render: (args) => ({
     components: { IOIconButtonElevated },
     setup() {

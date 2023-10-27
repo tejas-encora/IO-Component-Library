@@ -4,33 +4,27 @@
 @import url(theme.light.css);
 /* @import url(theme.dark.css) (prefers-color-scheme: dark); */
 
-
 /* Custom */
 
 .small {
-  height: var(--small)
+  height: var(--small);
 }
 .medium {
-  height: var(--medium)
+  height: var(--medium);
 }
 .large {
-  height: var(--large)
+  height: var(--large);
 }
 
-.active-indicator {
-    inset: auto 0 0 0;
-
-    pointer-events: none;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-
-    &::before,
-    &::after {
-      border-bottom: 80px solid red !important;
-      inset: auto 0 0 0;
-      content: '';
-      position: absolute;
-      width: 100%;
-    }
-  }
+.success {
+  --md-filled-button-container-color: var(--success);
+}
+.error {
+  --md-filled-button-container-color: var(--error);
+}
+.warning {
+  --md-filled-button-container-color: var(--warning);
+}
+.info {
+  --md-filled-button-container-color: var(--info);
+}
