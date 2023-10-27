@@ -14,20 +14,27 @@ export default {
   }),
   args: {
     disabled: false,
-    label: 'The Label',
+    label: 'Label',
     icon: 'magnifying-glass',
-    'supporting-text': 'My supporting text'
+    iconTrailing: 'circle-x',
+    'supporting-text': 'Supporting text'
   },
   argTypes: {
     label: {
       control: {
         type: 'text',
-      }
+      },
+      description: 'Field label',
     },
     icon: {
       control: {
         type: 'text'
-      }
+      },
+      iconTrailing: {
+        control: {
+          type: 'text'
+        }
+      },
     },
     disabled: 'boolean'
   },

@@ -21,10 +21,13 @@
 }
 .error {
   --md-filled-button-container-color: var(--error);
+  border-radius: 4px;
 }
 .warning {
   --md-filled-button-container-color: var(--warning);
+  --md-sys-color-on-primary: var(--on-warning);
 }
 .info {
   --md-filled-button-container-color: var(--info);
+  --md-sys-color-on-primary: var(--on-info);
 }

@@ -15,9 +15,9 @@ export default {
   }),
   args: {
     disabled: false,
-    label: 'The Label',
+    label: 'Label',
     icon: 'magnifying-glass',
-    'supporting-text': 'My supporting text'
+    'supporting-text': 'Supporting text'
   },
   argTypes: {
     label: {

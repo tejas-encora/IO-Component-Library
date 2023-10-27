@@ -15,8 +15,9 @@ export default {
   }),
   args: {
     disabled: false,
-    label: 'The Label',
-    'supporting-text': 'My supporting text'
+    label: 'Label',
+    icon: 'magnifying-glass',
+    'supporting-text': 'Supporting text'
   },
   argTypes: {
     label: {
@@ -24,7 +25,7 @@ export default {
         type: 'text',
       },
       description: 'The label for the input',
-      defaultValue: 'The Label'
+      defaultValue: 'Label'
     },
     disabled: {
       control: {

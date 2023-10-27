@@ -14,14 +14,22 @@ export default {
   }),
   args: {
     disabled: false,
-    label: 'The Label',
-    'supporting-text': 'My supporting text',
+    label: 'Label',
+    rows: 3,
+    'supporting-text': 'Supporting text',
   },
   argTypes: {
     label: {
       control: {
         type: 'text',
-      }
+      },
+      description: 'Field label'
+    },
+    rows: {
+      control: {
+        type: 'text',
+      },
+      description: 'Number of rows'
     },
     disabled: {
       control: 'boolean'

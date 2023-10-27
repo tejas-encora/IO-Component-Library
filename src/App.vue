@@ -13,7 +13,7 @@ import ColorGrid from '@/components/ColorGrid.vue'
   <main>
     <IOTextFieldBoth label="Testing"/><br><br>
     <IOTextField label="Testing"/><br><br>
-    <IOButtonFilled class="success">Click things</IOButtonFilled><br><br>
+    <IOButtonFilled>Click things</IOButtonFilled><br><br>
     <IOIconButtonFilled icon="pencil">Click things</IOIconButtonFilled><br><br>
     <IOTextFieldPassword label="Password" /><br><br>
     <ColorGrid/>

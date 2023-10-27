@@ -13,9 +13,14 @@
   --success: #008950;
   --error: #BA1A1A;
   --warning: #FFB300;
+  --on-warning: #4D3103;
   --info: #007ACD;
+  --on-warning: #007ACD;
   --md-filled-button-icon-size: 14px;
   --md-outlined-button-icon-size: 14px;
+
+  /* will be remapped */
+  
 
 /* ------------------- */
   --md-ref-palette-primary0: #000000;

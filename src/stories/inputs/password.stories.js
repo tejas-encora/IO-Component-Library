@@ -16,17 +16,16 @@ export default {
   }),
   args: {
     disabled: false,
-    label: 'The Label',
-    'supporting-text': 'My supporting text'
+    label: 'Label',
+    'supporting-text': 'Supporting text'
   },
   argTypes: {
     label: {
       control: {
         type: 'text',
-        description: 'Input Label',
-        defaultValue: 'The Label',
-      }
-    },
+      },
+      description: 'Field label',
+    },        
     disabled: 'boolean'
   },
 };
