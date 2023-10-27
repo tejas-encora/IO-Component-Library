@@ -2,7 +2,7 @@ import '@material/web/textfield/outlined-text-field.js'
 import IOTextFieldOutlineLeading from '@/components/Inputs/IOTextFieldOutlineLeading.vue'
 
 export default {
-  title: 'UI/Atoms/Inputs/Text Fields/Outlined/With Icons/Leading',
+  title: 'UI/Atoms/Inputs/Textfield/Outlined/With Icons/Leading',
   component: IOTextFieldOutlineLeading,
   tags: ['autodocs'],
   render: (args) => ({

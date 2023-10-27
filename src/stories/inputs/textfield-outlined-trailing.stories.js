@@ -3,7 +3,7 @@ import IOTextFieldOutlineTrailing from '@/components/Inputs/IOTextFieldOutlineTr
 import IOTextFieldOutlinePassword from '@/components/Inputs/IOTextFieldOutlinePassword.vue'
 
 export default {
-  title: 'UI/Atoms/Inputs/Text Fields/Outlined/With Icons/Trailing',
+  title: 'UI/Atoms/Inputs/Textfield/Outlined/With Icons/Trailing',
   component: IOTextFieldOutlineTrailing,
   tags: ['autodocs'],
   render: (args) => ({

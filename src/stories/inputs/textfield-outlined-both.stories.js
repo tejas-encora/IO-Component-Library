@@ -2,7 +2,7 @@ import '@material/web/textfield/outlined-text-field.js'
 import IOTextFieldOutlineBoth from '@/components/Inputs/IOTextFieldOutlineBoth.vue'
 
 export default {
-  title: 'UI/Atoms/Inputs/Text Fields/Outlined/With Icons/Both',
+  title: 'UI/Atoms/Inputs/Textfield/Outlined/With Icons/Both',
   component: IOTextFieldOutlineBoth,
   tags: ['autodocs'],
   render: (args) => ({

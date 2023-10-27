@@ -4,7 +4,7 @@ import IOTextFieldOutlinePassword from '@/components/Inputs/IOTextFieldOutlinePa
 import IOTextFieldPassword from '@/components/Inputs/IOTextFieldPassword.vue'
 
 export default {
-  title: 'UI/Atoms/Inputs/Text Fields/Password',
+  title: 'UI/Atoms/Inputs/Textfield/Password',
   component: IOTextFieldPassword,
   tags: ['autodocs'],
   render: (args) => ({

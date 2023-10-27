@@ -2,7 +2,7 @@ import '@material/web/textfield/filled-text-field.js'
 import IOTextFieldLeading from '@/components/Inputs/IOTextFieldLeading.vue'
 
 export default {
-  title: 'UI/Atoms/Inputs/Text Fields/Filled/With Icons/Leading',
+  title: 'UI/Atoms/Inputs/Textfield/Filled/With Icons/Leading',
   component: IOTextFieldLeading,
   tags: ['autodocs'],
   render: (args) => ({

@@ -3,7 +3,7 @@ import IOTextFieldTrailing from '@/components/Inputs/IOTextFieldTrailing.vue'
 import IOTextFieldPassword from '@/components/Inputs/IOTextFieldPassword.vue'
 
 export default {
-  title: 'UI/Atoms/Inputs/Text Fields/Filled/With Icons/Trailing',
+  title: 'UI/Atoms/Inputs/Textfield/Filled/With Icons/Trailing',
   component: IOTextFieldTrailing,
   tags: ['autodocs'],
   render: (args) => ({

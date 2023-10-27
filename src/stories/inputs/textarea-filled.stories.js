@@ -1,16 +1,16 @@
 import '@material/web/textfield/filled-text-field.js'
-import IOTextField from '@/components/Inputs/IOTextField.vue'
+import IOTextAreaFilled from '@/components/Inputs/IOTextAreaFilled.vue'
 
 export default {
-  title: 'UI/Atoms/Inputs/Textfield/Filled',
-  component: IOTextField,
+  title: 'UI/Atoms/Inputs/Textarea/Filled',
+  component: IOTextAreaFilled,
   tags: ['autodocs'],
   render: (args) => ({
-    components: { IOTextField },
+    components: { IOTextAreaFilled },
     setup() {
       return { args };
     },
-    template: `<IOTextField label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: `<IOTextAreaFilled rows="5" type="textarea" label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
   }),
   args: {
     disabled: false,
@@ -31,10 +31,10 @@ export default {
 
 export const Default = {
   render: (args) => ({
-    components: { IOTextField },
+    components: { IOTextAreaFilled },
     setup() {
       return { args };
     },
-    template: `<IOTextField label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: `<IOTextAreaFilled label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
   }),
 };

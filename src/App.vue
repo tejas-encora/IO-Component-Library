@@ -4,6 +4,8 @@ import IOButtonFilled from '@/components/Buttons/IOButtonFilled.vue'
 import IOTextFieldBoth from '@/components/Inputs/IOTextFieldBoth.vue'
 import IOTextFieldPassword from '@/components/Inputs/IOTextFieldPassword.vue'
 import IconGrid from '@/components/IconGrid.vue'
+import ColorGrid from '@/components/ColorGrid.vue'
+
 </script>
 
 <template>
@@ -12,7 +14,7 @@ import IconGrid from '@/components/IconGrid.vue'
     <IOTextField label="Testing"/><br><br>
     <IOIconButtonFilled icon="pencil">Click things</IOIconButtonFilled><br><br>
     <IOTextFieldPassword label="Password" /><br><br>
-    <IconGrid />
+    <ColorGrid/>
   </main>
 </template>
- 
+ s

@@ -2,7 +2,7 @@ import '@material/web/textfield/filled-text-field.js'
 import IOTextFieldBoth from '@/components/Inputs/IOTextFieldBoth.vue'
 
 export default {
-  title: 'UI/Atoms/Inputs/Text Fields/Filled/With Icons/Both',
+  title: 'UI/Atoms/Inputs/Textfield/Filled/With Icons/Both',
   component: IOTextFieldBoth,
   tags: ['autodocs'],
   render: (args) => ({
