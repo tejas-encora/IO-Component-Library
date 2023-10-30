@@ -6,6 +6,6 @@
 import '@/assets/theme.css'
 
 export default {
-  name: 'IOTextAreaFilled',
+  name: 'IOTextArea',
 };
 </script>

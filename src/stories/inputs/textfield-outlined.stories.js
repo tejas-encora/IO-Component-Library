@@ -24,7 +24,7 @@ export default {
       control: {
         type: 'text',
       },
-      description: 'The label for the input',
+      description: 'Feild label',
       defaultValue: 'Label'
     },
     disabled: {

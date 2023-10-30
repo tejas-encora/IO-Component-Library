@@ -2,7 +2,7 @@ import '@material/web/textfield/filled-text-field.js'
 import IOTextField from '@/components/Inputs/IOTextField.vue'
 
 export default {
-  title: 'UI/Atoms/Inputs/Textfield/Filled',
+  title: 'UI/Atoms/Inputs/Text Fields/Filled',
   component: IOTextField,
   tags: ['autodocs'],
   render: (args) => ({
@@ -14,9 +14,8 @@ export default {
   }),
   args: {
     disabled: false,
-    label: 'Label',
-    icon: 'magnifying-glass',
-    'supporting-text': 'Supporting text'
+    label: 'The Label',
+    'supporting-text': 'My supporting text',
   },
   argTypes: {
     label: {
