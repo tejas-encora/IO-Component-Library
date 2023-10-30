@@ -4,6 +4,9 @@ import IODisplaySmall from '@/components/Type/IODisplaySmall.vue'
 import IOHeadlineLarge from '@/components/Type/IOHeadlineLarge.vue'
 import IOHeadlineMedium from '@/components/Type/IOHeadlineMedium.vue'
 import IOHeadlineSmall from '@/components/Type/IOHeadlineSmall.vue'
+import IOSubHeadlineLarge from '@/components/Type/IOSubHeadlineLarge.vue'
+import IOSubHeadlineMedium from '@/components/Type/IOSubHeadlineMedium.vue'
+import IOSubHeadlineSmall from '@/components/Type/IOSubHeadlineSmall.vue'
 /**
  * 
  * 
@@ -17,8 +20,6 @@ export default {
         template: '<IODisplayLarge>IO Display Large</IODisplayLarge>',
     }),
 };
-
-
 export const DisplayLarge = {
     render: () => ({
         components: { IODisplayLarge },
@@ -37,26 +38,42 @@ export const DisplaySmall = {
         template: '<IODisplaySmall>IO Display Small</IODisplaySmall>',
     })
 }
-
 export const HeadlineLarge = {
     render: () => ({
         components: { IOHeadlineLarge },
-        template: '<IOHeadlineLarge>Headline Large</IOHeadlineLarge>',
+        template: '<IOHeadlineLarge>IO Headline Large</IOHeadlineLarge>',
     })
 }
 export const HeadlineMedium = {
     render: () => ({
         components: { IOHeadlineMedium },
-        template: '<IOHeadlineMedium>Headline Large</IOHeadlineMedium>',
+        template: '<IOHeadlineMedium>IO Headline Medium</IOHeadlineMedium>',
     })
 }
 export const HeadlineSmall = {
     render: () => ({
         components: { IOHeadlineSmall },
-        template: '<IOHeadlineSmall>Headline Large</IOHeadlineSmall>',
+        template: '<IOHeadlineSmall>IO Headline Small</IOHeadlineSmall>',
     })
 }
-
+export const SubHeadlineLarge = {
+    render: () => ({
+        components: { IOSubHeadlineLarge },
+        template: '<IOSubHeadlineLarge>IO Sub Headline Large</IOSubHeadlineLarge>',
+    })
+}
+export const SubHeadlineMedium = {
+    render: () => ({
+        components: { IOSubHeadlineMedium },
+        template: '<IOSubHeadlineMedium>IO Sub Headline Medium</IOSubHeadlineMedium>',
+    })
+}
+export const SubHeadlineSmall = {
+    render: () => ({
+        components: { IOSubHeadlineSmall },
+        template: '<IOSubHeadlineSmall>IO Sub Headline Small</IOSubHeadlineSmall>',
+    })
+}
 
 
 

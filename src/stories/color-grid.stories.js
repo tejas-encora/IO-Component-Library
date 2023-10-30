@@ -10,11 +10,11 @@ export default {
     component: ColorGrid,
     tags: ['autodocs'],
     render: (args) => ({
-        components: ColorGrid ,
+        components: { ColorGrid },
         setup() {
             return { args };
         },
-        template: `<ColorGrid tone={{arg.tone}} v-bind="args" />`,
+        template: '<ColorGrid tone={{arg.tone}} v-bind="args"/>',
     }),
     args: {
         tone: {
@@ -34,7 +34,7 @@ export default {
             setup() {
                 return { args };
             },
-            template: `<ColorGrid tone={{arg.tone}} v-bind="args" />`,
+            template: '<ColorGrid tone={{arg.tone}}/>',
         }),
     }
 };
@@ -45,7 +45,7 @@ export default {
             setup() {
                 return { args };
             },
-            template: `<ColorGrid tone={{arg.tone}} />`,
+            template: '<ColorGrid tone={{arg.tone}}/>',
         })
     };
 

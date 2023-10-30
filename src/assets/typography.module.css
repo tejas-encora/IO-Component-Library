@@ -1,4 +1,4 @@
-.display-large{
+h1{
   font-family: var(--md-sys-typescale-display-large-font-family-name);
   font-style: var(--md-sys-typescale-display-large-font-family-style);
   font-weight: var(--md-sys-typescale-display-large-font-weight);
@@ -8,7 +8,7 @@
   text-transform: var(--md-sys-typescale-display-large-text-transform);
   text-decoration: var(--md-sys-typescale-display-large-text-decoration);
 }
-.display-medium{
+h2{
   font-family: var(--md-sys-typescale-display-medium-font-family-name);
   font-style: var(--md-sys-typescale-display-medium-font-family-style);
   font-weight: var(--md-sys-typescale-display-medium-font-weight);
@@ -18,7 +18,7 @@
   text-transform: var(--md-sys-typescale-display-medium-text-transform);
   text-decoration: var(--md-sys-typescale-display-medium-text-decoration);
 }
-.display-small{
+h3{
   font-family: var(--md-sys-typescale-display-small-font-family-name);
   font-style: var(--md-sys-typescale-display-small-font-family-style);
   font-weight: var(--md-sys-typescale-display-small-font-weight);
@@ -28,7 +28,7 @@
   text-transform: var(--md-sys-typescale-display-small-text-transform);
   text-decoration: var(--md-sys-typescale-display-small-text-decoration);
 }
-.headline-large{
+h4{
   font-family: var(--md-sys-typescale-headline-large-font-family-name);
   font-style: var(--md-sys-typescale-headline-large-font-family-style);
   font-weight: var(--md-sys-typescale-headline-large-font-weight);
@@ -38,7 +38,7 @@
   text-transform: var(--md-sys-typescale-headline-large-text-transform);
   text-decoration: var(--md-sys-typescale-headline-large-text-decoration);
 }
-.headline-medium{
+h5{
   font-family: var(--md-sys-typescale-headline-medium-font-family-name);
   font-style: var(--md-sys-typescale-headline-medium-font-family-style);
   font-weight: var(--md-sys-typescale-headline-medium-font-weight);
@@ -48,15 +48,45 @@
   text-transform: var(--md-sys-typescale-headline-medium-text-transform);
   text-decoration: var(--md-sys-typescale-headline-medium-text-decoration);
 }
-.headline-small{
+h6{
   font-family: var(--md-sys-typescale-headline-small-font-family-name);
-  font-style: var(--md-sys-typescale-headline-small-font-family-style);
+  font-style: var(--md-sys-typescale-headline-small-font-family-style); 
   font-weight: var(--md-sys-typescale-headline-small-font-weight);
   font-size: var(--md-sys-typescale-headline-small-font-size);
   letter-spacing: var(--md-sys-typescale-headline-small-tracking);
   line-height: var(--md-sys-typescale-headline-small-height);
   text-transform: var(--md-sys-typescale-headline-small-text-transform);
   text-decoration: var(--md-sys-typescale-headline-small-text-decoration);
+}
+.subheadline-large {
+  font-family: var(--md-sys-typescale-subheadline-large-font-family-name);
+  font-style: var(--md-sys-typescale-subheadline-large-font-family-style);
+  font-weight: var(--md-sys-typescale-subheadline-large-font-weight);
+  font-size: var(--md-sys-typescale-subheadline-large-font-size);
+  letter-spacing: var(--md-sys-typescale-subheadline-large-tracking);
+  line-height: var(--md-sys-typescale-subheadline-large-height);
+  text-transform: var(--md-sys-typescale-subheadline-large-text-transform);
+  text-decoration: var(--md-sys-typescale-subheadline-large-text-decoration);
+}
+.subheadline-medium {
+  font-family: var(--md-sys-typescale-subheadline-medium-font-family-name);
+  font-style: var(--md-sys-typescale-subheadline-medium-font-family-style);
+  font-weight: var(--md-sys-typescale-subheadline-medium-font-weight);
+  font-size: var(--md-sys-typescale-subheadline-medium-font-size);
+  letter-spacing: var(--md-sys-typescale-subheadline-medium-tracking);
+  line-height: var(--md-sys-typescale-subheadline-medium-height);
+  text-transform: var(--md-sys-typescale-subheadline-medium-text-transform);
+  text-decoration: var(--md-sys-typescale-subheadline-medium-text-decoration);
+}
+.subheadline-small {
+  font-family: var(--md-sys-typescale-subheadline-small-font-family-name);
+  font-style: var(--md-sys-typescale-subheadline-small-font-family-style);
+  font-weight: var(--md-sys-typescale-subheadline-small-font-weight);
+  font-size: var(--md-sys-typescale-subheadline-small-font-size);
+  letter-spacing: var(--md-sys-typescale-subheadline-small-tracking);
+  line-height: var(--md-sys-typescale-subheadline-small-height);
+  text-transform: var(--md-sys-typescale-subheadline-small-text-transform);
+  text-decoration: var(--md-sys-typescale-subheadline-small-text-decoration);
 }
 .body-large{
   font-family: var(--md-sys-typescale-body-large-font-family-name);
@@ -117,34 +147,4 @@
   line-height: var(--md-sys-typescale-label-small-height);
   text-transform: var(--md-sys-typescale-label-small-text-transform);
   text-decoration: var(--md-sys-typescale-label-small-text-decoration);
-}
-.title-large{
-  font-family: var(--md-sys-typescale-title-large-font-family-name);
-  font-style: var(--md-sys-typescale-title-large-font-family-style);
-  font-weight: var(--md-sys-typescale-title-large-font-weight);
-  font-size: var(--md-sys-typescale-title-large-font-size);
-  letter-spacing: var(--md-sys-typescale-title-large-tracking);
-  line-height: var(--md-sys-typescale-title-large-height);
-  text-transform: var(--md-sys-typescale-title-large-text-transform);
-  text-decoration: var(--md-sys-typescale-title-large-text-decoration);
-}
-.title-medium{
-  font-family: var(--md-sys-typescale-title-medium-font-family-name);
-  font-style: var(--md-sys-typescale-title-medium-font-family-style);
-  font-weight: var(--md-sys-typescale-title-medium-font-weight);
-  font-size: var(--md-sys-typescale-title-medium-font-size);
-  letter-spacing: var(--md-sys-typescale-title-medium-tracking);
-  line-height: var(--md-sys-typescale-title-medium-height);
-  text-transform: var(--md-sys-typescale-title-medium-text-transform);
-  text-decoration: var(--md-sys-typescale-title-medium-text-decoration);
-}
-.title-small{
-  font-family: var(--md-sys-typescale-title-small-font-family-name);
-  font-style: var(--md-sys-typescale-title-small-font-family-style);
-  font-weight: var(--md-sys-typescale-title-small-font-weight);
-  font-size: var(--md-sys-typescale-title-small-font-size);
-  letter-spacing: var(--md-sys-typescale-title-small-tracking);
-  line-height: var(--md-sys-typescale-title-small-height);
-  text-transform: var(--md-sys-typescale-title-small-text-transform);
-  text-decoration: var(--md-sys-typescale-title-small-text-decoration);
 }

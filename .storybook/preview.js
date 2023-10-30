@@ -1,9 +1,11 @@
 /** @type { import('@storybook/vue3').Preview } */
 import '@/assets/theme.css'
+import '@fontsource/lato/300.css'
 import '@fontsource/lato/400.css'
+import '@fontsource/lato/700.css'
+import '@fortawesome/fontawesome-pro'
 import '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-pro/css/all.css'
-import '@material/web/button/filled-button.js'
 import { themes } from '@storybook/theming'
 
 const preview = {

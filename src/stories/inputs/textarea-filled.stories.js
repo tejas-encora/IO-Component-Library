@@ -27,7 +27,7 @@ export default {
     },
     rows: {
       control: {
-        type: 'text',
+        type: 'number',
       },
       description: 'Number of rows'
     },
