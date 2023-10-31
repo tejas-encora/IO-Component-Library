@@ -11,3 +11,8 @@ export default {
   name: 'IOHeadlineMedium',
 };
 </script>
+<style scoped>
+h5 {
+  font-family: 'Lato';
+}
+</style>

@@ -118,6 +118,33 @@ h6{
   text-transform: var(--md-sys-typescale-body-small-text-transform);
   text-decoration: var(--md-sys-typescale-body-small-text-decoration);
 }
+.link-large {
+  font-family: var(--md-sys-typescale-link-large-font-family-name);
+  font-style: var(--md-sys-typescale-link-large-font-family-style);
+  font-weight: var(--md-sys-typescale-link-large-font-weight);
+  font-size: var(--md-sys-typescale-link-large-font-size);
+  letter-spacing: var(--md-sys-typescale-link-large-letter-spacing);
+  line-height: var(--md-sys-typescale-link-small-line-height);
+}
+.link-base {
+  color: var(--md-ref-palette-primary40);
+  font-family: var(--md-sys-typescale-link-medium-font-family-name);
+  font-style: var(--md-sys-typescale-link-medium-font-family-style);
+  font-weight: var(--md-sys-typescale-link-medium-font-weight);
+  font-size: var(--md-sys-typescale-link-medium-font-size);
+  letter-spacing: var(--md-sys-typescale-link-medium-letter-spacing);
+  line-height: var(--md-sys-typescale-link-medium-line-height);
+}
+.link-small {
+  font-family: var(--md-sys-typescale-link-small-font-family-name);
+  font-style: var(--md-sys-typescale-link-small-font-family-style);
+  font-weight: var(--md-sys-typescale-link-small-font-weight);
+  font-size: var(--md-sys-typescale-link-small-font-size);
+  letter-spacing: var(--md-sys-typescale-link-small-letter-spacing);
+  line-height: var(--md-sys-typescale-link-small-line-height);
+}
+
+
 .label-large{
   font-family: var(--md-sys-typescale-label-large-font-family-name);
   font-style: var(--md-sys-typescale-label-large-font-family-style);

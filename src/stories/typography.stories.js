@@ -1,12 +1,11 @@
 
-import Typography from '@/components/Typography.vue'
+import Typography from './type/Typography.vue'
 
 export default {
     title: 'Styles/Typography',
     component: Typography,
-    tags: ['autodocs'],
     render: () => ({
-        components: { Typography },
+        components: {Typography},
         template: '<Typography />',
     }),
 };

@@ -9,7 +9,7 @@ export default {
   name: 'IOSubHeadlineSmall',
 };
 </script>
-<style>
+<style scoped>
 p {
    font-family: 'Lato', sans-serif;
 }

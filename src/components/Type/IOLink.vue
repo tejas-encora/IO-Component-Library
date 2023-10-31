@@ -1,18 +1,18 @@
 <template>
-  <h4>
+  <a href="#">
   <slot></slot>
-  </h4>
+  </a>
 </template>
 
 <script>
 import '@/assets/theme.css'
 
 export default {
-  name: 'IOHeadlineLarge',
+  name: 'IOLink',
 };
 </script>
 <style scoped>
-  h4 {
-    font-family: 'Lato';
-  }
+body {
+   font-family: 'Lato', sans-serif;
+}
 </style>

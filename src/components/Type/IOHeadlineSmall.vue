@@ -11,3 +11,8 @@ export default {
   name: 'IOHeadlineSmall',
 };
 </script>
+<style scoped>
+h6 {
+  font-family: 'Lato';
+}
+</style>

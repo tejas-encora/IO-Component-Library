@@ -1,5 +1,5 @@
 :root {
-  --md-source: #4921b8;
+  --md-source: #544DC7;
 
   /* custom */
   --md-filled-button-container-shape: 4px;
@@ -23,38 +23,38 @@
   
 
 /* ------------------- */
-  --md-ref-palette-primary0: #000000;
-  --md-ref-palette-primary10: #1e0061;
-  --md-ref-palette-primary20: #330098;
-  --md-ref-palette-primary25: #3f0daf;
-  --md-ref-palette-primary30: #4b23ba;
-  --md-ref-palette-primary35: #5734c5;
-  --md-ref-palette-primary40: #6342d2;
-  --md-ref-palette-primary50: #7c5eed;
-  --md-ref-palette-primary60: #967cff;
-  --md-ref-palette-primary70: #b09dff;
-  --md-ref-palette-primary80: #cbbeff;
-  --md-ref-palette-primary90: #e7deff;
-  --md-ref-palette-primary95: #f4eeff;
-  --md-ref-palette-primary98: #fdf8ff;
+  --md-ref-palette-primary0: #000000; 
+  --md-ref-palette-primary10: #110069;
+  --md-ref-palette-primary20: #231098;
+  --md-ref-palette-primary25: #2f23a3;
+  --md-ref-palette-primary30: #3b32ae;
+  --md-ref-palette-primary35: #473fba;
+  --md-ref-palette-primary40: #544dc7;
+  --md-ref-palette-primary50: #6d67e2;
+  --md-ref-palette-primary60: #8782fe;
+  --md-ref-palette-primary70: #a5a1ff;
+  --md-ref-palette-primary80: #c4c0ff;
+  --md-ref-palette-primary90: #e3dfff;
+  --md-ref-palette-primary95: #f2eeff;
+  --md-ref-palette-primary98: #fcf8ff;
   --md-ref-palette-primary99: #fffbff;
   --md-ref-palette-primary100: #ffffff;
   /* secondary */
   --md-ref-palette-secondary0: #000000;
-  --md-ref-palette-secondary10: #1d192b;
-  --md-ref-palette-secondary20: #322e41;
-  --md-ref-palette-secondary25: #3d394d;
-  --md-ref-palette-secondary30: #484458;
-  --md-ref-palette-secondary35: #545065;
-  --md-ref-palette-secondary40: #605b71;
-  --md-ref-palette-secondary50: #79748a;
-  --md-ref-palette-secondary60: #938da5;
-  --md-ref-palette-secondary70: #aea8c0;
-  --md-ref-palette-secondary80: #cac3dc;
-  --md-ref-palette-secondary90: #e6dff9;
-  --md-ref-palette-secondary95: #f4eeff;
-  --md-ref-palette-secondary98: #fdf8ff;
-  --md-ref-palette-secondary99: #fffbff;
+  --md-ref-palette-secondary10: #001f25;
+  --md-ref-palette-secondary20: #00363e;
+  --md-ref-palette-secondary25: #00424b;
+  --md-ref-palette-secondary30: #004e59;
+  --md-ref-palette-secondary35: #005b67;
+  --md-ref-palette-secondary40: #006876;
+  --md-ref-palette-secondary50: #008394;
+  --md-ref-palette-secondary60: #009fb3;
+  --md-ref-palette-secondary70: #26bbd2;
+  --md-ref-palette-secondary80: #51d7ee;
+  --md-ref-palette-secondary90: #a0efff;
+  --md-ref-palette-secondary95: #d3f7ff;
+  --md-ref-palette-secondary98: #eefcff;
+  --md-ref-palette-secondary99: #f7fdff;
   --md-ref-palette-secondary100: #ffffff;
   /* neutral */
   --md-ref-palette-neutral0: #000000;
@@ -123,7 +123,7 @@
   --md-sys-color-error-light: #ba1a1a;
   --md-sys-color-error-container-light: #ffdad6;
 
---md-sys-color-success-light: #008950;
+  --md-sys-color-success-light: #008950;
 
   --md-sys-color-on-error-light: #ffffff;
   --md-sys-color-on-error-container-light: #410002;
@@ -280,4 +280,25 @@
   --md-sys-typescale-subheadline-small-letter-spacing: 0.1px;
   --md-ref-typeface-brand: 'Lato';
   --md-ref-typeface-plain: 'Lato';
+  /* text link - base */
+  --md-sys-typescale-link-medium-font-family-name: Lato;
+  --md-sys-typescale-link-medium-font-family-style: Medium;
+  --md-sys-typescale-link-lamediumrge-font-weight: 500;
+  --md-sys-typescale-link-medium-font-size: 14px;
+  --md-sys-typescale-link-medium-letter-spacing: 0.25px;
+  --md-sys-typescale-link-medium-line-height: 20px;
+  /* text link - large */
+  --md-sys-typescale-link-large-font-family-name: Lato;
+  --md-sys-typescale-link-large-font-family-style: Medium;
+  --md-sys-typescale-link-large-font-weight: 500;
+  --md-sys-typescale-link-large-font-size: 15px;
+  --md-sys-typescale-link-large-letter-spacing: 0.25px;
+  --md-sys-typescale-link-large-line-height: 20x;
+/* text link - small */
+  --md-sys-typescale-link-small-font-family-name: Lato;
+  --md-sys-typescale-link-small-font-family-style: Medium;
+  --md-sys-typescale-link-small-font-weight: 500;
+  --md-sys-typescale-link-small-font-size: 12px;
+  --md-sys-typescale-link-small-letter-spacing: 0.25px;
+  --md-sys-typescale-link-small-line-height: 20x;
 }

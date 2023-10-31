@@ -1,5 +1,5 @@
 
-import ColorGrid from '@/components/ColorGrid.vue'
+import ColorGrid from './ColorGrid.vue'
 
 /**
  * 
