@@ -94,6 +94,8 @@ dd {
 }
 
 h3 {
-    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
 }
 </style>
