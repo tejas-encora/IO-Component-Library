@@ -1,6 +1,6 @@
 <template>
   <h1>
-  <slot></slot>
+    <slot></slot>
   </h1>
 </template>
 
