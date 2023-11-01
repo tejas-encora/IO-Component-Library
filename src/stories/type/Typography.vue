@@ -43,7 +43,7 @@
         <IOLink class="link-small">Text Link Small</IOLink>
     </div>
     <div class="wrap">
-        <IOLabel class="label-Large">Label</IOLabel><br /><br />
+        <IOLabel class="label-large">Label</IOLabel><br /><br />
         <IOLabel class="label-medium">Label</IOLabel><br /><br />
         <IOLabel class="label-small">Label</IOLabel>
     </div>
