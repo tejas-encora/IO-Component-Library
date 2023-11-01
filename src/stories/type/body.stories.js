@@ -1,6 +1,7 @@
 import IOBody from '@/components/Type/IOBody.vue'
 import IOLink from '@/components/Type/IOLink.vue'
 import IOCaption from '@/components/Type/IOCaption.vue'
+import IOLabel from '@/components/Type/IOLabel.vue'
 
 export default {
     title: 'UI/Atoms/Type/Body',
@@ -67,9 +68,27 @@ export const TextLinkSmall = {
         template: '<IOLink class="link-small">I\'m a small text link</IOLink>',
     })
 }
+export const LabelLarge = {
+    render: () => ({
+        components: { IOLabel },
+        template: '<IOLabel class="label-large">I\'m a large label</IOLabel>',
+    })
+}
+export const LabelBase = {
+    render: () => ({
+        components: { IOLabel },
+        template: '<IOLabel class="label-medium">I\'m a label</IOLabel>',
+    })
+}
+export const LabelSmall = {
+    render: () => ({
+        components: { IOLabel },
+        template: '<IOLabel class="label-small">I\'m a small label</IOLabel>',
+    })
+}
 export const Caption = {
     render: () => ({
         components: { IOLink },
-        template: '<IOCaption class="io-caption">I\'m a caption</IOLink>',
+        template: '<IOCaption class="io-caption">I\'m a caption</IOCaption>',
     })
 }

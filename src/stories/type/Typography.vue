@@ -43,6 +43,11 @@
         <IOLink class="link-small">Text Link Small</IOLink>
     </div>
     <div class="wrap">
+        <IOLabel class="label-Large">Label</IOLabel><br /><br />
+        <IOLabel class="label-medium">Label</IOLabel><br /><br />
+        <IOLabel class="label-small">Label</IOLabel>
+    </div>
+    <div class="wrap">
         <IOCaption>Caption</IOCaption>
     </div>
     <div class="wrap">
@@ -72,6 +77,7 @@ import IOSubHeadlineSmall from '@/components/Type/IOSubHeadlineSmall.vue'
 import IOBody from '@/components/Type/IOBody.vue'
 import IOLink from '@/components/Type/IOLink.vue'
 import IOCaption from '@/components/Type/IOCaption.vue'
+import IOLabel from '@/components/Type/IOLabel.vue'
 import '@/assets/theme.css'
 </script>
 
@@ -89,9 +95,11 @@ dl {
 dd {
     margin-bottom: 15px;
 }
+
 body {
     font-family: '';
 }
+
 .wrap {
     border: 1px solid #ddd;
     border-radius: 8px;
