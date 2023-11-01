@@ -3,7 +3,7 @@ import '@material/web/textfield/outlined-text-field.js'
 import IOTextFieldOutline from '@/components/Inputs/IOTextFieldOutline.vue'
 
 export default {
-  title: 'UI/Atoms/Inputs/Textfield/Outlined',
+  title: 'UI/Atoms/Inputs/Text Fields/Outlined',
   component: IOTextFieldOutline,
   tags: ['autodocs'],
   render: (args) => ({
@@ -24,7 +24,7 @@ export default {
       control: {
         type: 'text',
       },
-      description: 'Feild label',
+      description: 'Field label',
       defaultValue: 'Label'
     },
     disabled: {
