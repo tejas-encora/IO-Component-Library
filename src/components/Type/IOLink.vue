@@ -1,5 +1,5 @@
 <template>
-  <a href="#">
+  <a href="#" :class="sizeClass">
   <slot></slot>
   </a>
 </template>
@@ -9,6 +9,17 @@ import '@/assets/theme.css'
 
 export default {
   name: 'IOLink',
+  props: {
+    size: {
+      type: String,
+      default: ''
+    },
+    computed: {
+      sizeClass () {
+        return `${this.size}`
+      }
+    }
+  }
 };
 </script>
 <style scoped>

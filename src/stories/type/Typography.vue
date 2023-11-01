@@ -43,6 +43,9 @@
         <IOLink class="link-small">Text Link Small</IOLink>
     </div>
     <div class="wrap">
+        <IOCaption>Caption</IOCaption>
+    </div>
+    <div class="wrap">
         <h3>Headings</h3>
         <IODisplayLarge>Display Large</IODisplayLarge>
         <IODisplayMedium>Display Medium</IODisplayMedium>
@@ -68,6 +71,7 @@ import IOSubHeadlineMedium from '@/components/Type/IOSubHeadlineMedium.vue'
 import IOSubHeadlineSmall from '@/components/Type/IOSubHeadlineSmall.vue'
 import IOBody from '@/components/Type/IOBody.vue'
 import IOLink from '@/components/Type/IOLink.vue'
+import IOCaption from '@/components/Type/IOCaption.vue'
 import '@/assets/theme.css'
 </script>
 
@@ -85,7 +89,9 @@ dl {
 dd {
     margin-bottom: 15px;
 }
-
+body {
+    font-family: '';
+}
 .wrap {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -97,5 +103,18 @@ h3 {
     margin-top: 0;
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
+}
+
+.wrap h3:not(:first-child) {
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px 0;
 }
 </style>

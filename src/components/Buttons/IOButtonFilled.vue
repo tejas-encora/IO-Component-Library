@@ -22,9 +22,3 @@ export default {
 };
 
 </script>
-
-<style>
-/* .success {
-  --md-filled-button-container-color: var(--success);
-} */
-</style>

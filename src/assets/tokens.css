@@ -283,7 +283,7 @@
   /* text link - base */
   --md-sys-typescale-link-medium-font-family-name: Lato;
   --md-sys-typescale-link-medium-font-family-style: Medium;
-  --md-sys-typescale-link-lamediumrge-font-weight: 500;
+  --md-sys-typescale-link-medium-font-weight: 500;
   --md-sys-typescale-link-medium-font-size: 14px;
   --md-sys-typescale-link-medium-letter-spacing: 0.25px;
   --md-sys-typescale-link-medium-line-height: 20px;
@@ -301,4 +301,11 @@
   --md-sys-typescale-link-small-font-size: 12px;
   --md-sys-typescale-link-small-letter-spacing: 0.25px;
   --md-sys-typescale-link-small-line-height: 20x;
+  /* caption */
+  --md-sys-typescale-caption-font-family-name: Lato;
+  --md-sys-typescale-caption-font-family-style: Medium;
+  --md-sys-typescale-caption-font-weight: 600;
+  --md-sys-typescale-caption-font-size: 12px;
+  --md-sys-typescale-caption-letter-spacing: 5%;
+  --md-sys-typescale-caption-line-height: 20x;
 }

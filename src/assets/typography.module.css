@@ -175,3 +175,12 @@ h6{
   text-transform: var(--md-sys-typescale-label-small-text-transform);
   text-decoration: var(--md-sys-typescale-label-small-text-decoration);
 }
+
+.io-caption {
+  font-family: var(--md-sys-typescale-caption-font-family-name);
+  font-style: var(--md-sys-typescale-caption-font-family-style);
+  font-weight: var(--md-sys-typescale-caption-font-weight);
+  font-size: var(--md-sys-typescale-caption-font-size);
+  letter-spacing: var(--md-sys-typescale-caption-tracking);
+  line-height: var(--md-sys-typescale-caption-height);
+}

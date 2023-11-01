@@ -104,7 +104,7 @@ export default {
             return this.getFilteredPalette('palette-neutral');
         },
         neutralVariantPalette() {
-            return this.getFilteredPalette('palette-neutralvariant');
+            return this.getFilteredPalette('palette-neutral-variant');
         },
     },
     methods: {
