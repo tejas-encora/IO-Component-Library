@@ -2,7 +2,7 @@ import '@material/web/textfield/filled-text-field.js'
 import IOTextField from '@/components/Inputs/IOTextField.vue'
 
 export default {
-  title: 'UI/Atoms/Inputs/Text Fields/Filled',
+  title: 'UI/Atoms/Inputs/Textfield/Filled',
   component: IOTextField,
   tags: ['autodocs'],
   render: (args) => ({

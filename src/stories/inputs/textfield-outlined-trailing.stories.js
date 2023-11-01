@@ -1,6 +1,5 @@
 import '@material/web/textfield/outlined-text-field.js'
 import IOTextFieldOutlineTrailing from '@/components/Inputs/IOTextFieldOutlineTrailing.vue'
-import IOTextFieldOutlinePassword from '@/components/Inputs/IOTextFieldOutlinePassword.vue'
 
 export default {
   title: 'UI/Atoms/Inputs/Textfield/Outlined/With Icons/Trailing',
@@ -41,18 +40,5 @@ export const Default = {
       return { args };
     },
     template: `<IOTextFieldOutlineTrailing label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
-  }),
-};
-
-export const Password = {
-  args: {
-    icon: 'magnifying-glass'
-  },
-  render: (args) => ({
-    components: { IOTextFieldOutlinePassword },
-    setup() {
-      return { args };
-    },
-    template: `<IOTextFieldOutlinePassword label="Password" v-bind="args"/>`
   }),
 };
