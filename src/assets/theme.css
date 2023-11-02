@@ -32,3 +32,25 @@
   --md-filled-button-container-color: var(--info);
   --md-sys-color-on-primary: var(--on-info);
 }
+
+.label.resting:not(.hidden) {
+  top: 4px !important;
+}
+
+.field:not(.no-label) .content ::slotted(:not(textarea)) {
+    padding-bottom: 4px !important;
+    padding-top: 4px !important;
+}
+.content ::slotted(:not(textarea)) {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+}
+/* .text-field {
+  height: 32px !important;
+} */
+md-filled-text-field {
+  height: 32px!important;
+}
+md-filled-text-field .label.resting::part(native) {
+  top: 1px !important;
+}
