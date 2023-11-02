@@ -1,7 +1,6 @@
 <template>
-  <!-- Ensure you have an element with the 'md-filled-field' selector -->
   <md-filled-field>
-    <!-- ... other content ... -->
+     <md-filled-text-field label="Label" value="Test Value"></md-filled-text-field>
   </md-filled-field>
 </template>
 

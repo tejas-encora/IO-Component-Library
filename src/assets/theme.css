@@ -48,9 +48,9 @@
 /* .text-field {
   height: 32px !important;
 } */
-md-filled-text-field {
+/* md-filled-text-field {
   height: 32px!important;
-}
-md-filled-text-field .label.resting::part(native) {
+} */
+/* md-filled-text-field .label.resting::part(native) {
   top: 1px !important;
-}
+} */
