@@ -1,11 +1,36 @@
 <template>
-  <md-filled-text-field label="Label"></md-filled-text-field>
+  <!-- Ensure you have an element with the 'md-filled-field' selector -->
+  <md-filled-field>
+    <!-- ... other content ... -->
+  </md-filled-field>
 </template>
 
 <script>
-import '@/assets/theme.css'
-
 export default {
-  name: 'IOTextField',
+  mounted() {
+    // Check if the DOM is fully loaded
+    if (document.readyState === 'complete') {
+      this.accessShadowDOM();
+    } else {
+      window.addEventListener('load', this.accessShadowDOM);
+    }
+  },
+  methods: {
+    accessShadowDOM() {
+      console.log('Accessing shadow DOM');
+      var container = document.querySelector('md-filled-field');
+      if (container && container.shadowRoot) {
+        const labelElement = container.shadowRoot.querySelector('.label.resting');
+        if (labelElement) {
+          console.log('yep', labelElement.innerHTML);
+          labelElement.style.top = '4px';
+        } else {
+          console.log("Label element not found in Shadow DOM.");
+        }
+      } else {
+        console.log("md-filled-field or Shadow DOM not found.");
+      }
+    }
+  }
 };
 </script>
