@@ -1,7 +1,5 @@
 <template>
-  <md-filled-field>
-     <md-filled-text-field label="Label" value="Test Value"></md-filled-text-field>
-  </md-filled-field>
+    <md-filled-text-field label="Label" value="Test Value"></md-filled-text-field>
 </template>
 
 <script>
