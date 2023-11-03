@@ -6,11 +6,10 @@ export default {
   component: IOTextFieldTrailing,
   tags: ['autodocs'],
   render: (args) => ({
-    components: { IOTextField },
+    components: { IOTextFieldIOTextFieldTrailingLeading },
     setup() {
       return { args };
     },
-    props: Object.keys(argTypes),
     template: `<IOTextFieldTrailing label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
   }),
   args: {
@@ -30,9 +29,7 @@ export default {
         type: 'text'
       }
     },
-    disabled: 'boolean',
-    error: 'boolean',
-    handleToggle: { action: 'toggled' }
+    disabled: 'boolean'
   },
 };
 
@@ -42,7 +39,7 @@ export const Default = {
     setup() {
       return { args };
     },
-    template: `<IOTextFieldTrailing label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args" @toggled="handleToggle" v-bind="$props"/>`
+    template: `<IOTextFieldTrailing label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
   }),
 };
 
