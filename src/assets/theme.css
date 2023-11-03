@@ -33,6 +33,9 @@
   --md-sys-color-on-primary: var(--on-info);
 }
 
+
+
+/* 
 .label.resting:not(.hidden) {
   top: 4px !important;
 }
@@ -44,7 +47,7 @@
 .content ::slotted(:not(textarea)) {
     padding-top: 4px !important;
     padding-bottom: 4px !important;
-}
+} */
 /* .text-field {
   height: 32px !important;
 } */

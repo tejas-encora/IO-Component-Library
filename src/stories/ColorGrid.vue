@@ -88,7 +88,6 @@
 
 <script>
 export default {
-    name: 'TonalPalette',
     data() {
         return {
             colorVariables: {},

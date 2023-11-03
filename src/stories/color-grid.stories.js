@@ -9,15 +9,39 @@ export default {
     title: 'Styles/Colors/Tonal Palette',
     component: ColorGrid,
     tags: ['autodocs'],
-    render: () => ({
+    render: (args) => ({
         components: { ColorGrid },
-        template: '<ColorGrid />',
+        setup() {
+            return { args };
+        },
+        template: '<ColorGrid tone={{arg.tone}} v-bind="args"/>',
     }),
+    args: {
+
+    },
+    argTypes: {
+        tone: {
+            control: {
+                type: 'select',
+            },
+            options: ['primary', 'secondary'],
+        },
+        render: (args) => ({
+            components: ColorGrid ,
+            setup() {
+                return { args };
+            },
+            template: '<ColorGrid tone={{arg.tone}}/>',
+        }),
+    }
 };
 
     export const Default = {
-        render: () => ({
+        render: (args) => ({
             components: { ColorGrid },
+            setup() {
+                return { args };
+            },
             template: '<ColorGrid/>',
         })
     };

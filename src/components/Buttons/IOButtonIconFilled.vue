@@ -1,0 +1,24 @@
+<template>
+  <md-filled-icon-button>
+     <i :class="iconClass" />
+  </md-filled-icon-button>
+</template>
+
+<script>
+import '@/assets/theme.css';
+export default {
+  name: 'IOButtonIconFilled',
+  props: {
+    icon: {
+      type: String,
+      default: 'file-magnifying-glass'
+    }
+  },
+  computed: {
+    iconClass() {
+      return `fa-light fa-${this.icon}`;
+    },
+  }
+};
+
+</script>

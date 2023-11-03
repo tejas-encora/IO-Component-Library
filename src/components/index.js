@@ -19,6 +19,14 @@ export { default as IOButtonElevated } from '@/components/Buttons/IOButtonElevat
 export { default as IOIconButtonElevated } from '@/components/Buttons/IOButtonElevated.vue';
 
 /** 
+ * Icon Buttons * 
+*/
+export { default as IOButtonIcon } from '@/components/Buttons/IOButtonIcon.vue';
+export { default as IOButtonIconFilled } from '@/components/Buttons/IOButtonIconFilled.vue';
+export { default as IOButtonIconOutline } from '@/components/Buttons/IOButtonIconOutline.vue';
+export { default as IOButtonIconTonal } from '@/components/Buttons/IOButtonIconTonal.vue';
+
+/** 
  * Text Buttons * 
 */
 export { default as IOTextButton } from '@/components/Buttons/IOTextButton.vue';
@@ -43,3 +51,5 @@ export { default as IOTextFieldOutlineTrailing } from '@/components/Inputs/IOTex
 export { default as IOTextFieldOutlineBoth } from '@/components/Inputs/IOTextFieldOutlineBoth.vue';
 export { default as IOTextArea } from '@/components/Inputs/IOTextArea.vue';
 export { default as IOTextAreaOutline } from '@/components/Inputs/IOTextAreaOutline.vue';
+export { default as IOTextFieldPassword } from '@/components/Inputs/IOTextFieldPassword.vue';
+export { default as IOTextFieldOutlinePassword } from '@/components/Inputs/IOTextFieldOutlinePassword.vue';

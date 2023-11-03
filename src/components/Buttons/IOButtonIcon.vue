@@ -1,0 +1,24 @@
+<template>
+  <md-icon-button>
+     <i :class="iconClass" />
+  </md-icon-button>
+</template>
+
+<script>
+import '@/assets/theme.css';
+export default {
+  name: 'IOButtonIcon',
+  props: {
+    icon: {
+      type: String,
+      default: 'file-magnifying-glass'
+    }
+  },
+  computed: {
+    iconClass() {
+      return `fa-light fa-${this.icon}`;
+    },
+  }
+};
+
+</script>

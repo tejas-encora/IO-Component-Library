@@ -10,7 +10,7 @@ export default {
     setup() {
       return { args };
     },
-    template: `<IOIconButtonFilled v-bind="args">{{args.label}}</IOIconButtonFilled>`
+    template: `<IOIconButtonFilled icon={{args.icon}} v-bind="args">{{args.label}}</IOIconButtonFilled>`
   }),
   args: {
     disabled: false,
