@@ -29,6 +29,7 @@ coverage
 .history
 package-lock.json
 storybook-static
+dist
 
 
 

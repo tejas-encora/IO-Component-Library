@@ -21,10 +21,10 @@ export { default as IOIconButtonElevated } from '@/components/Buttons/IOButtonEl
 /** 
  * Icon Buttons * 
 */
-export { default as IOButtonIcon } from '@/components/Buttons/IOButtonIcon.vue';
-export { default as IOButtonIconFilled } from '@/components/Buttons/IOButtonIconFilled.vue';
-export { default as IOButtonIconOutline } from '@/components/Buttons/IOButtonIconOutline.vue';
-export { default as IOButtonIconTonal } from '@/components/Buttons/IOButtonIconTonal.vue';
+export { default as IOButtonIcon } from '@/components/Buttons/IconButtons/IOButtonIcon.vue';
+export { default as IOButtonIconFilled } from '@/components/Buttons/IconButtons/IOButtonIconFilled.vue';
+export { default as IOButtonIconOutline } from '@/components/Buttons/IconButtons/IOButtonIconOutline.vue';
+export { default as IOButtonIconTonal } from '@/components/Buttons/IconButtons/IOButtonIconTonal.vue';
 
 /** 
  * Text Buttons * 
