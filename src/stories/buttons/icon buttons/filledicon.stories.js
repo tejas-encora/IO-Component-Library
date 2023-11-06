@@ -1,4 +1,4 @@
-import IOButtonIconFilled from '@/components/Buttons/IOButtonIconFilled.vue'
+import IOButtonIconFilled from '@/components/Buttons/IconButtons/IOButtonIconFilled.vue'
 import '@material/web/iconbutton/filled-icon-button.js'
 
 /**

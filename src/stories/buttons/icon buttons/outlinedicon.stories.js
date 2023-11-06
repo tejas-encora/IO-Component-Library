@@ -1,4 +1,4 @@
-import IOButtonIconOutline from '@/components/Buttons/IOButtonIconOutline.vue'
+import IOButtonIconOutline from '@/components/Buttons/IconButtons/IOButtonIconOutline.vue'
 import '@material/web/iconbutton/outlined-icon-button.js'
 
 /**

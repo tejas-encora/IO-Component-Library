@@ -1,4 +1,4 @@
-import IOButtonIcon from '@/components/Buttons/IOButtonIcon.vue'
+import IOButtonIcon from '@/components/Buttons/IconButtons/IOButtonIcon.vue'
 import '@material/web/iconbutton/icon-button.js'
 
 /**

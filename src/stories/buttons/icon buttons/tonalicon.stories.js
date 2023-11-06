@@ -1,4 +1,4 @@
-import IOButtonIconTonal from '@/components/Buttons/IOButtonIconTonal.vue'
+import IOButtonIconTonal from '@/components/Buttons/IconButtons/IOButtonIconTonal.vue'
 import '@material/web/iconbutton/filled-tonal-icon-button.js'
 
 /**
