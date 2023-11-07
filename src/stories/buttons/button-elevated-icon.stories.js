@@ -1,16 +1,18 @@
 import '@material/web/button/elevated-button.js'
 import IOIconButtonElevated from '@/components/Buttons/IOIconButtonElevated.vue'
 
+const template = '<IOIconButtonElevated :class=args.class :disabled=args.disabled :icon=args.icon>{{args.label}}</IOIconButtonElevated>'
+
 export default {
   title: 'UI/Atoms/Buttons/Elevated/With Icon',
   component: IOIconButtonElevated,
   tags: ['autodocs'],
   render: (args) => ({
-    components: { IOIconButtonElevated },
+    components: { IOIconButtonElevated },       
     setup() {
       return { args };
     },
-    template: `<IOIconButtonElevated v-bind="args">{{args.label}}</IOIconButtonElevated>`
+    template: template
   }),
   args: {
     disabled: false,
@@ -48,7 +50,6 @@ export const Default = {
     setup() {
       return { args };
     },
-    template: '<IOIconButtonElevated icon={{args.icon}} v-bind="args">{{args.label}}</IOIconButtonElevated>'
+    template: template
   }),
 };
-

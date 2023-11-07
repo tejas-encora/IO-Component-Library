@@ -1,6 +1,8 @@
 import '@material/web/textfield/outlined-text-field.js'
 import IOTextAreaOutline from '@/components/Inputs/IOTextAreaOutline.vue'
 
+const template = '<IOTextAreaOutline :rows=args.rows type="textarea" :label=args.label :value=args.value :disabled=args.disabled />'
+
 export default {
   title: 'UI/Atoms/Inputs/Textarea/Outlined',
   component: IOTextAreaOutline,
@@ -10,13 +12,12 @@ export default {
     setup() {
       return { args };
     },
-    template: `<IOTextAreaOutline rows="5" type="textarea" label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: template
   }),
   args: {
     disabled: false,
     label: 'Label',
     rows: 3,
-    'supporting-text': 'Supporting text',
   },
   argTypes: {
     label: {
@@ -43,6 +44,6 @@ export const Default = {
     setup() {
       return { args };
     },
-    template: `<IOTextAreaOutline label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: template
   }),
 };

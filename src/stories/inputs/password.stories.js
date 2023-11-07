@@ -3,6 +3,8 @@ import '@material/web/textfield/outlined-text-field.js'
 import IOTextFieldOutlinePassword from '@/components/Inputs/IOTextFieldOutlinePassword.vue'
 import IOTextFieldPassword from '@/components/Inputs/IOTextFieldPassword.vue'
 
+const template = '<IOTextFieldPassword :disabled=args.disabled :label=args.label :supporting-text=args.supportingText />'
+
 export default {
   title: 'UI/Atoms/Inputs/Textfield/Password',
   component: IOTextFieldPassword,
@@ -12,12 +14,12 @@ export default {
     setup() {
       return { args };
     },
-    template: `<IOTextFieldPassword label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: template
   }),
   args: {
     disabled: false,
     label: 'Label',
-    'supporting-text': 'Supporting text'
+    supportingText: 'Supporting text'
   },
   argTypes: {
     label: {
@@ -25,8 +27,12 @@ export default {
         type: 'text',
       },
       description: 'Field label',
-    },        
-    disabled: 'boolean'
+    },   
+    supportingText: {
+      control: {
+        type: 'text',
+      }
+    }
   },
 };
 
@@ -36,7 +42,7 @@ export const Default = {
     setup() {
       return { args };
     },
-    template: `<IOTextFieldPassword label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: template
   }),
 };
 

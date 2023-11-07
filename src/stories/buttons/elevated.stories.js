@@ -5,6 +5,9 @@ import '@material/web/button/elevated-button.js'
  * 
  * Buttons help people take actions, such as sending an email, sharing a document, or liking a comment.
  */
+
+const template = '<IOButtonElevated :size=args.size :disabled=args.disabled>{{args.label}}</IOButtonElevated>';
+
 export default {
     title: 'UI/Atoms/Buttons/Elevated',
     component: IOButtonElevated,
@@ -14,12 +17,12 @@ export default {
         setup() {
             return { args };
         },
-        template: '<IOButtonElevated v-bind="args">{{args.label}}</IOButtonElevated>',
+        template: template,
     }),
     args: {
         disabled: false,
         label: 'click me',
-        class: 'medium',
+        size: 'medium',
     },
     argTypes: {
         label: {
@@ -27,47 +30,22 @@ export default {
                 type: 'text',
             },
         },
-        class: {
+        size: {
             control: {
                 type: 'select',
             },
             options: ['small', 'medium', 'large'],
         },
-
-        onClick: {action: 'Button clicked'},
+        onClick: { action: 'Button clicked' },
     },
 };
 
 export const Default = {
-    args: {
-        disabled: false,
-        label: 'click me',
-        class: 'medium'
-    },
-    argTypes: {
-        label: {
-            control: {
-                type: 'text',
-            },
-            description: 'Button label',
-        },
-        class: {
-            control: {
-                type: 'select',
-                options: ['small', 'medium', 'large'],
-                defaultValue: 'medium',
-            },
-            description: 'Button size',
-        },
-        onClick: { action: 'Button clicked' },
-    },
     render: (args) => ({
         components: { IOButtonElevated },
         setup() {
             return { args };
         },
-        template: '<IOButtonElevated v-bind="args">{{args.label}}</IOButtonElevated>',
+        template: template,
     })
 };
-
-

@@ -1,6 +1,8 @@
 import '@material/web/textfield/filled-text-field.js'
 import IOTextFieldLeading from '@/components/Inputs/IOTextFieldLeading.vue'
 
+const template = '<IOTextFieldLeading :label=args.label :supporting-text=args.supportingText :disabled=args.disabled />'
+
 export default {
   title: 'UI/Atoms/Inputs/Textfield/Filled/With Icons/Leading',
   component: IOTextFieldLeading,
@@ -10,13 +12,13 @@ export default {
     setup() {
       return { args };
     },
-    template: `<IOTextFieldLeading label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: template
   }),
   args: {
     disabled: false,
     label: 'Label',
     icon: 'magnifying-glass',
-    'supporting-text': 'Supporting text'
+    supportingText: 'Supporting text'
   },
   argTypes: {
     label: {
@@ -28,8 +30,7 @@ export default {
       control: {
         type: 'text'
       }
-    },
-    disabled: 'boolean'
+    }
   },
 };
 
@@ -39,7 +40,7 @@ export const Leading = {
     setup() {
       return { args };
     },
-    template: `<IOTextFieldLeading label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: template
   }),
 };
 

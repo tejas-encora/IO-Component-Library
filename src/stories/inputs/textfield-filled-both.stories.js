@@ -1,6 +1,8 @@
 import '@material/web/textfield/filled-text-field.js'
 import IOTextFieldBoth from '@/components/Inputs/IOTextFieldBoth.vue'
 
+const template = '<IOTextFieldBoth :label=args.label :supporting-text=args.supportingText :disabled=args.disabled />'
+
 export default {
   title: 'UI/Atoms/Inputs/Textfield/Filled/With Icons/Both',
   component: IOTextFieldBoth,
@@ -10,14 +12,14 @@ export default {
     setup() {
       return { args };
     },
-    template: `<IOTextFieldBoth label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: template
   }),
   args: {
     disabled: false,
     label: 'Label',
     icon: 'magnifying-glass',
     iconTrailing: 'circle-x',
-    'supporting-text': 'Supporting text'
+    supportingText: 'Supporting text'
   },
   argTypes: {
     label: {
@@ -35,8 +37,7 @@ export default {
           type: 'text'
         }
       },
-    },
-    disabled: 'boolean'
+    }
   },
 };
 
@@ -46,7 +47,7 @@ export const Default = {
     setup() {
       return { args };
     },
-    template: `<IOTextFieldBoth label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: template
   }),
 };
 

@@ -5,6 +5,9 @@ import '@material/web/iconbutton/filled-tonal-icon-button.js'
  * 
  * Buttons help people take actions, such as sending an email, sharing a document, or liking a comment.
  */
+
+const template = '<IOButtonIconTonal :icon=args.icon :disabled=args.disabled />';
+
 export default {
     title: 'UI/Atoms/Buttons/Icon Buttons/Tonal',
     component: IOButtonIconTonal,
@@ -14,7 +17,7 @@ export default {
         setup() {
             return { args };
         },
-        template: '<IOButtonIconTonal icon={{args.icon}} v-bind="args"/>',
+        template: template,
     }),
     args: {
         disabled: false,
@@ -50,7 +53,7 @@ export const Default = {
         setup() {
             return { args };
         },
-        template: '<IOButtonIconTonal icon={{args.icon}} v-bind="args"/>',
+        template: template,
     })
 };
 

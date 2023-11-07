@@ -5,6 +5,9 @@ import '@material/web/button/filled-button.js'
  * 
  * Buttons help people take actions, such as sending an email, sharing a document, or liking a comment.
  */
+
+const template = '<IOButtonFilled :size=args.size :class=args.class :disabled=args.disabled>{{args.label}}</IOButtonFilled>';
+
 export default {
     title: 'UI/Atoms/Buttons/Filled',
     component: IOButtonFilled,
@@ -14,12 +17,13 @@ export default {
         setup() {
             return { args };
         },
-        template: '<IOButtonFilled v-bind="args" status={{args.status}}>{{args.label}}</IOButtonFilled>',
+        template: template,
     }),
     args: {
         disabled: false,
         label: 'click me',
-        class: '',
+        class: 'primary',
+        size: 'medium',
     },
     argTypes: {
         label: {
@@ -31,41 +35,24 @@ export default {
             control: {
                 type: 'select',
             },
-            options: ['success', 'error', 'warning', 'info'],
+            options: ['success', 'error', 'warning', 'info', 'primary'],
         },
-
-        onClick: {action: 'Button clicked'},
+        size: {
+            control: {
+                type: 'select',
+            },
+            options: ['small', 'medium', 'large'],
+        },
+        onClick: { action: 'Button clicked' },
     },
 };
 
 export const Default = {
-    args: {
-        disabled: false,
-        label: 'click me',
-        class: ''
-    },
-    argTypes: {
-        label: {
-            control: {
-                type: 'text',
-            },
-            description: 'Button label',
-        },
-        class: {
-            control: {
-                type: 'select',
-            },
-            options: ['success', 'error', 'warning', 'info'],
-        },
-        onClick: { action: 'Button clicked' },
-    },
     render: (args) => ({
         components: { IOButtonFilled },
         setup() {
             return { args };
         },
-        template: '<IOButtonFilled v-bind="args" status={{args.status}}>{{args.label}}</IOButtonFilled>',
+        template: template,
     })
 };
-
-

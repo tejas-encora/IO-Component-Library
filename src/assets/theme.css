@@ -5,17 +5,32 @@
 /* @import url(theme.dark.css) (prefers-color-scheme: dark); */
 
 /* Custom */
-
-.small {
+.small,
+md-filled-button[size="small"],
+md-outlined-button[size="small"],
+md-elevated-button[size="small"],
+md-tonal-button[size="small"] {
   height: var(--small);
 }
-.medium {
+.medium,
+md-filled-button[size="medium"],
+md-outlined-button[size="medium"],
+md-elevated-button[size="medium"],
+md-tonal-button[size="medium"] {
   height: var(--medium);
 }
-.large {
+.large,
+md-filled-button[size="large"],
+md-outlined-button[size="large"],
+md-elevated-button[size="large"],
+md-tonal-button[size="large"]
+[size="large"] {
   height: var(--large);
 }
 
+md-filled-button {
+  border-radius: 4px;
+}
 
 .success {
   --md-filled-button-container-color: var(--success);

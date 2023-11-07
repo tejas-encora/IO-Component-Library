@@ -1,5 +1,5 @@
 <template>
-  <md-filled-button :class="btnStatus">
+  <md-filled-button :class="btnStatus" :size="sizeClass">
     <slot></slot>
   </md-filled-button>
 </template>
@@ -17,6 +17,9 @@ export default {
   computed: {
     btnStatus() {
       return `${this.class}`;
+    },
+    sizeClass() {
+      return `${this.size}`;
     },
   }
 };

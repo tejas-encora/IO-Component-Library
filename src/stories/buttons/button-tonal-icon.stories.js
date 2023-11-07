@@ -1,6 +1,8 @@
 import '@material/web/button/filled-tonal-button.js'
 import IOIconButtonTonal from '@/components/Buttons/IOIconButtonTonal.vue'
 
+const template = '<IOIconButtonTonal :class=args.class :disabled=args.disabled :icon=args.icon>{{args.label}}</IOIconButtonTonal>'
+
 export default {
   title: 'UI/Atoms/Buttons/Tonal/With Icon',
   component: IOIconButtonTonal,
@@ -10,7 +12,7 @@ export default {
     setup() {
       return { args };
     },
-    template: `<IOIconButtonTonal v-bind="args">{{args.label}}</IOIconButtonElevated>`
+    template: template
   }),
   args: {
     disabled: false,
@@ -48,7 +50,6 @@ export const Default = {
     setup() {
       return { args };
     },
-    template: '<IOIconButtonTonal icon={{args.icon}} v-bind="args">{{args.label}}</IOIconButtonElevated>'
+    template: template
   }),
 };
-

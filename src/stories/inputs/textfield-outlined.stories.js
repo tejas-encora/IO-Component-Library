@@ -1,6 +1,7 @@
-
 import '@material/web/textfield/outlined-text-field.js'
 import IOTextFieldOutline from '@/components/Inputs/IOTextFieldOutline.vue'
+
+const template = '<IOTextFieldOutline :label=args.label :supporting-text=args.supportingText :value=args.value :disabled=args.disabled />'
 
 export default {
   title: 'UI/Atoms/Inputs/Textfield/Outlined',
@@ -11,27 +12,23 @@ export default {
     setup() {
       return { args };
     },
-    template: `<IOTextFieldOutline label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: template
   }),
   args: {
     disabled: false,
     label: 'Label',
-    icon: 'magnifying-glass',
-    'supporting-text': 'Supporting text'
+    supportingText: 'Supporting text',
   },
   argTypes: {
     label: {
       control: {
         type: 'text',
-      },
-      description: 'Field label',
-      defaultValue: 'Label'
+      }
     },
-    disabled: {
+    supportingText: {
       control: {
-        type: 'boolean'
-      },
-      defaultValue: false
+        type: 'text',
+      }
     }
   },
 };
@@ -42,7 +39,6 @@ export const Default = {
     setup() {
       return { args };
     },
-    
-    template: `<IOTextFieldOutline label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: template
   }),
 };

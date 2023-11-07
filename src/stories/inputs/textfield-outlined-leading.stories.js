@@ -1,22 +1,24 @@
 import '@material/web/textfield/outlined-text-field.js'
 import IOTextFieldOutlineLeading from '@/components/Inputs/IOTextFieldOutlineLeading.vue'
 
+const template = '<IOTextFieldOutlineLeading :icon=args.icon :label=args.label :supporting-text=args.supportingText :disabled=args.disabled />';
+
 export default {
   title: 'UI/Atoms/Inputs/Textfield/Outlined/With Icons/Leading',
   component: IOTextFieldOutlineLeading,
   tags: ['autodocs'],
   render: (args) => ({
-    components: { IOTextField },
+    components: { IOTextFieldOutlineLeading },
     setup() {
       return { args };
     },
-    template: `<IOTextFieldOutlineLeading label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: template
   }),
   args: {
     disabled: false,
     label: 'Label',
     icon: 'magnifying-glass',
-    'supporting-text': 'Supporting text'
+    supportingText: 'Supporting text',
   },
   argTypes: {
     label: {
@@ -29,7 +31,6 @@ export default {
         type: 'text'
       }
     },
-    disabled: 'boolean'
   },
 };
 
@@ -39,7 +40,7 @@ export const Leading = {
     setup() {
       return { args };
     },
-    template: `<IOTextFieldOutlineLeading label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: template
   }),
 };
 

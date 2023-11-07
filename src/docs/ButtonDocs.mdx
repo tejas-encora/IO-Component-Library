@@ -1,9 +1,10 @@
-import { Meta, Source } from '@storybook/blocks';
-import * as ButtonStories from '../stories/buttons/filled.stories';
+import { Meta, Source, Canvas, Controls } from '@storybook/blocks';
+import * as ButtonStories from '../stories/buttons/filled.stories.js';
 
 <Meta title="UI/ButtonStories" of={ButtonStories} />
 
-<Source code={`const thisIsCustomSource = true;
-if (isSyntaxHighlighted) {
-  console.log('syntax highlighting is working');
-}`} />
+<Source of={ButtonStories.Default}/>
+
+<Canvas of={ButtonStories.Default} />
+
+<Controls of={ButtonStories.Default} />

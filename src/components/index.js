@@ -39,6 +39,11 @@ export { default as IOIconButtonTonal } from '@/components/Buttons/IOIconButtonT
 export { default as IOButtonTonal } from '@/components/Buttons/IOButtonTonal.vue'
 
 /** 
+ * Fab * 
+*/
+export { default as IOFab } from '@/components/Buttons/IOFab.vue'
+
+/** 
  * Inputs * 
 */
 export { default as IOTextField } from '@/components/Inputs/IOTextField.vue';

@@ -1,6 +1,8 @@
 import '@material/web/textfield/outlined-text-field.js'
 import IOTextFieldOutlineTrailing from '@/components/Inputs/IOTextFieldOutlineTrailing.vue'
 
+const template = '<IOTextFieldOutlineTrailing :icon=args.icon :label=args.label :supporting-text=args.supportingText :disabled=args.disabled />'
+
 export default {
   title: 'UI/Atoms/Inputs/Textfield/Outlined/With Icons/Trailing',
   component: IOTextFieldOutlineTrailing,
@@ -10,13 +12,13 @@ export default {
     setup() {
       return { args };
     },
-    template: `<IOTextFieldOutlineTrailing label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: template
   }),
   args: {
     disabled: false,
     label: 'Label',
     icon: 'magnifying-glass',
-    'supporting-text': 'Supporting text'
+    supportingText: 'Supporting text'
   },
   argTypes: {
     label: {
@@ -28,8 +30,7 @@ export default {
       control: {
         type: 'text'
       }
-    },
-    disabled: 'boolean'
+    }
   },
 };
 
@@ -39,6 +40,6 @@ export const Default = {
     setup() {
       return { args };
     },
-    template: `<IOTextFieldOutlineTrailing label={{args.label}} supporting-text={{args.supportingtext}} v-bind="args"/>`
+    template: template
   }),
 };

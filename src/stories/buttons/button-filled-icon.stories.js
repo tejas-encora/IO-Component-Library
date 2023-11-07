@@ -1,6 +1,8 @@
 import '@material/web/button/filled-button.js'
 import IOIconButtonFilled from '@/components/Buttons/IOIconButtonFilled.vue'
 
+const template = '<IOIconButtonFilled :class=args.class :disabled=args.disabled :icon=args.icon>{{args.label}}</IOIconButtonFilled>'
+
 export default {
   title: 'UI/Atoms/Buttons/Filled/With Icon',
   component: IOIconButtonFilled,
@@ -10,7 +12,7 @@ export default {
     setup() {
       return { args };
     },
-    template: `<IOIconButtonFilled icon={{args.icon}} v-bind="args">{{args.label}}</IOIconButtonFilled>`
+    template: template
   }),
   args: {
     disabled: false,
@@ -48,7 +50,6 @@ export const Default = {
     setup() {
       return { args };
     },
-    template: '<IOIconButtonFilled icon={{args.icon}} v-bind="args">{{args.label}}</IOIconButtonFilled>'
+    template: template
   }),
 };
-

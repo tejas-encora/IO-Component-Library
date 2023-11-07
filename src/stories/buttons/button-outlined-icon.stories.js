@@ -1,5 +1,7 @@
-import '@material/web/button/filled-button.js'
+import '@material/web/button/outlined-button.js'
 import IOIconButtonOutline from '@/components/Buttons/IOIconButtonOutline.vue'
+
+const template = '<IOIconButtonOutline :icon=args.icon :class=args.class :disabled=args.disabled>{{args.label}}</IOIconButtonOutline>';
 
 export default {
   title: 'UI/Atoms/Buttons/Outlined/With Icon',
@@ -10,7 +12,7 @@ export default {
     setup() {
       return { args };
     },
-    template: `<IOIconButtonOutline label={{args.label}} v-bind="args"/>`
+    template: template
   }),
   args: {
     disabled: false,
@@ -38,7 +40,7 @@ export default {
       },
       description: 'FontAwesome icon name, i.e. circle-plus. No \'fa-\' suffix is needed',
     },
-    disabled: 'boolean'
+
   },
 };
 
@@ -48,7 +50,7 @@ export const Default = {
     setup() {
       return { args };
     },
-    template: '<IOIconButtonOutline icon={{args.icon}} v-bind="args">{{args.label}}</IOIconButtonOutline>'
+    template: template
   }),
 };
 
