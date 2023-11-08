@@ -23,7 +23,7 @@
   color: var(--md-sys-color-on-primary-container);
 }
 .secondary {
-  background-color: var(--md-sys-color-secondary);
+  background-color: var(--md-sys-color-secondary) !important;
 }
 .secondary-text {
   color: var(--md-sys-color-secondary);

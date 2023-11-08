@@ -6,7 +6,7 @@ import '@material/web/button/filled-button.js'
  * Buttons help people take actions, such as sending an email, sharing a document, or liking a comment.
  */
 
-const template = '<IOButtonFilled :size=args.size :class=args.class :disabled=args.disabled>{{args.label}}</IOButtonFilled>';
+const template = '<IOButtonFilled :class=args.class :status=args.status :size=args.size :disabled=args.disabled>{{args.label}}</IOButtonFilled>';
 
 export default {
     title: 'UI/Atoms/Buttons/Filled',
@@ -22,8 +22,9 @@ export default {
     args: {
         disabled: false,
         label: 'click me',
-        class: 'primary',
         size: 'medium',
+        status: 'none',
+        class: 'none',
     },
     argTypes: {
         label: {
@@ -31,17 +32,23 @@ export default {
                 type: 'text',
             },
         },
-        class: {
-            control: {
-                type: 'select',
-            },
-            options: ['success', 'error', 'warning', 'info', 'primary'],
-        },
         size: {
             control: {
                 type: 'select',
             },
             options: ['small', 'medium', 'large'],
+        },
+        status: {
+            control: {
+                type: 'select',
+            },
+            options: ['none', 'success', 'error', 'warning', 'info'],
+        },
+        class: {
+            control: {
+                type: 'select',
+            },
+            options: ['none','primary', 'secondary'],
         },
         onClick: { action: 'Button clicked' },
     },

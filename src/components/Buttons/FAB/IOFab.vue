@@ -16,7 +16,7 @@ export default {
     variant: {
       type: String,
       default: ''
-    }
+    },
   },
   computed: {
     iconClass() {

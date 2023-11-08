@@ -7,8 +7,8 @@ import IOButtonFilled from '@/components/Buttons/IOButtonFilled.vue'
 </script>
 
 <template>
-  <main>
-    <IOButtonFilled class="success">ssdfsdfdf</IOButtonFilled><br><br>
+  <main class="test">
+    <IOButtonFilled class="secondary" size="large">ssdfsdfdf</IOButtonFilled><br><br>
     <IOFab icon="plus-large">sdf</IOFab><br><br>
   </main>
 </template>

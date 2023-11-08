@@ -32,20 +32,31 @@ md-filled-button {
   border-radius: 4px;
 }
 
-.success {
-  --md-filled-button-container-color: var(--success);
+.success,
+[status="success"] {
+  --md-filled-button-container-color: var(--md-sys-color-success-light);
 }
-.error {
-  --md-filled-button-container-color: var(--error);
+.error,
+[status="error"] {
+  --md-filled-button-container-color: var(--md-sys-color-error-light);
   border-radius: 4px;
 }
-.warning {
-  --md-filled-button-container-color: var(--warning);
-  --md-sys-color-on-primary: var(--on-warning);
+.warning,
+[status="warning"] {
+  --md-filled-button-container-color: var(--md-sys-color-warning-light);
+  --md-sys-color-on-primary: var(--md-sys-color-on-warning-light);
 }
-.info {
-  --md-filled-button-container-color: var(--info);
-  --md-sys-color-on-primary: var(--on-info);
+.info,
+[status="info"] {
+  --md-filled-button-container-color: var(--md-sys-color-informational-light);
+  color: var(--md-sys-color-on-informational-container-light);
+}
+.secondary {
+  --md-filled-button-container-color: var(--md-sys-color-secondary);
+  color: var(--md-sys-color-on-secondary-container-light);
+}
+.primary {
+  background-color: var(--md-sys-color-primary);
 }
 
 

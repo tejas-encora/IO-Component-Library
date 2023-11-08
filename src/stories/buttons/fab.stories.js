@@ -1,12 +1,11 @@
 import IOFab from '@/components/Buttons/FAB/IOFab.vue'
 import '@material/web/fab/fab.js'
-
 /**
  * 
  * Buttons help people take actions, such as sending an email, sharing a document, or liking a comment.
  */
 
-const template = `<IOFab :icon=args.icon :size=args.size :variant=args.variant :lowered=args.lowered></IOFab>`;
+const template = `<IOFab :icon=args.icon :size=args.size :variant=args.variant :lowered=args.lowered />`;
 
 export default {
     title: 'UI/Atoms/Buttons/FAB',
@@ -56,18 +55,17 @@ export default {
             },
             description: 'Lower elevation',
         },
-        onClick: {action: 'Button clicked'},
-    },
+        onClick: { action: 'Button clicked' },
+    }
 };
 
-export const Default = {
-    render: (args) => ({
-        components: { IOFab },
-        setup() {
-            return { args };
-        },
-        template: template,
-    })
-};
+export const Default = (args) => ({
+    components: { IOFab },
+    setup() {
+        return { args };
+    },
+    template: template,
+});
+
 
 
