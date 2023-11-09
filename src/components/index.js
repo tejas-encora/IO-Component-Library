@@ -58,3 +58,5 @@ export { default as IOTextArea } from '@/components/Inputs/IOTextArea.vue';
 export { default as IOTextAreaOutline } from '@/components/Inputs/IOTextAreaOutline.vue';
 export { default as IOTextFieldPassword } from '@/components/Inputs/IOTextFieldPassword.vue';
 export { default as IOTextFieldOutlinePassword } from '@/components/Inputs/IOTextFieldOutlinePassword.vue';
+
+export { default as IOCheckbox } from '@/components/Checkbox/IOCheckbox.vue';

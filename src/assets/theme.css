@@ -36,11 +36,17 @@ md-filled-button {
 [status="success"] {
   --md-filled-button-container-color: var(--md-sys-color-success-light);
 }
-.error,
+/* .error,
 [status="error"] {
   --md-filled-button-container-color: var(--md-sys-color-error-light);
   border-radius: 4px;
+} */
+md-checkbox.error {
+  --md-checkbox-outline-color: var(--md-sys-color-error-light);
+  border-radius: 2px;
+  --md-checkbox-hover-outline-color: var(--md-sys-color-error-light);
 }
+
 .warning,
 [status="warning"] {
   --md-filled-button-container-color: var(--md-sys-color-warning-light);
@@ -83,3 +89,7 @@ md-filled-button {
 /* md-filled-text-field .label.resting::part(native) {
   top: 1px !important;
 } */
+
+.test {
+  background-color: var(--md-surfaces-surface1-test);
+}

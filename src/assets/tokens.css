@@ -563,4 +563,11 @@
   --md-sys-typescale-caption-font-size: 12px;
   --md-sys-typescale-caption-letter-spacing: 5%;
   --md-sys-typescale-caption-line-height: 20x;
+
+
+    --surfacergb1: rgba(248, 250, 250, 1.0);
+  --surfacergb2: rgba(84, 77, 199, 0.05);
+   --md-surfaces-surface1-test: var(--surfacergb1), var(--surfacergb2);
+
+   --md-checkbox-outline-color: var(--md-sys-color-error-light)
 }
