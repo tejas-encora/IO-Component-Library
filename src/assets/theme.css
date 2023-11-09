@@ -36,16 +36,16 @@ md-filled-button {
 [status="success"] {
   --md-filled-button-container-color: var(--md-sys-color-success-light);
 }
-/* .error,
+.error,
 [status="error"] {
   --md-filled-button-container-color: var(--md-sys-color-error-light);
   border-radius: 4px;
-} */
-md-checkbox.error {
+}
+/* md-checkbox.error {
   --md-checkbox-outline-color: var(--md-sys-color-error-light);
   border-radius: 2px;
   --md-checkbox-hover-outline-color: var(--md-sys-color-error-light);
-}
+} */
 
 .warning,
 [status="warning"] {
@@ -92,4 +92,6 @@ md-checkbox.error {
 
 .test {
   background-color: var(--md-surfaces-surface1-test);
+  /* width: 500px;
+  height: 200px; */
 }

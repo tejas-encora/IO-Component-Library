@@ -60,3 +60,7 @@ export { default as IOTextFieldPassword } from '@/components/Inputs/IOTextFieldP
 export { default as IOTextFieldOutlinePassword } from '@/components/Inputs/IOTextFieldOutlinePassword.vue';
 
 export { default as IOCheckbox } from '@/components/Checkbox/IOCheckbox.vue';
+/** 
+ * Feedback * 
+*/
+export { default as IOBadge } from '@/components/Checkbox/IOBadge.vue';

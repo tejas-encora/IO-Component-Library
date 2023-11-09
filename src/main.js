@@ -11,7 +11,6 @@ import '@material/web/fab/fab.js'
 
 import '@material/web/textfield/filled-text-field.js'
 import '@material/web/textfield/outlined-text-field.js'
-
 import '@material/web/checkbox/checkbox.js'
 import '@fontsource/lato/300.css'
 import '@fontsource/lato/400.css'

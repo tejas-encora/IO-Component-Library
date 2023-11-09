@@ -38,8 +38,3 @@ export default {
 };
 
 </script>
-<style>
-.test {
-  background-color: var(--md-surfaces-surface1-light)
-}
-</style>
