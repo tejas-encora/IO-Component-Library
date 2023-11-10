@@ -21,7 +21,7 @@ export default {
     args: {
         label: 'Avatar Chip',
         variant: false,
-        src:  'https://picsum.photos/200',
+        src:  'avatar.png',
     },
     argTypes: {
         variant: {
