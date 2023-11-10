@@ -1,0 +1,69 @@
+:root {
+
+/*
+* This file is for reference purposes only
+********************************/
+
+/* Default Chips*/
+  --md-input-chip-container-height: 32px;
+  --md-input-chip-container-shape: 8px;
+  --md-input-chip-disabled-label-text-color: var(--md-sys-color-on-surface, #1d1b20);
+  --md-input-chip-disabled-label-text-opacity: 0.38;
+  --md-input-chip-disabled-selected-container-color: var(--md-sys-color-on-surface, #1d1b20);
+  --md-input-chip-disabled-selected-container-opacity: 0.12;
+  --md-input-chip-label-text-font: var(--md-sys-typescale-label-large-font, var(--md-ref-typeface-plain, Roboto));
+  --md-input-chip-label-text-line-height: var(--md-sys-typescale-label-large-line-height, 1.25rem);
+  --md-input-chip-label-text-size: var(--md-sys-typescale-label-large-size, 0.875rem);
+  --md-input-chip-label-text-weight: var(--md-sys-typescale-label-large-weight, var(--md-ref-typeface-weight-medium, 500));
+  --md-input-chip-selected-container-color: var(--md-sys-color-secondary-container, #e8def8);
+  --md-input-chip-selected-focus-label-text-color: var(--md-sys-color-on-secondary-container, #1d192b);
+  --md-input-chip-selected-hover-label-text-color: var(--md-sys-color-on-secondary-container, #1d192b);
+  --md-input-chip-selected-hover-state-layer-color: var(--md-sys-color-on-secondary-container, #1d192b);
+  --md-input-chip-selected-hover-state-layer-opacity: 0.08;
+  --md-input-chip-selected-label-text-color: var(--md-sys-color-on-secondary-container, #1d192b);
+  --md-input-chip-selected-outline-width: 0px;
+  --md-input-chip-selected-pressed-label-text-color: var(--md-sys-color-on-secondary-container, #1d192b);
+  --md-input-chip-selected-pressed-state-layer-color: var(--md-sys-color-on-secondary-container, #1d192b);
+  --md-input-chip-selected-pressed-state-layer-opacity: 0.12;
+  --md-input-chip-disabled-outline-color: var(--md-sys-color-on-surface, #1d1b20);
+  --md-input-chip-disabled-outline-opacity: 0.12;
+  --md-input-chip-focus-label-text-color: var(--md-sys-color-on-surface-variant, #49454f);
+  --md-input-chip-focus-outline-color: var(--md-sys-color-on-surface-variant, #49454f);
+  --md-input-chip-hover-label-text-color: var(--md-sys-color-on-surface-variant, #49454f);
+  --md-input-chip-hover-state-layer-color: var(--md-sys-color-on-surface-variant, #49454f);
+  --md-input-chip-hover-state-layer-opacity: 0.08;
+  --md-input-chip-label-text-color: var(--md-sys-color-on-surface-variant, #49454f);
+  --md-input-chip-outline-color: var(--md-sys-color-outline, #79747e);
+  --md-input-chip-outline-width: 1px;
+  --md-input-chip-pressed-label-text-color: var(--md-sys-color-on-surface-variant, #49454f);
+  --md-input-chip-pressed-state-layer-color: var(--md-sys-color-on-surface-variant, #49454f);
+  --md-input-chip-pressed-state-layer-opacity: 0.12;
+  --md-input-chip-avatar-shape: 9999px;
+  --md-input-chip-avatar-size: 24px;
+  --md-input-chip-disabled-avatar-opacity: 0.38;
+  --md-input-chip-disabled-leading-icon-color: var(--md-sys-color-on-surface, #1d1b20);
+  --md-input-chip-disabled-leading-icon-opacity: 0.38;
+  --md-input-chip-icon-size: 18px;
+  --md-input-chip-selected-focus-leading-icon-color: var(--md-sys-color-primary, #6750a4);
+  --md-input-chip-selected-hover-leading-icon-color: var(--md-sys-color-primary, #6750a4);
+  --md-input-chip-selected-leading-icon-color: var(--md-sys-color-primary, #6750a4);
+  --md-input-chip-selected-pressed-leading-icon-color: var(--md-sys-color-primary, #6750a4);
+  --md-input-chip-focus-leading-icon-color: var(--md-sys-color-primary, #6750a4);
+  --md-input-chip-hover-leading-icon-color: var(--md-sys-color-primary, #6750a4);
+  --md-input-chip-leading-icon-color: var(--md-sys-color-primary, #6750a4);
+  --md-input-chip-pressed-leading-icon-color: var(--md-sys-color-primary, #6750a4);
+  --md-input-chip-disabled-trailing-icon-color: var(--md-sys-color-on-surface, #1d1b20);
+  --md-input-chip-disabled-trailing-icon-opacity: 0.38;
+  --md-input-chip-selected-focus-trailing-icon-color: var(--md-sys-color-on-secondary-container, #1d192b);
+  --md-input-chip-selected-hover-trailing-icon-color: var(--md-sys-color-on-secondary-container, #1d192b);
+  --md-input-chip-selected-pressed-trailing-icon-color: var(--md-sys-color-on-secondary-container, #1d192b);
+  --md-input-chip-selected-trailing-icon-color: var(--md-sys-color-on-secondary-container, #1d192b);
+  --md-input-chip-focus-trailing-icon-color: var(--md-sys-color-on-surface-variant, #49454f);
+  --md-input-chip-hover-trailing-icon-color: var(--md-sys-color-on-surface-variant, #49454f);
+  --md-input-chip-pressed-trailing-icon-color: var(--md-sys-color-on-surface-variant, #49454f);
+  --md-input-chip-trailing-icon-color: var(--md-sys-color-on-surface-variant, #49454f);
+  --md-input-chip-container-shape-start-start: var(--md-input-chip-container-shape-start-start, var(--md-input-chip-container-shape));
+  --md-input-chip-container-shape-start-end: var(--md-input-chip-container-shape-start-end, var(--md-input-chip-container-shape));
+  --md-input-chip-container-shape-end-end: var(--md-input-chip-container-shape-end-end, var(--md-input-chip-container-shape));
+  --md-input-chip-container-shape-end-start: var(--md-input-chip-container-shape-end-start, var(--md-input-chip-container-shape));
+}

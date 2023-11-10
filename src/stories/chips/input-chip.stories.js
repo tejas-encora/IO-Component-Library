@@ -1,18 +1,18 @@
 
-import IOChipInputTrailing from '@/components/Chips/IOChipInputTrailing.vue'
+import IOChipInput from '@/components/Chips/IOChipInput.vue'
 import '@material/web/chips/input-chip.js'
 
-const template = '<IOChipInputTrailing :label=args.label :variant=args.variant />';
+const template = '<IOChipInput :label=args.label :variant=args.variant :notrail=args.notrail />';
 /**
  * 
- * Buttons help people take actions, such as sending an email, sharing a document, or liking a comment.
+ * Chips help people enter information, make selections, filter content, or trigger actions.  
  */
 export default {
-    title: 'UI/Atoms/Chips',
-    component: IOChipInputTrailing,
+    title: 'UI/Atoms/Chips/Input',
+    component: IOChipInput,
     tags: ['autodocs'],
     render: (args) => ({
-        components: { IOChipInputTrailing },
+        components: { IOChipInput },
         setup() {
             return { args };
         },
@@ -20,7 +20,8 @@ export default {
     }),
     args: {
         label: 'Input Chip',
-        variant: false
+        variant: false,
+        notrail: false,
     },
     argTypes: {
         label: {
@@ -33,12 +34,18 @@ export default {
                 type: 'boolean',
             },
         },
+        notrail: {
+            control: {
+                type: 'boolean',
+            },
+            description: 'Show/hide the trailing icon'
+        },
     },
 };
 
 export const Default = {
     render: (args) => ({
-        components: { IOChipInputTrailing },
+        components: { IOChipInput },
         setup() {
             return { args };
         },

@@ -46,7 +46,10 @@ export { default as IOFab } from '@/components/Buttons/IOFab.vue'
 /** 
  * Chips * 
 */
-export { default as IOChipInputTrailing } from '@/components/Chips/IOChipInputTrailing.vue'
+export { default as IOChipInput } from '@/components/Chips/IOChipInput.vue'
+export { default as IOChipInputLeading } from '@/components/Chips/IOChipInputLeading.vue'
+export { default as IOChipInputAvatar } from '@/components/Chips/IOChipInputAvatar.vue'
+
 /** 
  * Inputs * 
 */

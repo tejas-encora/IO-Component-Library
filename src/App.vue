@@ -3,7 +3,8 @@
 import IOFab from '@/components/Buttons/FAB/IOFab.vue'
 import IOButtonFilled from '@/components/Buttons/IOButtonFilled.vue'
 import IOCheckbox from '@/components/Checkbox/IOCheckbox.vue'
-import IOChipInputTrailing from '@/components/Chips/IOChipInputTrailing.vue'
+import IOChipInput from '@/components/Chips/IOChipInput.vue'
+import IOChipInputAvatar from '@/components/Chips/IOChipInputAvatar.vue'
 // import IconGrid from '@/components/IconGrid.vue'
 // import ColorGrid from '@/components/ColorGrid.vue'
 </script>
@@ -13,6 +14,7 @@ import IOChipInputTrailing from '@/components/Chips/IOChipInputTrailing.vue'
     <IOButtonFilled class="secondary" size="large">Clickage</IOButtonFilled><br><br>
     <IOFab icon="plus-large" /><br><br>
     <IOCheckbox /><br><br>
-    <IOChipInputTrailing label="Input Chip"/><br><br>
+    <IOChipInput label="Input Chip"/><br><br>
+    <IOChipInputAvatar label="Avatar" src="https://picsum.photos/200" />
   </div>
 </template>
