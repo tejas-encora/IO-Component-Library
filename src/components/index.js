@@ -41,7 +41,7 @@ export { default as IOButtonTonal } from '@/components/Buttons/IOButtonTonal.vue
 /** 
  * Fab * 
 */
-export { default as IOFab } from '@/components/Buttons/IOFab.vue'
+export { default as IOFab } from '@/components/Buttons/FAB/IOFab.vue'
 
 /** 
  * Chips * 
@@ -70,4 +70,4 @@ export { default as IOCheckbox } from '@/components/Checkbox/IOCheckbox.vue';
 /** 
  * Feedback * 
 */
-export { default as IOBadge } from '@/components/Checkbox/IOBadge.vue';
+export { default as IOBadge } from '@/components/Badge/IOBadge.vue';
