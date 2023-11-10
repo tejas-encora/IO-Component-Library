@@ -10,14 +10,14 @@ md-filled-button[size="small"],
 md-outlined-button[size="small"],
 md-elevated-button[size="small"],
 md-tonal-button[size="small"] {
-  height: var(--small);
+  height: var(--small)
 }
 .medium,
 md-filled-button[size="medium"],
 md-outlined-button[size="medium"],
 md-elevated-button[size="medium"],
 md-tonal-button[size="medium"] {
-  height: var(--medium);
+  height: var(--medium)
 }
 .large,
 md-filled-button[size="large"],
@@ -25,11 +25,11 @@ md-outlined-button[size="large"],
 md-elevated-button[size="large"],
 md-tonal-button[size="large"]
 [size="large"] {
-  height: var(--large);
+  height: var(--large)
 }
 
 md-filled-button {
-  border-radius: 4px;
+  border-radius: 4px
 }
 
 .success,
@@ -39,7 +39,7 @@ md-filled-button {
 .error,
 [status="error"] {
   --md-filled-button-container-color: var(--md-sys-color-error-light);
-  border-radius: 4px;
+  border-radius: 4px
 }
 /* md-checkbox.error {
   --md-checkbox-outline-color: var(--md-sys-color-error-light);
@@ -50,22 +50,25 @@ md-filled-button {
 .warning,
 [status="warning"] {
   --md-filled-button-container-color: var(--md-sys-color-warning-light);
-  --md-sys-color-on-primary: var(--md-sys-color-on-warning-light);
+  --md-sys-color-on-primary: var(--md-sys-color-on-warning-light)
 }
 .info,
 [status="info"] {
   --md-filled-button-container-color: var(--md-sys-color-informational-light);
-  color: var(--md-sys-color-on-informational-container-light);
+  color: var(--md-sys-color-on-informational-container-light)
 }
 .secondary {
   --md-filled-button-container-color: var(--md-sys-color-secondary);
   color: var(--md-sys-color-on-secondary-container-light);
 }
 .primary {
-  background-color: var(--md-sys-color-primary);
+  background-color: var(--md-sys-color-primary)
 }
 
-
+[variant="true"] {
+  background-color: var(--md-sys-color-primary-container-light);
+  --md-input-chip-label-text-color: var(--md-sys-color-on-primary-container-light)
+}
 
 /* 
 .label.resting:not(.hidden) {

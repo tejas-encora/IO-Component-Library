@@ -4,7 +4,7 @@ export default defineConfig({
     /**
      * Configure a public assets directory.
      */
-    publicDir: "public",
+    publicDir: "@/public",
 
     /**
      * Set up a custom component to wrap around previewed components.

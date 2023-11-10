@@ -563,7 +563,15 @@
   --md-sys-typescale-caption-letter-spacing: 5%;
   --md-sys-typescale-caption-line-height: 20x;
 
+  /* chips*/
+   --md-input-chip-container-height: 24px;
+   --md-input-chip-container-shape: 24px;
+   --md-input-chip-label-text-size: 12px;
+  --md-input-chip-icon-size: 12px;
 
+
+
+   /* testing */
     --surfacergb1: rgba(27, 30, 31, 1.0);
   --surfacergb2: rgba(196, 192, 255, 0.05);
    --md-surfaces-surface1-test: var(--surfacergb1), var(--surfacergb2);

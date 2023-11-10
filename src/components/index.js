@@ -44,6 +44,10 @@ export { default as IOButtonTonal } from '@/components/Buttons/IOButtonTonal.vue
 export { default as IOFab } from '@/components/Buttons/IOFab.vue'
 
 /** 
+ * Chips * 
+*/
+export { default as IOChipInputTrailing } from '@/components/Chips/IOChipInputTrailing.vue'
+/** 
  * Inputs * 
 */
 export { default as IOTextField } from '@/components/Inputs/IOTextField.vue';
