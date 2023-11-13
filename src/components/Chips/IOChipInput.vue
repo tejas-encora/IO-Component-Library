@@ -1,5 +1,5 @@
 <template>
-  <md-input-chip :variant="variantBool" :close="closeBool"></md-input-chip>
+  <md-input-chip :variant="variantBool" :close="closeBool" :elevated="setElevation"></md-input-chip>
 </template>
 
 <script>
@@ -8,11 +8,15 @@ export default {
   props: {
     variant: {
       type: Boolean,
-      default: false
+      default: false,
     },
     close: {
       type: Boolean,
-      default: false
+      default: false,
+    },
+    elevation: {
+      type: Boolean,
+      default: false,
     }
   },
   computed: {
@@ -21,6 +25,9 @@ export default {
     },
     closeBool() {
       return `${this.close}`
+    },
+        setElevation() {
+      return `${this.elevation}`
     },
   }
 };
