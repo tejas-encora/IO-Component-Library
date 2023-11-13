@@ -1,5 +1,5 @@
 <template>
-  <md-input-chip :variant="variantBool" :notrail="trailingBool">
+  <md-input-chip :variant="variantBool" :close="closeBool">
     <i :class="iconClass" slot="icon" />
   </md-input-chip>
 </template>
@@ -16,7 +16,7 @@ export default {
       type: Boolean,
       default: false
     },
-    notrail: {
+    close: {
       type: Boolean,
       default: false,
     }
@@ -28,8 +28,8 @@ export default {
     iconClass() {
       return `fa-light fa-${this.icon}`;
     },
-        trailingBool() {
-      return `${this.notrail}`;
+    closeBool() {
+      return `${this.close}`;
     },
   }
 };

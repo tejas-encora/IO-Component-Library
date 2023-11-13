@@ -1,5 +1,5 @@
 <template>
-  <md-input-chip :variant="variantBool" :notrail="trailingBool"></md-input-chip>
+  <md-input-chip :variant="variantBool" :close="closeBool"></md-input-chip>
 </template>
 
 <script>
@@ -10,7 +10,7 @@ export default {
       type: Boolean,
       default: false
     },
-    notrail: {
+    close: {
       type: Boolean,
       default: false
     }
@@ -19,8 +19,8 @@ export default {
     variantBool() {
       return `${this.variant}`
     },
-    trailingBool() {
-      return `${this.notrail}`
+    closeBool() {
+      return `${this.close}`
     },
   }
 };

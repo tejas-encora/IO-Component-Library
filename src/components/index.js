@@ -48,7 +48,7 @@ export { default as IOFab } from '@/components/Buttons/FAB/IOFab.vue'
 */
 export { default as IOChipInput } from '@/components/Chips/IOChipInput.vue'
 export { default as IOChipInputLeading } from '@/components/Chips/IOChipInputLeading.vue'
-export { default as IOChipInputAvatar } from '@/components/Chips/IOChipInputAvatar.vue'
+export { default as IOChipInputIconAvatar } from '@/components/Chips/IOChipInputIconAvatar.vue'
 
 /** 
  * Inputs * 

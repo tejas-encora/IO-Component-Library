@@ -1,5 +1,5 @@
 <template>
-  <md-input-chip :variant="variantBool" avatar>
+  <md-input-chip :variant="variantBool" avatar :close="closeBool">
     <img slot="icon" :src="imgSrc" alt="avatar" />
   </md-input-chip>
 </template>
@@ -14,6 +14,10 @@ export default {
     },
     src: {
       type: String,
+    },
+    close: {
+      type: Boolean,
+      default: false,
     }
   },
   computed: {
@@ -22,6 +26,9 @@ export default {
     },
     imgSrc() {
       return `${this.src}`
+    },
+    closeBool() {
+      return `${this.close}`
     },
   }
 };

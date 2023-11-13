@@ -2,7 +2,7 @@
 import IOChipInput from '@/components/Chips/IOChipInput.vue'
 import '@material/web/chips/input-chip.js'
 
-const template = '<IOChipInput :label=args.label :variant=args.variant :notrail=args.notrail />';
+const template = '<IOChipInput :label=args.label :variant=args.variant :close=args.close />';
 /**
  * 
  * Chips help people enter information, make selections, filter content, or trigger actions.  
@@ -21,7 +21,7 @@ export default {
     args: {
         label: 'Input Chip',
         variant: false,
-        notrail: false,
+        close: false,
     },
     argTypes: {
         label: {
@@ -34,11 +34,11 @@ export default {
                 type: 'boolean',
             },
         },
-        notrail: {
+        close: {
             control: {
                 type: 'boolean',
             },
-            description: 'Show/hide the trailing icon'
+            description: 'Show close icon',
         },
     },
 };

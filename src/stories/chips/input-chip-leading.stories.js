@@ -2,7 +2,7 @@
 import IOChipInputLeading from '@/components/Chips/IOChipInputLeading.vue'
 import '@material/web/chips/input-chip.js'
 
-const template = '<IOChipInputLeading :label=args.label :variant=args.variant :icon=args.icon :notrail=args.notrail />';
+const template = '<IOChipInputLeading :label=args.label :variant=args.variant :icon=args.icon :close=args.close />';
 /**
  * 
  * Chips help people enter information, make selections, filter content, or trigger actions.  
@@ -22,7 +22,7 @@ export default {
         label: 'Leading Icon',
         icon: 'book-sparkles',
         variant: false,
-        notrail: false
+        close: false
     },
     argTypes: {
         label: {
@@ -35,11 +35,11 @@ export default {
                 type: 'boolean',
             },
         },
-        notrail: {
+        close: {
             control: {
                 type: 'boolean',
             },
-            description: 'Show/hide the trailing icon'
+            description: 'Show close icon'
         },
         icon: {
             control: {
