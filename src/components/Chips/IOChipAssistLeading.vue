@@ -1,5 +1,5 @@
 <template>
-  <md-assist-chip>
+  <md-assist-chip :class="{ 'elevated': isElevated}">
     <i :class="setIcon" slot="icon" />
   </md-assist-chip>
 </template>
@@ -17,6 +17,9 @@ export default {
     setIcon() {
       return `fa-light fa-${this.icon}`;
     },
+    isElevated() {
+      return this.elevated;
+    }
   }
 };
 </script>

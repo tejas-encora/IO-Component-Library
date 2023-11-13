@@ -1,8 +1,8 @@
 
 import IOChipAssistLeading from '@/components/Chips/IOChipAssistLeading.vue'
-import '@material/web/chips/input-chip.js'
+import '@material/web/chips/assist-chip.js'
 
-const template = '<IOChipAssistLeading :label=args.label :variant=args.variant :icon=args.icon :close=args.close />';
+const template = '<IOChipAssistLeading :label=args.label :variant=args.variant :icon=args.icon :close=args.close :elevated=args.elevated :disabled=args.disabled />';
 /**
  * 
  * Chips help people enter information, make selections, filter content, or trigger actions.  
@@ -16,11 +16,13 @@ export default {
         setup() {
             return { args };
         },
-        template: template,
+        template,
     }),
     args: {
         label: 'Leading Icon',
         icon: 'book-sparkles',
+        elevated: false,
+        disabled: false,
     },
     argTypes: {
         label: {
@@ -33,6 +35,12 @@ export default {
                 type: 'text',
             },
         },
+        elevated: {
+            control: {
+                type: 'boolean',
+            },
+            description: 'Add elevation'
+        },
     },
 };
 
@@ -42,6 +50,6 @@ export const Default = {
         setup() {
             return { args };
         },
-        template: template,
+        template,
     })
 };

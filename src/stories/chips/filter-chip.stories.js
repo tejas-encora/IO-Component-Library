@@ -1,27 +1,27 @@
 
-import IOChipInput from '@/components/Chips/IOChipInput.vue'
-import '@material/web/chips/input-chip.js'
+import IOChipFilter from '@/components/Chips/IOChipFilter.vue'
+import '@material/web/chips/filter-chip.js'
 
-const template = '<IOChipInput :label=args.label :variant=args.variant :close=args.close />';
+const template = '<IOChipFilter :label=args.label :selected=args.selected :elevated=args.elevated />';
 /**
  * 
  * Chips help people enter information, make selections, filter content, or trigger actions.  
  */
 export default {
-    title: 'UI/Atoms/Chips/Input',
-    component: IOChipInput,
+    title: 'UI/Atoms/Chips/Filter',
+    component: IOChipFilter,
     tags: ['autodocs'],
     render: (args) => ({
-        components: { IOChipInput },
+        components: { IOChipFilter },
         setup() {
             return { args };
         },
         template,
     }),
     args: {
-        label: 'Input Chip',
-        variant: false,
-        close: false,
+        label: 'Filter Chip',
+        selected: false,
+        elevated: false,
     },
     argTypes: {
         label: {
@@ -29,23 +29,22 @@ export default {
                 type: 'text',
             },
         },
-        variant: {
+        selected: {
             control: {
                 type: 'boolean',
             },
         },
-        close: {
+        elevated: {
             control: {
                 type: 'boolean',
             },
-            description: 'Make removable'
         },
     },
 };
 
 export const Default = {
     render: (args) => ({
-        components: { IOChipInput },
+        components: { IOChipFilter },
         setup() {
             return { args };
         },
