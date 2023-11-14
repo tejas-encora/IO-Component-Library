@@ -17,7 +17,7 @@ export default {
         setup() {
             return { args };
         },
-        template: template,
+        template,
     }),
     args: {
         disabled: false,
@@ -46,6 +46,6 @@ export const Default = {
         setup() {
             return { args };
         },
-        template: template,
+        template,
     })
 };

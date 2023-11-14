@@ -16,7 +16,7 @@ export default {
         setup() {
             return { args };
         },
-        template: template,
+        template,
     }),
     args: {
         label: 'Leading Icon',
@@ -55,6 +55,6 @@ export const Default = {
         setup() {
             return { args };
         },
-        template: template,
+        template,
     })
 };

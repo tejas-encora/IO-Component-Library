@@ -1,6 +1,6 @@
 <template>
   <md-assist-chip>
-    <img slot="icon" :src="imgSrc" alt="" />
+    <img slot="icon" :src="imgSrc" alt="" :class="{ elevated: isElevated }" />
   </md-assist-chip>
 </template>
 
@@ -16,6 +16,9 @@ export default {
     imgSrc() {
       return `${this.src}`
     },
+    isElevated() {
+      return this.elevated;
+    }
   }
 };
 </script>

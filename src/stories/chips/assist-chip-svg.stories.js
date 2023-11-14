@@ -2,7 +2,7 @@
 import IOChipAssistSvg from '@/components/Chips/IOChipAssistSvg.vue'
 import '@material/web/chips/assist-chip.js'
 
-const template = '<IOChipAssistSvg :label=args.label :src=args.src :elevated=args.elevated />';
+const template = '<IOChipAssistSvg :label=args.label :src=args.src :elevated=args.elevated :disabled=args.disabled />';
 /**
  * 
  * Chips help people enter information, make selections, filter content, or trigger actions.  
@@ -16,12 +16,13 @@ export default {
         setup() {
             return { args };
         },
-        template: template,
+        template,
     }),
     args: {
         label: 'Leading Icon',
         src: 'IO.svg',
         elevated: false,
+        disabled: false,
     },
     argTypes: {
         label: {
@@ -49,6 +50,6 @@ export const Default = {
         setup() {
             return { args };
         },
-        template: template,
+        template,
     })
 };

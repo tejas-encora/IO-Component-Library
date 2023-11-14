@@ -16,7 +16,7 @@ export default {
         setup() {
             return { args };
         },
-        template: template,
+        template,
     }),
     args: {
         label: '3',
@@ -44,6 +44,6 @@ export const Default = {
         setup() {
             return { args };
         },
-        template: template,
+        template,
     })
 };

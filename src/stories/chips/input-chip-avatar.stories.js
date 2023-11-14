@@ -16,7 +16,7 @@ export default {
         setup() {
             return { args };
         },
-        template: template,
+        template,
     }),
     args: {
         label: 'Avatar Chip',
@@ -50,7 +50,7 @@ export const Default = {
         setup() {
             return { args };
         },
-        template: template,
+        template,
     })
 };
 
