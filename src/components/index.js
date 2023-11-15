@@ -47,12 +47,11 @@ export { default as IOFab } from '@/components/Buttons/FAB/IOFab.vue'
  * Chips * 
 */
 export { default as IOChipInput } from '@/components/Chips/IOChipInput.vue'
-export { default as IOChipInputLeading } from '@/components/Chips/IOChipInputLeading.vue'
-export { default as IOChipInputIconAvatar } from '@/components/Chips/IOChipInputIconAvatar.vue'
+// export { default as IOChipInputLeading } from '@/components/Chips/IOChipInputLeading.vue'
+// export { default as IOChipInputIconAvatar } from '@/components/Chips/IOChipInputIconAvatar.vue'
 export { default as IOChipAssist } from '@/components/Chips/IOChipAssist.vue'
 export { default as IOChipAssistLeading } from '@/components/Chips/IOChipAssistLeading.vue'
 export { default as IOChipAssistSvg } from '@/components/Chips/IOChipAssistSvg.vue'
-export { default as IOChipAssist } from '@/components/Chips/IOChipAssist.vue'
 export { default as IOChipInputIcon } from '@/components/Chips/IOChipInputIcon.vue'
 export { default as IOChipInputIconRemove } from '@/components/Chips/IOChipInputIconRemove.vue'
 /** 
