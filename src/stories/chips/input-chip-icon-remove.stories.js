@@ -1,29 +1,27 @@
 
-import IOChipFilter from '@/components/Chips/IOChipFilter.vue'
-import '@material/web/chips/filter-chip.js'
+import IOChipInputIconRemove from '@/components/Chips/IOChipInputIconRemove.vue'
+import '@material/web/chips/input-chip.js'
 
-const template = '<IOChipFilter :label=args.label :removable=args.removable :selected=args.selected :elevated=args.elevated :disabled=args.disabled />';
+const template = '<IOChipInputIconRemove :label=args.label :selected=args.selected :icon=args.icon />';
 /**
  * 
  * Chips help people enter information, make selections, filter content, or trigger actions.  
  */
 export default {
-    title: 'UI/Atoms/Chips/Filter',
-    component: IOChipFilter,
+    title: 'UI/Atoms/Chips/Input/Icon Removable',
+    component: IOChipInputIconRemove,
     tags: ['autodocs'],
     render: (args) => ({
-        components: { IOChipFilter },
+        components: { IOChipInputIconRemove },
         setup() {
             return { args };
         },
         template,
     }),
     args: {
-        label: 'Filter Chip',
+        label: 'Icon Removable',
+        icon: 'book-sparkles',
         selected: false,
-        elevated: false,
-        disabled: false,
-        removable: false,
     },
     argTypes: {
         label: {
@@ -36,14 +34,9 @@ export default {
                 type: 'boolean',
             },
         },
-        elevated: {
+        icon: {
             control: {
-                type: 'boolean',
-            },
-        },
-        removable: {
-            control: {
-                type: 'boolean',
+                type: 'text',
             },
         },
     },
@@ -51,7 +44,7 @@ export default {
 
 export const Default = {
     render: (args) => ({
-        components: { IOChipFilter },
+        components: { IOChipInputIconRemove },
         setup() {
             return { args };
         },

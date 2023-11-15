@@ -52,7 +52,9 @@ export { default as IOChipInputIconAvatar } from '@/components/Chips/IOChipInput
 export { default as IOChipAssist } from '@/components/Chips/IOChipAssist.vue'
 export { default as IOChipAssistLeading } from '@/components/Chips/IOChipAssistLeading.vue'
 export { default as IOChipAssistSvg } from '@/components/Chips/IOChipAssistSvg.vue'
-export { default as IOChipFilter } from '@/components/Chips/IOChipAssist.vue'
+export { default as IOChipAssist } from '@/components/Chips/IOChipAssist.vue'
+export { default as IOChipInputIcon } from '@/components/Chips/IOChipInputIcon.vue'
+export { default as IOChipInputIconRemove } from '@/components/Chips/IOChipInputIconRemove.vue'
 /** 
  * Inputs * 
 */

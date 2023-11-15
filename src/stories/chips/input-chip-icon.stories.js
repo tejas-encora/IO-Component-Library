@@ -1,28 +1,27 @@
 
-import IOChipInputLeading from '@/components/Chips/IOChipInputLeading.vue'
+import IOChipInputIcon from '@/components/Chips/IOChipInputIcon.vue'
 import '@material/web/chips/input-chip.js'
 
-const template = '<IOChipInputLeading :label=args.label :variant=args.variant :icon=args.icon :close=args.close />';
+const template = '<IOChipInputIcon :label=args.label :selected=args.selected :icon=args.icon />';
 /**
  * 
  * Chips help people enter information, make selections, filter content, or trigger actions.  
  */
 export default {
-    title: 'UI/Atoms/Chips/Input/Leading Icon',
-    component: IOChipInputLeading,
+    title: 'UI/Atoms/Chips/Input/Icon',
+    component: IOChipInputIcon,
     tags: ['autodocs'],
     render: (args) => ({
-        components: { IOChipInputLeading },
+        components: { IOChipInputIcon },
         setup() {
             return { args };
         },
         template,
     }),
     args: {
-        label: 'Leading Icon',
+        label: 'With Icon',
         icon: 'book-sparkles',
-        variant: false,
-        close: false
+        selected: false,
     },
     argTypes: {
         label: {
@@ -30,16 +29,10 @@ export default {
                 type: 'text',
             },
         },
-        variant: {
+        selected: {
             control: {
                 type: 'boolean',
             },
-        },
-        close: {
-            control: {
-                type: 'boolean',
-            },
-            description: 'Show close icon'
         },
         icon: {
             control: {
@@ -51,7 +44,7 @@ export default {
 
 export const Default = {
     render: (args) => ({
-        components: { IOChipInputLeading },
+        components: { IOChipInputIcon },
         setup() {
             return { args };
         },

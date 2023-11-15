@@ -2,7 +2,7 @@
 import IOChipInputAvatar from '@/components/Chips/IOChipInputAvatar.vue'
 import '@material/web/chips/input-chip.js'
 
-const template = `<IOChipInputAvatar :label=args.label :variant=args.variant :src=args.src  :close="args.close" />`;
+const template = `<IOChipInputAvatar :label=args.label :selected=args.selected :src=args.src  :removable="args.removable" />`;
 /**
  * 
  * Chips help people enter information, make selections, filter content, or trigger actions.  
@@ -20,12 +20,12 @@ export default {
     }),
     args: {
         label: 'Avatar Chip',
-        variant: false,
+        selected: false,
         src: 'avatar.png',
-        close: false,
+        removable: false,
     },
     argTypes: {
-        variant: {
+        selected: {
             control: {
                 type: 'boolean',
             },
@@ -35,11 +35,11 @@ export default {
                 type: 'text',
             },
         },
-        close: {
+        removable: {
             control: {
                 type: 'boolean',
             },
-            description: 'Show close icon',
+            description: 'Make removable',
         },
     },
 };

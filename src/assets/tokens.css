@@ -569,18 +569,18 @@
    --md-input-chip-label-text-size: 12px;
   --md-input-chip-icon-size: 12px;
   --md-input-chip-avatar-size: 16px;
-
+  --md-input-chip-selected-container-color: var(--md-ref-palette-primary90);
   --md-assist-chip-container-height: 24px;
    --md-assist-chip-container-shape: 24px;
    --md-assist-chip-label-text-size: 12px;
    --md-assist-chip-icon-size: 12px;
+   --md-assist-chip-selected-container-color: var(--md-ref-palette-primary90);
   /* --md-assist-chip-elevated-container-elevation: 20px; */
-
   --md-filter-chip-container-height: 24px;
    --md-filter-chip-container-shape: 24px;
    --md-filter-chip-label-text-size: 12px;
    --md-filter-chip-icon-size: 12px;
-
+   --md-filter-chip-selected-container-color: var(--md-ref-palette-primary90);
    
    /* testing */
     --surfacergb1: rgba(27, 30, 31, 1.0);

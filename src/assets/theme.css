@@ -65,14 +65,15 @@ md-filled-button {
   background-color: var(--md-sys-color-primary)
 }
 
-[variant="true"] {
+/* [variant="true"] {
   background-color: var(--md-sys-color-primary-container-light);
   --md-input-chip-label-text-color: var(--md-sys-color-on-primary-container-light)
 }
-
-md-input-chip[close="false"] {
+*/
+/* md-input-chip[removable="false"] {
   --md-input-chip-icon-size: 0;
-}
+}  */
+
 /* 
 .label.resting:not(.hidden) {
   top: 4px !important;

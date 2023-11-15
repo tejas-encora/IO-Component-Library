@@ -2,7 +2,7 @@
 import IOChipInput from '@/components/Chips/IOChipInput.vue'
 import '@material/web/chips/input-chip.js'
 
-const template = '<IOChipInput :label=args.label :variant=args.variant :close=args.close />';
+const template = '<IOChipInput :label=args.label :removable=args.removable :selected=args.selected :disabled=args.disabled />';
 /**
  * 
  * Chips help people enter information, make selections, filter content, or trigger actions.  
@@ -20,8 +20,9 @@ export default {
     }),
     args: {
         label: 'Input Chip',
-        variant: false,
-        close: false,
+        selected: false,
+        disabled: false,
+        removable: false,
     },
     argTypes: {
         label: {
@@ -29,16 +30,15 @@ export default {
                 type: 'text',
             },
         },
-        variant: {
+        selected: {
             control: {
                 type: 'boolean',
             },
         },
-        close: {
+        removable: {
             control: {
                 type: 'boolean',
             },
-            description: 'Make removable'
         },
     },
 };
