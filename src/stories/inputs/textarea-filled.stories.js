@@ -1,7 +1,7 @@
 import '@material/web/textfield/filled-text-field.js'
 import IOTextArea from '@/components/Inputs/IOTextArea.vue'
 
-const template = '<IOTextArea :rows=args.rows type="textarea" :label=args.label :value=args.value :disabled=args.disabled />'
+const template = '<IOTextArea :error=args.error :error-text=args.errorText :rows=args.rows type="textarea" :label=args.label :value=args.value :disabled=args.disabled />'
 
 export default {
   title: 'UI/Atoms/Inputs/Textarea/Filled',
@@ -18,6 +18,8 @@ export default {
     disabled: false,
     label: 'Label',
     rows: 3,
+    error: false,
+    errorText: 'Oops, this thing needs fixed',
   },
   argTypes: {
     label: {
@@ -34,7 +36,19 @@ export default {
     },
     disabled: {
       control: 'boolean'
-    }
+    },
+    error: {
+      control: {
+        type: 'boolean',
+      },
+      description: 'Error state',
+    },
+    errorText: {
+      control: {
+        type: 'text',
+      },
+      description: 'Error text',
+    },
   },
 };
 

@@ -1,5 +1,5 @@
 <template>
-  <md-filled-text-field :error="isError" :leadingIcon="isIconStart" :trailingIcon="isIconEnd" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)"
+  <md-filled-text-field :error="isError" :error-text="errText" :leadingIcon="isIconStart" :trailingIcon="isIconEnd" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)"
    >
     <i :class="setIconStart" slot="leading-icon" v-if="leadingIcon" />
     <i :class="setIconEnd" slot="trailing-icon" v-if="trailingIcon" />
@@ -30,7 +30,11 @@ export default {
     error: {
       type: String,
       default: false,
-    }
+    },
+    errorText: {
+      type: String,
+      default: 'Oops, this thing needs fixed',
+    },
   },
   emits: ['update:modelValue'],
   computed: {
@@ -48,6 +52,9 @@ export default {
     },
     isError() {
       return this.error;
+    },
+    errText() {
+      return this.errorText;
     },
   }
 };

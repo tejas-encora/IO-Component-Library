@@ -1,7 +1,7 @@
 import '@material/web/textfield/filled-text-field.js'
 import IOTextField from '@/components/Inputs/IOTextField.vue'
 
-const template = '<IOTextField :error=args.error :label=args.label :supporting-text=args.supportingText :value=args.value :disabled=args.disabled :leadingIcon=args.leadingIcon :trailingIcon=args.trailingIcon :iconStart=args.iconStart :iconEnd=args.iconEnd />'
+const template = '<IOTextField :error=args.error :error-text=args.errorText :label=args.label :supporting-text=args.supportingText :value=args.value :disabled=args.disabled :leadingIcon=args.leadingIcon :trailingIcon=args.trailingIcon :iconStart=args.iconStart :iconEnd=args.iconEnd />'
 
 export default {
   title: 'UI/Atoms/Inputs/Textfield/Filled',
@@ -23,6 +23,7 @@ export default {
     iconStart: 'magnifying-glass',
     iconEnd: 'circle-x',
     error: false,
+    errorText: 'Oops, this thing needs fixed',
   },
   argTypes: {
     label: {
@@ -66,6 +67,12 @@ export default {
         type: 'boolean',
       },
       description: 'Error state',
+    },
+    errorText: {
+      control: {
+        type: 'text',
+      },
+      description: 'Error text',
     },
   },
 };
