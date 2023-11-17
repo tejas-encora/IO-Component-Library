@@ -1,23 +1,39 @@
 <template>
-  <md-filled-tonal-button :class="sizeClass">
+  <md-filled-tonal-button :leadingIcon="hasIcon" :size="setSize">
     <slot></slot>
+    <i :class="setIcon" slot="icon" v-if="leadingIcon" />
   </md-filled-tonal-button>
 </template>
 
 <script>
+
 export default {
-  name: "IOButtonTonal",
+  name: 'IOButtonTonal',
   props: {
-    class: {
+    size: {
       type: String,
-      default: '',
-    }
+      default: 'medium'
+    },
+    icon: {
+      type: String,
+      default: "circle-plus"
+    },
+    leadingIcon: {
+      type: Boolean,
+      default: false,
+    },
   },
   computed: {
-    sizeClass() {
-      return `${this.class}`;
+    setSize() {
+      return this.size;
     },
-  }
+    setIcon() {
+      return `fa-light fa-${this.icon}`;
+    },
+    hasIcon() {
+      return this.leadingIcon;
+    },
+  },
 };
-</script>
 
+</script>

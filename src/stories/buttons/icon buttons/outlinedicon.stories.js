@@ -1,4 +1,4 @@
-import IOButtonIconOutline from '@/components/Buttons/IconButtons/IOButtonIconOutline.vue'
+import IOIconButtonOutline from '@/components/Buttons/IconButtons/IOIconButtonOutline.vue'
 import '@material/web/iconbutton/outlined-icon-button.js'
 
 /**
@@ -6,14 +6,14 @@ import '@material/web/iconbutton/outlined-icon-button.js'
  * Buttons help people take actions, such as sending an email, sharing a document, or liking a comment.
  */
 
-const template = '<IOButtonIconOutline :icon=args.icon :disabled=args.disabled />';
+const template = '<IOIconButtonOutline :icon=args.icon :disabled=args.disabled />';
 
 export default {
     title: 'UI/Atoms/Buttons/Icon Buttons/Outlined',
-    component: IOButtonIconOutline,
+    component: IOIconButtonOutline,
     tags: ['autodocs'],
     render: (args) => ({
-        components: { IOButtonIconOutline },
+        components: { IOIconButtonOutline },
         setup() {
             return { args };
         },
@@ -36,7 +36,7 @@ export default {
 
 export const Default = {
     render: (args) => ({
-        components: { IOButtonIconOutline },
+        components: { IOIconButtonOutline },
         setup() {
             return { args };
         },

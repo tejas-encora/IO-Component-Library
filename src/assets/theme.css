@@ -9,25 +9,27 @@
 md-filled-button[size="small"],
 md-outlined-button[size="small"],
 md-elevated-button[size="small"],
-md-tonal-button[size="small"] {
+md-filled-tonal-button[size="small"],
+md-text-button[size="small"] {
   height: var(--small)
 }
 .medium,
 md-filled-button[size="medium"],
 md-outlined-button[size="medium"],
 md-elevated-button[size="medium"],
-md-tonal-button[size="medium"] {
+md-filled-tonal-button[size="medium"],
+md-text-button[size="medium"] {
   height: var(--medium)
 }
 .large,
 md-filled-button[size="large"],
 md-outlined-button[size="large"],
 md-elevated-button[size="large"],
-md-tonal-button[size="large"]
-[size="large"] {
+md-filled-tonal-button[size="large"],
+md-filled-button[size="large"],
+md-text-button[size="large"] {
   height: var(--large)
 }
-
 md-filled-button {
   border-radius: 4px
 }

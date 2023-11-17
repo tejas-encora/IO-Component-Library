@@ -1,18 +1,17 @@
 <template>
-  <md-outlined-button>
-    <slot></slot>
-    <i :class="iconClass" slot="icon" />
-  </md-outlined-button>
+  <md-filled-tonal-icon-button>
+     <i :class="iconClass" />
+  </md-filled-tonal-icon-button>
 </template>
 
 <script>
-
+import '@/assets/theme.css';
 export default {
-  name: "IOIconButtonOutline",
+  name: 'IOIconButtonTonal',
   props: {
     icon: {
       type: String,
-      default: "circle-plus"
+      default: 'file-magnifying-glass'
     }
   },
   computed: {
@@ -21,4 +20,5 @@ export default {
     },
   }
 };
+
 </script>

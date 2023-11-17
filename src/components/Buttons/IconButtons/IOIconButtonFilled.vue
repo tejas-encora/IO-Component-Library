@@ -1,13 +1,13 @@
 <template>
-  <md-outlined-icon-button>
+  <md-filled-icon-button>
      <i :class="iconClass" />
-  </md-outlined-icon-button>
+  </md-filled-icon-button>
 </template>
 
 <script>
 import '@/assets/theme.css';
 export default {
-  name: 'IOButtonIconOutline',
+  name: 'IOIconButtonFilled',
   props: {
     icon: {
       type: String,

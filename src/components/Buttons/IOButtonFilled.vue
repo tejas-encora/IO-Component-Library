@@ -1,9 +1,8 @@
 <template>
-  <main class="test">
-    <md-filled-button :status="btnStatus" :size="sizeClass" :class="typeClass">
-      <slot></slot>
-    </md-filled-button>
-  </main>
+  <md-filled-button :leadingIcon="hasIcon" :status="setStatus" :size="setSize" :class="setClass">
+    <slot></slot>
+    <i :class="setIcon" slot="icon" v-if="leadingIcon" />
+  </md-filled-button>
 </template>
 
 <script>
@@ -11,28 +10,42 @@
 export default {
   name: 'IOButtonFilled',
   props: {
-    class: {
-      type: String,
-      default: ''
-    },
     size: {
       type: String,
-      default: ''
+      default: 'medium',
+    },
+    icon: {
+      type: String,
+      default: "circle-plus",
+    },
+    class: {
+      type: String,
+      default: 'primary',
     },
     status: {
       type: String,
-      default: ''
-    }
+      default: 'none',
+    },
+    leadingIcon: {
+      type: Boolean,
+      default: false,
+    },
   },
   computed: {
-    btnStatus() {
-      return `${this.status}`;
+    setStatus() {
+      return this.status;
     },
-    sizeClass() {
-      return `${this.size}`;
+    setSize() {
+      return this.size;
     },
-    typeClass() {
-      return `${this.class}`;
+    setClass() {
+      return this.class;
+    },
+    setIcon() {
+      return `fa-light fa-${this.icon}`;
+    },
+    hasIcon() {
+      return this.leadingIcon;
     },
   },
 };

@@ -1,6 +1,7 @@
 <template>
-  <md-elevated-button :size="sizeClass">
+  <md-elevated-button :leadingIcon="hasIcon" :size="setSize">
     <slot></slot>
+    <i :class="setIcon" slot="icon" v-if="leadingIcon" />
   </md-elevated-button>
 </template>
 
@@ -11,14 +12,28 @@ export default {
   props: {
     size: {
       type: String,
-      default: ''
-    }
+      default: 'medium'
+    },
+    icon: {
+      type: String,
+      default: "circle-plus"
+    },
+    leadingIcon: {
+      type: Boolean,
+      default: false,
+    },
   },
   computed: {
-    sizeClass() {
-      return `${this.size}`;
+    setSize() {
+      return this.size;
     },
-  }
+    setIcon() {
+      return `fa-light fa-${this.icon}`;
+    },
+    hasIcon() {
+      return this.leadingIcon;
+    },
+  },
 };
 
 </script>

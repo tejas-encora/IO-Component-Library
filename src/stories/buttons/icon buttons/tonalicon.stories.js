@@ -1,4 +1,4 @@
-import IOButtonIconTonal from '@/components/Buttons/IconButtons/IOButtonIconTonal.vue'
+import IOIconButtonTonal from '@/components/Buttons/IconButtons/IOIconButtonTonal.vue'
 import '@material/web/iconbutton/filled-tonal-icon-button.js'
 
 /**
@@ -6,14 +6,14 @@ import '@material/web/iconbutton/filled-tonal-icon-button.js'
  * Buttons help people take actions, such as sending an email, sharing a document, or liking a comment.
  */
 
-const template = '<IOButtonIconTonal :icon=args.icon :disabled=args.disabled />';
+const template = '<IOIconButtonTonal :icon=args.icon :disabled=args.disabled />';
 
 export default {
     title: 'UI/Atoms/Buttons/Icon Buttons/Tonal',
-    component: IOButtonIconTonal,
+    component: IOIconButtonTonal,
     tags: ['autodocs'],
     render: (args) => ({
-        components: { IOButtonIconTonal },
+        components: { IOIconButtonTonal },
         setup() {
             return { args };
         },
@@ -49,7 +49,7 @@ export const Default = {
         onClick: { action: 'Button clicked' },
     },
     render: (args) => ({
-        components: { IOButtonIconTonal },
+        components: { IOIconButtonTonal },
         setup() {
             return { args };
         },

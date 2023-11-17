@@ -1,14 +1,14 @@
-import '@material/web/button/elevated-button.js'
-import IOButtonElevated from '@/components/Buttons/IOButtonElevated.vue'
+import '@material/web/button/text-button.js'
+import IOButtonText from '@/components/Buttons/IOButtonText.vue'
 
-const template = '<IOButtonElevated :disabled=args.disabled :size=args.size :icon=args.icon :leadingIcon=args.leadingIcon>{{args.label}}</IOButtonElevated>'
+const template = '<IOButtonText :class=args.class :disabled=args.disabled :size=args.size :icon=args.icon :leadingIcon=args.leadingIcon>{{args.label}}</IOButtonText>'
 
 export default {
-    title: 'UI/Atoms/Buttons/Elevated',
-    component: IOButtonElevated,
+    title: 'UI/Atoms/Buttons/Text',
+    component: IOButtonText,
     tags: ['autodocs'],
     render: (args) => ({
-        components: { IOButtonElevated },
+        components: { IOButtonText },
         setup() {
             return { args };
         },
@@ -20,6 +20,7 @@ export default {
         size: 'medium',
         icon: 'circle-plus',
         leadingIcon: false,
+        class: 'none',
     },
     argTypes: {
         label: {
@@ -48,12 +49,18 @@ export default {
             },
             description: 'Add leading icon',
         },
+        class: {
+            control: {
+                type: 'select',
+            },
+            options: ['none', 'secondary'],
+        },
     },
 };
 
 export const Button = {
     render: (args) => ({
-        components: { IOButtonElevated },
+        components: { IOButtonText },
         setup() {
             return { args };
         },

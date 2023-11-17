@@ -3,7 +3,7 @@
     <div class="wrap">
         <h3>Body Text</h3>
         <dl>
-            <dt>Body Large</dt>
+            <dt class="body-large">Body Large</dt>
             <dd>
                 <IOBody class="body-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla, justo
                     sit amet vulputate luctus,
@@ -13,7 +13,7 @@
                     ultrices
                     tincidunt. Nunc id cursus ipsum.</IOBody>
             </dd>
-            <dt>Body Base</dt>
+            <dt class="body-medium">Body Base</dt>
             <dd>
                 <IOBody class="body-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla, justo
                     sit amet vulputate luctus,
@@ -23,7 +23,7 @@
                     ultrices
                     tincidunt. Nunc id cursus ipsum.</IOBody>
             </dd>
-            <dt>Body Small</dt>
+            <dt class="body-small">Body Small</dt>
             <dd>
                 <IOBody class="body-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla, justo
                     sit amet vulputate luctus,

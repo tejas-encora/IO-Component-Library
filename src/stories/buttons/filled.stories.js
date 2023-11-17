@@ -1,12 +1,7 @@
-import IOButtonFilled from '@/components/Buttons/IOButtonFilled.vue'
 import '@material/web/button/filled-button.js'
+import IOButtonFilled from '@/components/Buttons/IOButtonFilled.vue'
 
-/**
- * 
- * Buttons help people take actions, such as sending an email, sharing a document, or liking a comment.
- */
-
-const template = '<IOButtonFilled :class=args.class :status=args.status :size=args.size :disabled=args.disabled>{{args.label}}</IOButtonFilled>';
+const template = '<IOButtonFilled :class=args.class :disabled=args.disabled :status=args.status :size=args.size :icon=args.icon :leadingIcon=args.leadingIcon>{{args.label}}</IOButtonFilled>'
 
 export default {
     title: 'UI/Atoms/Buttons/Filled',
@@ -17,12 +12,14 @@ export default {
         setup() {
             return { args };
         },
-        template,
+        template
     }),
     args: {
         disabled: false,
-        label: 'click me',
+        label: 'Label',
         size: 'medium',
+        icon: 'circle-plus',
+        leadingIcon: false,
         status: 'none',
         class: 'none',
     },
@@ -31,14 +28,30 @@ export default {
             control: {
                 type: 'text',
             },
+            description: 'Button label',
         },
         size: {
             control: {
                 type: 'select',
             },
+            description: 'Button size',
             options: ['small', 'medium', 'large'],
         },
+        icon: {
+            // if: { arg: 'leadingIcon' },
+            control: {
+                type: 'text'
+            },
+            description: 'FontAwesome icon name, i.e. circle-plus. No \'fa-\' suffix is needed',
+        },
+        leadingIcon: {
+            control: {
+                type: 'boolean',
+            },
+            description: 'Add leading icon',
+        },
         status: {
+            //  if: { arg: 'class', eq: 'primary' },
             control: {
                 type: 'select',
             },
@@ -48,18 +61,17 @@ export default {
             control: {
                 type: 'select',
             },
-            options: ['none','primary', 'secondary'],
+            options: ['none', 'secondary'],
         },
-        onClick: { action: 'Button clicked' },
     },
 };
 
-export const Default = {
+export const Button = {
     render: (args) => ({
         components: { IOButtonFilled },
         setup() {
             return { args };
         },
-        template,
-    })
+        template
+    }),
 };

@@ -1,4 +1,4 @@
-import IOButtonIcon from '@/components/Buttons/IconButtons/IOButtonIcon.vue'
+import IOIconButton from '@/components/Buttons/IconButtons/IOIconButton.vue'
 import '@material/web/iconbutton/icon-button.js'
 
 /**
@@ -6,14 +6,14 @@ import '@material/web/iconbutton/icon-button.js'
  * Buttons help people take actions, such as sending an email, sharing a document, or liking a comment.
  */
 
-const template = '<IOButtonIcon :icon=args.icon :disabled=args.disabled />';
+const template = '<IOIconButton :icon=args.icon :disabled=args.disabled />';
 
 export default {
     title: 'UI/Atoms/Buttons/Icon Buttons/Default',
-    component: IOButtonIcon,
+    component: IOIconButton,
     tags: ['autodocs'],
     render: (args) => ({
-        components: { IOButtonIcon },
+        components: { IOIconButton },
         setup() {
             return { args };
         },
@@ -36,7 +36,7 @@ export default {
 
 export const Default = {
     render: (args) => ({
-        components: { IOButtonIcon },
+        components: { IOIconButton },
         setup() {
             return { args };
         },

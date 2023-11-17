@@ -1,4 +1,4 @@
-import IOButtonIconFilled from '@/components/Buttons/IconButtons/IOButtonIconFilled.vue'
+import IOIconButtonFilled from '@/components/Buttons/IconButtons/IOIconButtonFilled.vue'
 import '@material/web/iconbutton/filled-icon-button.js'
 
 /**
@@ -6,14 +6,14 @@ import '@material/web/iconbutton/filled-icon-button.js'
  * Buttons help people take actions, such as sending an email, sharing a document, or liking a comment.
  */
 
-const template = '<IOButtonIconFilled :icon=args.icon />';
+const template = '<IOIconButtonFilled :icon=args.icon />';
 
 export default {
     title: 'UI/Atoms/Buttons/Icon Buttons/Filled',
-    component: IOButtonIconFilled,
+    component: IOIconButtonFilled,
     tags: ['autodocs'],
     render: (args) => ({
-        components: { IOButtonIconFilled },
+        components: { IOIconButtonFilled },
         setup() {
             return { args };
         },
@@ -36,7 +36,7 @@ export default {
 
 export const Default = {
     render: (args) => ({
-        components: { IOButtonIconFilled },
+        components: { IOIconButtonFilled },
         setup() {
             return { args };
         },
