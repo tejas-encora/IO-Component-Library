@@ -1,5 +1,6 @@
 <template>
-  <md-filled-text-field label="Password" :type="inputType">
+  <md-filled-text-field label="Password" :type="inputType" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)"
+     >
     <md-icon-button slot="trailing-icon" @click="handleToggle">
       <md-icon>
         <i :class="currIconClass"></i>

@@ -1,6 +1,6 @@
 <template>
   <main>
-    <IOTextField label="Enter your name" v-model="name"></IOTextField>
+    <IOTextField label="Enter your name" v-model="name" trailingIcon icon="pen"></IOTextField>
     <p>{{ message }}</p>
 
 

@@ -1,5 +1,5 @@
 <template>
-  <md-filled-text-field type="textarea" label="Label" rows="5"></md-filled-text-field>
+  <md-filled-text-field type="textarea" label="Label" rows="5" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)"></md-filled-text-field>
 </template>
 
 <script>

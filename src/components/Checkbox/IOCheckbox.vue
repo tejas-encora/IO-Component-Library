@@ -1,5 +1,6 @@
 <template>
-  <md-checkbox touch-target="wrapper" :class="errorClass"></md-checkbox>
+  <md-checkbox touch-target="wrapper" :class="errorClass" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)"
+     ></md-checkbox>
 </template>
 
 <script>

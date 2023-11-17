@@ -33,16 +33,11 @@ export { default as IOChipInputIconRemove } from '@/components/Chips/IOChipInput
  * Inputs * 
 */
 export { default as IOTextField } from '@/components/Inputs/IOTextField.vue';
-export { default as IOTextFieldTrailing } from '@/components/Inputs/IOTextFieldTrailing.vue';
-export { default as IOTextFieldBoth } from '@/components/Inputs/IOTextFieldBoth.vue';
 export { default as IOTextFieldOutline } from '@/components/Inputs/IOTextFieldOutline.vue';
-export { default as IOTextFieldOutlineLeading } from '@/components/Inputs/IOTextFieldOutlineLeading.vue';
-export { default as IOTextFieldOutlineTrailing } from '@/components/Inputs/IOTextFieldOutlineTrailing.vue';
-export { default as IOTextFieldOutlineBoth } from '@/components/Inputs/IOTextFieldOutlineBoth.vue';
 export { default as IOTextArea } from '@/components/Inputs/IOTextArea.vue';
 export { default as IOTextAreaOutline } from '@/components/Inputs/IOTextAreaOutline.vue';
-export { default as IOTextFieldPassword } from '@/components/Inputs/IOTextFieldPassword.vue';
-export { default as IOTextFieldOutlinePassword } from '@/components/Inputs/IOTextFieldOutlinePassword.vue';
+export { default as IOPassword } from '@/components/Inputs/IOPassword.vue';
+export { default as IOPasswordOutline } from '@/components/Inputs/IOPasswordOutline.vue';
 
 /** 
  * Checkbox * 
