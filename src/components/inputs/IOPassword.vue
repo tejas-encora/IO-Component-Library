@@ -1,18 +1,18 @@
 <template>
-  <md-outlined-text-field label="Password" :type="inputType">
+  <md-filled-text-field label="Password" :type="inputType">
     <md-icon-button slot="trailing-icon" @click="handleToggle">
       <md-icon>
         <i :class="currIconClass"></i>
       </md-icon>
     </md-icon-button>
-  </md-outlined-text-field>
+  </md-filled-text-field>
 </template>
 
 <script>
 import '@/assets/theme.css'
 
 export default {
-  name: "IOTextFieldOutlinePassword",
+  name: "IOPassword",
   data() {
     return {
       isPassVisible: false,

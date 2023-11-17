@@ -1,12 +1,54 @@
 <template>
-  <md-outlined-text-field label="Label" placeholder="Placeholder" supporting-text="Supporting text"></md-outlined-text-field>
+  <md-outlined-text-field :error="isError" :leadingIcon="isIconStart" :trailingIcon="isIconEnd" :value="modelValue"
+    @input="$emit('update:modelValue', $event.target.value)">
+    <i :class="setIconStart" slot="leading-icon" v-if="leadingIcon" />
+    <i :class="setIconEnd" slot="trailing-icon" v-if="trailingIcon" />
+  </md-outlined-text-field>
 </template>
 
 <script>
-import '@/assets/theme.css'
-
 export default {
-  name: "IOTextFieldOutline"
+  name: 'IOTextFielOutline',
+  props: {
+    modelValue: String,
+    leadingIcon: {
+      type: Boolean,
+      default: false,
+    },
+    trailingIcon: {
+      type: Boolean,
+      default: false,
+    },
+    iconStart: {
+      type: String,
+      default: "magnifying-glass",
+    },
+    iconEnd: {
+      type: String,
+      default: "circle-x",
+    },
+    error: {
+      type: String,
+      default: false,
+    }
+  },
+  emits: ['update:modelValue'],
+  computed: {
+    setIconStart() {
+      return `fa-light fa-${this.iconStart}`;
+    },
+    setIconEnd() {
+      return `fa-light fa-${this.iconEnd}`;
+    },
+    isIconStart() {
+      return this.leadingIcon;
+    },
+    isIconEnd() {
+      return this.trailingIcon;
+    },
+    isError() {
+      return this.error;
+    },
+  }
 };
 </script>
-
