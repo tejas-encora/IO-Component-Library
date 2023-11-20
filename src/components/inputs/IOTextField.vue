@@ -1,14 +1,15 @@
 <template>
-  <md-filled-text-field :error="isError" :error-text="errText" :leadingIcon="isIconStart" :trailingIcon="setIconEnd"
+  <md-filled-text-field :error="isError" :error-text="errText" :leading-icon="isIconStart" :trailing-icon="setIconEnd"
     :value="modelValue" @input="$emit('update:modelValue', $event.target.value)">
     <i :class="setIconStart" slot="leading-icon" v-if="leadingIcon" />
-    <i :class="setIconEnd" slot="trailing-icon" v-if="trailingIcon" />
+    <i :class="setIconEnd" slot="trailing-icon" v-if="trailingIcon && !showClearIcon" />
+    <span class="clear-button" slot="trailing-icon" v-if="showClearIcon" @click="clearInput">
+      <i class="fa-light fa-circle-x"></i>
+    </span>
   </md-filled-text-field>
 </template>
 
 <script>
-//const showClass = error ? 'fa-solid fa-circle-exclamation' : `fa-light fa-${this.iconEnd}`;
-
 export default {
   name: 'IOTextField',
   props: {
@@ -35,7 +36,11 @@ export default {
     },
     errorText: {
       type: String,
-      default: 'Oops, this thing needs fixed',
+      default: 'Oops, this thing needs fixing',
+    },
+    clear: {
+      type: Boolean,
+      default: true,
     },
   },
   emits: ['update:modelValue'],
@@ -53,11 +58,21 @@ export default {
       return this.trailingIcon;
     },
     isError() {
-      return this.error;
+      return this.error && !this.clear;
     },
     errText() {
       return this.errorText;
     },
-  }
+    showClearIcon() {
+      return this.clear;
+    },
+  },
+  methods: {
+    clearInput() {
+      this.$emit('update:modelValue', '');
+      this.$emit('update:clear', true);
+      this.$emit('update:error', false);
+    },
+  },
 };
 </script>

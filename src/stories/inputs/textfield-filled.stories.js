@@ -1,7 +1,7 @@
 import '@material/web/textfield/filled-text-field.js'
 import IOTextField from '@/components/Inputs/IOTextField.vue'
 
-const template = '<IOTextField :error=args.error :error-text=args.errorText :label=args.label :supporting-text=args.supportingText :value=args.value :disabled=args.disabled :leadingIcon=args.leadingIcon :trailingIcon=args.trailingIcon :iconStart=args.iconStart :iconEnd=args.iconEnd />'
+const template = '<IOTextField :clear=args.clear :error=args.error :error-text=args.errorText :label=args.label :supporting-text=args.supportingText :value=args.value :disabled=args.disabled :leadingIcon=args.leadingIcon :trailingIcon=args.trailingIcon :iconStart=args.iconStart :iconEnd=args.iconEnd />'
 
 export default {
   title: 'UI/Atoms/Inputs/Textfield/Filled',
@@ -21,9 +21,10 @@ export default {
     leadingIcon: false,
     trailingIcon: false,
     iconStart: 'magnifying-glass',
-    iconEnd: 'circle-exclamation',
+    iconEnd: '',
     error: false,
     errorText: 'Oops, this thing needs fixed',
+    clear: true,
   },
   argTypes: {
     label: {
@@ -66,13 +67,19 @@ export default {
       control: {
         type: 'boolean',
       },
-      description: 'Error state',
+      description: 'Apply error state',
     },
     errorText: {
       control: {
         type: 'text',
       },
-      description: 'Error text',
+      description: 'Custom error supporting text',
+    },
+    clear: {
+      clear: {
+        type: 'boolean',
+      },
+      description: 'Add delete icon that clears the value',
     },
   },
 };
