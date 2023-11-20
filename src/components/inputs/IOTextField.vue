@@ -1,12 +1,14 @@
 <template>
-  <md-filled-text-field :error="isError" :error-text="errText" :leadingIcon="isIconStart" :trailingIcon="isIconEnd" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)"
-   >
+  <md-filled-text-field :error="isError" :error-text="errText" :leadingIcon="isIconStart" :trailingIcon="setIconEnd"
+    :value="modelValue" @input="$emit('update:modelValue', $event.target.value)">
     <i :class="setIconStart" slot="leading-icon" v-if="leadingIcon" />
     <i :class="setIconEnd" slot="trailing-icon" v-if="trailingIcon" />
   </md-filled-text-field>
 </template>
 
 <script>
+//const showClass = error ? 'fa-solid fa-circle-exclamation' : `fa-light fa-${this.iconEnd}`;
+
 export default {
   name: 'IOTextField',
   props: {
@@ -28,7 +30,7 @@ export default {
       default: "circle-x",
     },
     error: {
-      type: String,
+      type: Boolean,
       default: false,
     },
     errorText: {
@@ -42,7 +44,7 @@ export default {
       return `fa-light fa-${this.iconStart}`;
     },
     setIconEnd() {
-      return `fa-light fa-${this.iconEnd}`;
+      return this.error ? 'fa-solid fa-circle-exclamation' : `fa-light fa-${this.iconEnd}`;
     },
     isIconStart() {
       return this.leadingIcon;

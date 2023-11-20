@@ -21,7 +21,7 @@ export default {
     leadingIcon: false,
     trailingIcon: false,
     iconStart: 'magnifying-glass',
-    iconEnd: 'circle-x',
+    iconEnd: 'circle-exclamation',
     error: false,
     errorText: 'Oops, this thing needs fixed',
   },

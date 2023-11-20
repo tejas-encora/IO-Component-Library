@@ -1,6 +1,6 @@
 <template>
   <main>
-    <IOTextField label="Enter your name" v-model="name" trailingIcon icon="pen"></IOTextField>
+    <IOTextField label="Enter your name" v-model="name" trailing-icon error></IOTextField>
     <p>{{ message }}</p>
 
 
@@ -8,7 +8,7 @@
     <IOButtonElevated>IOButtonElevated</IOButtonElevated>
 
     <p>Hello, {{ fname }} {{ lname }}</p>
-    <IOTextField label="First" v-model="fname"></IOTextField>
+    <IOTextField label="First" v-model="fname" error></IOTextField>
     <IOTextField label="Last" v-model="lname"></IOTextField>
     <!-- <IOButtonFilled @click="handleTest">Submit</IOButtonFilled> -->
   </main>
