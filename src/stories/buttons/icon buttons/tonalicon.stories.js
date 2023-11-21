@@ -11,7 +11,6 @@ const template = '<IOIconButtonTonal :icon=args.icon :disabled=args.disabled />'
 export default {
     title: 'UI/Atoms/Buttons/Icon Buttons/Tonal',
     component: IOIconButtonTonal,
-    tags: ['autodocs'],
     render: (args) => ({
         components: { IOIconButtonTonal },
         setup() {
