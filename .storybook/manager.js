@@ -3,4 +3,5 @@ import ioTheme from './IoTheme';
 
 addons.setConfig({
     theme: ioTheme,
+    
 });

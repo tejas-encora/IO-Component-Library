@@ -10,15 +10,24 @@ const config = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    '@storybook/addon-docs'
+    '@storybook/addon-docs',
+    'storybook-version'
   ],
   framework: {
     name: "@storybook/vue3-vite",
     options: {},
   },
   docs: {
-    autodocs: 'tag',
-    defaultName: 'Documentation',
+    // autodocs: 'tag',
+    // defaultName: 'Documentation',
   },
+  parameters: {
+    version: {
+      major: '4',
+      minor: '2',
+      patch: '0',
+    }
+  }
 };
+
 export default config;
