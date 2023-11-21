@@ -2,7 +2,7 @@
 import IOChipInput from '@/components/Chips/IOChipInput.vue'
 import '@material/web/chips/input-chip.js'
 
-const template = '<IOChipInput :label=args.label :removable=args.removable :selected=args.selected :disabled=args.disabled />';
+const template = `<IOChipInput :avatar=args.avatar :label=args.label :selected=args.selected :src=args.src :leadingIcon=args.leadingIcon :icon=args.icon />`;
 /**
  * 
  * Chips help people enter information, make selections, filter content, or trigger actions.  
@@ -10,7 +10,6 @@ const template = '<IOChipInput :label=args.label :removable=args.removable :sele
 export default {
     title: 'UI/Atoms/Chips/Input',
     component: IOChipInput,
-    tags: ['autodocs'],
     render: (args) => ({
         components: { IOChipInput },
         setup() {
@@ -21,23 +20,38 @@ export default {
     args: {
         label: 'Input Chip',
         selected: false,
-        disabled: false,
-        removable: false,
+        src: 'avatar.png',
+        avatar: false,
+        leadingIcon: false,
+        icon: 'book-sparkles',
     },
     argTypes: {
-        label: {
-            control: {
-                type: 'text',
-            },
-        },
         selected: {
             control: {
                 type: 'boolean',
             },
         },
-        removable: {
+        avatar: {
             control: {
                 type: 'boolean',
+            },
+        },
+        leadingIcon: {
+            control: {
+                type: 'boolean',
+            },
+            description: 'Add leading icon',
+        },
+        icon: {
+            // if: { arg: 'leadingIcon' },
+            control: {
+                type: 'text'
+            },
+            description: 'Leading icon. FontAwesome icon name, i.e. circle-plus. No \'fa-\' suffix is needed',
+        },
+        src: {
+            control: {
+                type: 'text',
             },
         },
     },
@@ -52,3 +66,4 @@ export const Default = {
         template,
     })
 };
+
