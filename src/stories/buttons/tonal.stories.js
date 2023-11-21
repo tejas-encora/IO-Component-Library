@@ -6,7 +6,6 @@ const template = '<IOButtonTonal :disabled=args.disabled :size=args.size :icon=a
 export default {
     title: 'UI/Atoms/Buttons/Tonal',
     component: IOButtonTonal,
-    tags: ['autodocs'],
     render: (args) => ({
         components: { IOButtonTonal },
         setup() {

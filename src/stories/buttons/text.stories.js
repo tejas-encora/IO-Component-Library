@@ -6,7 +6,6 @@ const template = '<IOButtonText :class=args.class :disabled=args.disabled :size=
 export default {
     title: 'UI/Atoms/Buttons/Text',
     component: IOButtonText,
-    tags: ['autodocs'],
     render: (args) => ({
         components: { IOButtonText },
         setup() {

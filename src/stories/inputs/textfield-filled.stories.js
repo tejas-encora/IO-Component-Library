@@ -1,5 +1,6 @@
 import '@material/web/textfield/filled-text-field.js'
 import IOTextField from '@/components/Inputs/IOTextField.vue'
+import { fireEvent, userEvent, within } from '@storybook/testing-library';
 
 const template = '<IOTextField :clear=args.clear :error=args.error :error-text=args.errorText :label=args.label :supporting-text=args.supportingText :value=args.value :disabled=args.disabled :leadingIcon=args.leadingIcon :trailingIcon=args.trailingIcon :iconStart=args.iconStart :iconEnd=args.iconEnd />'
 
@@ -21,10 +22,10 @@ export default {
     leadingIcon: false,
     trailingIcon: false,
     iconStart: 'magnifying-glass',
-    iconEnd: '',
+    iconEnd: 'pencil',
     error: false,
     errorText: 'Oops, this thing needs fixed',
-    clear: true,
+    clear: false,
   },
   argTypes: {
     label: {
@@ -84,7 +85,13 @@ export default {
   },
 };
 
+
 export const Default = {
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getElementById('circle-x'));
+  },
   render: (args) => ({
     components: { IOTextField },
     setup() {

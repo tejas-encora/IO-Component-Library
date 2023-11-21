@@ -6,7 +6,6 @@ const template = '<IOButtonFilled :class=args.class :disabled=args.disabled :sta
 export default {
     title: 'UI/Atoms/Buttons/Filled',
     component: IOButtonFilled,
-    tags: ['autodocs'],
     render: (args) => ({
         components: { IOButtonFilled },
         setup() {
@@ -56,6 +55,7 @@ export default {
                 type: 'select',
             },
             options: ['none', 'success', 'error', 'warning', 'info'],
+            description: 'Add a status',
         },
         class: {
             control: {

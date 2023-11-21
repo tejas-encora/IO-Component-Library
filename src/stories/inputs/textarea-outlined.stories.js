@@ -6,7 +6,6 @@ const template = '<IOTextAreaOutline :error=args.error :error-text=args.errorTex
 export default {
   title: 'UI/Atoms/Inputs/Textarea/Outlined',
   component: IOTextAreaOutline,
-  tags: ['autodocs'],
   render: (args) => ({
     components: { IOTextAreaOutline },
     setup() {

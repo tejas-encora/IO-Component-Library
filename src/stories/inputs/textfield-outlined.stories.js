@@ -21,10 +21,10 @@ export default {
     leadingIcon: false,
     trailingIcon: false,
     iconStart: 'magnifying-glass',
-    iconEnd: 'pencil',
+    iconEnd: 'circle-x',
     error: false,
     errorText: 'Oops, this thing needs fixed',
-    clear: false,
+    clear: true,
   },
   argTypes: {
     label: {

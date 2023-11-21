@@ -10,7 +10,6 @@ const template = '<IOBadge :size=args.size>{{args.label}}</IOBadge>';
 export default {
     title: 'UI/Atoms/Feedback/Badge',
     component: IOBadge,
-    tags: ['autodocs'],
     render: (args) => ({
         components: { IOBadge },
         setup() {

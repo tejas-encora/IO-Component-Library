@@ -10,7 +10,6 @@ const template = `<IOFab :icon=args.icon :size=args.size :variant=args.variant :
 export default {
     title: 'UI/Atoms/Buttons/FAB',
     component: IOFab,
-    tags: ['autodocs'],
     render: (args) => ({
         components: { IOFab },
         setup() {

@@ -1,17 +1,15 @@
 <template>
-  <md-outlined-text-field :error="isError" :error-text="errText" :leading-icon="isIconStart"
-    :trailing-icon="setIconEnd" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)">
-    <i :class="setIconStart" slot="leading-icon" v-if="leadingIcon && !showClearIcon" />
+  <md-outlined-text-field :error="isError" :error-text="errText" :leading-icon="isIconStart" :trailing-icon="setIconEnd"
+    :value="modelValue" @input="$emit('update:modelValue', $event.target.value)">
+    <i :class="setIconStart" slot="leading-icon" v-if="leadingIcon" />
     <i :class="setIconEnd" slot="trailing-icon" v-if="trailingIcon && !showClearIcon" />
-    <span class="clear-button" slot="trailing-icon" v-if="showClearIcon" @click="clearInput">
-      <i class="fa-light fa-circle-x"></i>
-    </span>
+    <i class="fa-light fa-circle-x" slot="trailing-icon" v-if="showClearIcon" @click="clearInput" />
   </md-outlined-text-field>
 </template>
 
 <script>
 export default {
-  name: 'IOTextFieldOutline',
+  name: 'IOTextField',
   props: {
     modelValue: String,
     leadingIcon: {
@@ -76,3 +74,12 @@ export default {
   },
 };
 </script>
+<style scoped>
+i {
+  font-size: var(--md-filled-text-field-leading-icon-size);
+}
+
+i.fa-circle-x {
+  cursor: pointer;
+}
+</style>

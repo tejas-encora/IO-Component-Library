@@ -6,7 +6,6 @@ const template = '<IOTextArea :error=args.error :error-text=args.errorText :rows
 export default {
   title: 'UI/Atoms/Inputs/Textarea/Filled',
   component: IOTextArea,
-  tags: ['autodocs'],
   render: (args) => ({
     components: { IOTextArea },
     setup() {

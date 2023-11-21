@@ -3,9 +3,7 @@
     :value="modelValue" @input="$emit('update:modelValue', $event.target.value)">
     <i :class="setIconStart" slot="leading-icon" v-if="leadingIcon" />
     <i :class="setIconEnd" slot="trailing-icon" v-if="trailingIcon && !showClearIcon" />
-    <span class="clear-button" slot="trailing-icon" v-if="showClearIcon" @click="clearInput">
-      <i class="fa-light fa-circle-x"></i>
-    </span>
+    <i id="circle-x" class="fa-light fa-circle-x" slot="trailing-icon" v-if="showClearIcon" @click="clearInput" />
   </md-filled-text-field>
 </template>
 
@@ -28,7 +26,7 @@ export default {
     },
     iconEnd: {
       type: String,
-      default: "circle-x",
+      default: "pencil",
     },
     error: {
       type: Boolean,
@@ -40,7 +38,7 @@ export default {
     },
     clear: {
       type: Boolean,
-      default: true,
+      default: false,
     },
   },
   emits: ['update:modelValue'],
@@ -76,3 +74,11 @@ export default {
   },
 };
 </script>
+<style scoped>
+  i {
+    font-size: var(--md-filled-text-field-leading-icon-size);
+  }
+  i.fa-circle-x {
+    cursor: pointer;
+  }
+</style>

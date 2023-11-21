@@ -6,7 +6,6 @@ const template = '<IOButtonOutline :disabled=args.disabled  :size=args.size :ico
 export default {
     title: 'UI/Atoms/Buttons/Outlined',
     component: IOButtonOutline,
-    tags: ['autodocs'],
     render: (args) => ({
         components: { IOButtonOutline },
         setup() {

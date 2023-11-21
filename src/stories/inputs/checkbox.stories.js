@@ -6,7 +6,6 @@ const template = `<IOCheckbox :class=args.class :disabled=args.disabled />`
 export default {
   title: 'UI/Atoms/Inputs/Checkbox',
   component: IOCheckbox,
-  tags: ['autodocs'],
   render: (args) => ({
     components: { IOCheckbox },
     setup() {

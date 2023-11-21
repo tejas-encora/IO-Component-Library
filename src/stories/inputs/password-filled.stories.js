@@ -6,7 +6,6 @@ const template = '<IOPassword :error=args.error :error-text=args.errorText :disa
 export default {
   title: 'UI/Atoms/Inputs/Password/Filled',
   component: IOPassword,
-  tags: ['autodocs'],
   render: (args) => ({
     components: { IOPassword },
     setup() {

@@ -11,7 +11,6 @@ const template = '<IOIconButtonOutline :icon=args.icon :disabled=args.disabled /
 export default {
     title: 'UI/Atoms/Buttons/Icon Buttons/Outlined',
     component: IOIconButtonOutline,
-    tags: ['autodocs'],
     render: (args) => ({
         components: { IOIconButtonOutline },
         setup() {

@@ -9,9 +9,8 @@ import '@material/web/iconbutton/icon-button.js'
 const template = '<IOIconButton :icon=args.icon :disabled=args.disabled />';
 
 export default {
-    title: 'UI/Atoms/Buttons/Icon Buttons/Default',
+    title: 'UI/Atoms/Buttons/Icon Buttons',
     component: IOIconButton,
-    tags: ['autodocs'],
     render: (args) => ({
         components: { IOIconButton },
         setup() {

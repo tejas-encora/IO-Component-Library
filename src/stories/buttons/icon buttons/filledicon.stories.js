@@ -11,7 +11,6 @@ const template = '<IOIconButtonFilled :icon=args.icon />';
 export default {
     title: 'UI/Atoms/Buttons/Icon Buttons/Filled',
     component: IOIconButtonFilled,
-    tags: ['autodocs'],
     render: (args) => ({
         components: { IOIconButtonFilled },
         setup() {

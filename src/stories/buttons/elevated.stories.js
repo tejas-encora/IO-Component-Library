@@ -6,7 +6,6 @@ const template = '<IOButtonElevated :disabled=args.disabled :size=args.size :ico
 export default {
     title: 'UI/Atoms/Buttons/Elevated',
     component: IOButtonElevated,
-    tags: ['autodocs'],
     render: (args) => ({
         components: { IOButtonElevated },
         setup() {

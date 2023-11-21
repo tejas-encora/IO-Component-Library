@@ -6,7 +6,6 @@ const template = '<IOPasswordOutline :error=args.error :error-text=args.errorTex
 export default {
   title: 'UI/Atoms/Inputs/Password/Outlined',
   component: IOPasswordOutline,
-  tags: ['autodocs'],
   render: (args) => ({
     components: { IOPasswordOutline },
     setup() {
