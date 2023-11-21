@@ -7,7 +7,6 @@ const template = '<IOTextField :clear=args.clear :error=args.error :error-text=a
 export default {
   title: 'UI/Atoms/Inputs/Textfield/Filled',
   component: IOTextField,
-  tags: ['autodocs'],
   render: (args) => ({
     components: { IOTextField },
     setup() {
@@ -74,7 +73,7 @@ export default {
       control: {
         type: 'text',
       },
-      description: 'Custom error supporting text',
+      description: 'Custom error text',
     },
     clear: {
       clear: {

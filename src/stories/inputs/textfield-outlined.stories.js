@@ -6,7 +6,6 @@ const template = '<IOTextFieldOutline :clear=args.clear :error=args.error :error
 export default {
   title: 'UI/Atoms/Inputs/Textfield/Outlined',
   component: IOTextFieldOutline,
-  tags: ['autodocs'],
   render: (args) => ({
     components: { IOTextFieldOutline },
     setup() {
