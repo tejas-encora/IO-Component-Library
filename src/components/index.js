@@ -21,11 +21,10 @@ export { default as IOFab } from '@/components/Buttons/FAB/IOFab.vue'
 */
 export { default as IOChipInput } from '@/components/Chips/IOChipInput.vue'
 export { default as IOChipInputBlank } from '@/components/Chips/IOChipInputBlank.vue'
-
 // export { default as IOChipInputLeading } from '@/components/Chips/IOChipInputLeading.vue'
 // export { default as IOChipInputIconAvatar } from '@/components/Chips/IOChipInputIconAvatar.vue'
 export { default as IOChipAssist } from '@/components/Chips/IOChipAssist.vue'
-
+export { default as IOChipAssistBlank } from '@/components/Chips/IOChipAssistBlank.vue'
 /** 
  * Inputs * 
 */
