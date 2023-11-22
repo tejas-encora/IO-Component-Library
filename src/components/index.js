@@ -25,8 +25,6 @@ export { default as IOChipInputBlank } from '@/components/Chips/IOChipInputBlank
 // export { default as IOChipInputLeading } from '@/components/Chips/IOChipInputLeading.vue'
 // export { default as IOChipInputIconAvatar } from '@/components/Chips/IOChipInputIconAvatar.vue'
 export { default as IOChipAssist } from '@/components/Chips/IOChipAssist.vue'
-export { default as IOChipAssistLeading } from '@/components/Chips/IOChipAssistLeading.vue'
-export { default as IOChipAssistSvg } from '@/components/Chips/IOChipAssistSvg.vue'
 
 /** 
  * Inputs * 
