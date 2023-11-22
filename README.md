@@ -2,11 +2,11 @@
 
 # IO Component Library (mat-lib-test)
 
-## For Consumer Apps
+## For Testing Consumer Apps
 
 ### Installation
 
-1. Install the Iodine test package:
+1. Install the package:
     ```bash
     npm install @encoradxp/mat-lib-test
     ```
