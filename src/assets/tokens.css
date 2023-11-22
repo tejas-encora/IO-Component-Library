@@ -570,6 +570,7 @@
   --md-input-chip-icon-size: 12px;
   --md-input-chip-avatar-size: 16px;
   --md-input-chip-selected-container-color: var(--md-ref-palette-primary90);
+
   --md-assist-chip-container-height: 24px;
    --md-assist-chip-container-shape: 24px;
    --md-assist-chip-label-text-size: 12px;
@@ -583,6 +584,12 @@
    --md-filter-chip-icon-size: 12px;
    --md-filter-chip-selected-container-color: var(--md-ref-palette-primary90);
    
+  --md-suggestion-chip-container-height: 24px;
+   --md-suggestion-chip-container-shape: 24px;
+   --md-suggestion-chip-label-text-size: 12px;
+   --md-suggestion-chip-icon-size: 12px;
+   --md-suggestion-chip-selected-container-color: var(--md-ref-palette-primary90);
+
 /* textfields */
   --md-filled-text-field-leading-icon-size: 28px;
   --md-filled-text-field-trailing-icon-size: 28px;

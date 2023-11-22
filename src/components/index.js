@@ -23,7 +23,7 @@ export { default as IOChipInput } from '@/components/Chips/IOChipInput.vue'
 export { default as IOChipInputBlank } from '@/components/Chips/IOChipInputBlank.vue'
 export { default as IOChipAssist } from '@/components/Chips/IOChipAssist.vue'
 export { default as IOChipAssistBlank } from '@/components/Chips/IOChipAssistBlank.vue'
-
+export { default as IOChipSuggest } from '@/components/Chips/IOChipSuggest.vue'
 /** 
  * Inputs * 
 */
