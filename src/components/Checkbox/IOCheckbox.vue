@@ -1,5 +1,5 @@
 <template>
-  <md-checkbox touch-target="wrapper" :class="errorClass" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)"
+  <md-checkbox touch-target="wrapper" :error="isError" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)"
      ></md-checkbox>
 </template>
 
@@ -7,15 +7,22 @@
 export default {
   name: 'IOCheckbox',
   props: {
-    class: {
-        type: String,
-        default: ''
-      },
+    error: {
+      type: Boolean,
+      default: false,
+    },
   },  
   computed: {
-    errorClass() { 
-      return `${this.class}`
+    isError() {
+      return this.error;
     },
-  }
+  },
+  emits: ['update:modelValue'],
 };
 </script>
+<style scoped>
+md-checkbox[error] {
+    --md-sys-color-primary: var(--md-ref-palette-error40);
+}
+
+</style>

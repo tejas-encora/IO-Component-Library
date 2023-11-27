@@ -1,7 +1,7 @@
 import '@material/web/checkbox/checkbox.js'
 import IOCheckbox from '@/components/Checkbox/IOCheckbox.vue'
 
-const template = `<IOCheckbox :class=args.class :disabled=args.disabled />`
+const template = `<IOCheckbox :error=args.error :disabled=args.disabled />`
 
 export default {
   title: 'UI/Atoms/Inputs/Checkbox',
@@ -11,21 +11,20 @@ export default {
     setup() {
       return { args };
     },
-    template: template
+    template
   }),
   args: {
     disabled: false,
-    class: ''
+    error: false,
   },
   argTypes: {
     disabled: {
       control: 'boolean',
     },
-    class: {
+    error: {
       control: {
-        type: 'select',
+        type: 'boolean',
       },
-      options: ['none', 'error']
     }
   },
 };
@@ -36,6 +35,6 @@ export const Default = {
     setup() {
       return { args };
     },
-    template: template
+    template
   }),
 };

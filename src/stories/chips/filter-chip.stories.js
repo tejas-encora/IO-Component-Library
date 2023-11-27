@@ -2,7 +2,7 @@
 import IOChipFilter from '@/components/Chips/IOChipFilter.vue'
 import '@material/web/chips/filter-chip.js'
 
-const template = '<IOChipFilter :label=args.label :removable=args.removable :selected=args.selected :elevated=args.elevated :disabled=args.disabled />';
+const template = '<IOChipFilter :label=args.label :selected=args.selected :elevated=args.elevated :disabled=args.disabled :leadingIcon="args.leadingIcon" :trailingIcon="args.trailingIcon" :icon=args.icon />';
 /**
  * 
  * Chips help people enter information, make selections, filter content, or trigger actions.  
@@ -23,7 +23,9 @@ export default {
         selected: false,
         elevated: false,
         disabled: false,
-        removable: false,
+        leadingIcon: false,
+        trailingIcon: false,
+        icon: 'book-sparkles',
     },
     argTypes: {
         label: {
@@ -41,9 +43,19 @@ export default {
                 type: 'boolean',
             },
         },
-        removable: {
+        leadingIcon: {
             control: {
                 type: 'boolean',
+            },
+        },
+        trailingIcon: {
+            control: {
+                type: 'boolean',
+            },
+        },
+        icon: {
+            control: {
+                type: 'text',
             },
         },
     },

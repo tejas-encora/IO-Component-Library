@@ -591,14 +591,11 @@
    --md-suggestion-chip-selected-container-color: var(--md-ref-palette-primary90);
 
 /* textfields */
-  --md-filled-text-field-leading-icon-size: 28px;
-  --md-filled-text-field-trailing-icon-size: 28px;
-
+  --md-filled-text-field-leading-icon-size: 18px;
+  --md-filled-text-field-trailing-icon-size: 18px;
 
    /* testing */
     --surfacergb1: rgba(27, 30, 31, 1.0);
     --surfacergb2: rgba(196, 192, 255, 0.05);
     --md-surfaces-surface1-test: var(--surfacergb1), var(--surfacergb2);
-
-   /* --md-checkbox-outline-color: var(--md-sys-color-error-light) */
 }
