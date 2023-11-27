@@ -25,6 +25,7 @@
     "@material/web": "^1.0.0",
     "@previewjs/cli": "^1.27.0",
     "@storybook/addon-actions": "^7.4.6",
+    "vite-plugin-vuetify": "^1.0.2",
     "vue": "^3.3.4",
     "vue-meta": "^2.4.0"
   },
