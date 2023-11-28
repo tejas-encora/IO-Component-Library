@@ -1,6 +1,6 @@
 {
   "name": "@encoradxp/mat-lib-test",
-  "version": "0.2.33",
+  "version": "0.2.34",
   "publicConfig": {
     "access": "public"
   },
@@ -40,7 +40,6 @@
     "@storybook/jest": "^0.2.3",
     "@storybook/manager-api": "^7.4.6",
     "@storybook/testing-library": "^0.2.2",
-    "@storybook/theming": "^7.4.6",
     "@storybook/vue3": "^7.4.6",
     "@storybook/vue3-vite": "^7.4.6",
     "@vitejs/plugin-vue": "^4.3.4",
