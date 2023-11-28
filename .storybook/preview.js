@@ -7,6 +7,14 @@ import '@fortawesome/fontawesome-pro'
 import '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-pro/css/all.css'
 import { themes } from '@storybook/theming'
+import { setup } from '@storybook/vue3';
+import { registerPlugins } from '../src/plugins';
+import { withVuetifyTheme } from './withVuetifyTheme.decorator';
+
+setup((app) => {
+  // Registers your app's plugins into Storybook
+  registerPlugins(app);
+});
 
 const preview = {
   parameters: {
@@ -23,4 +31,5 @@ const preview = {
     },
   },
 };
+export const decorators = [withVuetifyTheme];
 export default preview;

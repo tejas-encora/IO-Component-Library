@@ -43,3 +43,8 @@ export { default as IOCheckbox } from '@/components/Checkbox/IOCheckbox.vue';
  * Feedback * 
 */
 export { default as IOBadge } from '@/components/Badge/IOBadge.vue';
+
+/** 
+ * Tables * 
+*/
+export { default as IODataTable } from '@/components/DataTable/IODataTable.vue';

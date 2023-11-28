@@ -3,7 +3,6 @@
 // import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-pro'
 import '@/styles/main.scss'
-import { VDatePicker } from 'vuetify/labs/VDatePicker'
 import fa from '@fortawesome/fontawesome-pro/css/all.css'
 // import { aliases, mdi } from 'vuetify/lib/iconsets/mdi'
 

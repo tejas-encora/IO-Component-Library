@@ -9,7 +9,9 @@
     "build": "vite build && node post-build.js",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "preinstall": "npm install vite-plugin-vuetify",
+    "postinstall": "cp -r ./src/plugins ../../../src && cp -r ./src/styles ../../../src"
   },
   "main": "./dist/mat-lib-test.umd.js",
   "module": "./dist/mat-lib-test.es.js",
