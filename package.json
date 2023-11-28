@@ -1,6 +1,6 @@
 {
   "name": "@encoradxp/mat-lib-test",
-  "version": "0.2.43",
+  "version": "0.2.46",
   "publicConfig": {
     "access": "public"
   },
@@ -9,8 +9,7 @@
     "build": "vite build && node post-build.js",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "postinstall": "cp -r ./src/styles ../../../src"
+    "build-storybook": "storybook build"
   },
   "main": "./dist/mat-lib-test.umd.js",
   "module": "./dist/mat-lib-test.es.js",

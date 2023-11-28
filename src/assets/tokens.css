@@ -265,7 +265,7 @@
 /* system colors */
 
   /* light */
-  --md-sys-color-primary-light: rgba(22,22,22,0.2);
+  --md-sys-color-primary-light: var(--md-ref-palette-primary40);
   --md-sys-color-on-primary-light: var(--md-ref-palette-primary100);
   --md-sys-color-primary-container-light: var(--md-ref-palette-primary90);
   --md-sys-color-on-primary-container-light: var(--md-ref-palette-primary10);
@@ -284,7 +284,7 @@
   --md-sys-color-secondary-fixed-dim-light: var(--md-ref-palette-secondary80);
   --md-sys-color-secondary-fixed-variant-light: var(--md-ref-palette-secondary30);
 
-  --md-sys-color-error-light: var(--md-ref-palette-error50, 0.5);
+  --md-sys-color-error-light: var(--md-ref-palette-error50);
   --md-sys-color-on-error-light: var(--md-ref-palette-error100);
   --md-sys-color-error-container-light: var(--md-ref-palette-error90);
   --md-sys-color-on-error-container-light: var(--md-ref-palette-error10);

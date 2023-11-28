@@ -4,12 +4,12 @@
             <v-text-field v-model="search" label="Search" prepend-inner-icon="mdi-magnify" single-line variant="outlined"
                 hide-details></v-text-field>
         </template>
-
         <v-data-table :headers="headers" :items="desserts" :search="search"></v-data-table>
     </v-card>
 </template>
 <script>
 export default {
+    name: 'IODataTableSearch',
     data() {
         return {
             search: '',

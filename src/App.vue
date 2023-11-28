@@ -12,7 +12,7 @@
     <IOTextField label="Last" v-model="lname"></IOTextField>
     <!-- <IOButtonFilled @click="handleTest">Submit</IOButtonFilled> -->
     <IOCheckbox label="Last" error />
-    <IODataTable/>
+    <IODataTableSearch />
   </main>
 </template>
 
@@ -22,7 +22,7 @@ import IOChipFilter from '@/components/Chips/IOChipFilter.vue';
 import IOTextField from '@/components/Inputs/IOTextField.vue';
 import IOButtonFilled from '@/components/Buttons/IOButtonFilled.vue';
 import IOButtonElevated from '@/components/Buttons/IOButtonElevated.vue';
-import IODataTable from '@/components/DataTable/IODataTable.vue';
+import IODataTableSearch from '@/components/DataTable/IODataTableSearch.vue';
 import { ref, computed } from 'vue';
 
 export default {
@@ -32,7 +32,7 @@ export default {
     IOTextField,
     IOChipFilter,
     IOCheckbox,
-    IODataTable
+    IODataTableSearch
   },
   setup() {
     const counter = ref(0);
