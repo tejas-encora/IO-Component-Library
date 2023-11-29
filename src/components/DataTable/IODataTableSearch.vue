@@ -66,4 +66,10 @@ export default {
 .v-data-table__td {
     font-family: 'Lato', sans-serif !important;
 }
+.v-table .v-icon {
+    font-size: 14px;
+    height: 20px;
+    width: 20px;
+}
+
 </style>
