@@ -12,7 +12,6 @@ const preview = {
   parameters: {
     docs: {
       theme: themes.light,
-      layout: 'centered',
     },
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
@@ -21,6 +20,7 @@ const preview = {
         date: /Date$/,
       },
     },
+    layout: 'centered',
   },
 };
 export default preview;
