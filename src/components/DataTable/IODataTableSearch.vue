@@ -1,15 +1,22 @@
 <template>
-    <v-card flat title="Nutrition">
+    <v-card flat title="Nutrition" max-width="70%" class="mx-auto" border>
         <template v-slot:text>
-            <v-text-field v-model="search" label="Search" prepend-inner-icon="mdi-magnify" single-line variant="outlined"
-                hide-details></v-text-field>
+            <!-- <v-text-field v-model="search" label="Search" prepend-inner-icon="mdi-magnify" single-line variant="filled"
+                hide-details></v-text-field> -->
+            <IOTextField class="full-width" label="Search" v-model="search" leading-icon icon="magnifying-glass"
+                trailing-icon clear></IOTextField>
         </template>
         <v-data-table :headers="headers" :items="desserts" :search="search"></v-data-table>
     </v-card>
 </template>
 <script>
+import IOTextField from '@/components/Inputs/IOTextField.vue';
+
 export default {
     name: 'IODataTableSearch',
+    components: {
+        IOTextField,
+    },
     data() {
         return {
             search: '',
@@ -112,3 +119,14 @@ export default {
     },
 }
 </script>
+<style>
+.full-width {
+    width: 100%;
+}
+
+.vcard {
+    width: 80% !important;
+    text-align: center !important;
+    border: 1px solid !important;
+}
+</style>
