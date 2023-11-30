@@ -1,6 +1,6 @@
 {
   "name": "@encoradxp/mat-lib-test",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "publicConfig": {
     "access": "public"
   },
