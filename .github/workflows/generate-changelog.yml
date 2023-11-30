@@ -1,5 +1,5 @@
 name: Generate Changelog
-on: [workflow_dispatch]
+on: [push]
 jobs:
   changelog:
     runs-on: ubuntu-20.04
@@ -9,4 +9,3 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }} 
 
-          
