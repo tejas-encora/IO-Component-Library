@@ -1,6 +1,6 @@
 {
   "name": "@encoradxp/mat-lib-test",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "publicConfig": {
     "access": "public"
   },
@@ -27,7 +27,8 @@
     "@storybook/addon-actions": "^7.4.6",
     "vite-plugin-vuetify": "^1.0.2",
     "vue": "^3.3.4",
-    "vue-meta": "^2.4.0"
+    "vue-meta": "^2.4.0",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
     "@storybook/addon-docs": "^7.4.6",

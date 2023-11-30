@@ -45,9 +45,6 @@ const darkTheme = {
 };
 
 export default createVuetify({
-  components: {
-    VDatePicker,
-  },
   directives,
   theme: {
     defaultTheme: "light",

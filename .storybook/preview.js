@@ -8,6 +8,15 @@ import '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-pro/css/all.css'
 import { themes } from '@storybook/theming'
 
+import { setup } from "@storybook/vue3";
+import { registerPlugins } from "../src/plugins";
+import { withVuetifyTheme, DEFAULT_THEME } from "./withVuetifyTheme.decorator";
+
+setup((app) => {
+  // Registers your app's plugins into Storybook
+  registerPlugins(app);
+});
+
 const preview = {
   parameters: {
     docs: {
@@ -20,7 +29,7 @@ const preview = {
         date: /Date$/,
       },
     },
-    layout: 'centered',
   },
 };
 export default preview;
+export const decorators = [withVuetifyTheme];

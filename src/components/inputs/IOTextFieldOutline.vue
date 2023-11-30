@@ -3,13 +3,13 @@
     :value="modelValue" @input="$emit('update:modelValue', $event.target.value)">
     <i :class="setIconStart" slot="leading-icon" v-if="leadingIcon" />
     <i :class="setIconEnd" slot="trailing-icon" v-if="trailingIcon && !showClearIcon" />
-    <i class="fa-light fa-circle-x" slot="trailing-icon" v-if="showClearIcon" @click="clearInput" />
+    <i id="circle-x" class="fa-light fa-circle-x" slot="trailing-icon" v-if="showClearIcon" @click="clearInput" />
   </md-outlined-text-field>
 </template>
 
 <script>
 export default {
-  name: 'IOTextField',
+  name: 'IOTextFieldOutline',
   props: {
     modelValue: String,
     leadingIcon: {
@@ -26,7 +26,7 @@ export default {
     },
     iconEnd: {
       type: String,
-      default: "circle-x",
+      default: "pencil",
     },
     error: {
       type: Boolean,

@@ -1,5 +1,6 @@
 import '@material/web/textfield/outlined-text-field.js'
 import IOTextFieldOutline from '@/components/Inputs/IOTextFieldOutline.vue'
+import { fireEvent, userEvent, within } from '@storybook/testing-library';
 
 const template = '<IOTextFieldOutline :clear=args.clear :error=args.error :error-text=args.errorText :label=args.label :supporting-text=args.supportingText :value=args.value :disabled=args.disabled :leadingIcon=args.leadingIcon :trailingIcon=args.trailingIcon :iconStart=args.iconStart :iconEnd=args.iconEnd />'
 
@@ -20,10 +21,10 @@ export default {
     leadingIcon: false,
     trailingIcon: false,
     iconStart: 'magnifying-glass',
-    iconEnd: 'circle-x',
+    iconEnd: 'pencil',
     error: false,
     errorText: 'Oops, this thing needs fixed',
-    clear: true,
+    clear: false,
   },
   argTypes: {
     label: {
@@ -72,7 +73,7 @@ export default {
       control: {
         type: 'text',
       },
-      description: 'Custom error supporting text',
+      description: 'Custom error text',
     },
     clear: {
       clear: {
@@ -83,7 +84,13 @@ export default {
   },
 };
 
+
 export const Default = {
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getElementById('circle-x'));
+  },
   render: (args) => ({
     components: { IOTextFieldOutline },
     setup() {

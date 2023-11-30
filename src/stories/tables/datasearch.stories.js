@@ -1,9 +1,9 @@
-import IODataTableSearch from '@/components/DataTable/IODataTableSearch.vue'
+import IODataTableSearch from '@/labs/DataTable/IODataTableSearch.vue'
 
 const template = '<IODataTableSearch />';
 
 export default {
-    title: 'UI/Molecules/DataTables',
+    title: 'UI/Labs/DataTables',
     component: IODataTableSearch,
     render: (args) => ({
         components: { IODataTableSearch },
