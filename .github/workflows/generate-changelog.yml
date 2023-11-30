@@ -1,8 +1,5 @@
 name: Generate Changelog
-on:
-  release:
-    types:
-      - created
+on: [workflow_dispatch]
 jobs:
   changelog:
     runs-on: ubuntu-20.04
@@ -11,3 +8,4 @@ jobs:
         uses: heinrichreimer/action-github-changelog-generator@v2.3
         with:
           token: ${{ secrets.GITHUB_TOKEN }} 
+
