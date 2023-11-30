@@ -10,7 +10,13 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "version": "auto-changelog --output src/docs/ChangeLog.mdx --template keepachangelog && git add src/docs/ChangeLog.mdx"
+    "version": "auto-changelog && git add src/docs/ChangeLog.mdx"
+  },
+  "auto-changelog": {
+    "output": "src/docs/ChangeLog.mdx",
+    "template": "keepachangelog",
+    "unreleased": true,
+    "commitLimit": false
   },
   "main": "./dist/mat-lib-test.umd.js",
   "module": "./dist/mat-lib-test.es.js",
