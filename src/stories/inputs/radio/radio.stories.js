@@ -1,7 +1,7 @@
 import '@material/web/radio/radio.js'
 import IORadioButton from '@/components/radio/IORadioButton.vue'
 
-const template = `<IORadioButton :error=args.error :disabled=args.disabled />`
+const template = `<IORadioButton :disabled=args.disabled />`
 
 export default {
   title: 'UI/Atoms/Inputs/Radio Button',
@@ -15,17 +15,11 @@ export default {
   }),
   args: {
     disabled: false,
-    error: false,
   },
   argTypes: {
     disabled: {
       control: 'boolean',
     },
-    error: {
-      control: {
-        type: 'boolean',
-      },
-    }
   },
 };
 
