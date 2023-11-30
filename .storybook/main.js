@@ -5,7 +5,7 @@ const config = {
     '../src/**/*stories.mdx',
     '../src/**/*.stories.js'
   ],
-  staticDirs: ['../public'],
+  staticDirs: ['../src/assets/public'],
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
