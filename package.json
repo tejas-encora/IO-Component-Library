@@ -9,7 +9,8 @@
     "build": "vite build && node post-build.js",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "version": "auto-changelog --output src/docs/ChangeLog.mdx --template keepachangelog && git add src/docs/ChangeLog.mdx"
   },
   "main": "./dist/mat-lib-test.umd.js",
   "module": "./dist/mat-lib-test.es.js",
@@ -43,6 +44,7 @@
     "@storybook/vue3": "^7.4.6",
     "@storybook/vue3-vite": "^7.4.6",
     "@vitejs/plugin-vue": "^4.3.4",
+    "auto-changelog": "^2.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.69.5",
