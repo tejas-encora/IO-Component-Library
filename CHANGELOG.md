@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## Build
+### [0.3.12](https://github.com/tejas-encora/IO-Component-Library/compare/v0.3.11...v0.3.12) (2023-12-01)
 
 ### [0.3.11](https://github.com/tejas-encora/IO-Component-Library/compare/v0.3.10...v0.3.11) (2023-12-01)
 
