@@ -16,7 +16,8 @@
 
     <IOTextFieldOutline label="Test" error trailing-icon></IOTextFieldOutline>
 
-    <IODataTableSearch />
+    <!-- <IODataTableSearch /> -->
+    <IODataTable />
   </main>
 </template>
 
@@ -27,7 +28,7 @@ import IOTextField from '@/components/Inputs/IOTextField.vue';
 import IOTextFieldOutline from '@/components/Inputs/IOTextFieldOutline.vue';
 import IOButtonFilled from '@/components/Buttons/IOButtonFilled.vue';
 import IOButtonElevated from '@/components/Buttons/IOButtonElevated.vue';
-import IODataTableSearch from '@/labs/DataTable/IODataTableSearch.vue';
+import IODataTable from '@/labs/DataTable/IODataTable.vue';
 import { ref, computed } from 'vue';
 
 export default {
@@ -37,7 +38,7 @@ export default {
     IOTextField,
     IOChipFilter,
     IOCheckbox,
-    IODataTableSearch,
+    IODataTable,
     IOTextFieldOutline
   },
   setup() {

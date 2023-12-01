@@ -1,135 +1,99 @@
 <template>
-    <v-data-table :items="items" />
+    <v-card border max-width="80%" class="mx-auto" :hasSearch="isSearch">
+        <IOTextField v-model="search" label="Search" class="full-width" leading-icon icon="magnifying-glass" clear v-if="isSearch" />
+        <v-data-table :headers="headers" :items="characters" :search="search" class="zebra" />
+    </v-card>
 </template>
 
 <script>
+import { ref, onMounted } from 'vue'
+import IOTextField from '@/components/Inputs/IOTextField.vue'
+
 export default {
     name: 'IODataTable',
-    data() {
-        return {
-            items: [
-                {
-                    name: 'African Elephant',
-                    species: 'Loxodonta africana',
-                    diet: 'Herbivore',
-                    habitat: 'Savanna, Forests',
-                },
-                {
-                    name: 'Lion',
-                    species: 'Panthera leo',
-                    diet: 'Carnivore',
-                    habitat: 'Grasslands, Savanna',
-                },
-                {
-                    name: 'Giraffe',
-                    species: 'Giraffa camelopardalis',
-                    diet: 'Herbivore',
-                    habitat: 'Savanna, Woodlands',
-                },
-                {
-                    name: 'Zebra',
-                    species: 'Equus zebra',
-                    diet: 'Herbivore',
-                    habitat: 'Grasslands, Woodlands',
-                },
-                {
-                    name: 'Hippopotamus',
-                    species: 'Hippopotamus amphibius',
-                    diet: 'Herbivore',
-                    habitat: 'Rivers, Lakes',
-                },
-                {
-                    name: 'Cheetah',
-                    species: 'Acinonyx jubatus',
-                    diet: 'Carnivore',
-                    habitat: 'Grasslands, Savanna',
-                },
-                {
-                    name: 'Rhinoceros',
-                    species: 'Diceros bicornis',
-                    diet: 'Herbivore',
-                    habitat: 'Grasslands, Woodlands',
-                },
-                {
-                    name: 'Gorilla',
-                    species: 'Gorilla gorilla',
-                    diet: 'Herbivore',
-                    habitat: 'Forests, Mountains',
-                },
-                {
-                    name: 'Leopard',
-                    species: 'Panthera pardus',
-                    diet: 'Carnivore',
-                    habitat: 'Forests, Savanna',
-                },
-                {
-                    name: 'Hyrax',
-                    species: 'Procavia capensis',
-                    diet: 'Herbivore',
-                    habitat: 'Rocks, Mountains',
-                },
-                {
-                    name: 'Elephant Seal',
-                    species: 'Mirounga leonina',
-                    diet: 'Carnivore',
-                    habitat: 'Coastlines, Islands',
-                },
-                {
-                    name: 'Wildebeest',
-                    species: 'Connochaetes taurinus',
-                    diet: 'Herbivore',
-                    habitat: 'Grasslands, Savanna',
-                },
-                {
-                    name: 'Chimpanzee',
-                    species: 'Pan troglodytes',
-                    diet: 'Omnivore',
-                    habitat: 'Forests, Woodlands',
-                },
-                {
-                    name: 'Warthog',
-                    species: 'Phacochoerus africanus',
-                    diet: 'Herbivore',
-                    habitat: 'Savanna, Grasslands',
-                },
-                {
-                    name: 'Baboon',
-                    species: 'Papio hamadryas',
-                    diet: 'Omnivore',
-                    habitat: 'Savanna, Mountains',
-                },
-                {
-                    name: 'Meerkat',
-                    species: 'Suricata suricatta',
-                    diet: 'Omnivore',
-                    habitat: 'Deserts, Grasslands',
-                },
-                {
-                    name: 'Honey Badger',
-                    species: 'Mellivora capensis',
-                    diet: 'Omnivore',
-                    habitat: 'Various',
-                },
-                {
-                    name: 'Hyena',
-                    species: 'Crocuta crocuta',
-                    diet: 'Carnivore',
-                    habitat: 'Grasslands, Savanna',
-                },
-                {
-                    name: 'Aardvark',
-                    species: 'Orycteropus afer',
-                    diet: 'Insectivore',
-                    habitat: 'Grasslands, Woodlands',
-                },
-                {
-                    name: 'Ostrich',
-                    species: 'Struthio camelus',
-                    diet: 'Herbivore',
-                    habitat: 'Savanna, Grasslands',
-                },
-            ],
-        };
+    components: {
+        IOTextField
     },
+    props: {
+        hasSearch: {
+            type: Boolean,
+            default: false,
+        },
+    },
+    computed: {
+        isSearch() {
+            return this.hasSearch;
+        }
+    },
+    setup() {
+        const search = ref('')
+        const characters = ref([])
+
+        // const headers = [
+        //     { text: 'Name', value: 'name' },
+        //     { text: 'Race', value: 'race' },
+        //     { text: 'Gender', value: 'gender' },
+        //     { text: 'Birth', value: 'birth' },
+        //     { text: 'Death', value: 'death' }
+        // ]
+
+        onMounted(async () => {
+            const url = 'https://the-one-api.dev/v2/character'
+            const bearerToken = 'rwlpOJMKDeangwftjVsA'
+
+            try {
+                const response = await fetch(url, {
+                    headers: {
+                        Authorization: `Bearer ${bearerToken}`
+                    }
+                })
+
+                if (!response.ok) {
+                    throw new Error('Failed to fetch')
+                }
+
+                const data = await response.json()
+                characters.value = data.docs
+            } catch (error) {
+                console.error(error)
+            }
+        })
+
+        return {
+            search,
+            // headers,
+            characters
+        }
+    }
 }
 </script>
+<style>
+.full-width {
+    width: 100%;
+}
+
+.vcard {
+    /* width: 80% !important; */
+    text-align: center !important;
+    border: 1px solid !important;
+}
+
+.zebra tbody tr:nth-child(even) {
+    background-color: var(--md-sys-color-surface-container-low);
+}
+
+.v-data-table-header__content {
+    font-weight: bold;
+}
+
+.v-data-table-header__content,
+.v-data-table__td {
+    font-family: 'Lato', sans-serif !important;
+}
+
+.v-table .v-icon {
+    font-size: 14px;
+    height: 20px;
+    width: 20px;
+}
+</style>

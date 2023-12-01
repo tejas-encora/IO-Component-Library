@@ -48,4 +48,3 @@ export { default as IOBadge } from '@/components/Badge/IOBadge.vue';
  * Tables * 
 */
 export { default as IODataTable } from '@/labs/DataTable/IODataTable.vue';
-export { default as IODataTableSearch } from '@/labs/DataTable/IODataTableSearch.vue';
