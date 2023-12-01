@@ -30,6 +30,6 @@ coverage
 package-lock.json
 storybook-static
 dist
-
+CHANGELOG.md
 
 
