@@ -12,16 +12,22 @@
     <IOTextField label="Last" v-model="lname"></IOTextField>
     <!-- <IOButtonFilled @click="handleTest">Submit</IOButtonFilled> -->
     <IOCheckbox label="Last" error />
+    <IORadioButton />
     <p>&nbsp;</p>
 
     <IOTextFieldOutline label="Test" error trailing-icon></IOTextFieldOutline>
 
     <!-- <IODataTableSearch /> -->
-    <IODataTable />
+    <!-- <IODataTable /> -->
+    <IODataTableV hasSearch />
+    
+     <!-- <IOMenu /> -->
   </main>
 </template>
 
 <script>
+import IORadioButton from '@/components/Radio/IORadioButton.vue';
+import IOMenu from '@/components/Menu/IOMenu.vue';
 import IOCheckbox from '@/components/Checkbox/IOCheckbox.vue';
 import IOChipFilter from '@/components/Chips/IOChipFilter.vue';
 import IOTextField from '@/components/Inputs/IOTextField.vue';
@@ -29,6 +35,7 @@ import IOTextFieldOutline from '@/components/Inputs/IOTextFieldOutline.vue';
 import IOButtonFilled from '@/components/Buttons/IOButtonFilled.vue';
 import IOButtonElevated from '@/components/Buttons/IOButtonElevated.vue';
 import IODataTable from '@/labs/DataTable/IODataTable.vue';
+import IODataTableV from '@/labs/DataTable/IODataTableV.vue';
 import { ref, computed } from 'vue';
 
 export default {
@@ -39,7 +46,10 @@ export default {
     IOChipFilter,
     IOCheckbox,
     IODataTable,
-    IOTextFieldOutline
+    IODataTableV,
+    IORadioButton,
+    IOTextFieldOutline,
+    IOMenu
   },
   setup() {
     const counter = ref(0);

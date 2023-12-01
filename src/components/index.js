@@ -40,6 +40,11 @@ export { default as IOPasswordOutline } from '@/components/Inputs/IOPasswordOutl
 export { default as IOCheckbox } from '@/components/Checkbox/IOCheckbox.vue';
 
 /** 
+ * Radio Buttons * 
+*/
+export { default as IORadioButton } from '@/components/Radio/IORadioButton.vue';
+
+/** 
  * Feedback * 
 */
 export { default as IOBadge } from '@/components/Badge/IOBadge.vue';
@@ -48,3 +53,5 @@ export { default as IOBadge } from '@/components/Badge/IOBadge.vue';
  * Tables * 
 */
 export { default as IODataTable } from '@/labs/DataTable/IODataTable.vue';
+export { default as IODataTableSS } from '@/labs/DataTable/IODataTableSS.vue';
+export { default as IODataTableV } from '@/labs/DataTable/IODataTableV.vue';

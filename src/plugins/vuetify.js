@@ -3,7 +3,7 @@
 // import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-pro'
 import '@/styles/main.scss'
-import fa from '@fortawesome/fontawesome-pro/css/all.css'
+import fa from '@fortawesome/fontawesome-pro/css/all.css?inline'
 // import { aliases, mdi } from 'vuetify/lib/iconsets/mdi'
 
 // Vuetify
