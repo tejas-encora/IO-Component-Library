@@ -1,9 +1,9 @@
 <template>
   <span style="position: relative">
-    <md-filled-button id="usage-anchor-2"
-      >Set with element ref</md-filled-button
+    <IOFab id="anchor"
+      >Menu Test</IOFab
     >
-    <md-menu id="usage-menu-2">
+    <md-menu id="option-menu">
       <md-menu-item>
         <div slot="headline">Apple</div>
       </md-menu-item>
@@ -18,18 +18,25 @@
 </template>
 
 <script type="module">
-// Initialize menuEl before trying to set properties on it
-const anchorEl = document.body.querySelector('#usage-anchor-2');
-const menuEl = document.body.querySelector('#usage-menu-2');
+import IOFab from '@/components/Buttons/FAB/IOFab.vue';
 
-// Check that menuEl is not null before setting properties
-if (menuEl) {
-  menuEl.anchorElement = anchorEl;
+export default {
+  name: 'IOMenu',
+  components: {
+    IOFab,
+  },
+};
 
-  anchorEl.addEventListener('click', () => {
-    if (menuEl) {
+document.addEventListener('DOMContentLoaded', () => {
+  const anchorEl = document.getElementById('anchor');
+  const menuEl = document.getElementById('option-menu');
+
+  if(anchorEl && menuEl) {
+    menuEl.anchorElement = anchorEl;
+
+    anchorEl.addEventListener('click', () => {
       menuEl.open = !menuEl.open;
-    }
-  });
-}
+    });
+  }
+});
 </script>

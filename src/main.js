@@ -18,6 +18,8 @@ import '@material/web/chips/assist-chip.js'
 import '@material/web/chips/filter-chip.js'
 import '@material/web/chips/suggestion-chip.js'
 
+import '@material/web/menu/menu.js'
+
 import '@fontsource/lato/300.css'
 import '@fontsource/lato/400.css'
 import '@fontsource/lato/700.css'

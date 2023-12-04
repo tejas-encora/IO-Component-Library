@@ -1,13 +1,30 @@
 <template>
-    <v-card border max-width="80%" class="mx-auto" :hasSearch="isSearch">
-        <IOTextField v-model="search" label="Search" class="full-width" leading-icon icon="magnifying-glass" clear v-if="isSearch" />
-        <v-data-table :headers="headers" :items="characters" :search="search" class="zebra" />
+    <v-card border
+            max-width="80%"
+            class="mx-auto"
+            :hasSearch="isSearch">
+        <IOTextField v-model="search"
+                     label="Search"
+                     class="full-width"
+                     leading-icon
+                     icon="magnifying-glass"
+                     clear
+                     v-if="isSearch" />
+        <v-data-table :headers="headers"
+                      :items="items"
+                      :search="search"
+                      :loading="loading"
+                      :class="classes">
+            <template v-slot:loading>
+                <v-skeleton-loader type="table-row@6"></v-skeleton-loader>
+            </template>
+        </v-data-table>
     </v-card>
 </template>
 
 <script>
-import { ref, onMounted } from 'vue'
-import IOTextField from '@/components/Inputs/IOTextField.vue'
+import { ref, computed } from 'vue';
+import IOTextField from '@/components/Inputs/IOTextField.vue';
 
 export default {
     name: 'IODataTable',
@@ -19,55 +36,35 @@ export default {
             type: Boolean,
             default: false,
         },
-    },
-    computed: {
-        isSearch() {
-            return this.hasSearch;
+        items: {
+            type: Array,
+            required: true,
+        },
+        loading: {
+            type: Boolean,
+            default: false,
         }
     },
-    setup() {
-        const search = ref('')
-        const characters = ref([])
+    setup(props) {
+        const loading = ref(props.loading);
+        const search = ref('');
 
-        // const headers = [
-        //     { text: 'Name', value: 'name' },
-        //     { text: 'Race', value: 'race' },
-        //     { text: 'Gender', value: 'gender' },
-        //     { text: 'Birth', value: 'birth' },
-        //     { text: 'Death', value: 'death' }
-        // ]
+        const classes = computed(() => ({
+            'loading': loading.value,
+        }));
 
-        onMounted(async () => {
-            const url = 'https://the-one-api.dev/v2/character'
-            const bearerToken = 'rwlpOJMKDeangwftjVsA'
-
-            try {
-                const response = await fetch(url, {
-                    headers: {
-                        Authorization: `Bearer ${bearerToken}`
-                    }
-                })
-
-                if (!response.ok) {
-                    throw new Error('Failed to fetch')
-                }
-
-                const data = await response.json()
-                characters.value = data.docs
-            } catch (error) {
-                console.error(error)
-            }
-        })
+        const isSearch = computed(() => props.hasSearch);
 
         return {
             search,
-            // headers,
-            characters
-        }
+            classes,
+            isSearch,
+        };
     }
-}
+};
 </script>
-<style>
+
+<style scoped>
 .full-width {
     width: 100%;
 }
@@ -95,5 +92,4 @@ export default {
     font-size: 14px;
     height: 20px;
     width: 20px;
-}
-</style>
+}</style>

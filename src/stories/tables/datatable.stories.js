@@ -1,6 +1,5 @@
 import IODataTable from '@/labs/DataTable/IODataTable.vue'
-
-const template = '<IODataTable :hasSearch=args.hasSearch />';
+const template = '<IODataTable :hasSearch=args.hasSearch :items=args.items />';
 
 export default {
     title: 'UI/Labs/DataTables',
@@ -14,6 +13,7 @@ export default {
     }),
     args: {
         hasSearch: false,
+        items: [],
     },
     argTypes: {
         hasSearch: {
@@ -21,7 +21,7 @@ export default {
                 type: 'boolean',
             },
             description: 'Show search',
-        }
+        },
     },
 };
 
