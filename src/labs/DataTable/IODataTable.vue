@@ -68,7 +68,9 @@ export default {
 .full-width {
     width: 100%;
 }
-
+.v-data-table-header__content {
+    font-weight: bold
+}
 .vcard {
     /* width: 80% !important; */
     text-align: center !important;

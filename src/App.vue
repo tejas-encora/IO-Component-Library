@@ -22,16 +22,17 @@
                  trailing-icon></IOTextField>
     <IOTextField label="Last"
                  v-model="lname"></IOTextField>
-    <!-- <IOButtonFilled @click="handleTest">Submit</IOButtonFilled> -->
+
     <IOCheckbox label="Last"
                 error />
+                <p>&nbsp;</p>
     <IORadioButton />
     <p>&nbsp;</p>
 
     <IOTextFieldOutline label="Test"
                         error
                         trailing-icon></IOTextFieldOutline>
-    <p>&nbsp;</p>
+    <!-- <p>&nbsp;</p>
     Data Table
     <IODataTable hasSearch
                  :items="characters" />
@@ -40,7 +41,7 @@
                   :items="characters" />
     Data Table Server Side
     <IODataTableSS hasSearch
-                  :items="characters" />
+                  :items="characters" /> -->
     <!-- <IOMenu /> -->
   </main>
 </template>

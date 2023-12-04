@@ -12,6 +12,7 @@ import '@material/web/fab/fab.js'
 import '@material/web/textfield/filled-text-field.js'
 import '@material/web/textfield/outlined-text-field.js'
 import '@material/web/checkbox/checkbox.js'
+import '@material/web/radio/radio.js'
 
 import '@material/web/chips/input-chip.js'
 import '@material/web/chips/assist-chip.js'

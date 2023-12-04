@@ -12,6 +12,7 @@
         <v-data-table-virtual :headers="headers"
                               :items="items"
                               height="400"
+                              class="zebra"
                               item-value="name"></v-data-table-virtual>
     </v-card>
 </template>
