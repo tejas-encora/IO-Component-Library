@@ -106,5 +106,5 @@ md-filled-button {
   height: 200px; */
 }
 .docs-story {
-  height: 200px;
+  height: 200px !important;
 }
