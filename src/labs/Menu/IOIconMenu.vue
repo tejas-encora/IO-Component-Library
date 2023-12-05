@@ -1,8 +1,6 @@
 <template>
   <span style="position: relative">
-    <IOFab id="anchor"
-      >Menu Test</IOFab
-    >
+    <IOIconButtonFilled id="anchor"/>
     <md-menu id="option-menu">
       <md-menu-item>
         <div slot="headline">Apple</div>
@@ -18,12 +16,12 @@
 </template>
 
 <script type="module">
-import IOFab from '@/components/Buttons/FAB/IOFab.vue';
+import IOIconButtonFilled from '@/components/Buttons/IconButtons/IOIconButtonFilled.vue';
 
 export default {
-  name: 'IOMenu',
+  name: 'IOIconMenu',
   components: {
-    IOFab,
+    IOIconButtonFilled,
   },
 };
 

@@ -11,6 +11,7 @@ const config = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     '@storybook/addon-docs',
+    '@storybook/addon-actions',
     'storybook-version'
   ],
   framework: {

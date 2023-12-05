@@ -55,3 +55,8 @@ export { default as IOBadge } from '@/components/Badge/IOBadge.vue';
 export { default as IODataTable } from '@/labs/DataTable/IODataTable.vue';
 export { default as IODataTableSS } from '@/labs/DataTable/IODataTableSS.vue';
 export { default as IODataTableV } from '@/labs/DataTable/IODataTableV.vue';
+
+/** 
+ * Menu * 
+*/
+export { default as IOIconMenu } from '@/labs/Menu/IOIconMenu.vue';
