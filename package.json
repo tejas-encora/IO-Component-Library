@@ -1,6 +1,6 @@
 {
   "name": "@encoradxp/mat-lib-test",
-  "version": "0.3.18",
+  "version": "0.4.0",
   "publicConfig": {
     "access": "public"
   },
@@ -13,12 +13,6 @@
     "release": "standard-version",
     "commit": "cz",
     "fini": "git push --follow-tags origin main && npm publish"
-  },
-  "auto-changelog": {
-    "output": "src/docs/ChangeLog.mdx",
-    "template": "keepachangelog",
-    "unreleased": true,
-    "commitLimit": false
   },
   "main": "./dist/mat-lib-test.umd.js",
   "module": "./dist/mat-lib-test.es.js",
@@ -33,7 +27,6 @@
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "@material/web": "^1.0.0",
     "@previewjs/cli": "^1.27.0",
-    "@storybook/addon-actions": "^7.4.6",
     "vite-plugin-vuetify": "^1.0.2",
     "vue": "^3.3.4",
     "vue-meta": "^2.4.0",
@@ -42,6 +35,7 @@
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
+    "@storybook/addon-actions": "^7.6.3",
     "@storybook/addon-docs": "^7.4.6",
     "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-interactions": "^7.5.3",

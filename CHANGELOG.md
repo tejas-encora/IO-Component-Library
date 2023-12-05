@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/tejas-encora/IO-Component-Library/compare/v0.3.18...v0.4.0) (2023-12-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* **vue 3 > 2:** IODataTable may be broken
+
+* **vue 3 > 2:** test vue 2 component ([9beb1af](https://github.com/tejas-encora/IO-Component-Library/commit/9beb1af4b3b41fcd7549ce22c01fc384ec24427e))
+
 ### [0.3.18](https://github.com/tejas-encora/IO-Component-Library/compare/v0.3.17...v0.3.18) (2023-12-04)
 
 

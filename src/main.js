@@ -20,6 +20,7 @@ import '@material/web/chips/filter-chip.js'
 import '@material/web/chips/suggestion-chip.js'
 
 import '@material/web/menu/menu.js'
+import '@material/web/menu/menu-item.js'
 
 import '@fontsource/lato/300.css'
 import '@fontsource/lato/400.css'

@@ -1,6 +1,6 @@
 <template>
   <main>
-    <IOTextField label="Enter your name"
+    <!-- <IOTextField label="Enter your name"
                  v-model="name"
                  trailing-icon
                  clear></IOTextField>
@@ -31,7 +31,7 @@
 
     <IOTextFieldOutline label="Test"
                         error
-                        trailing-icon></IOTextFieldOutline>
+                        trailing-icon></IOTextFieldOutline> -->
     <!-- <p>&nbsp;</p>
     Data Table
     <IODataTable hasSearch
@@ -42,13 +42,17 @@
     Data Table Server Side
     <IODataTableSS hasSearch
                   :items="characters" /> -->
-    <!-- <IOMenu /> -->
+    <IOIconMenu />
+    <p>&nbsp;</p>
+    Data Table
+    <IODataTable hasSearch
+                 :items="characters" />
   </main>
 </template>
 
 <script>
 import IORadioButton from '@/components/Radio/IORadioButton.vue';
-import IOMenu from '@/components/Menu/IOMenu.vue';
+import IOIconMenu from '@/labs/Menu/IOIconMenu.vue';
 import IOCheckbox from '@/components/Checkbox/IOCheckbox.vue';
 import IOChipFilter from '@/components/Chips/IOChipFilter.vue';
 import IOTextField from '@/components/Inputs/IOTextField.vue';
@@ -72,7 +76,7 @@ export default {
     IODataTableSS,    
     IORadioButton,
     IOTextFieldOutline,
-    IOMenu
+    IOIconMenu
   },
   setup() {
     const counter = ref(0);
