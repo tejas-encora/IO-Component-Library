@@ -12,7 +12,8 @@
     "build-storybook": "storybook build",
     "release": "standard-version",
     "commit": "cz",
-    "fini": "git push --follow-tags origin main && npm publish"
+    "fini": "git push --follow-tags origin main && npm publish",
+    "postinstall": "cp -r ./src/styles ../../../src"
   },
   "main": "./dist/mat-lib-test.umd.js",
   "module": "./dist/mat-lib-test.es.js",
