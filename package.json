@@ -1,6 +1,6 @@
 {
   "name": "@encoradxp/mat-lib-test",
-  "version": "0.5.4",
+  "version": "0.5.6",
   "publicConfig": {
     "access": "public"
   },
@@ -13,7 +13,7 @@
     "release": "standard-version",
     "commit": "cz",
     "fini": "git push --follow-tags origin main && npm publish",
-    "postinstall": "cp -r ./src/styles ../"
+    "postinstall": "cp -r ./src/styles ../../../src"
   },
   "main": "./dist/mat-lib-test.umd.js",
   "module": "./dist/mat-lib-test.es.js",
