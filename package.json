@@ -1,6 +1,6 @@
 {
   "name": "@encoradxp/mat-lib-test",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "publicConfig": {
     "access": "public"
   },
@@ -12,8 +12,7 @@
     "build-storybook": "storybook build",
     "release": "standard-version",
     "commit": "cz",
-    "fini": "git push --follow-tags origin main && npm publish",
-    "postinstall": "cp -r ./src/styles ../../../src"
+    "fini": "git push --follow-tags origin main && npm publish"
   },
   "main": "./dist/mat-lib-test.umd.js",
   "module": "./dist/mat-lib-test.es.js",
@@ -64,10 +63,6 @@
     ".": {
       "import": "./dist/mat-lib-test.es.js",
       "require": "./dist/mat-lib-test.umd.js"
-    },
-    "./dist/style.css": {
-      "import": "./dist/style.css",
-      "require": "./dist/style.css"
     }
   },
   "config": {
