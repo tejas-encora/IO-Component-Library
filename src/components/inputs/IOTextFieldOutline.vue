@@ -46,7 +46,7 @@ export default {
     },
     errorText: {
       type: String,
-      default: 'Oops, this thing needs fixing',
+      default: 'Your custom error message',
     },
     clear: {
       type: Boolean,
