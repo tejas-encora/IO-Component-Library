@@ -1,0 +1,76 @@
+{
+  "name": "@encoradxp/mat-lib-test",
+  "version": "0.5.9",
+  "publicConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node post-build.js && storybook build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "release": "standard-version",
+    "commit": "cz",
+    "fini": "git push --follow-tags origin main && npm publish"
+  },
+  "main": "./dist/mat-lib-test.umd.js",
+  "module": "./dist/mat-lib-test.es.js",
+  "files": [
+    "dist",
+    "src/assets"
+  ],
+  "dependencies": {
+    "@fontsource/lato": "^5.0.15",
+    "@fortawesome/fontawesome-pro": "^6.4.2",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
+    "@material/web": "^1.0.0",
+    "@previewjs/cli": "^1.27.0",
+    "vue": "^2.7.10",
+    "vuetify": "^2.6.0",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@storybook/addon-actions": "^7.6.3",
+    "@storybook/addon-docs": "^7.4.6",
+    "@storybook/addon-essentials": "^7.4.6",
+    "@storybook/addon-interactions": "^7.5.3",
+    "@storybook/addon-links": "^7.4.6",
+    "@storybook/blocks": "^7.4.6",
+    "@storybook/jest": "^0.2.3",
+    "@storybook/manager-api": "^7.4.6",
+    "@storybook/testing-library": "^0.2.2",
+    "@storybook/theming": "^7.4.6",
+    "@storybook/vue3": "^7.4.6",
+    "@storybook/vue3-vite": "^7.4.6",
+    "@vitejs/plugin-vue": "^4.3.4",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.69.5",
+    "standard-version": "^9.5.0",
+    "storybook": "^7.4.6",
+    "storybook-version": "^0.1.1",
+    "vite": "^4.4.9"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/mat-lib-test.es.js",
+      "require": "./dist/mat-lib-test.umd.js"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
