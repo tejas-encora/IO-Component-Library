@@ -17,4 +17,4 @@ const combinedContent = `${srcFileContent}\n${destFileContent}`;
 // Write the combined content to the destination file
 fs.writeFileSync(destFilePath, combinedContent, 'utf-8');
 
-console.log(`Contents from 'imports.js' have been added to the top of '${destFilePath}'`);
+console.log(`Contents from 'imports.js' to '${destFilePath}' added`);

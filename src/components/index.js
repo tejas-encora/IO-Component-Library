@@ -52,7 +52,7 @@ export { default as IOButtonFilled } from '@/components/Buttons/IOButtonFilled.v
 /** 
  * Tables * 
 */
-// export { default as IODataTable } from '@/labs/DataTable/IODataTable.vue';
+export { default as IODataTable } from '@/labs/DataTable/IODataTable.vue';
 // export { default as IODataTableSS } from '@/labs/DataTable/IODataTableSS.vue';
 // export { default as IODataTableV } from '@/labs/DataTable/IODataTableV.vue';
 
