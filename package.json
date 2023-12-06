@@ -28,8 +28,8 @@
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "@material/web": "^1.0.0",
     "@previewjs/cli": "^1.27.0",
-    "vite-plugin-vuetify": "^1.0.2",
-    "vue": "^3.3.4",
+    "vue": "^2.7.10",
+    "vuetify": "^2.6.0",
     "vue-meta": "^2.4.0",
     "webfontloader": "^1.6.28"
   },
