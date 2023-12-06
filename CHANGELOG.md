@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/tejas-encora/IO-Component-Library/compare/v0.4.0...v0.5.0) (2023-12-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* **vue 3 -> 2:** Components being out of version with the consuming app
+
+* **vue 3 -> 2:** convert comps to vue2 ([f8b24f6](https://github.com/tejas-encora/IO-Component-Library/commit/f8b24f609dd1f19955438b72841cfac02a0097a1))
+
 ## [0.4.0](https://github.com/tejas-encora/IO-Component-Library/compare/v0.3.18...v0.4.0) (2023-12-05)
 
 
