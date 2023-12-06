@@ -12,13 +12,11 @@
                      v-if="isSearch" />
         <v-data-table-server :items="items"
                              :hasSearch="isSearch"
-                             class="zebra"
-                             ></v-data-table-server>
+                             class="zebra"></v-data-table-server>
     </v-card>
 </template>
 
 <script>
-import { ref, computed } from 'vue'
 import IOTextField from '@/components/Inputs/IOTextField.vue'
 
 export default {
@@ -36,18 +34,16 @@ export default {
             default: () => [],
         },
     },
+    data() {
+        return {
+            search: '',
+        };
+    },
     computed: {
         isSearch() {
             return this.hasSearch;
         }
     },
-    setup() {
-        const search = ref('');
-
-        return {
-            search,
-        };
-    }
 };
 </script>
 <style>

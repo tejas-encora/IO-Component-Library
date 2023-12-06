@@ -1,22 +1,21 @@
 <template>
-  <md-elevated-button :leadingIcon="hasIcon" :size="setSize">
+  <md-elevated-button :leading-icon="hasIcon" :size="setSize">
     <slot></slot>
-    <i :class="setIcon" slot="icon" v-if="leadingIcon" />
+    <i :class="setIcon" slot="icon" v-if="leadingIcon"></i>
   </md-elevated-button>
 </template>
 
 <script>
-
 export default {
   name: 'IOButtonElevated',
   props: {
     size: {
       type: String,
-      default: 'medium'
+      default: 'medium',
     },
     icon: {
       type: String,
-      default: "circle-plus"
+      default: 'circle-plus',
     },
     leadingIcon: {
       type: Boolean,
@@ -35,5 +34,4 @@ export default {
     },
   },
 };
-
 </script>

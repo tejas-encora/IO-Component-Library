@@ -1,6 +1,10 @@
 <template>
-  <md-outlined-text-field type="textarea" rows="5" :error="isError" :error-text="errText" :value="modelValue"
-    @input="$emit('update:modelValue', $event.target.value)">
+  <md-outlined-text-field type="textarea"
+                          rows="5"
+                          :error="isError"
+                          :error-text="errText"
+                          :value="value"
+                          @input="handleInput">
   </md-outlined-text-field>
 </template>
 
@@ -8,7 +12,7 @@
 export default {
   name: 'IOTextAreaOutline',
   props: {
-    modelValue: String,
+    value: String,
     error: {
       type: String,
       default: false,
@@ -18,13 +22,17 @@ export default {
       default: 'Oops, this thing needs fixed',
     },
   },
-  emits: ['update:modelValue'],
   computed: {
     isError() {
       return this.error;
     },
     errText() {
       return this.errorText;
+    },
+  },
+  methods: {
+    handleInput(event) {
+      this.$emit('input', event.target.value); // Emitting 'input' event instead of 'update:modelValue'
     },
   }
 };

@@ -1,9 +1,22 @@
 <template>
-  <md-filled-text-field :error="isError" :error-text="errText" :leading-icon="isIconStart" :trailing-icon="setIconEnd"
-    :value="modelValue" @input="$emit('update:modelValue', $event.target.value)">
-    <i :class="setIconStart" slot="leading-icon" v-if="leadingIcon" />
-    <i :class="setIconEnd" slot="trailing-icon" v-if="trailingIcon && !showClearIcon" />
-    <i id="circle-x" class="fa-light fa-circle-x" slot="trailing-icon" v-if="showClearIcon" @click="clearInput" />
+  <md-filled-text-field id="md-filled-text-field"
+                        :error="isError"
+                        :error-text="errText"
+                        :leading-icon="isIconStart"
+                        :trailing-icon="setIconEnd"
+                        :value="modelValue"
+                        @input="updateModelValue">
+    <i :class="setIconStart"
+         slot="leading-icon"
+         v-if="leadingIcon" />
+      <i :class="setIconEnd"
+         slot="trailing-icon"
+         v-if="trailingIcon && !showClearIcon" />
+      <i id="circle-x"
+         class="fa-light fa-circle-x"
+         slot="trailing-icon"
+         v-if="showClearIcon"
+         @click="clearInput" />
   </md-filled-text-field>
 </template>
 
@@ -11,7 +24,6 @@
 export default {
   name: 'IOTextField',
   props: {
-    modelValue: String,
     leadingIcon: {
       type: Boolean,
       default: false,
@@ -22,11 +34,11 @@ export default {
     },
     iconStart: {
       type: String,
-      default: "magnifying-glass",
+      default: 'magnifying-glass',
     },
     iconEnd: {
       type: String,
-      default: "pencil",
+      default: 'pencil',
     },
     error: {
       type: Boolean,
@@ -40,45 +52,55 @@ export default {
       type: Boolean,
       default: false,
     },
+    modelValue: {
+      type: String,
+    },
   },
-  emits: ['update:modelValue'],
   computed: {
-    setIconStart() {
+    setIconStart: function () {
       return `fa-light fa-${this.iconStart}`;
     },
-    setIconEnd() {
-      return this.error ? 'fa-solid fa-circle-exclamation' : `fa-light fa-${this.iconEnd}`;
+    setIconEnd: function () {
+      return this.error
+        ? 'fa-solid fa-circle-exclamation'
+        : `fa-light fa-${this.iconEnd}`;
     },
-    isIconStart() {
+    isIconStart: function () {
       return this.leadingIcon;
     },
-    isIconEnd() {
+    isIconEnd: function () {
       return this.trailingIcon;
     },
-    isError() {
+    isError: function () {
       return this.error && !this.clear;
     },
-    errText() {
+    errText: function () {
       return this.errorText;
     },
-    showClearIcon() {
+    showClearIcon: function () {
       return this.clear;
     },
   },
   methods: {
-    clearInput() {
-      this.$emit('update:modelValue', '');
+    updateModelValue: function (event) {
+      this.$emit('update:modelValue', event.target.value);
+    },
+    clearInput: function () {
+      document.getElementById('md-filled-text-field').value = '';
+      this.$emit('input', '');
       this.$emit('update:clear', true);
       this.$emit('update:error', false);
     },
   },
 };
 </script>
+
 <style scoped>
-  i {
-    font-size: var(--md-filled-text-field-leading-icon-size);
-  }
-  i.fa-circle-x {
-    cursor: pointer;
-  }
+i {
+  font-size: var(--md-filled-text-field-leading-icon-size);
+}
+
+i.fa-circle-x {
+  cursor: pointer;
+}
 </style>

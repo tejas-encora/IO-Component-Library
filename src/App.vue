@@ -1,7 +1,7 @@
 <template>
   <main>
-    <!-- <IOTextField label="Enter your name"
-                 v-model="name"
+  <IOTextField label="Enter your name"
+                 v-model="fullname"
                  trailing-icon
                  clear></IOTextField>
     <p>{{ message }}</p>
@@ -16,12 +16,12 @@
     <IOButtonElevated>IOButtonElevated</IOButtonElevated>
 
     <p>Hello, {{ fname }} {{ lname }}</p>
-    <IOTextField label="First"
+    <!-- <IOTextField label="First"
                  v-model="fname"
                  error
                  trailing-icon></IOTextField>
     <IOTextField label="Last"
-                 v-model="lname"></IOTextField>
+                 v-model="lname"></IOTextField> -->
 
     <IOCheckbox label="Last"
                 error />
@@ -31,22 +31,22 @@
 
     <IOTextFieldOutline label="Test"
                         error
-                        trailing-icon></IOTextFieldOutline> -->
+                        trailing-icon></IOTextFieldOutline> 
     <!-- <p>&nbsp;</p>
     Data Table
     <IODataTable hasSearch
                  :items="characters" />
     Data Table Virtual
     <IODataTableV hasSearch
-                  :items="characters" />
-    Data Table Server Side
+                  :items="characters" /> -->
+    <!-- Data Table Server Side
     <IODataTableSS hasSearch
                   :items="characters" /> -->
     <IOIconMenu />
     <p>&nbsp;</p>
     Data Table
-    <IODataTable hasSearch
-                 :items="characters" />
+    <!-- <IODataTable hasSearch
+                 :items="characters" /> -->
   </main>
 </template>
 
@@ -80,13 +80,13 @@ export default {
   },
   setup() {
     const counter = ref(0);
-    const name = ref('bonzo');
+    const fullname = ref('');
     const fname = ref('');
     const lname = ref('');
     const data = ref([])
     const characters = ref([])
     const message = computed(() => {
-      return `${name.value} clicked the button ${counter.value} times`;
+      return `${fullname.value} clicked the button ${counter.value} times`;
     });
     // const fullName = computed(() => {
     //   return `Hello, ${fname.value} ${lname.value}!`;
@@ -121,7 +121,7 @@ export default {
     return {
       data,
       counter,
-      name,
+      fullname,
       fname,
       lname,
       message,

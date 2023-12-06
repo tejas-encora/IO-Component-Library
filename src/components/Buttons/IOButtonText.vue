@@ -1,26 +1,28 @@
- <template>
-   <md-text-button :leadingIcon="hasIcon" :size="setSize">
-     <slot></slot>
-     <i :class="setIcon" slot="icon" v-if="leadingIcon" />
-   </md-text-button>
+<template>
+  <button
+    :class="[setSize, { 'md-icon-button': hasIcon }]"
+    :disabled="disabled"
+  >
+    <slot></slot>
+    <i :class="setIcon" v-if="hasIcon" />
+  </button>
 </template>
 
 <script>
-
 export default {
   name: 'IOTextButton',
   props: {
     size: {
       type: String,
-      default: 'medium'
+      default: 'md-size--medium',
     },
     icon: {
       type: String,
-      default: "circle-plus"
+      default: 'circle-plus',
     },
-    class: {
-      type: String,
-      default: '',
+    disabled: {
+      type: Boolean,
+      default: false,
     },
     leadingIcon: {
       type: Boolean,
@@ -28,22 +30,15 @@ export default {
     },
   },
   computed: {
-    setStatus() {
-      return this.status;
-    },
     setSize() {
-      return this.size;
-    },
-    setClass() {
-      return this.class;
+      return `md-button--${this.size}`;
     },
     setIcon() {
-      return `fa-light fa-${this.icon}`;
+      return `fa fa-${this.icon}`;
     },
     hasIcon() {
       return this.leadingIcon;
     },
   },
 };
-
 </script>

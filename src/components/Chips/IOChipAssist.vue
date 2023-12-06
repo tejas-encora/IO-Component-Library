@@ -1,7 +1,22 @@
 <template>
-  <md-assist-chip :elevated="isElevated" :leading-icon="isIconStart" :svg="isSvg">
-    <i :class="iconClass" slot="icon" v-if="isIconStart && !svg" aria-hidden="true" />
-    <img slot="icon" :src="imgSrc" alt="" aria-hidden="true" v-if="svg && !leadingIcon" />
+  <md-assist-chip
+    :elevated="isElevated"
+    :leading-icon="isIconStart"
+    :svg="isSvg"
+  >
+    <i
+      :class="iconClass"
+      slot="icon"
+      v-if="isIconStart && !svg"
+      aria-hidden="true"
+    ></i>
+    <img
+      slot="icon"
+      :src="imgSrc"
+      alt=""
+      aria-hidden="true"
+      v-if="svg && !leadingIcon"
+    />
   </md-assist-chip>
 </template>
 
@@ -15,7 +30,7 @@ export default {
     },
     icon: {
       type: String,
-      default: "book-sparkles",
+      default: 'book-sparkles',
     },
     elevated: {
       type: Boolean,
@@ -46,7 +61,7 @@ export default {
     isSvg() {
       return this.svg;
     },
-  }
+  },
 };
 </script>
 <style scoped>
