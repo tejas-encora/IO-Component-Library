@@ -32,7 +32,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       '@labs': fileURLToPath(new URL('./labs', import.meta.url)),
       '@public': fileURLToPath(new URL('./public', import.meta.url)),
-      '@assests': fileURLToPath(new URL('./assets', import.meta.url)),
+      '@assets': fileURLToPath(new URL('./assets', import.meta.url)),
     }
   }
 })

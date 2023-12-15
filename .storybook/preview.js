@@ -10,13 +10,13 @@ import { themes } from '@storybook/theming'
 
 import { setup } from "@storybook/vue3";
 import { registerPlugins } from "../src/plugins";
-import { withVuetifyTheme, DEFAULT_THEME } from "./withVuetifyTheme.decorator";
+import { withVuetifyTheme } from "./withVuetifyTheme.decorator";
 
 setup((app) => {
   // Registers your app's plugins into Storybook
   registerPlugins(app);
 });
-
+const DEFAULT_THEME = "light";
 const preview = {
   parameters: {
     docs: {
