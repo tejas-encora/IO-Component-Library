@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.9](https://github.com/tejas-encora/IO-Component-Library/compare/v0.5.8...v0.5.9) (2023-12-15)
+
+
+### Features
+
+* **datatable:** fix host styles ([cdeecf7](https://github.com/tejas-encora/IO-Component-Library/commit/cdeecf7af50f3a98670016624513c3defb361a6a))
+
 ### [0.5.8](https://github.com/tejas-encora/IO-Component-Library/compare/v0.4.0...v0.5.8) (2023-12-06)
 
 ## [0.4.0](https://github.com/tejas-encora/IO-Component-Library/compare/v0.3.18...v0.4.0) (2023-12-05)
