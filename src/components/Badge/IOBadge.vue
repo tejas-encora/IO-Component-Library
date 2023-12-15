@@ -1,5 +1,5 @@
 <template>
-  <md-badge :size="sizeClass">
+  <md-badge :size="sizeClass" class="md-badge">
     <slot></slot>
   </md-badge>
 </template>
@@ -21,7 +21,7 @@ export default {
 };
 </script>
 <style scoped>
-md-badge {
+.md-badge {
   background: var(--md-sys-color-error-light);
   border-radius: 100px;
   color: var(--md-sys-color-on-error-light);
@@ -35,12 +35,12 @@ md-badge {
   text-align: center;
 }
 
-md-badge[size="small"] {
+.md-badge[size="small"] {
   width: 6px;
   height: 6px;
 }
 
-md-badge[size="s-large"] {
+.md-badge[size="s-large"] {
   display: flex;
   width: 14px;
   height: 14px;
@@ -48,7 +48,8 @@ md-badge[size="s-large"] {
   justify-content: center;
   flex-shrink: 0;
 }
-md-badge[size="m-large"] {
+
+.v-data-table .md-badge[size="m-large"] {
   display: inline-block;
   padding: 0 4px;
 }

@@ -29,14 +29,13 @@ import '@fortawesome/fontawesome-pro'
 import '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-pro/css/all.css'
 import '@/assets/theme.css'
-
+import '../dist/style.css'
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import { aliases, fa } from 'vuetify/iconsets/fa'
 import { createApp } from 'vue'
-
 import App from './App.vue'
 
 const vuetify = createVuetify({
@@ -50,9 +49,9 @@ const vuetify = createVuetify({
         },
     },
     theme: {
-        defaultTheme: 'myCustomTheme',
+        defaultTheme: 'ioVuetifyTheme',
         themes: {
-            myCustomTheme: {
+            ioVuetifyTheme: {
                 dark: false,
                 colors: {
                     background: '#FFFFFF',

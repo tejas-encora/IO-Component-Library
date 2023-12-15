@@ -13,7 +13,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/components/index.js'),
-      name: 'MatLib',
+      name: 'ioUI',
       fileName: (format) => `mat-lib-test.${format}.js`,
     },
     rollupOptions: {
@@ -32,6 +32,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       '@labs': fileURLToPath(new URL('./labs', import.meta.url)),
       '@public': fileURLToPath(new URL('./public', import.meta.url)),
+      '@assests': fileURLToPath(new URL('./assets', import.meta.url)),
     }
   }
 })

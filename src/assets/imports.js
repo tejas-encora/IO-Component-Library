@@ -25,6 +25,7 @@ import '@fortawesome/fontawesome-pro/css/all.css'
 import '@fontsource/lato/300.css'
 import '@fontsource/lato/400.css'
 import '@fontsource/lato/700.css'
+import './theme.css'
 import './style.css'
 
 

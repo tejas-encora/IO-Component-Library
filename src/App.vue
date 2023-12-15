@@ -1,132 +1,53 @@
 <template>
   <main>
-    <!-- <IOTextField label="Enter your name"
-                 v-model="name"
-                 trailing-icon
-                 clear></IOTextField>
-    <p>{{ message }}</p>
-
-    <IOChipFilter label="test"
-                  trailingIcon
-                  leadingIcon
-                  icon="book-sparkles"></IOChipFilter>
-    <IOButtonFilled @click="incCount"
-                    leadingIcon
-                    icon="circle-plus">Increment</IOButtonFilled>
-    <IOButtonElevated>IOButtonElevated</IOButtonElevated>
-
-    <p>Hello, {{ fname }} {{ lname }}</p>
-    <IOTextField label="First"
-                 v-model="fname"
-                 error
-                 trailing-icon></IOTextField>
-    <IOTextField label="Last"
-                 v-model="lname"></IOTextField>
-
-    <IOCheckbox label="Last"
-                error />
-                <p>&nbsp;</p>
-    <IORadioButton />
-    <p>&nbsp;</p>
-
-    <IOTextFieldOutline label="Test"
-                        error
-                        trailing-icon></IOTextFieldOutline> -->
-    <!-- <p>&nbsp;</p>
-    Data Table
-    <IODataTable hasSearch
-                 :items="characters" />
-    Data Table Virtual
-    <IODataTableV hasSearch
-                  :items="characters" />
-    Data Table Server Side
-    <IODataTableSS hasSearch
-                  :items="characters" /> -->
-    <IOIconMenu />
+    <p>Vue Version: {{ vueVersion }}</p>
+    <p>Vuetify Version: {{ vuetifyVersion }}</p>
     <p>&nbsp;</p>
     Data Table
-    <IODataTable hasSearch
-                 :items="characters" />
+    <IODataTable :items="characters" class="zebra" />
   </main>
 </template>
 
 <script>
-import IORadioButton from '@/components/Radio/IORadioButton.vue';
-import IOIconMenu from '@/labs/Menu/IOIconMenu.vue';
-import IOCheckbox from '@/components/Checkbox/IOCheckbox.vue';
-import IOChipFilter from '@/components/Chips/IOChipFilter.vue';
-import IOTextField from '@/components/Inputs/IOTextField.vue';
-import IOTextFieldOutline from '@/components/Inputs/IOTextFieldOutline.vue';
-import IOButtonFilled from '@/components/Buttons/IOButtonFilled.vue';
-import IOButtonElevated from '@/components/Buttons/IOButtonElevated.vue';
-import IODataTable from '@/labs/DataTable/IODataTable.vue';
-import IODataTableV from '@/labs/DataTable/IODataTableV.vue';
-import IODataTableSS from '@/labs/DataTable/IODataTableSS.vue';
-import { ref, computed, onMounted } from 'vue';
+import IODataTable from '@/labs/DataTable/IODataTable.vue'
+import { ref, onMounted } from 'vue'
+import axios from 'axios'
+import vuePackage from 'vue/package.json'
+import vuetifyPackage from 'vuetify/package.json'
 
 export default {
   components: {
-    IOButtonElevated,
-    IOButtonFilled,
-    IOTextField,
-    IOChipFilter,
-    IOCheckbox,
-    IODataTable,
-    IODataTableV,
-    IODataTableSS,    
-    IORadioButton,
-    IOTextFieldOutline,
-    IOIconMenu
+    IODataTable
   },
   setup() {
-    const counter = ref(0);
-    const name = ref('bonzo');
-    const fname = ref('');
-    const lname = ref('');
-    const data = ref([])
-    const characters = ref([])
-    const message = computed(() => {
-      return `${name.value} clicked the button ${counter.value} times`;
-    });
-    // const fullName = computed(() => {
-    //   return `Hello, ${fname.value} ${lname.value}!`;
-    // });
-    const handleTest = () => {
-      alert('yep')
-    }
-    const incCount = () => {
-      counter.value++;
-    };
-    onMounted(async () => {
-      const url = 'https://the-one-api.dev/v2/character'
-      const bearerToken = 'rwlpOJMKDeangwftjVsA'
+    const data = ref([]);
+    const characters = ref([]);
+
+    const vueVersion = vuePackage.version;
+    const vuetifyVersion = vuetifyPackage.version;
+
+    onMounted(async function () {
+      const url = 'https://the-one-api.dev/v2/character';
+      const bearerToken = 'rwlpOJMKDeangwftjVsA';
 
       try {
-        const response = await fetch(url, {
+        const response = await axios.get(url, {
           headers: {
-            Authorization: `Bearer ${bearerToken}`
-          }
-        })
+            Authorization: `Bearer ${bearerToken}`,
+          },
+        });
 
-        if (!response.ok) {
-          throw new Error('Failed to fetch')
-        }
-
-        const data = await response.json()
-        characters.value = data.docs
+        characters.value = response.data.docs;
       } catch (error) {
-        console.error(error)
+        console.error('Error fetching characters:', error);
       }
-    })
+    });
+
     return {
       data,
-      counter,
-      name,
-      fname,
-      lname,
-      message,
-      incCount,
       characters,
+      vueVersion,
+      vuetifyVersion,
     };
   },
 };

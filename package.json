@@ -27,7 +27,8 @@
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "@material/web": "^1.0.0",
     "@previewjs/cli": "^1.27.0",
-    "vite-plugin-vuetify": "^1.0.2",
+    "axios": "^1.6.2",
+    "vite-plugin-vuetify": "^2.0.1",
     "vue": "^3.3.4",
     "vue-meta": "^2.4.0",
     "webfontloader": "^1.6.28"

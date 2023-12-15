@@ -23,7 +23,8 @@
 </template>
 
 <script>
-import IOTextField from '@/components/Inputs/IOTextField.vue'
+import { ref, computed } from 'vue';
+import IOTextField from '@/components/Inputs/IOTextField.vue';
 
 export default {
     name: 'IODataTable',
@@ -42,33 +43,30 @@ export default {
         loading: {
             type: Boolean,
             default: false,
-        },
+        }
     },
-    data() {
+    setup(props) {
+        const loading = ref(props.loading);
+        const search = ref('');
+
+        const classes = computed(() => ({
+            'loading': loading.value,
+        }));
+
+        const isSearch = computed(() => props.hasSearch);
+
         return {
-            search: '',
+            search,
+            classes,
+            isSearch,
         };
-    },
-    computed: {
-        classes() {
-            return {
-                'loading': this.loading,
-            };
-        },
-        isSearch() {
-            return this.hasSearch;
-        },
-    },
+    }
 };
 </script>
 
 <style scoped>
 .full-width {
     width: 100%;
-}
-
-.v-data-table-header__content {
-    font-weight: bold
 }
 
 .vcard {
