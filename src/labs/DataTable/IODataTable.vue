@@ -1,5 +1,5 @@
 <template>
-  <v-card border max-width="80%" class="mx-auto" :hasSearch="isSearch">
+  <v-card border class="mx-auto" :hasSearch="isSearch">
     <IOTextField
       v-model="search"
       label="Search"
@@ -13,15 +13,21 @@
       :headers="headers"
       :items="items"
       :search="search"
-      :loading="loading"
       :class="classes"
+      show-select
+      v-model="selected"
+      :hide-default-header="true"
+      :hide-default-footer="true"
+      :loading="loading"
     >
       <template v-slot:loading>
-        <v-skeleton-loader type="table-row@6"></v-skeleton-loader>
+        <v-skeleton-loader boilerplate type="list-item-avatar" :loading="true"></v-skeleton-loader>
       </template>
+      <template v-slot:top> </template>
       <template v-slot:item.race="{ value }">
-                <IOChipIndicator :label="value" />
+        <IOChipIndicator :label="value" />
       </template>
+      <template v-slot:bottom> </template>
     </v-data-table>
   </v-card>
 </template>
@@ -64,6 +70,8 @@ export default {
       search,
       classes,
       isSearch,
+      selected: [],
+      singleSelect: false,
     };
   },
 };

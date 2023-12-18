@@ -6,10 +6,10 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node post-build.js && storybook build",
+    "build": "vite build && node post-build.js && sb build",
     "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "sb": "sb dev -p 6006",
+    "build-sb": "storybook build",
     "release": "standard-version",
     "commit": "cz",
     "fini": "git push --follow-tags origin main && npm publish"

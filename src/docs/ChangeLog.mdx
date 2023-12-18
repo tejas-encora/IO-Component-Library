@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.10](https://github.com/tejas-encora/IO-Component-Library/compare/v0.5.9...v0.5.10) (2023-12-15)
+
+
+### Features
+
+* **datatable:** test using chip in table ([921c8b4](https://github.com/tejas-encora/IO-Component-Library/commit/921c8b4d623c0a73a10ddab63119e7d85348fe41))
+
 ### [0.5.9](https://github.com/tejas-encora/IO-Component-Library/compare/v0.5.8...v0.5.9) (2023-12-15)
 
 

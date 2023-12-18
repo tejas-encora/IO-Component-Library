@@ -5,8 +5,10 @@
 </template>
 
 <script>
+import IOChipIndicator from "@/components/Chips/IOChipIndicator.vue";
 export default {
   name: 'IOChipsuggestion',
+  components: 'md-suggestion-chip',
   props: {
     leadingIcon: {
       type: Boolean,
@@ -27,3 +29,8 @@ export default {
   }
 };
 </script>
+<style scoped>
+  md-suggestion-chip button {
+    font-family: 'Lato', sans-serif !important;
+  }
+</style>

@@ -77,12 +77,13 @@ md-filled-button {
   height: 200px; */
 }
 .docs-story {
-  height: 200px !important;
+  /* height: 200px !important; */
 }
 
 /* Data Table */
 .v-data-table {
   width: 100%;
+  font-family: 'Lato', sans-serif !important;
 }
 
 .v-data-table__table {
@@ -102,7 +103,7 @@ md-filled-button {
 .v-data-table .v-table__wrapper > table > thead > tr th.v-data-table-column--align-end,
 .v-data-table .v-table__wrapper > table tbody > tr > td.v-data-table-column--align-end,
 .v-data-table .v-table__wrapper > table tbody > tr th.v-data-table-column--align-end {
-  text-align: end;
+  text-align: start;
 }
 .v-data-table .v-table__wrapper > table > thead > tr > td.v-data-table-column--align-end .v-data-table-header__content,
 .v-data-table .v-table__wrapper > table > thead > tr th.v-data-table-column--align-end .v-data-table-header__content,
@@ -149,7 +150,9 @@ md-filled-button {
 .v-data-table .v-table__wrapper > table tbody > tr > th:not(.v-data-table__th--sorted):hover .v-data-table-header__sort-icon {
   opacity: 0.5;
 }
-
+.v-table__wrapper thead {
+  height: 40px !important; 
+}
 .v-data-table-column--fixed {
   background: rgb(var(--v-theme-surface));
   position: sticky !important;
@@ -178,7 +181,7 @@ md-filled-button {
 }
 
 .v-data-table-group-header-row__column {
-  padding-left: calc(var(--v-data-table-group-header-row-depth) * 16px) !important;
+  padding-left: calc(var(--v-data-table-group-header-row-depth) * 12px) !important;
 }
 
 .v-data-table-header__content {

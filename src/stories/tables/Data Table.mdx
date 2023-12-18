@@ -13,20 +13,25 @@ These tables are working correctly in the app. Currently WIP for Storybook.
 
 **To use**:
 
-`npm install vite-plugins-vuetify`
+```
+npm install vite-plugins-vuetify
+```
 
-In your 'vite.config.ts' file, add the following:
+In your 'vite.config.ts|js' file, add the following:
 
-`import vuetify from 'vite-plugin-vuetify'`
+```
+import vuetify from 'vite-plugin-vuetify'
+```
 
-`plugins: [
+```
+plugins: [
     vue(),
     vuetify(),
-  ],
-  `
+]
+  ```
 
 In your 'main.js' add the following:
-`
+```
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
@@ -34,7 +39,7 @@ import * as directives from 'vuetify/directives'
 import { aliases, fa } from 'vuetify/iconsets/fa'`
 
 The theme property is currently being worked on. This is a sample for now.
-`const vuetify = createVuetify({
+const vuetify = createVuetify({
     components,
     directives,
     icons: {
@@ -64,9 +69,9 @@ The theme property is currently being worked on. This is a sample for now.
             }
         }
     }
-})`
-
-`createApp(App).use(vuetify).mount('#app')`
+})
+createApp(App).use(vuetify).mount('#app')
+```
 
 <Primary />
 

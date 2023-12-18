@@ -1,10 +1,11 @@
 <template>
   <main>
+    <h2>IO Component Library Host</h2>
     <p>Vue Version: {{ vueVersion }}</p>
     <p>Vuetify Version: {{ vuetifyVersion }}</p>
     <p>&nbsp;</p>
     Data Table
-    <IODataTable :items="characters" class="zebra" />
+    <IODataTable :items="characters" class="zebra" show-select />
   </main>
 </template>
 
