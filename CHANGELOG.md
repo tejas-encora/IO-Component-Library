@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.11](https://github.com/tejas-encora/IO-Component-Library/compare/v0.5.10...v0.5.11) (2023-12-18)
+
+
+### Features
+
+* **datatable:** datatable now displays in sb ([d2bbcde](https://github.com/tejas-encora/IO-Component-Library/commit/d2bbcde13f3b1f5ff548163f669d0639afceba78))
+
 ### [0.5.10](https://github.com/tejas-encora/IO-Component-Library/compare/v0.5.9...v0.5.10) (2023-12-15)
 
 
