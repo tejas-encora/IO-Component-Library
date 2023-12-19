@@ -1,6 +1,6 @@
 import IODataTable from '@/labs/DataTable/IODataTable.vue'
-
-const template = '<IODataTable :hasSearch=args.hasSearch :items="mockData" v-slot="item"/>';
+// import '@material/web/chips/suggestion-chip.js'
+const template = '<IODataTable :hasSearch=args.hasSearch :items="mockData" />';
 const mockData = [];
 
 function getRandomName() {

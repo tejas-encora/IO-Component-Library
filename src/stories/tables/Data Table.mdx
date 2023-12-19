@@ -72,7 +72,16 @@ const vuetify = createVuetify({
 })
 createApp(App).use(vuetify).mount('#app')
 ```
+You also need to add this to your vite.config.js. This is due to the fonts not currently loading in dist. IN PROGRESS
 
+```
+server: {
+    fs: {
+      // Allow serving files from one level up to the project root
+      allow: ['..'],
+    },
+  },
+  ```
 <Primary />
 
 ## Props

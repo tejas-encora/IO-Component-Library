@@ -6,6 +6,7 @@ import '@fontsource/lato/700.css'
 import '@fortawesome/fontawesome-pro'
 import '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-pro/css/all.css'
+import '@material/web/chips/suggestion-chip.js'
 import { themes } from '@storybook/theming'
 
 import { setup } from "@storybook/vue3";

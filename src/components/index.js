@@ -38,6 +38,7 @@ export { default as IOPasswordOutline } from '@/components/Inputs/IOPasswordOutl
  * Select * 
 */
 export { default as IOSelect } from '@/components/Select/IOSelect.vue';
+
 /** 
  * Checkbox * 
 */
