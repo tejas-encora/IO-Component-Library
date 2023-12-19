@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.2](https://github.com/tejas-encora/IO-Component-Library/compare/v0.6.1...v0.6.2) (2023-12-19)
+
+
+### Features
+
+* **datatable:** add v-select ([72726f5](https://github.com/tejas-encora/IO-Component-Library/commit/72726f5035dac2e30a5b06a54c0e8afa26bf4b52))
+
 ### [0.6.1](https://github.com/tejas-encora/IO-Component-Library/compare/v0.5.11...v0.6.1) (2023-12-18)
 
 ### [0.5.11](https://github.com/tejas-encora/IO-Component-Library/compare/v0.5.10...v0.5.11) (2023-12-18)

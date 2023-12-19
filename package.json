@@ -1,6 +1,6 @@
 {
   "name": "@encoradxp/mat-lib-test",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "publicConfig": {
     "access": "public"
   },
@@ -12,7 +12,8 @@
     "build-sb": "storybook build",
     "release": "standard-version",
     "commit": "cz",
-    "fini": "git push --follow-tags origin main && npm publish"
+    "fini": "git push --follow-tags origin main && npm publish",
+    "pushnopub": "git push --follow-tags origin main"
   },
   "main": "./dist/mat-lib-test.umd.js",
   "module": "./dist/mat-lib-test.es.js",
