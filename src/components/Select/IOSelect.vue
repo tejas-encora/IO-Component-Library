@@ -23,7 +23,7 @@ export default {
   }
 }     
 </script>
-<style>
+<style lang="scss">
 .v-data-table__td {
     .v-select .v-field .v-field__input {
     padding: 4px 0 4px 16px !important;
