@@ -1,10 +1,24 @@
 <template>
-  <md-outlined-text-field :error="isError" :error-text="errText" :leading-icon="isIconStart" :trailing-icon="setIconEnd"
-    :value="modelValue" @input="$emit('update:modelValue', $event.target.value)">
-    <i :class="setIconStart" slot="leading-icon" v-if="leadingIcon" />
-    <i :class="setIconEnd" slot="trailing-icon" v-if="trailingIcon && !showClearIcon" />
-    <i id="circle-x" class="fa-light fa-circle-x" slot="trailing-icon" v-if="showClearIcon" @click="clearInput" />
-  </md-outlined-text-field>
+  <v-text-field :error="isError"
+                :error-text="errText"
+                :leading-icon="isIconStart"
+                :trailing-icon="setIconEnd"
+                :value="modelValue"
+                @input="$emit('update:modelValue', $event.target.value)"
+                density="compact"
+                variant="outlined">
+    <i :class="setIconStart"
+       slot="leading-icon"
+       v-if="leadingIcon" />
+    <i :class="setIconEnd"
+       slot="trailing-icon"
+       v-if="trailingIcon && !showClearIcon" />
+    <i id="circle-x"
+       class="fa-light fa-circle-x"
+       slot="trailing-icon"
+       v-if="showClearIcon"
+       @click="clearInput" />
+  </v-text-field>
 </template>
 
 <script>
@@ -75,11 +89,25 @@ export default {
 };
 </script>
 <style scoped>
-i {
+/* i {
   font-size: var(--md-filled-text-field-leading-icon-size);
 }
-
 i.fa-circle-x {
   cursor: pointer;
+} */
+</style>
+<style>
+.v-input--density-compact {
+  --v-input-control-height: 32px !important;
+  --v-input-padding-top: 0 !important;
+  /* .v-field {
+    padding-bottom: 0 !important;
+  } */
+  .v-field--no-label {
+    --v-field-padding-bottom: 0;
+  }
+  .v-input__details {
+    display: none;
+  }
 }
 </style>

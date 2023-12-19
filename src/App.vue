@@ -3,6 +3,7 @@
     <h2>IO Component Library Host</h2>
     <p>Vue Version: {{ vueVersion }}</p>
     <p>Vuetify Version: {{ vuetifyVersion }}</p>
+    <IOTextFieldOutline label="myLabel" density="compact" />
     <p>&nbsp;</p>
     Data Table
     <IODataTable :items="characters" class="zebra" show-select />
@@ -11,6 +12,8 @@
 
 <script>
 import IODataTable from '@/labs/DataTable/IODataTable.vue'
+import IOTextFieldOutline from '@/components/Inputs/IOTextFieldOutline.vue'
+import IOSelect from '@/components/Select/IOSelect.vue'
 import { ref, onMounted } from 'vue'
 import axios from 'axios'
 import vuePackage from 'vue/package.json'
@@ -18,7 +21,9 @@ import vuetifyPackage from 'vuetify/package.json'
 
 export default {
   components: {
-    IODataTable
+    IODataTable,
+    IOSelect,
+    IOTextFieldOutline
   },
   setup() {
     const data = ref([]);
@@ -53,3 +58,6 @@ export default {
   },
 };
 </script>
+<style lang="">
+
+</style>

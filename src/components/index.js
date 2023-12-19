@@ -35,6 +35,10 @@ export { default as IOPassword } from '@/components/Inputs/IOPassword.vue';
 export { default as IOPasswordOutline } from '@/components/Inputs/IOPasswordOutline.vue';
 
 /** 
+ * Select * 
+*/
+export { default as IOSelect } from '@/components/Select/IOSelect.vue';
+/** 
  * Checkbox * 
 */
 export { default as IOCheckbox } from '@/components/Checkbox/IOCheckbox.vue';

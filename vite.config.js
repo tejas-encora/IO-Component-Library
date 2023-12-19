@@ -16,6 +16,7 @@ export default defineConfig({
     vue(),
     vuetify(),
   ],
+  
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/components/index.js'),
@@ -39,6 +40,7 @@ export default defineConfig({
       '@labs': fileURLToPath(new URL('./labs', import.meta.url)),
       '@public': fileURLToPath(new URL('./public', import.meta.url)),
       '@assets': fileURLToPath(new URL('./assets', import.meta.url)),
+      '@styles': fileURLToPath(new URL('./styles', import.meta.url)),
     }
   }
 })

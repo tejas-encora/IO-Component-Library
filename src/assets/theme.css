@@ -5,6 +5,11 @@
 /* @import url(theme.dark.css) (prefers-color-scheme: dark); */
 
 /* Custom */
+  .v-input--density-compact {
+    --v-input-control-height: 32px !important;
+    --v-input-padding-top: 0 !important;
+  }
+
 .small,
 md-filled-button[size="small"],
 md-outlined-button[size="small"],

@@ -1,24 +1,11 @@
-@use 'vuetify/settings' with (
+@use 'vuetify' with (
   // Place SASS variable overrides here
   $font-size-root: 14px,
-  $body-font-family: 'Lato'
+  $body-font-family: 'Lato',
+  $variable: false,
+  $selection-control-size: 32px
 );
 
-.v-picker__header > div {
-  border-bottom: 1px solid #C0C8CD
-}
-.v-picker-title {
-  text-transform: none !important;
-}
-.v-picker-title, .v-picker__header {
-  background: #fff;
-  color: rgba(0, 0, 0, 0.87);
-}
-.v-btn {
-  font-weight: 500 !important;
-  text-transform: none;
-  letter-spacing: 0.1px;
-}
 body {
   color: #000;
   font-family: "Lato"!important;
@@ -28,3 +15,10 @@ body {
   letter-spacing: 0.25px;
   font-size: 14px;
 }
+
+// @use "@material/textfield";
+
+// .io-textfield-outlined {
+//   // Sets button density scale to `-3`, i.e. button height to `24px`.
+//   @include textfield.density(-3);
+// }

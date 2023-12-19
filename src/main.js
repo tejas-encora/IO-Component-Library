@@ -11,6 +11,7 @@ import '@material/web/fab/fab.js'
 
 import '@material/web/textfield/filled-text-field.js'
 import '@material/web/textfield/outlined-text-field.js'
+
 import '@material/web/checkbox/checkbox.js'
 import '@material/web/radio/radio.js'
 
@@ -22,6 +23,9 @@ import '@material/web/chips/suggestion-chip.js'
 import '@material/web/menu/menu.js'
 import '@material/web/menu/menu-item.js'
 
+import '@material/web/select/outlined-select.js'
+import '@material/web/select/filled-select.js'
+
 import '@fontsource/lato/300.css'
 import '@fontsource/lato/400.css'
 import '@fontsource/lato/700.css'
@@ -31,6 +35,7 @@ import '@fortawesome/fontawesome-pro/css/all.css'
 import '../dist/theme.css'
 import '../dist/style.css'
 import 'vuetify/styles'
+
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
