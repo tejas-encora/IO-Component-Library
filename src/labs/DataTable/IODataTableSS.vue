@@ -5,7 +5,6 @@
             :hasSearch="isSearch">
         <IOTextField v-model="search"
                      label="Search"
-                     class="full-width"
                      leading-icon
                      icon="magnifying-glass"
                      clear
@@ -18,7 +17,7 @@
 </template>
 
 <script>
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import IOTextField from '@/components/Inputs/IOTextField.vue'
 
 export default {

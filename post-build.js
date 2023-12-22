@@ -28,7 +28,7 @@ fs.writeFileSync(destJsFilePath, combinedJsContent, 'utf-8');
 
 console.log(`Contents from 'imports.js' have been added to '${destJsFilePath}'`);
 
-// Array of CSS files to be copied
+// CSS files to be copied
 const cssFiles = [
     'theme.css',
     'tokens.css',
@@ -37,7 +37,7 @@ const cssFiles = [
     'theme.light.css'
 ];
 
-// Copy each CSS file
+// Copy 
 cssFiles.forEach(file => {
     const srcCssFilePath = path.join(__dirname, 'src', 'assets', file);
     const destCssFilePath = path.join(__dirname, 'dist', file);

@@ -38,7 +38,6 @@ export default {
     }),
     args: {
         hasSearch: false,
-
     },
     argTypes: {
         hasSearch: {

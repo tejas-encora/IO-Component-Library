@@ -9,12 +9,15 @@ The IODataTable* components are used for displaying tabular data. Features inclu
 
 Reference: [https://vuetifyjs.com/en/api/v-data-table/](https://vuetifyjs.com/en/api/v-data-table/)
 
-These tables are working correctly in the app. Currently WIP for Storybook.
-
 **To use**:
 
 ```
 npm install vite-plugins-vuetify
+```
+Make sure you have sass installed
+
+```
+npm install -D sass
 ```
 
 In your 'vite.config.ts|js' file, add the following:
@@ -50,21 +53,12 @@ const vuetify = createVuetify({
         },
     },
     theme: {
-        defaultTheme: 'myCustomTheme',
+        defaultTheme: 'ioVuetifyTheme',
         themes: {
-            myCustomTheme: {
+            ioVuetifyTheme: {
                 dark: false,
                 colors: {
-                    background: '#FFFFFF',
-                    surface: '#FFFFFF',
-                    primary: '#6200EE',
-                    'primary-darken-1': '#3700B3',
-                    secondary: '#03DAC6',
-                    'secondary-darken-1': '#018786',
-                    error: '#B00020',
-                    info: '#2196F3',
-                    success: '#4CAF50',
-                    warning: '#FB8C00'
+
                 }
             }
         }

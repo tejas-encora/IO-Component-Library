@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import '@/assets/theme.css';
 export default {
   name: 'IOIconButton',
   props: {
