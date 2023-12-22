@@ -148,7 +148,7 @@
   /* success */
   --md-ref-palette-success100: #FFFFFF;
   --md-ref-palette-success99: #F5FFF8;
-  --md-ref-palette-success95: #C9FFD9;
+  --md-ref-palette-success95: #C1FFD3;
   --md-ref-palette-success90: #91EEB7;
   --md-ref-palette-success80: #68DB9B;
   --md-ref-palette-success70: #34C27A;
@@ -596,8 +596,18 @@
 
   --ioUI-sys-light-primary-container: var(--md-ref-palette-primary90);
   --ioUI-sys-light-on-primary-container: var(--md-ref-palette-primary10);
-  --ioUI-sys-light-secondary-container:
-
+  --io-sys-light-primary: var(--md-ref-palette-primary40);
+  --io-sys-light-on-primary: #fff;
+  --ioUI-sys-light-secondary-container: var(--md-ref-palette-secondary90);
+  --ioUI-sys-light-on-informational-container: var(--md-ref-palette-informational20);
+  --ioUI-sys-light-informational-container: var(--md-ref-palette-informational90);
+  --ioUI-sys-color-warning-light: var(--md-ref-palette-warning90);
+  --ioUI-sys-color-on-warning-light: var(--md-ref-palette-warning10);
+  --ioUI-sys-color-error-light: var(--md-ref-palette-error90);
+  --ioUI-sys-light-success-container: var(--md-ref-palette-success95);
+   --ioUI-sys-light-success-on-container: var(--md-ref-palette-success20);
+   --ioUI-sys-light-surface-variant: var(--md-ref-palette-neutral-variant90);
+   --ioUI-sys-light-on-surface: var(--md-ref-palette-neutral10);
 /* textfields */
   --md-filled-text-field-leading-icon-size: 18px;
   --md-filled-text-field-trailing-icon-size: 18px;

@@ -9,8 +9,10 @@
                   :loading="loading"
                   :items-per-page="-1"
                   class="zebra">
-      <template v-for="slot in Object.keys($slots)" v-slot:[slot]="slotProps">
-        <slot :name="slot" v-bind="slotProps"></slot>
+      <template v-for="slot in Object.keys($slots)"
+                v-slot:[slot]="slotProps">
+        <slot :name="slot"
+              v-bind="slotProps"></slot>
       </template>
       <template v-slot:bottom></template>
     </v-data-table>
@@ -18,7 +20,7 @@
 </template>
 
 <script setup>
-import { ref, computed, defineProps } from "vue";
+import { ref, computed } from "vue";
 
 const props = defineProps({
   hasSearch: {
@@ -46,6 +48,14 @@ console.log('headers', props.headers);
 </script>
 
 <style>
+.v-input__details {
+  display: none;
+}
+
+.v-select .v-field .v-field__input {
+  padding: 4px 0 4px 16px !important;
+}
+
 .vcard {
   text-align: center !important;
   border: 1px solid !important;

@@ -33,8 +33,8 @@ import '@fortawesome/fontawesome-pro'
 import '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-pro/css/all.css'
 
-import '../dist/style.css'
-import '../dist/theme.css'
+// import '@/assets/dist/style.css'
+import '@/assets/theme.css'
 import 'vuetify/styles'
 
 import { createVuetify } from 'vuetify'

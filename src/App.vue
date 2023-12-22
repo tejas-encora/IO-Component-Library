@@ -7,16 +7,23 @@
     <IOChipIndicator label="123"
                      status="info" />
     <p>&nbsp;</p>
+    <IOSelect :items="selectItems"
+              variant="outlined"
+              density="compact"
+              v-model="selected"
+              height="32px" />
+    <p>&nbsp;</p>
     <IOTextFieldOutline label="myLabel" />
     <p>&nbsp;</p>
     Data Table
     <IODataTable :headers="headers"
                  :items="items"
                  class="zebra"
-                 show-select>
+                 show-select
+                 density="compact">
       <template v-slot:item.location="{ item }">
         <div v-if="item.name === 'Red Pyramid'">
-          <IOChipIndicator :label="item.location" />
+          <IOChipIndicator :label="item.location" status="success" />
         </div>
         <div v-else-if="item.location === 'Egypta'">
           <IOSelect :items="selectItems"

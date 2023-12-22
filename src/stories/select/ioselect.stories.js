@@ -7,7 +7,6 @@ export default {
     
     args: {
         items: ['Option 1', 'Option 2', 'Option 3'],
-        class: "zebra",
         density: "compact"
     },
     argTypes: {
