@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.4](https://github.com/tejas-encora/IO-Component-Library/compare/v0.6.2...v0.6.4) (2023-12-26)
+
+
+### Features
+
+* **chips:** add indicator chips and variants ([de88e1e](https://github.com/tejas-encora/IO-Component-Library/commit/de88e1ebad2467d9ce1c5f0220b55e2c4a8eace8))
+* **chips:** added base indicator chips ([51eae84](https://github.com/tejas-encora/IO-Component-Library/commit/51eae844618bb5164dadf662ced32b76106e68f6))
+* **datatable:** get working in consumer ([71b323c](https://github.com/tejas-encora/IO-Component-Library/commit/71b323c83ddd020b1de7777f2ac7e98be05d1e9d))
+
+
+### Bug Fixes
+
+* **storybook:** fix storybook not rendering chip for table ([b5ddf56](https://github.com/tejas-encora/IO-Component-Library/commit/b5ddf56f184976053df22ecb52c9beb9bef2da23))
+* **storybook:** fix storybook not rendering preview ([364c709](https://github.com/tejas-encora/IO-Component-Library/commit/364c7098c049b77ff450a0e6e57c0427ff4d1c17))
+
 ### [0.6.2](https://github.com/tejas-encora/IO-Component-Library/compare/v0.6.1...v0.6.2) (2023-12-19)
 
 
