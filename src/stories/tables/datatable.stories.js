@@ -1,6 +1,7 @@
 import IODataTable from '@/labs/DataTable/IODataTable.vue'
 // import '@material/web/chips/suggestion-chip.js'
-const template = '<IODataTable :hasSearch=args.hasSearch :items="mockData" class="zebra" />';
+
+const template = '<IODataTable :hasSearch=args.hasSearch :items="mockData" class="zebra" :density=args.density :show-select=args.showSelect />';
 const mockData = [];
 
 function getRandomName() {
@@ -23,13 +24,10 @@ for (let i = 0; i < 20; i++) {
     mockData.push(randomObject);
 }
 
-console.log(mockData);
-
-
 export default {
     title: 'UI/Labs/DataTables',
     component: IODataTable,
-    render: (argTypes) => ({
+    render: (args) => ({
         components: { IODataTable },
         setup() {
             return { args, mockData };
@@ -38,13 +36,28 @@ export default {
     }),
     args: {
         hasSearch: false,
+        density: 'default',
+        showSelect: false,
     },
     argTypes: {
         hasSearch: {
-            controls: {
+            control: {
                 type: 'boolean',
             },
             description: 'Show search',
+        },
+        density: {
+            control: {
+                type: 'select',
+            },
+            description: 'Adjusts the vertical height of the table rows',
+            options: ['default', 'comfortable', 'compact']
+        },
+        showSelect: {
+            control: {
+                type: 'boolean',
+            },
+            description: 'Turns checkboxes on/off',
         },
     },
 };
@@ -58,8 +71,14 @@ export const Default = {
         template,
     })
 };
-const docStoryElement = document.querySelector('.doc-story');
-if (docStoryElement) {
-    docStoryElement.style.height = 'auto';
-    docStoryElement.style.overflow = 'auto';
-}
+
+// const docStoryElement = document.querySelector(".docs-story");
+// const vDataTableElement = document.querySelector(".zebra");
+
+
+// if (vDataTableElement) {
+//     docStoryElement.style.height = "400px";
+// } else {
+//     docStoryElement.style.height = "200px";
+//     console.log("Element not found");
+// }

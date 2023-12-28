@@ -1,14 +1,16 @@
 <template>
-  <v-card border
-          class="mx-auto"
-          :hasSearch="isSearch"
-          style="max-height: 300px; overflow: auto;">
+  <div style="max-height: 300px; overflow: auto">
     <v-data-table :headers="headers"
                   :items="items"
                   :search="search"
                   :loading="loading"
                   :items-per-page="-1"
-                  class="zebra">
+                  class="zebra"
+                  :show-select="showSelect"
+                  :density="density"
+                  v-model="selected"
+                  item-key="id"
+                  @update:selected="emits('update:selected', $event)">
       <template v-for="slot in Object.keys($slots)"
                 v-slot:[slot]="slotProps">
         <slot :name="slot"
@@ -16,13 +18,15 @@
       </template>
       <template v-slot:bottom></template>
     </v-data-table>
-  </v-card>
+  </div>
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
+import { ref, computed, watch } from "vue";
+const emits = defineEmits(['update:selected']);
 
 const props = defineProps({
+  selected: Array,
   hasSearch: {
     type: Boolean,
     default: false,
@@ -37,17 +41,36 @@ const props = defineProps({
   },
   headers: {
     type: Array,
-    required: true,
-  }
+  },
+  density: {
+    type: String,
+    default: 'default',
+  },
+  showSelect: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const search = ref("");
 const selected = ref([]);
 const isSearch = computed(() => props.hasSearch);
-console.log('headers', props.headers);
+
+watch(selected, () => {
+  console.log('watch')
+  printSelected();
+}, { deep: true });
+
+function printSelected() {
+  console.debug(selected.value);
+}
 </script>
 
 <style>
+tbody tr:nth-child(odd) {
+  background: var(--ioUI-sys-light-surface-container);
+}
+
 .v-input__details {
   display: none;
 }

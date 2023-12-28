@@ -1,5 +1,5 @@
 <template>
-  <md-checkbox touch-target="wrapper" :error="isError" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)"
+  <md-checkbox touch-target="wrapper" :class="{ 'error-state': error }" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)"
      ></md-checkbox>
 </template>
 
@@ -21,7 +21,7 @@ export default {
 };
 </script>
 <style scoped>
-md-checkbox[error] {
+.error-state {
     --md-sys-color-primary: var(--md-ref-palette-error40);
 }
 

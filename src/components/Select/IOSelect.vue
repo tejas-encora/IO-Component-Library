@@ -4,23 +4,29 @@
     <v-select :items="items"
               variant="outlined"
               density="compact"
-              height="32px"></v-select>
+              height="32px"
+              :label="label" />
   </div>
 </template>
 
 <script setup>
 
-const props = defineProps ({
+const props = defineProps({
   items: {
     type: Array,
-  default: () => [],
-}
-})
+    default: () => [],
+  },
+  label: {
+    type: String,
+  }
+});
 </script>
 <style lang="scss">
-// .v-data-table__td {
-//   .v-select .v-field .v-field__input {
-//     padding: 4px 0 4px 16px !important;
-//   }
-// }
+.v-table .v-text-field {
+  background: white
+}
+ .v-input--density-compact {
+    --v-input-control-height: 32px;
+    --v-input-padding-top: 0px;
+}
 </style>

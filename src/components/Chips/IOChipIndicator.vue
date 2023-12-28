@@ -29,6 +29,10 @@ export default {
 };
 </script>
 <style scoped>
+
+.primary.action:hover {
+  color: #fff;
+}
 md-suggestion-chip button {
   font-family: 'Lato', sans-serif !important;
 }
@@ -98,7 +102,10 @@ md-suggestion-chip button {
   background: var(--ioUI-sys-light-error);
   border-radius: 24px;
 }
-
+.indicator[status='error'][variant='true']:hover {
+  --md-suggestion-chip-label-text-color: var(--ioUI-sys-light-on-error)!important;
+  color: #fff;
+}
 
 .indicator[status='error']:disabled {
   border: none;

@@ -1,5 +1,5 @@
 <template>
-  <md-filter-chip :leadingIcon="hasIcon" :trailingIcon="hasTrailing">
+  <md-filter-chip :leading-icon="hasIcon" :trailing-icon="hasTrailing">
     <slot></slot>
     <i :class="setIcon" slot="leading-icon" v-if="leadingIcon" />
     <i :class="setTrailing" slot="trailing-icon" v-if="trailingIcon" />

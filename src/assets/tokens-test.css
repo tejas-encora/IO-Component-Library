@@ -1,0 +1,643 @@
+:root {
+  --ioUI-source: #544DC7;
+
+  /* custom */
+  --ioUI-filled-button-container-shape: 4px;
+  --ioUI-outlined-button-container-shape: 4px;
+  --ioUI-text-button-container-shape: 4px;
+  --ioUI-elevated-button-container-shape: 4px;
+  --ioUI-filled-tonal-button-container-shape: 4px;
+  --small: 24px;
+  --medium: 32px;
+  --large: 40px;
+  --success: #008950;
+  --error: #BA1A1A;
+  --warning: #FFB300;
+  --on-warning: #4D3103;
+  --info: #007ACD;
+  --on-warning: #007ACD;
+  --ioUI-filled-button-icon-size: 14px;
+  --ioUI-outlined-button-icon-size: 14px;
+
+  /* --ioUI-filled-field-top-space: 5px;
+  --ioUI-filled-field-bottom-space: 5px;
+  --_with-label-bottom-space: 5px;
+  --_with-label-top-space: 5px;
+  --ioUI-filled-field-label-text-size: 11px; */
+  /* will be remapped */
+  
+/* primary */
+  --ioUI-ref-palette-primary100: #FFFFFF;
+  --ioUI-ref-palette-primary99: #FFFBFF;
+  --ioUI-ref-palette-primary95: #F2EEFF;
+  --ioUI-ref-palette-primary90: #E3DFFF;
+  --ioUI-ref-palette-primary80: #C4C0FF;
+  --ioUI-ref-palette-primary70: #A5A1FF;
+  --ioUI-ref-palette-primary60: #8781FE;
+  --ioUI-ref-palette-primary50: #6D67E1;
+  --ioUI-ref-palette-primary40: #544DC7;
+  --ioUI-ref-palette-primary30: #3C32AE;
+  --ioUI-ref-palette-primary20: #231098;
+  --ioUI-ref-palette-primary10: #110068;
+  --ioUI-ref-palette-primary0: #000000;
+  --ioUI-ref-palette-primary4: #070042;
+  --ioUI-ref-palette-primary5: #09004A;
+  --ioUI-ref-palette-primary6: #0B0051;
+  --ioUI-ref-palette-primary12: #140074;
+  --ioUI-ref-palette-primary17: #1C0091;
+  --ioUI-ref-palette-primary22: #28189C;
+  --ioUI-ref-palette-primary24: #2D1fA0;
+  --ioUI-ref-palette-primary25: #2F23A2;
+  --ioUI-ref-palette-primary35: #483FBA;
+  --ioUI-ref-palette-primary87: #D9D6FF;
+  --ioUI-ref-palette-primary92: #E9E5FF;
+  --ioUI-ref-palette-primary94: #EFEBFF;
+  --ioUI-ref-palette-primary96: #F6F2FF;
+  --ioUI-ref-palette-primary98: #FCF8FF;
+
+ 
+
+  /* secondary */
+  --ioUI-ref-palette-secondary100: #FFFFFF;
+  --ioUI-ref-palette-secondary99: #F7FDFF;
+  --ioUI-ref-palette-secondary95: #D3F7FF;
+  --ioUI-ref-palette-secondary90: #A0EFFF;
+  --ioUI-ref-palette-secondary80: #51D7EE;
+  --ioUI-ref-palette-secondary70: #26BBD2;
+  --ioUI-ref-palette-secondary60: #009FB3;
+  --ioUI-ref-palette-secondary50: #008394;
+  --ioUI-ref-palette-secondary40: #006876;
+  --ioUI-ref-palette-secondary30: #004E59;
+  --ioUI-ref-palette-secondary20: #00363E;
+  --ioUI-ref-palette-secondary10: #001F25;
+  --ioUI-ref-palette-secondary0: #000000;
+  --ioUI-ref-palette-secondary4: #001114;
+  --ioUI-ref-palette-secondary5: #001418;
+  --ioUI-ref-palette-secondary6: #00161B;
+  --ioUI-ref-palette-secondary12: #002429;
+  --ioUI-ref-palette-secondary17: #002F36;
+  --ioUI-ref-palette-secondary22: #003B43;
+  --ioUI-ref-palette-secondary24: #004049;
+  --ioUI-ref-palette-secondary25: #00424B;
+  --ioUI-ref-palette-secondary35: #005B67;
+  --ioUI-ref-palette-secondary87: #79EAFF;
+  --ioUI-ref-palette-secondary92: #B6F2FF;
+  --ioUI-ref-palette-secondary94: #CAF5FF;
+  --ioUI-ref-palette-secondary96: #DDF9FF;
+  --ioUI-ref-palette-secondary98: #EEFCFF;
+
+  /* error */
+  --ioUI-ref-palette-error100: #FFFFFF;
+  --ioUI-ref-palette-error99: #FFFBFC;
+  --ioUI-ref-palette-error95: #FFEDEA;
+  --ioUI-ref-palette-error90: #FFDAD6;
+  --ioUI-ref-palette-error80: #FFB4AB;
+  --ioUI-ref-palette-error70: #FFB4AB;
+  --ioUI-ref-palette-error60: #FF5449;
+  --ioUI-ref-palette-error50: #DE3730;
+  --ioUI-ref-palette-error40: #BA1A1A;
+  --ioUI-ref-palette-error30: #93000A;
+  --ioUI-ref-palette-error20: #690005;
+  --ioUI-ref-palette-error10: #410002;
+  --ioUI-ref-palette-error0: #000000;
+  --ioUI-ref-palette-error4: #280001;
+  --ioUI-ref-palette-error5: #2D0001;
+  --ioUI-ref-palette-error6: #310001;
+  --ioUI-ref-palette-error12: #490002;
+  --ioUI-ref-palette-error17: #5C0004;
+  --ioUI-ref-palette-error22: #710005;
+  --ioUI-ref-palette-error24: #790006;
+  --ioUI-ref-palette-error25: #7E0007;
+  --ioUI-ref-palette-error35: #A80710;
+  --ioUI-ref-palette-error87: #FFCFC9;
+  --ioUI-ref-palette-error92: #FFE2DE;
+  --ioUI-ref-palette-error94: #FFE9E6;
+  --ioUI-ref-palette-error96: #FFF0EE;
+  --ioUI-ref-palette-error98: #FFF7F7;
+
+  /* warning */
+  --ioUI-ref-palette-warning100: #FFFFFF;
+  --ioUI-ref-palette-warning99: #FFFBED;
+  --ioUI-ref-palette-warning95: #FFF1C6;
+  --ioUI-ref-palette-warning90: #FFE699;
+  --ioUI-ref-palette-warning80: #FFDA65;
+  --ioUI-ref-palette-warning70: #FFCA28;
+  --ioUI-ref-palette-warning60: #FFB300;
+  --ioUI-ref-palette-warning50: #F3A108;
+  --ioUI-ref-palette-warning40: #E08E00;
+  --ioUI-ref-palette-warning30: #B57200;
+  --ioUI-ref-palette-warning20: #845200;
+  --ioUI-ref-palette-warning10: #4D3103;
+  --ioUI-ref-palette-warning0: #000000;
+  --ioUI-ref-palette-warning4: #211500;
+  --ioUI-ref-palette-warning5: #2E1C00;
+  --ioUI-ref-palette-warning6: #3B2400;
+  --ioUI-ref-palette-warning12: #613D00;
+  --ioUI-ref-palette-warning17: #734800;
+  --ioUI-ref-palette-warning22: #9C6200;
+  --ioUI-ref-palette-warning24: #AB6B00;
+  --ioUI-ref-palette-warning25: #B27000;
+  --ioUI-ref-palette-warning35: #D68800;
+  --ioUI-ref-palette-warning87: #FFE187;
+  --ioUI-ref-palette-warning92: #FFE9A8;
+  --ioUI-ref-palette-warning94: #FFEDB8;
+  --ioUI-ref-palette-warning96: #FFF4D4;
+  --ioUI-ref-palette-warning98: #FFF9E5;
+
+
+  /* success */
+  --ioUI-ref-palette-success100: #FFFFFF;
+  --ioUI-ref-palette-success99: #F5FFF8;
+  --ioUI-ref-palette-success95: #C1FFD3;
+  --ioUI-ref-palette-success90: #91EEB7;
+  --ioUI-ref-palette-success80: #68DB9B;
+  --ioUI-ref-palette-success70: #34C27A;
+  --ioUI-ref-palette-success60: #00A662;
+  --ioUI-ref-palette-success50: #008950;
+  --ioUI-ref-palette-success40: #006D3F;
+  --ioUI-ref-palette-success30: #00522E;
+  --ioUI-ref-palette-success20: #00391E;
+  --ioUI-ref-palette-success10: #00210F;
+  --ioUI-ref-palette-success0: #000000;
+  --ioUI-ref-palette-success4: #001209;
+  --ioUI-ref-palette-success5: #00170B;
+  --ioUI-ref-palette-success6: #001A0C;
+  --ioUI-ref-palette-success12: #002611;
+  --ioUI-ref-palette-success17: #00301A;
+  --ioUI-ref-palette-success22: #003D20;
+  --ioUI-ref-palette-success24: #004526;
+  --ioUI-ref-palette-success25: #004A29;
+  --ioUI-ref-palette-success35: #005C33;
+  --ioUI-ref-palette-success87: #78EBA7;
+  --ioUI-ref-palette-success92: #9EF7C3;
+  --ioUI-ref-palette-success94: #B5FFCB;
+  --ioUI-ref-palette-success96: #D9FFE4;
+  --ioUI-ref-palette-success98: #EBFFF1;
+
+  /* informational */
+  --ioUI-ref-palette-informational100: #FFFFFF;
+  --ioUI-ref-palette-informational99: #FCFCFF;
+  --ioUI-ref-palette-informational95: #EAF1FF;
+  --ioUI-ref-palette-informational90: #D1E4FF;
+  --ioUI-ref-palette-informational80: #9FCAFF;
+  --ioUI-ref-palette-informational70: #64AFFF;
+  --ioUI-ref-palette-informational60: #2B95EF;
+  --ioUI-ref-palette-informational50: #007ACD;
+  --ioUI-ref-palette-informational40: #0061A4;
+  --ioUI-ref-palette-informational30: #00497D;
+  --ioUI-ref-palette-informational20: #003258;
+  --ioUI-ref-palette-informational10: #001D36;
+  --ioUI-ref-palette-informational0: #000000;
+  --ioUI-ref-palette-informational4: #00101F;
+  --ioUI-ref-palette-informational5: #001426;
+  --ioUI-ref-palette-informational6: #00172B;
+  --ioUI-ref-palette-informational12: #002240;
+  --ioUI-ref-palette-informational17: #002B4D;
+  --ioUI-ref-palette-informational22: #003761;
+  --ioUI-ref-palette-informational24: #003D69;
+  --ioUI-ref-palette-informational25: #004270;
+  --ioUI-ref-palette-informational35: #00538F;
+  --ioUI-ref-palette-informational87: #C2DDFF;
+  --ioUI-ref-palette-informational92: #DBEAFF;
+  --ioUI-ref-palette-informational94: #E4EFFF;
+  --ioUI-ref-palette-informational96: #F0F5FF;
+  --ioUI-ref-palette-informational98: #F8F9FF;
+
+  /* neutral */
+  --ioUI-ref-palette-neutral100: #FFFFFF;
+  --ioUI-ref-palette-neutral99: #FAFCFC;
+  --ioUI-ref-palette-neutral95: #EFF1F1;
+  --ioUI-ref-palette-neutral90: #E1E3E3;
+  --ioUI-ref-palette-neutral80: #C4C7C7;
+  --ioUI-ref-palette-neutral70: #A9ACAC;
+  --ioUI-ref-palette-neutral60: #8E9192;
+  --ioUI-ref-palette-neutral50: #747878;
+  --ioUI-ref-palette-neutral40: #5C5F5F;
+  --ioUI-ref-palette-neutral30: #3D4345;
+  --ioUI-ref-palette-neutral20: #202324;
+  --ioUI-ref-palette-neutral10: #111414;
+  --ioUI-ref-palette-neutral0: #ffffff;
+  --ioUI-ref-palette-neutral4: #060808;
+  --ioUI-ref-palette-neutral5: #0B0D0D;
+  --ioUI-ref-palette-neutral6: #0D0F0F;
+  --ioUI-ref-palette-neutral12: #16181A;
+  --ioUI-ref-palette-neutral17: #1B1E1F;
+  --ioUI-ref-palette-neutral22: #242829;
+  --ioUI-ref-palette-neutral24: #2D3233;
+  --ioUI-ref-palette-neutral25: #343A3B;
+  --ioUI-ref-palette-neutral35: #494E4F;
+  --ioUI-ref-palette-neutral87: #D7D9D9;
+  --ioUI-ref-palette-neutral92: #E6E8E8;
+  --ioUI-ref-palette-neutral94: #EBEDED;
+  --ioUI-ref-palette-neutral96: #F5F7F7;
+  --ioUI-ref-palette-neutral98: #F8FAFA;
+
+  /* neutral-variant */
+  --ioUI-ref-palette-neutral-variant100: #FFFFFF;
+  --ioUI-ref-palette-neutral-variant99: #F9FBFC;
+  --ioUI-ref-palette-neutral-variant95: #F0F6FA;
+  --ioUI-ref-palette-neutral-variant90: #DCE4E9;
+  --ioUI-ref-palette-neutral-variant80: #C0C8CD;
+  --ioUI-ref-palette-neutral-variant70: #A4ACB1;
+  --ioUI-ref-palette-neutral-variant60: #8A9297;
+  --ioUI-ref-palette-neutral-variant50: #70787D;
+  --ioUI-ref-palette-neutral-variant40: #586064;
+  --ioUI-ref-palette-neutral-variant30: #40484C;
+  --ioUI-ref-palette-neutral-variant20: #11171A;
+  --ioUI-ref-palette-neutral-variant10: #000000;
+  --ioUI-ref-palette-neutral-variant0: #11171A;
+  --ioUI-ref-palette-neutral-variant4: #050708;
+  --ioUI-ref-palette-neutral-variant5: #090B0D;
+  --ioUI-ref-palette-neutral-variant6: #0C1012;
+  --ioUI-ref-palette-neutral-variant12: #141B1F;
+  --ioUI-ref-palette-neutral-variant17: #1E2426;
+  --ioUI-ref-palette-neutral-variant22: #272D30;
+  --ioUI-ref-palette-neutral-variant24: #30373B;
+  --ioUI-ref-palette-neutral-variant25: #363C40;
+  --ioUI-ref-palette-neutral-variant35: #4D575C;
+  --ioUI-ref-palette-neutral-variant87: #D2DBE0;
+  --ioUI-ref-palette-neutral-variant92: #E4EBF0;
+  --ioUI-ref-palette-neutral-variant94: #E9F0F5;
+  --ioUI-ref-palette-neutral-variant96: #F2F7FA;
+  --ioUI-ref-palette-neutral-variant98: #F8FAFA;
+
+
+/* system colors */
+
+  /* light */
+  --ioUI-sys-color-primary-light: var(--ioUI-ref-palette-primary40);
+  --ioUI-sys-color-on-primary-light: var(--ioUI-ref-palette-primary100);
+  --ioUI-sys-color-primary-container-light: var(--ioUI-ref-palette-primary90);
+  --ioUI-sys-color-on-primary-container-light: var(--ioUI-ref-palette-primary10);
+  --ioUI-sys-color-inverse-primary-light: var(--ioUI-ref-palette-primary80);
+  --ioUI-sys-color-primary-fixed-light: var(--ioUI-ref-palette-primary90);
+  --ioUI-sys-color-on-primary-fixed-light: var(--ioUI-ref-palette-primary10);
+  --ioUI-sys-color-primary-fixed-dim-light: var(--ioUI-ref-palette-primary80);
+  --ioUI-sys-color-primary-fixed-variant-light: var(--ioUI-ref-palette-primary30);
+
+  --ioUI-sys-color-secondary-light: var(--ioUI-ref-palette-secondary50);
+  --ioUI-sys-color-on-secondary-light: var(--ioUI-ref-palette-secondary100);
+  --ioUI-sys-color-secondary-container-light: var(--ioUI-ref-palette-secondary90);
+  --ioUI-sys-color-on-secondary-container-light: var(--ioUI-ref-palette-secondary10);
+  --ioUI-sys-color-secondary-fixed-light: var(--ioUI-ref-palette-secondary90);
+  --ioUI-sys-color-on-secondary-fixed-light: var(--ioUI-ref-palette-secondary10);
+  --ioUI-sys-color-secondary-fixed-dim-light: var(--ioUI-ref-palette-secondary80);
+  --ioUI-sys-color-secondary-fixed-variant-light: var(--ioUI-ref-palette-secondary30);
+
+  --ioUI-sys-color-error-light: var(--ioUI-ref-palette-error50);
+  --ioUI-sys-color-on-error-light: var(--ioUI-ref-palette-error100);
+  --ioUI-sys-color-error-container-light: var(--ioUI-ref-palette-error90);
+  --ioUI-sys-color-on-error-container-light: var(--ioUI-ref-palette-error10);
+
+  --ioUI-sys-color-warning-light: var(--ioUI-ref-palette-warning60);
+  --ioUI-sys-color-on-warning-light: var(--ioUI-ref-palette-warning10);
+  --ioUI-sys-color-warning-container-light: var(--ioUI-ref-palette-warning90);
+  --ioUI-sys-color-on-warning-container-light: var(--ioUI-ref-palette-warning10);
+
+  --ioUI-sys-color-success-light: var(--ioUI-ref-palette-success50);
+  --ioUI-sys-color-on-success-light: var(--ioUI-ref-palette-success100);
+  --ioUI-sys-color-success-container-light: var(--ioUI-ref-palette-success95);
+  --ioUI-sys-color-on-success-container-light: var(--ioUI-ref-palette-success20);
+
+  --ioUI-sys-color-informational-light: var(--ioUI-ref-palette-informational50);
+  --ioUI-sys-color-on-informational-light: var(--ioUI-ref-palette-informational100);
+  --ioUI-sys-color-informational-container-light: var(--ioUI-ref-palette-informational90);
+  --ioUI-sys-color-on-informational-container-light: var(--ioUI-ref-palette-informational20);
+
+  --ioUI-sys-color-background-light: var(--ioUI-ref-palette-neutral95);
+  --ioUI-sys-color-on-background-light: var(--ioUI-ref-palette-neutral10);
+
+  --ioUI-sys-color-surface-light: var(--ioUI-ref-palette-neutral98);
+  --ioUI-sys-color-on-surface-light: var(--ioUI-ref-palette-neutral10);
+
+  --ioUI-sys-color-surface-variant-light: var(--ioUI-ref-palette-neutral-variant90);
+  --ioUI-sys-color-on-surface-variant-light: var(--ioUI-ref-palette-neutral-variant30);
+
+  --ioUI-sys-color-inverse-surface-light: var(--ioUI-ref-palette-neutral20);
+  --ioUI-sys-color-inverse-on-surface-light: var(--ioUI-ref-palette-neutral95);
+
+  --ioUI-sys-color-outline-light: var(--ioUI-ref-palette-neutral-variant50);
+  --ioUI-sys-color-outline-variant-light: var(--ioUI-ref-palette-neutral-variant80);
+
+
+  --ioUI-sys-color-surface-tint-light: var(--ioUI-ref-palette-primary40);
+  --ioUI-sys-color-surface-tint-color-light: var(--ioUI-ref-palette-primary40);
+
+  --ioUI-sys-color-shadow-light: var(--ioUI-ref-palette-neutral10);
+
+  --ioUI-sys-color-scrim-light: var(--ioUI-ref-palette-neutral10);
+
+  --ioUI-sys-color-surface-container-highest-light: var(--ioUI-ref-palette-neutral90);
+  --ioUI-sys-color-surface-container-high-light: var(--ioUI-ref-palette-neutral92);
+  --ioUI-sys-color-surface-container-light: var(--ioUI-ref-palette-neutral94);
+  --ioUI-sys-color-surface-container-low-light: var(--ioUI-ref-palette-neutral96);
+  --ioUI-sys-color-surface-container-low: var(--ioUI-ref-palette-neutral96);
+  --ioUI-sys-color-surface-container-lowest-light: var(--ioUI-ref-palette-neutral100);
+  --ioUI-sys-color-surface-bright-light: var(--ioUI-ref-palette-neutral98);
+  --ioUI-sys-color-surface-dim-light: var(--ioUI-ref-palette-neutral87);
+
+
+  /* dark */
+  --ioUI-sys-color-primary-dark: var(--ioUI-ref-palette-primary80);
+  --ioUI-sys-color-on-primary-dark: var(--ioUI-ref-palette-primary20);
+  --ioUI-sys-color-primary-container-dark: var(--ioUI-ref-palette-primary30);
+  --ioUI-sys-color-on-primary-container-dark: var(--ioUI-ref-palette-primary90);
+  --ioUI-sys-color-inverse-primary-dark: var(--ioUI-ref-palette-primary40);
+  --ioUI-sys-color-primary-fixed-dark: var(--ioUI-ref-palette-primary90);
+  --ioUI-sys-color-on-primary-fixed-dark: var(--ioUI-ref-palette-primary10);
+  --ioUI-sys-color-primary-fixed-dim-dark: var(--ioUI-ref-palette-primary80);
+  --ioUI-sys-color-primary-fixed-variant-dark: var(--ioUI-ref-palette-primary30);
+
+  --ioUI-sys-color-secondary-dark: var(--ioUI-ref-palette-secondary80);
+  --ioUI-sys-color-on-secondary-dark: var(--ioUI-ref-palette-secondary20);
+  --ioUI-sys-color-secondary-container-dark: var(--ioUI-ref-palette-secondary30);
+  --ioUI-sys-color-on-secondary-container-dark: var(--ioUI-ref-palette-secondary90);
+  --ioUI-sys-color-secondary-fixed-dark: var(--ioUI-ref-palette-secondary90);
+  --ioUI-sys-color-on-secondary-fixed-dark: var(--ioUI-ref-palette-secondary10);
+  --ioUI-sys-color-secondary-fixed-dim-dark: var(--ioUI-ref-palette-secondary80);
+  --ioUI-sys-color-secondary-fixed-variant-dark: var(--ioUI-ref-palette-secondary30);
+
+  --ioUI-sys-color-error-dark: var(--ioUI-ref-palette-error80);
+  --ioUI-sys-color-on-error-dark: var(--ioUI-ref-palette-error20);
+  --ioUI-sys-color-error-container-dark: var(--ioUI-ref-palette-error30);
+  --ioUI-sys-color-on-error-container-dark: var(--ioUI-ref-palette-error90);
+
+  --ioUI-sys-color-warning-dark: var(--ioUI-ref-palette-warning80);
+  --ioUI-sys-color-on-warning-dark: var(--ioUI-ref-palette-warning20);
+  --ioUI-sys-color-warning-container-dark: var(--ioUI-ref-palette-warning30);
+  --ioUI-sys-color-on-warning-container-dark: var(--ioUI-ref-palette-warning90);
+
+  --ioUI-sys-color-success-dark: var(--ioUI-ref-palette-success80);
+  --ioUI-sys-color-on-success-dark: var(--ioUI-ref-palette-success20);
+  --ioUI-sys-color-success-container-dark: var(--ioUI-ref-palette-success30);
+  --ioUI-sys-color-on-success-container-dark: var(--ioUI-ref-palette-success90);
+
+  --ioUI-sys-color-informational-dark: var(--ioUI-ref-palette-informational80);
+  --ioUI-sys-color-on-informational-dark: var(--ioUI-ref-palette-informational20);
+  --ioUI-sys-color-informational-container-dark: var(--ioUI-ref-palette-informational30);
+  --ioUI-sys-color-on-informational-container-dark: var(--ioUI-ref-palette-informational90);
+
+  --ioUI-sys-color-background-dark: var(--ioUI-ref-palette-neutral10);
+  --ioUI-sys-color-on-background-dark: var(--ioUI-ref-palette-neutral90);
+
+  --ioUI-sys-color-surface-dark: var(--ioUI-ref-palette-neutral20);
+  --ioUI-sys-color-on-surface-dark: var(--ioUI-ref-palette-neutral95);
+
+  --ioUI-sys-color-surface-variant-dark: var(--ioUI-ref-palette-neutral-variant30);
+  --ioUI-sys-color-on-surface-variant-dark: var(--ioUI-ref-palette-neutral-variant80);;
+
+  --ioUI-sys-color-inverse-surface-dark: var(--ioUI-ref-palette-neutral90);
+  --ioUI-sys-color-inverse-on-surface-dark: var(--ioUI-ref-palette-neutral20);
+
+  --ioUI-sys-color-outline-dark: var(--ioUI-ref-palette-neutral-variant60);
+  --ioUI-sys-color-outline-variant-dark: var(--ioUI-ref-palette-neutral-variant30);
+
+
+  --ioUI-sys-color-surface-tint-dark: var(--ioUI-ref-palette-primary80);
+  --ioUI-sys-color-surface-tint-color-dark: var(--ioUI-ref-palette-primary80);
+
+  --ioUI-sys-color-shadow-dark: var(--ioUI-ref-palette-neutral0);
+
+  --ioUI-sys-color-scrim-dark: var(--ioUI-ref-palette-neutral0);
+
+  --ioUI-sys-color-surface-container-highest-dark: var(--ioUI-ref-palette-neutral24);
+  --ioUI-sys-color-surface-container-high-dark: var(--ioUI-ref-palette-neutral22);
+  --ioUI-sys-color-surface-container-dark: var(--ioUI-ref-palette-neutral12);
+  --ioUI-sys-color-surface-container-low-dark: var(--ioUI-ref-palette-neutral10);
+  --ioUI-sys-color-surface-container-lowest-dark: var(--ioUI-ref-palette-neutral4);
+  --ioUI-sys-color-surface-bright-dark: var(--ioUI-ref-palette-neutral25);
+  --ioUI-sys-color-surface-dim-dark: var(--ioUI-ref-palette-neutral17);
+
+  /* surfaces */
+
+  /* light */
+
+  --ioUI-surfaces-surface1-light: rgba(248, 250, 250, 1.0), rgba(84, 77, 199, 0.05);
+  --ioUI-surfaces-surface2-light: rgba(248, 250, 250, 1.0), rgba(84, 77, 199, 0.08);
+  --ioUI-surfaces-surface3-light: rgba(248, 250, 250, 1.0), rgba(84, 77, 199, 0.11);
+  --ioUI-surfaces-surface4-light: rgba(248, 250, 250, 1.0), rgba(84, 77, 199, 0.12);
+  --ioUI-surfaces-surface5-light: rgba(248, 250, 250, 1.0), rgba(84, 77, 199, 0.14);
+
+  /* dark */
+  --ioUI-surfaces-surface1-dark: rgba(27, 30, 31, 1.0), rgba(196, 192, 255, 0.05);
+  --ioUI-surfaces-surface2-dark: rgba(27, 30, 31, 1.0), rgba(196, 192, 255, 0.08);
+  --ioUI-surfaces-surface3-dark: rgba(27, 30, 31, 1.0), rgba(196, 192, 255, 0.11);
+  --ioUI-surfaces-surface4-dark: rgba(27, 30, 31, 1.0), rgba(196, 192, 255, 0.12);
+  --ioUI-surfaces-surface5-dark: rgba(27, 30, 31, 1.0), rgba(196, 192, 255, 0.14);
+  
+  /* ------------------------------------------------ *
+
+  /* display - large */
+  --ioUI-sys-typescale-display-large-font-family-name: 'Lato';
+  --ioUI-sys-typescale-display-large-font-family-style: Regular;
+  --ioUI-sys-typescale-display-large-font-weight: 400px;
+  --ioUI-sys-typescale-display-large-font-size: 57px;
+  --ioUI-sys-typescale-display-large-line-height: 64px;
+  --ioUI-sys-typescale-display-large-letter-spacing: -0.25px;
+  /* display - medium */
+  --ioUI-sys-typescale-display-medium-font-family-name: 'Lato';
+  --ioUI-sys-typescale-display-medium-font-family-style: Regular;
+  --ioUI-sys-typescale-display-medium-font-weight: 400px;
+  --ioUI-sys-typescale-display-medium-font-size: 45px;
+  --ioUI-sys-typescale-display-medium-line-height: 52px;
+  --ioUI-sys-typescale-display-medium-letter-spacing: 0px;
+  /* display - small */
+  --ioUI-sys-typescale-display-small-font-family-name: 'Lato';
+  --ioUI-sys-typescale-display-small-font-family-style: Regular;
+  --ioUI-sys-typescale-display-small-font-weight: 400px;
+  --ioUI-sys-typescale-display-small-font-size: 36px;
+  --ioUI-sys-typescale-display-small-line-height: 44px;
+  --ioUI-sys-typescale-display-small-letter-spacing: 0px;
+  /* headline - large */
+  --ioUI-sys-typescale-headline-large-font-family-name: 'Lato';
+  --ioUI-sys-typescale-headline-large-font-family-style: Regular;
+  --ioUI-sys-typescale-headline-large-font-weight: 400px;
+  --ioUI-sys-typescale-headline-large-font-size: 32px;
+  --ioUI-sys-typescale-headline-large-line-height: 40px;
+  --ioUI-sys-typescale-headline-large-letter-spacing: 0px;
+  /* headline - medium */
+  --ioUI-sys-typescale-headline-medium-font-family-name: 'Lato';
+  --ioUI-sys-typescale-headline-medium-font-family-style: Regular;
+  --ioUI-sys-typescale-headline-medium-font-weight: 400px;
+  --ioUI-sys-typescale-headline-medium-font-size: 28px;
+  --ioUI-sys-typescale-headline-medium-line-height: 36px;
+  --ioUI-sys-typescale-headline-medium-letter-spacing: 0px;
+  /* headline - small */
+  --ioUI-sys-typescale-headline-small-font-family-name: 'Lato';
+  --ioUI-sys-typescale-headline-small-font-family-style: Regular;
+  --ioUI-sys-typescale-headline-small-font-weight: 400px;
+  --ioUI-sys-typescale-headline-small-font-size: 24px;
+  --ioUI-sys-typescale-headline-small-line-height: 32px;
+  --ioUI-sys-typescale-headline-small-letter-spacing: 0px;
+  
+  /* body - large */
+  --ioUI-sys-typescale-body-large-font-family-name: 'Lato';
+  --ioUI-sys-typescale-body-large-font-family-style: Regular;
+  --ioUI-sys-typescale-body-large-font-weight: 400px;
+  --ioUI-sys-typescale-body-large-font-size: 16px;
+  --ioUI-sys-typescale-body-large-line-height: 24px;
+  --ioUI-sys-typescale-body-large-letter-spacing: 0.5px;
+  /* body - medium */
+  --ioUI-sys-typescale-body-medium-font-family-name: 'Lato';
+  --ioUI-sys-typescale-body-medium-font-family-style: Regular;
+  --ioUI-sys-typescale-body-medium-font-weight: 400px;
+  --ioUI-sys-typescale-body-medium-font-size: 14px;
+  --ioUI-sys-typescale-body-medium-line-height: 20px;
+  --ioUI-sys-typescale-body-medium-letter-spacing: 0.25px;
+  /* body - small */
+  --ioUI-sys-typescale-body-small-font-family-name: 'Lato';
+  --ioUI-sys-typescale-body-small-font-family-style: Regular;
+  --ioUI-sys-typescale-body-small-font-weight: 400px;
+  --ioUI-sys-typescale-body-small-font-size: 12px;
+  --ioUI-sys-typescale-body-small-line-height: 16px;
+  --ioUI-sys-typescale-body-small-letter-spacing: 0.4px;
+  /* label - large */
+  --ioUI-sys-typescale-label-large-font-family-name: 'Lato';
+  --ioUI-sys-typescale-label-large-font-family-style: Medium;
+  --ioUI-sys-typescale-label-large-font-weight: 500px;
+  --ioUI-sys-typescale-label-large-font-size: 14px;
+  --ioUI-sys-typescale-label-large-line-height: 20px;
+  --ioUI-sys-typescale-label-large-letter-spacing: 0.1px;
+  /* label - medium */
+  --ioUI-sys-typescale-label-medium-font-family-name: 'Lato';
+  --ioUI-sys-typescale-label-medium-font-family-style: Medium;
+  --ioUI-sys-typescale-label-medium-font-weight: 500px;
+  --ioUI-sys-typescale-label-medium-font-size: 12px;
+  --ioUI-sys-typescale-label-medium-line-height: 16px;
+  --ioUI-sys-typescale-label-medium-letter-spacing: 0.5px;
+  /* label - small */
+  --ioUI-sys-typescale-label-small-font-family-name: 'Lato';
+  --ioUI-sys-typescale-label-small-font-family-style: Medium;
+  --ioUI-sys-typescale-label-small-font-weight: 500px;
+  --ioUI-sys-typescale-label-small-font-size: 11px;
+  --ioUI-sys-typescale-label-small-line-height: 16px;
+  --ioUI-sys-typescale-label-small-letter-spacing: 0.5px;
+  /* sub headline - large */
+  --ioUI-sys-typescale-subheadline-large-font-family-name: 'Lato';
+  --ioUI-sys-typescale-subheadline-large-font-family-style: Regular;
+  --ioUI-sys-typescale-subheadline-large-font-weight: 600px;
+  --ioUI-sys-typescale-subheadline-large-font-size: 16px;
+  --ioUI-sys-typescale-subheadline-large-line-height: 24px;
+  --ioUI-sys-typescale-subheadline-large-letter-spacing: 0px;
+  /* sub headline - medium */
+  --ioUI-sys-typescale-subheadline-medium-font-family-name: 'Lato';
+  --ioUI-sys-typescale-subheadline-medium-font-family-style: Medium;
+  --ioUI-sys-typescale-subheadline-medium-font-weight: 600px;
+  --ioUI-sys-typescale-subheadline-medium-font-size: 15px;
+  --ioUI-sys-typescale-subheadline-medium-line-height: 24px;
+  --ioUI-sys-typescale-subheadline-medium-letter-spacing: 0.15px;
+  /* sub headline - small */
+  --ioUI-sys-typescale-subheadline-small-font-family-name: 'Lato';
+  --ioUI-sys-typescale-subheadline-small-font-family-style: Medium;
+  --ioUI-sys-typescale-subheadline-small-font-weight: 600px;
+  --ioUI-sys-typescale-subheadline-small-font-size: 14px;
+  --ioUI-sys-typescale-subheadline-small-line-height: 20px;
+  --ioUI-sys-typescale-subheadline-small-letter-spacing: 0.1px;
+  --ioUI-ref-typeface-brand: ''Lato'';
+  --ioUI-ref-typeface-plain: ''Lato'';
+  /* text link - base */
+  --ioUI-sys-typescale-link-medium-font-family-name: ''Lato'';
+  --ioUI-sys-typescale-link-medium-font-family-style: Medium;
+  --ioUI-sys-typescale-link-medium-font-weight: 500;
+  --ioUI-sys-typescale-link-medium-font-size: 14px;
+  --ioUI-sys-typescale-link-medium-letter-spacing: 0.25px;
+  --ioUI-sys-typescale-link-medium-line-height: 20px;
+  /* text link - large */
+  --ioUI-sys-typescale-link-large-font-family-name: 'Lato';
+  --ioUI-sys-typescale-link-large-font-family-style: Medium;
+  --ioUI-sys-typescale-link-large-font-weight: 500;
+  --ioUI-sys-typescale-link-large-font-size: 15px;
+  --ioUI-sys-typescale-link-large-letter-spacing: 0.25px;
+  --ioUI-sys-typescale-link-large-line-height: 20x;
+/* text link - small */
+  --ioUI-sys-typescale-link-small-font-family-name: 'Lato';
+  --ioUI-sys-typescale-link-small-font-family-style: Medium;
+  --ioUI-sys-typescale-link-small-font-weight: 500;
+  --ioUI-sys-typescale-link-small-font-size: 12px;
+  --ioUI-sys-typescale-link-small-letter-spacing: 0.25px;
+  --ioUI-sys-typescale-link-small-line-height: 20x;
+  /* caption */
+  --ioUI-sys-typescale-caption-font-family-name: 'Lato';
+  --ioUI-sys-typescale-caption-font-family-style: Medium;
+  --ioUI-sys-typescale-caption-font-weight: 600;
+  --ioUI-sys-typescale-caption-font-size: 12px;
+  --ioUI-sys-typescale-caption-letter-spacing: 5%;
+  --ioUI-sys-typescale-caption-line-height: 20x;
+
+  /* chips*/
+   --ioUI-input-chip-container-height: 24px;
+   --ioUI-input-chip-container-shape: 24px;
+   --ioUI-input-chip-label-text-size: 12px;
+  --ioUI-input-chip-icon-size: 12px;
+  --ioUI-input-chip-avatar-size: 16px;
+  --ioUI-input-chip-selected-container-color: var(--ioUI-ref-palette-primary90);
+  
+
+  --ioUI-assist-chip-container-height: 24px;
+   --ioUI-assist-chip-container-shape: 24px;
+   --ioUI-assist-chip-label-text-size: 12px;
+   --ioUI-assist-chip-icon-size: 12px;
+   --ioUI-assist-chip-selected-container-color: var(--ioUI-ref-palette-primary90);
+  /* --ioUI-assist-chip-elevated-container-elevation: 20px; */
+  
+  --ioUI-filter-chip-container-height: 24px;
+   --ioUI-filter-chip-container-shape: 24px;
+   --ioUI-filter-chip-label-text-size: 12px;
+   --ioUI-filter-chip-icon-size: 12px;
+   --ioUI-filter-chip-selected-container-color: var(--ioUI-ref-palette-primary90);
+   
+  --ioUI-suggestion-chip-container-height: 24px;
+   --ioUI-suggestion-chip-container-shape: 24px;
+   --ioUI-suggestion-chip-label-text-size: 12px;
+   --ioUI-suggestion-chip-icon-size: 12px;
+   --ioUI-suggestion-chip-container-color: var(--ioUI-ref-palette-primary90);
+
+/* ioUI-sys */
+
+  --ioUI-sys-light-primary-container: var(--ioUI-ref-palette-primary90);
+  --ioUI-sys-light-on-primary-container: var(--ioUI-ref-palette-primary10);
+  --ioUI-sys-light-primary: var(--ioUI-ref-palette-primary40);
+  --ioUI-sys-light-on-primary: #fff;
+  --ioUI-sys-light-secondary: var(--ioUI-ref-palette-secondary50);
+  --ioUI-sys-light-on-secondary: #fff;
+  --ioUI-sys-light-secondary-container: var(--ioUI-ref-palette-secondary90);
+
+  --ioUI-sys-light-informational-container: var(--ioUI-ref-palette-informational90);
+  --ioUI-sys-light-on-informational-container: var(--ioUI-ref-palette-informational20);
+  --ioUI-sys-light-informational: var(--ioUI-ref-palette-informational50);
+  --ioUI-sys-light-on-informational: #fff;
+  --ioUI-sys-light-informational: var(--ioUI-ref-palette-informational50);
+  --ioUI-sys-light-on-informational: #fff;
+
+--ioUI-sys-light-warning-container: var(--ioUI-ref-palette-warning90);
+--ioUI-sys-light-on-warning-container: var(--ioUI-ref-palette-warning10);
+--ioUI-sys-light-warning: var(--ioUI-ref-palette-warning60);
+
+--ioUI-sys-light-success-container: var(--ioUI-ref-palette-success95);
+--ioUI-sys-light-on-success-container: var(--ioUI-ref-palette-success20);
+--ioUI-sys-light-on-success: #fff;
+--ioUI-sys-light-success: var(--ioUI-ref-palette-success50);
+
+--ioUI-sys-light-error-container: var(--ioUI-ref-palette-error90); 
+--ioUI-sys-light-on-error-container: var(--ioUI-ref-palette-error10);
+--ioUI-sys-light-on-error: #fff;
+--ioUI-sys-light-error: var(--ioUI-ref-palette-error40);
+
+--ioUI-sys-light-surface-variant: var(--ioUI-ref-palette-neutral-variant90);
+--ioUI-sys-light-on-surface: var(--ioUI-ref-palette-neutral10);
+--ioUI-sys-light-inverse-surface: var(--ioUI-ref-palette-neutral20);
+--ioUI-sys-light-inverse-on-surface: var(--ioUI-ref-palette-neutral95);
+--ioUI-sys-light-surface-variant: var(--ioUI-ref-palette-neutral-variant90);
+
+--ioUI-sys-light-outline-variant: var(--ioUI-ref-palette-neutral-variant80);
+--ioUI-sys-light-surface-container: var(--ioUI-ref-palette-neutral94)
+
+/* textfields */
+  --ioUI-filled-text-field-leading-icon-size: 18px;
+  --ioUI-filled-text-field-trailing-icon-size: 18px;
+
+   /* testing */
+    --surfacergb1: rgba(27, 30, 31, 1.0);
+    --surfacergb2: rgba(196, 192, 255, 0.05);
+    --ioUI-surfaces-surface1-test: var(--surfacergb1), var(--surfacergb2);
+}

@@ -623,12 +623,15 @@
 --ioUI-sys-light-on-error: #fff;
 --ioUI-sys-light-error: var(--md-ref-palette-error40);
 
+--ioUI-sys-light-surface: var(--md-ref-palette-neutral99);
+--ioUI-sys-light-surface-variant: var(--md-ref-palette-neutral-variant90);
+--ioUI-sys-light-on-surface: var(--md-ref-palette-neutral10);
+--ioUI-sys-light-inverse-surface: var(--md-ref-palette-neutral20);
+--ioUI-sys-light-inverse-on-surface: var(--md-ref-palette-neutral95);
+--ioUI-sys-light-surface-variant: var(--md-ref-palette-neutral-variant90);
 
-   --ioUI-sys-light-surface-variant: var(--md-ref-palette-neutral-variant90);
-   --ioUI-sys-light-on-surface: var(--md-ref-palette-neutral10);
-   --ioUI-sys-light-inverse-surface: var(--md-ref-palette-neutral20);
-   --ioUI-sys-light-inverse-on-surface: var(--md-ref-palette-neutral95);
-   --ioUI-sys-light-surface-variant: var(--md-ref-palette-neutral-variant90);
+--ioUI-sys-light-outline-variant: var(--md-ref-palette-neutral-variant80);
+--ioUI-sys-light-surface-container: var(--md-ref-palette-neutral94);
 
 /* textfields */
   --md-filled-text-field-leading-icon-size: 18px;
