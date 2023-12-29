@@ -42,6 +42,7 @@ import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import { aliases, fa } from 'vuetify/iconsets/fa'
 import { createApp } from 'vue'
+
 import App from './App.vue'
 
 const vuetify = createVuetify({
@@ -60,7 +61,12 @@ const vuetify = createVuetify({
             ioVuetifyTheme: {
                 dark: false,
                 colors: {
-
+                    primary: '#544DC7',
+                    secondary: '#008394',
+                    error: '#FB8C00',
+                    info: '#007ACD',
+                    success: '#008950',
+                    warning: '#E08E00',
                 }
             }
         }

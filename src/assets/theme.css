@@ -4,21 +4,6 @@
 @import url(theme.light.css);
 /* @import url(theme.dark.css) (prefers-color-scheme: dark); */
 
-/* Custom */
-
-/* .v-input--density-compact {
-  --v-input-control-height: 32px !important;
-  --v-input-padding-top: 0 !important;
-
-  .v-field--no-label {
-    --v-field-padding-bottom: 0;
-  }
-
-  .v-input__details {
-    display: none;
-  }
-} */
-
 .small,
 md-filled-button[size='small'],
 md-outlined-button[size='small'],
@@ -94,8 +79,4 @@ md-filled-button {
   background-color: var(--md-surfaces-surface1-test);
   /* width: 500px;
   height: 200px; */
-}
-
-.v-selection-control--dirty {
-  color: var(--ioUI-sys-light-primary)
 }

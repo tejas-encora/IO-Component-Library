@@ -11,6 +11,7 @@
 
 <script setup>
 
+import 'vuetify/styles'
 const props = defineProps({
   items: {
     type: Array,
@@ -21,7 +22,7 @@ const props = defineProps({
   }
 });
 </script>
-<style lang="scss">
+<style scoped>
 .v-table .v-text-field {
   background: white
 }

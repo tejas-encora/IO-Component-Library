@@ -14,7 +14,7 @@ Reference: [https://vuetifyjs.com/en/api/v-data-table/](https://vuetifyjs.com/en
 ```
 npm install vite-plugins-vuetify
 ```
-Make sure you have sass installed
+Make sure you have SASS installed
 
 ```
 npm install -D sass
@@ -58,7 +58,12 @@ const vuetify = createVuetify({
             ioVuetifyTheme: {
                 dark: false,
                 colors: {
-
+                    primary: '#544DC7',
+                    secondary: '#008394',
+                    error: '#FB8C00',
+                    info: '#007ACD',
+                    success: '#008950',
+                    warning: '#E08E00',
                 }
             }
         }
@@ -66,7 +71,7 @@ const vuetify = createVuetify({
 })
 createApp(App).use(vuetify).mount('#app')
 ```
-You also need to add this to your vite.config.js. This is due to the fonts not currently loading in dist. IN PROGRESS
+You also need to add this to your vite.config.js. This is due to the Lato fonts not currently loading in dist. IN PROGRESS
 
 ```
 server: {

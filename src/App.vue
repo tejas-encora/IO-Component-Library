@@ -1,59 +1,72 @@
 <template>
-  <main>
-    <h2>IO Component Library Host</h2>
-    <p>Vue Version: {{ vueVersion }}</p>
-    <p>Vuetify Version: {{ vuetifyVersion }}</p>
-    <p>&nbsp;</p>
-    <IOChipIndicator label="123"
-                     status="info" />
-    <p>&nbsp;</p>
-    <IOSelect :items="selectItems"
-              variant="outlined"
-              density="compact"
-              v-model="selected"
-              height="32px"
-              label="Select" />
-    <p>&nbsp;</p>
-    <IOTextFieldOutline label="myLabel" />
-    <p>&nbsp;</p>
-    Data Table
-    <IODataTable :headers="headers"
-                 :items="items"
-                 class="zebra"
-                 density="compact"
-                 item-value="name"
-                 show-select
-                 v-model="selected">
+  <div class="container">
+    <v-row>
+      <v-col cols="12">
+        <h2>IO Component Library Host</h2>
+        <p>Vue Version: {{ vueVersion }}</p>
+        <p>Vuetify Version: {{ vuetifyVersion }}</p>
+        <p>Selected: {{ selected }}</p>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12">
+        <IOChipIndicator label="123"
+                         status="info" />
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12">
+        <IOSelect :items="selectItems"
+                  variant="outlined"
+                  density="compact"
+                  v-model="selected"
+                  height="32px"
+                  label="Select" />
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12">
+        <IOTextFieldOutline label="myLabel" />
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12">
+        <h3>Data Table</h3>
+        <IODataTable :headers="headers"
+                     :items="items"
+                     class="zebra"
+                     density="compact"
+                     item-value="name"
+                     show-select
+                     @selected-update="handleSelectedUpdate"
+                     v-model="selectedItems">
+          <!-- Slot for customizing the "Location" column -->
+          <template v-slot:item.location="{ item }">
+            <IOChipIndicator :label="item.location"
+                             :status="getStatus(item)" />
+          </template>
 
-      <!-- <template v-slot:item.data-table-select="{ on, props }">
-        <IOCheckbox v-bind="props"
-                    v-on="on" />
-      </template> -->
-      
-      <template v-slot:item.location="{ item }">
-        <IOChipIndicator :label="item.location"
-                         :status="getStatus(item)" />
-      </template>
-      <template v-slot:item.constructionDate="{ item }">
-        <div v-if="item.constructionDate === 'c. 2570 BC'">
-          <IOSelect :items="selectItems"
-                    variant="outlined"
-                    density="compact"
-                    v-model="selected"
-                    height="32px"
-                    label="Select"
-                    error />
-        </div>
-        <div v-else>
-          {{ item.constructionDate }}
-        </div>
-      </template>
-    </IODataTable>
-  </main>
+          <!-- Slot for customizing the "Construction Date" column -->
+          <template v-slot:item.constructionDate="{ item }">
+            <div v-if="item.constructionDate === 'c. 2570 BC'">
+              <IOSelect :items="selectItems"
+                        variant="outlined"
+                        density="compact"
+                        v-model="selected"
+                        height="32px"
+                        label="Select" />
+            </div>
+            <div v-else>
+              {{ item.constructionDate }}
+            </div>
+          </template>
+        </IODataTable>
+      </v-col>
+    </v-row>
+  </div>
 </template>
-
 <script setup>
-import { ref, onMounted, watch } from "vue";
+import { ref } from "vue";
 import IOChipIndicator from "@/components/Chips/IOChipIndicator.vue";
 import IODataTable from "@/labs/DataTable/IODataTable.vue";
 import IOSelect from "@/components/Select/IOSelect.vue";
@@ -167,6 +180,7 @@ const selectItems = ["Option 1", "Option 2", "Option 3"]; // for select componen
 const vueVersion = vuePackage.version;
 const vuetifyVersion = vuetifyPackage.version;
 const selected = ref([]);
+const singleSelect = ref(false);
 
 function getStatus(item) {
   if (item.location === "Egypt") {
@@ -178,10 +192,20 @@ function getStatus(item) {
   }
 }
 
+function handleSelectedUpdate(newSelected) { 
+  // Handle the selected item objects updated event
+  console.log("Selected items:", JSON.stringify(newSelected, null, 2));
+}
+
 </script>
 
 <style>
 main {
   padding: 0 15px;
 }
-</style>
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}</style>

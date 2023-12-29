@@ -8,9 +8,9 @@
                   class="zebra"
                   :show-select="showSelect"
                   :density="density"
-                  v-model="selected"
+                  v-model="selectedItems"
                   item-key="id"
-                  @update:selected="emits('update:selected', $event)">
+                  :value="selectedItems">
       <template v-for="slot in Object.keys($slots)"
                 v-slot:[slot]="slotProps">
         <slot :name="slot"
@@ -53,32 +53,31 @@ const props = defineProps({
 });
 
 const search = ref("");
-const selected = ref([]);
 const isSearch = computed(() => props.hasSearch);
+const selectedItems = ref([]);
 
-watch(selected, () => {
-  console.log('watch')
-  printSelected();
-}, { deep: true });
+watch(selectedItems, (newSelected) => {
+  // Emit a custom event to pass the selected values to the parent component
+  emits("selected-update", newSelected);
+});
 
-function printSelected() {
-  console.debug(selected.value);
-}
 </script>
 
 <style>
+
 tbody tr:nth-child(odd) {
   background: var(--ioUI-sys-light-surface-container);
 }
-
 .v-input__details {
-  display: none;
+  display: none !important;
 }
-
-.v-select .v-field .v-field__input {
-  padding: 4px 0 4px 16px !important;
+.v-icon
+.v-selection-control--dirty {
+  color: var(--ioUI-sys-light-primary)
 }
-
+.v-table--density-compact > .v-table__wrapper > table > thead > tr > th {
+ background: var(--md-sys-color-surface-container-low);
+}
 .vcard {
   text-align: center !important;
   border: 1px solid !important;
@@ -94,8 +93,20 @@ tbody tr:nth-child(odd) {
 }
 
 .table-wrap {
-  max-height: 300px;
+  max-height: 400px;
   overflow: auto;
   border: 1px solid;
 }
+tbody tr:nth-of-type(even) {
+   background: var(--md-sys-color-surface-container-low);
+ }
+ .v-input--checkbox {
+    color: red !important;
+  }
+
 </style>
+
+
+
+
+
