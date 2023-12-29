@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.5](https://github.com/tejas-encora/IO-Component-Library/compare/v0.6.4...v0.6.5) (2023-12-29)
+
+
+### Features
+
+* **datatable:** datatable selected items, misc styling, table checkboxes WIP ([4f0b8e9](https://github.com/tejas-encora/IO-Component-Library/commit/4f0b8e9ee96003cda23d156e11ada4500e978be8))
+* **datatable:** wip. added checkboxes, misc styling fixes ([4575641](https://github.com/tejas-encora/IO-Component-Library/commit/45756412f23578825350be10a56120cca723582e))
+
 ### [0.6.4](https://github.com/tejas-encora/IO-Component-Library/compare/v0.6.2...v0.6.4) (2023-12-26)
 
 
