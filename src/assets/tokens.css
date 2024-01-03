@@ -18,14 +18,38 @@
   --on-warning: #007ACD;
   --md-filled-button-icon-size: 14px;
   --md-outlined-button-icon-size: 14px;
-
-  /* --md-filled-field-top-space: 5px;
-  --md-filled-field-bottom-space: 5px;
-  --_with-label-bottom-space: 5px;
-  --_with-label-top-space: 5px;
-  --md-filled-field-label-text-size: 11px; */
-  /* will be remapped */
   
+/* ioUI-palette */
+   --ioUI-ref-primary-primary95: #F2EEFF;
+  --ioUI-ref-palette-primary100: #ffffff;
+  --ioUI-ref-palette-primary99: #fffbff;
+  --ioUI-ref-palette-primary95: #f2eeff;
+  --ioUI-ref-palette-primary90: #e3dfff;
+  --ioUI-ref-palette-primary80: #c4c0ff;
+  --ioUI-ref-palette-primary70: #a5a1ff;
+  --ioUI-ref-palette-primary60: #8781fe;
+  --ioUI-ref-palette-primary50: #6d67e1;
+  --ioUI-ref-palette-primary40: #544dc7;
+  --ioUI-ref-palette-primary30: #3c32ae;
+  --ioUI-ref-palette-primary20: #231098;
+  --ioUI-ref-palette-primary10: #110068;
+  --ioUI-ref-palette-primary0: #000000;
+  --ioUI-ref-palette-primary4: #070042;
+  --ioUI-ref-palette-primary5: #09004a;
+  --ioUI-ref-palette-primary6: #0b0051;
+  --ioUI-ref-palette-primary12: #140074;
+  --ioUI-ref-palette-primary17: #1c0091;
+  --ioUI-ref-palette-primary22: #28189c;
+  --ioUI-ref-palette-primary24: #2d1fa0;
+  --ioUI-ref-palette-primary25: #2f23a2;
+  --ioUI-ref-palette-primary35: #483fba;
+  --ioUI-ref-palette-primary87: #d9d6ff;
+  --ioUI-ref-palette-primary92: #e9e5ff;
+  --ioUI-ref-palette-primary94: #efebff;
+  --ioUI-ref-palette-primary96: #f6f2ff;
+  --ioUI-ref-palette-primary98: #fcf8ff;
+
+
 /* primary */
   --md-ref-palette-primary100: #FFFFFF;
   --md-ref-palette-primary99: #FFFBFF;

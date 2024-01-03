@@ -192,7 +192,7 @@ function getStatus(item) {
   }
 }
 
-function handleSelectedUpdate(newSelected) { 
+function handleSelectedUpdate(newSelected) {
   // Handle the selected item objects updated event
   console.log("Selected items:", JSON.stringify(newSelected, null, 2));
 }
@@ -208,4 +208,5 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-}</style>
+}
+</style>

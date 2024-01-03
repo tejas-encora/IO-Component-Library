@@ -63,10 +63,12 @@ const vuetify = createVuetify({
                 colors: {
                     primary: '#544DC7',
                     secondary: '#008394',
-                    error: '#FB8C00',
-                    info: '#007ACD',
+                    error: '#DE3730',
+                    warning: '#FFB300',
                     success: '#008950',
-                    warning: '#E08E00',
+                    info: '#007ACD',
+                    background: '#EFF1F1',
+                    surface: '#F8FAFA',
                 }
             }
         }

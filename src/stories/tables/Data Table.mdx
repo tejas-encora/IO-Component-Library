@@ -5,7 +5,7 @@ import * as DataTableBase from './datatable.stories';
 
 # Data Table
 
-The IODataTable* components are used for displaying tabular data. Features include sorting, searching, pagination, grouping, and row selection.
+The IODataTable\* components are used for displaying tabular data. Features include sorting, searching, pagination, grouping, and row selection.
 
 Reference: [https://vuetifyjs.com/en/api/v-data-table/](https://vuetifyjs.com/en/api/v-data-table/)
 
@@ -14,6 +14,7 @@ Reference: [https://vuetifyjs.com/en/api/v-data-table/](https://vuetifyjs.com/en
 ```
 npm install vite-plugins-vuetify
 ```
+
 Make sure you have SASS installed
 
 ```
@@ -31,9 +32,10 @@ plugins: [
     vue(),
     vuetify(),
 ]
-  ```
+```
 
 In your 'main.js' add the following:
+
 ```
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
@@ -58,12 +60,14 @@ const vuetify = createVuetify({
             ioVuetifyTheme: {
                 dark: false,
                 colors: {
-                    primary: '#544DC7',
-                    secondary: '#008394',
-                    error: '#FB8C00',
-                    info: '#007ACD',
-                    success: '#008950',
-                    warning: '#E08E00',
+                    primary: 'var(--md-ref-palette-primary40)',
+                    secondary: 'var(--md-ref-palette-secondary50)',
+                    error: 'var(--md-ref-palette-error50)',
+                    warning: 'var(--md-ref-palette-warning60)',
+                    success: 'var(--md-ref-palette-success50)',
+                    info: 'var(--md-ref-palette-informational50)',
+                    background: 'var(--md-ref-palette-neutral95)',
+                    surface: 'var(--md-ref-palette-neutral98)',
                 }
             }
         }
@@ -71,6 +75,7 @@ const vuetify = createVuetify({
 })
 createApp(App).use(vuetify).mount('#app')
 ```
+
 You also need to add this to your vite.config.js. This is due to the Lato fonts not currently loading in dist. IN PROGRESS
 
 ```
@@ -80,7 +85,8 @@ server: {
       allow: ['..'],
     },
   },
-  ```
+```
+
 <Primary />
 
 ## Props
